@@ -41,6 +41,7 @@ body{
     .menu > ul> li>  a{
         font-size: 35px;
         margin: 0 auto;
+        white-space: nowrap;
     }
     .menu >ul{
         margin-top: 9%;
