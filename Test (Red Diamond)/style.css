@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  max-width: 1400px;
-}
-
 header {
   position: absolute;
   left: 0;
