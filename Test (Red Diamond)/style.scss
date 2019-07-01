@@ -420,13 +420,14 @@ header{
             font-size: 1.5em;
             .phone-logo{
                 display: block;
-
+              color: black;
             }
         }
     }
     .advantages{
         width: 100%;
         margin: 60% 0 0 0;
+
         ul{
             justify-content: center;
             flex-wrap: wrap;
@@ -479,9 +480,12 @@ header{
                 text-align: center;
             }
             .locations{
-                height: 970px;
+                height: 1050px;
                 .locations-block{
                     top: 200px;
+                  .location{
+                    font-size: 1.5em;
+                  }
                 }
             }
         }

@@ -423,6 +423,7 @@ header .call-block button:hover {
   }
   header .call-block .phone-logo {
     display: block;
+    color: black;
   }
 
   .advantages {
@@ -482,10 +483,13 @@ header .call-block button:hover {
     text-align: center;
   }
   .promo .left-promo .locations {
-    height: 970px;
+    height: 1050px;
   }
   .promo .left-promo .locations .locations-block {
     top: 200px;
+  }
+  .promo .left-promo .locations .locations-block .location {
+    font-size: 1.5em;
   }
 
   .services {
