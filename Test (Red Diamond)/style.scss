@@ -443,7 +443,7 @@ header{
                 }
                 img{
                     transform: scale(1.9);
-                    margin: 0 auto  5% 0;
+                    margin: 0 auto  5% auto;
                 }
 
             }
@@ -505,6 +505,41 @@ header{
                 left: -25%;
             }
         }
+    }
+    .footer{
+        padding: 5%;
+      .footer-block{
+        flex-wrap: wrap;
+        .footer-nav{
+          width: 100%;
+          .zakupki{
+            margin: 0 auto;
+          }
+          ul{
+            width: 80%;
+            margin: 0 auto;
+          }
+          li{
+            font-size: 2.5em;
+          }
+          .social{
+            display: flex;
+            justify-content: center;
+            margin: 3% auto;
+            li{
+              margin-right: 5%;
+            }
+            img{
+              transform: scale(1.4);
+            }
+          }
+        }
+
+        .contacts{
+          width: 100%;
+          font-size: 2em;
+        }
+      }
     }
 }
 
