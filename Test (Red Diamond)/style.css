@@ -552,7 +552,7 @@ header .call-block button:hover {
     font-size: 2em;
   }
 }
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 641px) {
   .advantages ul {
     align-items: flex-start;
   }
