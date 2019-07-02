@@ -407,6 +407,19 @@ header .call-block button:hover {
   margin-bottom: 0;
 }
 
+@media screen and (max-device-width: 1200px) and (min-device-width: 641px) {
+  .advantages ul {
+    align-items: flex-start;
+  }
+  .advantages ul li {
+    width: 30%;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .advantages ul li img {
+    margin: auto auto;
+  }
+}
 @media screen and (max-device-width: 640px) {
   header {
     flex-wrap: wrap;
@@ -550,19 +563,6 @@ header .call-block button:hover {
   .footer .footer-block .contacts {
     width: 100%;
     font-size: 2em;
-  }
-}
-@media screen and (max-device-width: 1200px) and (min-device-width: 641px) {
-  .advantages ul {
-    align-items: flex-start;
-  }
-  .advantages ul li {
-    width: 30%;
-    margin: 0;
-    align-items: flex-start;
-  }
-  .advantages ul li img {
-    margin: auto auto;
   }
 }
 @font-face {

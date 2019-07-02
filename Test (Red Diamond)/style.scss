@@ -405,6 +405,22 @@ header{
         }
     }
 }
+@media screen and (max-device-width: 1200px) and (min-device-width: 641px){
+    .advantages{
+        ul {
+            align-items: flex-start;
+            li {
+                width: 30%;
+                margin:0;
+                align-items: flex-start;
+
+                img {
+                    margin: auto auto;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-device-width: 640px) {
     header {
         flex-wrap: wrap;
@@ -550,22 +566,7 @@ header{
       }
     }
 }
-@media screen and (max-device-width: 1200px) and (min-device-width: 641px){
-    .advantages{
-        ul {
-                align-items: flex-start;
-            li {
-                width: 30%;
-                margin:0;
-                align-items: flex-start;
 
-                img {
-                    margin: auto auto;
-                }
-            }
-        }
-    }
-}
 
 
 
