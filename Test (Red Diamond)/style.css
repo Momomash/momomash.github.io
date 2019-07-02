@@ -448,7 +448,8 @@ header .call-block button:hover {
 
   .advantages {
     width: 100%;
-    margin: 60% 0 0 0;
+    position: relative;
+    margin: 10% 0 0 0;
   }
   .advantages ul {
     justify-content: center;
@@ -491,6 +492,10 @@ header .call-block button:hover {
   .promo .left-promo {
     width: 100%;
   }
+  .promo .left-promo p {
+    margin: 10%;
+    font-size: 2em;
+  }
   .promo .left-promo .preview {
     margin: 30% 0 0 0;
   }
@@ -506,7 +511,7 @@ header .call-block button:hover {
     height: 1050px;
   }
   .promo .left-promo .locations .locations-block {
-    top: 200px;
+    top: 100px;
   }
   .promo .left-promo .locations .locations-block .location {
     font-size: 1.5em;
