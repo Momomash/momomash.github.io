@@ -123,11 +123,11 @@ header .call-block button:hover {
 }
 .advantages li .advantages-description h4 {
   font-family: "Roboto Medium";
-  font-size: 1em;
+  font-size: 1.3em;
 }
 .advantages li .advantages-description p {
   font-family: "Myriad Pro Regular";
-  font-size: 0.75em;
+  font-size: 1em;
   color: #8b8b8b;
 }
 
@@ -207,7 +207,7 @@ header .call-block button:hover {
 .promo .left-promo p {
   margin: 65% 20% 18% 20%;
   font-family: "Roboto Regular";
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .promo .left-promo .locations {
   height: 770px;
@@ -273,7 +273,7 @@ header .call-block button:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   font-family: "Oswald Medium";
-  font-size: 1em;
+  font-size: 1.2em;
   width: 90%;
 }
 .services .services-block .service img {
@@ -290,9 +290,9 @@ header .call-block button:hover {
   color: #d2d4d7;
   font-family: "Oswald Medium";
   position: absolute;
-  font-size: 8em;
+  font-size: 10em;
   margin-top: 10%;
-  left: -20%;
+  left: -17%;
   transform: rotate(270deg);
   z-index: 1;
 }
@@ -319,9 +319,12 @@ header .call-block button:hover {
   height: 2em;
 }
 .partners .carousel-item img {
-  width: 100%;
-  height: 100%;
-  margin: auto 0;
+  width: 80%;
+  height: 70%;
+  margin: auto auto;
+}
+.partners .carousel-item .col-3 {
+  padding: 20px;
 }
 .partners .carousel-inner {
   width: 80% !important;
@@ -343,7 +346,7 @@ header .call-block button:hover {
 .footer {
   background-color: #ebebeb;
   width: 100%;
-  padding: 5% 5% 2% 5%;
+  padding: 5% 10% 2% 10%;
 }
 .footer .footer-block {
   width: 100%;
@@ -375,6 +378,7 @@ header .call-block button:hover {
   display: inline-block;
   font-family: "Roboto Regular";
   margin-right: 1em;
+  font-size: 1.5em;
 }
 .footer .footer-nav img {
   width: 81px;
@@ -396,8 +400,11 @@ header .call-block button:hover {
   float: right;
   flex-direction: column;
   font-family: "Roboto Regular";
-  font-size: 1em;
+  font-size: 1.3em;
   color: #4f4f4f;
+}
+.footer .contacts p:nth-child(2) {
+  margin-bottom: 0;
 }
 
 @media screen and (max-device-width: 640px) {
@@ -543,6 +550,19 @@ header .call-block button:hover {
   .footer .footer-block .contacts {
     width: 100%;
     font-size: 2em;
+  }
+}
+@media screen and (max-device-width: 1200px) {
+  .advantages ul {
+    align-items: flex-start;
+  }
+  .advantages ul li {
+    width: 30%;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .advantages ul li img {
+    margin: auto auto;
   }
 }
 @font-face {
