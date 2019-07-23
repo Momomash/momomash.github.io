@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="" />
+    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/Mattress/assets/img/bg/bg-promo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mattress/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="f8c5ed1e-7be8-4b8f-95da-39ef880082e2" name="Revert &quot;Fix adaptive mobile&quot;" comment="Revert &quot;Fix adaptive mobile&quot;&#10;&#10;This reverts commit d753c5e6">
+      <change beforePath="$PROJECT_DIR$/Test (Red Diamond)/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Test (Red Diamond)/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test (Red Diamond)/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Test (Red Diamond)/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test (Red Diamond)/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Test (Red Diamond)/style.scss" afterDir="false" />
+    </list>
+    <list id="6ffa6a7f-801e-47ec-a855-97b89a702531" name="Test" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,7 +22,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mattress/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -70,7 +90,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="bg" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -98,6 +154,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="" />
+      <changelist id="6ffa6a7f-801e-47ec-a855-97b89a702531" name="Test" comment="" />
       <created>1558846166494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -115,6 +172,7 @@
       <workItem from="1561356168649" duration="23987000" />
       <workItem from="1561599059237" duration="51000" />
       <workItem from="1561599140798" duration="46000" />
+      <workItem from="1563913301048" duration="867000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1558846279824</created>
@@ -165,16 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1561467134190</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixes">
+      <created>1563913927862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563913927862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76427000" />
+    <option name="totallyTimeSpent" value="77294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4054054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22023182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -185,10 +250,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -243,7 +308,8 @@
     <MESSAGE value="Blocks" />
     <MESSAGE value="images" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Project 1 (flex)/fonts/Times New Roman Bold Italic.ttf">
@@ -312,6 +378,22 @@
           <folding>
             <element signature="e#1#33#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mattress/src/js/material-ripple.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mattress/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
