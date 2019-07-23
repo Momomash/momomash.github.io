@@ -1,0 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import '../../node_modules/bootstrap/scss/functions';
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   c:\users\мария\desktop\матрацы\src\css\_appwork\_include-material.scss 1:9  @import
+ *   c:\users\мария\desktop\матрацы\src\css\appwork-material.scss 1:9            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import '../../node_modules/bootstrap/scss/functions';\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   c:\\users\\\43c \430 \440 \438 \44f \\desktop\\\43c \430 \442 \440 \430 \446 \44b \\src\\css\\_appwork\\_include-material.scss 1:9  @import\a   c:\\users\\\43c \430 \440 \438 \44f \\desktop\\\43c \430 \442 \440 \430 \446 \44b \\src\\css\\appwork-material.scss 1:9            root stylesheet";
+}

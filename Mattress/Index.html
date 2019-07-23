@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ЖилиСпали</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+
+    <script src="assets/vendor/js/material-ripple.js"></script>
+    <script src="assets/vendor/js/layout-helpers.js"></script>
+
+    <!--&lt;!&ndash; Theme settings &ndash;&gt;-->
+    <!--&lt;!&ndash; This file MUST be included after core stylesheets and layout-helpers.js in the <head> section &ndash;&gt;-->
+    <!--<script src="assets/vendor/js/theme-settings.js"></script>-->
+    <!--<script>-->
+    <!--window.themeSettings = new ThemeSettings({-->
+    <!--cssPath: 'assets/vendor/css/rtl/',-->
+    <!--themesPath: 'assets/vendor/css/rtl/'-->
+    <!--});-->
+    <!--</script>-->
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/js/pace.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/vendor/libs/nouislider/nouislider.css">
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/vendor/libs/datatables/datatables.css">
+    <link rel="stylesheet" href="assets/vendor/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery-indicator.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+
+        <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">Brand</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="header-1 navbar-collapse collapse flex-shrink-0">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">О нас</a>
+                <a class="nav-item nav-link" href="#">Матрасы</a>
+                <a class="nav-item nav-link" href="#">Подушки</a>
+                <a class="nav-item nav-link" href="#">Вопросы и ответы</a>
+                <a class="nav-item nav-link" href="#">Контакты</a>
+            </div>
+        </div>
+
+        <div class="header-1 navbar-collapse collapse justify-content-lg-end w-lg-100">
+            <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
+                <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
+                    <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
+                        <i class="ion ion-md-cart navbar-icon align-middle"></i>
+                        <span class="badge badge-danger indicator">5</span>
+                        <span class="d-lg-none align-middle">&nbsp; Cart</span>
+                    </a>
+                    <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
+                        <div class="nav navbar-nav align-items-lg-center">
+                            <a href="#" class="btn btn-primary px-3 ml-lg-4">Купить матрас</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron ui-hero justify-content-center ui-bg-cover ui-bg-overlay-container text-white py-0"
+     style="background-image: url('assets/img/bg/bg-promo.jpg');">
+    <div class="ui-bg-overlay bg-dark opacity-25"></div>
+    <div class="d-flex flex-column w-100 ui-mh-100vh">
+        <div class="container d-flex align-items-center flex-grow-1">
+            <div class="row flex-basis-100">
+                <div class="col-lg-8 text-center py-5 my-5 mx-auto">
+
+                    <h1 class="display-4 mb-5"><strong>Делаем матрасы с которых не хочется вставать</strong></h1>
+                    <div class="lead mt-4 mb-5">
+                        ЖилиСпали - сервис заказа недорогих и качественных матрасов и подушек напрямую у производителя.
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg font-weight-semibold">Купить матрас</a> &nbsp;
+                    <a href="#" class="btn btn-outline-white btn-lg font-weight-semibold">Подробнее</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uikit-company-example">
+    <div class="container">
+        <div class="uikit-example">
+            <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+                <h1 class="display-4 text-center">ЖилиСпали</h1>
+                <div class="lead text-muted pb-3 mt-4 mb-5">
+                    Производитель недорогих и качественных матрасов,
+                    работающий в формате онлайн сервиса без затрат на
+                    розничную сеть, продавцов и дорогую рекламу.
+
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6 col-lg-4 p-4">
+                    <img src="assets/img/bg/bg-promo1.jpg" class="ui-w-140 rounded-circle mb-4" alt="">
+                    <h5 class="font-weight-bold mb-2">Высокое качество</h5>
+                    <div class="ui-company-text text-muted">
+                        Мы производим матрасы с 1997 года и знаем всё о комфортном сне.
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 p-4">
+                    <img src="assets/img/bg/bg-promo1.jpg" class="ui-w-140 rounded-circle mb-4" alt="">
+                    <h5 class="font-weight-bold mb-2">Доступная цена</h5>
+                    <div class="ui-company-text text-muted">
+                        Мы сделали доступными матрасы премиум-класса.
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 p-4">
+                    <img src="assets/img/bg/bg-promo1.jpg" class="ui-w-140 rounded-circle mb-4" alt="">
+                    <h5 class="font-weight-bold mb-2">Бесплатная доставка </h5>
+                    <div class="ui-company-text text-muted">
+                        Бесплатная доставка осуществляется в Москву и МО*.
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <h3 class="text-center works__header">Посмотрите на три потрясающих матраса</h3>
+        <div class="row">
+            <div class="col-lg-7 col-md-12 order-lg-2">
+                <div class="works__images imgblok1">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 order-lg-1">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Матрас 1</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei. </p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="works__images imgblok2">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Матрас 2</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei. </p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 order-lg-2">
+                <div class="works__images imgblok3">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 order-lg-1">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Матрас 3</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei.</p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <h3 class="text-center works__header">А еще у нас есть отличные подушки</h3>
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="works__images imgblok4">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Подушка 1</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei. </p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 order-lg-2">
+                <div class="works__images imgblok5">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 order-lg-1">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Подушка 2</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei.</p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="works good-promo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="works__images imgblok6">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="works__block">
+                    <div class="works__box">
+                        <h3>Подушка 3</h3>
+                        <p>Lorem ipsum dolor sit amet, est ne natum facer oratio, te duo ancillae volutpat voluptatum.
+                            Ad rebum soleat nec, omnes accommodare eos et.
+                            Tollit persius eam et, at numquam qualisque voluptatum vel, est verear commodo elaboraret
+                            ei.</p>
+                        <a href="#" class="btn btn-round btn-primary btn-lg font-weight-semibold">Подробнее</a> &nbsp;
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="jumbotron ui-hero justify-content-center ui-bg-cover ui-bg-overlay-container text-white py-0"
+     style="background-image: url('assets/img/bg/bg-sleep.jpg');">
+    <div class="ui-bg-overlay bg-dark opacity-50"></div>
+    <div class="d-flex flex-column w-100 ui-mh-100vh">
+        <div class="container d-flex align-items-center flex-grow-1 py-5">
+            <div class="row flex-basis-100">
+                <div class="w-100 text-center">
+                    <a class="sleep-promo" href="#">
+                        <h1 class="display-2 col-md-8 col-lg-7 col-xl-6 font-weight-bolder px-0 mx-auto mx-auto">
+                            Что такое комфортный сон?
+                        </h1>
+                        <p class="lead col-md-9 col-lg-7 col-xl-9 px-0 pt-3 mx-auto">
+                            Комфортный сон - основа здорового организма и прямой путь к долголетию.
+                            В отличии предствителей интернет-магазинов и розничных продавцов, в "ЖилиСпали"
+                            занимаются производством матрасов, подушек и аксессуаров для сна уже более 20 лет.
+                            Мы знаем все о комфортном и правильном сне, знаем о чем рассказать и что показать.
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container advantages">
+    <h1 class="display-4 text-center mb-5"><strong>ЖилиСпали</strong> — матрасы по доступной цене,с качеством уровня
+        премиальных брендов и честной поддержкой клиентов.
+    </h1>
+    <div class="row text-center">
+        <div class="col-md-4 my-4">
+            <div class="text-secondary mx-auto mb-4">
+            </div>
+            <h5>Свое производство </h5>
+            <div class="ui-company-text text-muted">
+                Производство матрасов расположено в Московской области в районе Шатуры.
+                Фотографии и видео с фабрики смотрите в нашем блоге.
+            </div>
+        </div>
+        <div class="col-md-4 my-4">
+            <div class="text-secondary mx-auto mb-4">
+            </div>
+            <h5>Лучшие материалы</h5>
+            <div class="ui-company-text text-muted">
+                Наш опыт позволяет выбирать лучшие материалы для матрасов и
+                подушек от самых надежных и проверенных поставщиков.
+            </div>
+        </div>
+        <div class="col-md-4 my-4">
+            <div class="text-secondary mx-auto mb-4">
+            </div>
+            <h5>Реальные инновации</h5>
+            <div class="ui-company-text text-muted">
+                Мы используем современные материалы, учитываем последнии
+                европейские тенденции и получаем удобные матрасы и подушки.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#807B78; padding-top: 4rem">
+    <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto social-promo">
+        <h1 class="display-4 text-center">Познакомьтесь с нашим брендом</h1>
+        <div class="lead text-muted pb-3 mt-4 mb-5">
+            Давайте общаться и дружить!
+            Мы сами пишем в блоге и обещаем рассказать вам массу интересного.
+            Вы узнаете как мы делаем матрасы, побываете на производстве,
+            увидите материалы и узнаете почему мы отказались от сети продаж.
+        </div>
+    </div>
+    <div class="row col-md-10 offset-md-1 col-sm-12 offset-sm-0 brand-advantages">
+        <div class="col-md-4 col-lg-4  col-sm-12 advantage-block"><a href="#">
+            <div class="ui-bg-cover ui-bg-overlay-container rounded text-white p-4 mb-4 overflow-hidden"
+                 style="background-image: url('assets/img/bg/bg-promo1.jpg');">
+                <div class="ui-bg-overlay bg-dark opacity-25"></div>
+                <div class="pt-5 mt-5">
+                    <h5 class="font-weight-bold m-0">Как мы делаем матрасы?</h5>
+                    <div class=" opacity-75 mb-1"> Матрасы премиум-сегмента по доступным ценам с бесплатной
+                        доставкой.
+                        Миф или реальность?
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12 advantage-block"><a href="#">
+            <div class="ui-bg-cover ui-bg-overlay-container rounded text-white p-4 mb-4 overflow-hidden"
+                 style="background-image: url('assets/img/bg/bg-promo1.jpg');">
+                <div class="ui-bg-overlay bg-dark opacity-25"></div>
+                <div class="pt-5 mt-5">
+                    <h5 class="font-weight-bold m-0">Как мы делаем матрасы?</h5>
+                    <div class=" opacity-75 mb-1"> Матрасы премиум-сегмента по доступным ценам с бесплатной
+                        доставкой.
+                        Миф или реальность?
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12 advantage-block"><a href="#">
+            <div class="ui-bg-cover ui-bg-overlay-container rounded text-white p-4 mb-4 overflow-hidden"
+                 style="background-image: url('assets/img/bg/bg-promo1.jpg');">
+                <div class="ui-bg-overlay bg-dark opacity-25"></div>
+                <div class="pt-5 mt-5">
+                    <h5 class="font-weight-bold m-0">Как мы делаем матрасы?</h5>
+                    <div class=" opacity-75 mb-1"> Матрасы премиум-сегмента по доступным ценам с бесплатной
+                        доставкой.
+                        Миф или реальность?
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class=" text-center pb-4 mb-5" style="margin-top: 3rem">Часто задаваемые вопросы </h1>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <h5 class="mb-2">Dapibus ac facilisis in?</h5>
+            <p class="ui-company-text text-muted mb-4 ">
+                Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.
+                Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.
+            </p>
+            <hr>
+            <h5 class="mb-2">Cras justo odio?</h5>
+            <p class="ui-company-text text-muted mb-4">
+                Etiam vivendo eu sea, purto ponderum mediocritatem at pro.
+                Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.
+            </p>
+            <hr>
+            <h5 class="mb-2">Porta ac consectetur ac?</h5>
+            <p class="ui-company-text text-muted mb-4">
+                Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse.
+                Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.
+            </p>
+            <hr>
+        </div>
+    </div>
+    <a href="#" class="to-section">Перейти в раздел</a>
+</div>
+<nav class="footer bg-white">
+    <div class="container text-center py-3">
+        <div class="pb-3">
+            <a href="#" class="footer-link pt-3">О нас</a>
+            <a href="#" class="footer-link pt-3 ml-4">Матрасы</a>
+            <a href="#" class="footer-link pt-3 ml-4">Подушки</a>
+            <a href="#" class="footer-link pt-3 ml-4">Вопросы и ответы</a>
+            <a href="#" class="footer-link pt-3 ml-4">Контакты</a>
+            <a href="#" class="footer-link pt-3 ml-4">Доставка</a>
+            <a href="#" class="footer-link pt-3 ml-4">Оплата</a>
+            <a href="#" class="footer-link pt-3 ml-4">Гарантия</a>
+
+        </div>
+
+        <hr class="m-0">
+
+        <div class="col-md-9 col-lg-7 col-xl-6 px-0 my-4 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vulputate commodo justo, a malesuada magna interdum sodales.
+            Vestibulum bibendum fermentum tortor, eu blandit orci porta quis.
+        </div>
+
+        <div class="pb-3">
+            <a href="#" class="footer-text font-weight-bolder">Brand</a> © &nbsp; &nbsp; All rights reserved
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    $('.header-1 .navbar-search-input > input').on('focus', function () {
+        $('.header-1 .navbar-search-box').addClass('active');
+    });
+    $('.header-1 .navbar-search-cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.header-1 .navbar-search-box').removeClass('active');
+    });
+</script>
+
+
+</body>
+</html>
