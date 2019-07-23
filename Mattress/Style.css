@@ -1,5 +1,69 @@
 @charset "UTF-8";
-/* Code examples */
+.navbar.bg-white .navbar-nav .nav-link {
+  color: #0D39AB;
+  font-family: "Montserrat Medium";
+  font-size: 14px;
+}
+
+.navbar.bg-white .navbar-nav .nav-link:hover {
+  color: #2353CD;
+}
+
+.navbar.bg-white .navbar-nav .show > .nav-link, .navbar.bg-white .navbar-nav .active > .nav-link, .navbar.bg-white .navbar-nav .nav-link.show, .navbar.bg-white .navbar-nav .nav-link.active {
+  color: #2353CD;
+}
+
+.header-nav {
+  margin: 0;
+}
+
+.navbar {
+  padding: 0 80px;
+}
+
+.header-1 {
+  justify-content: flex-end;
+}
+
+.buy-button {
+  margin-right: 0;
+  flex-grow: 0;
+}
+
+#about_matters, #about_anchor {
+  padding-top: 80px;
+  margin-top: -80px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+html:not([dir=rtl]) .pb-3, html:not([dir=rtl]) .py-3 {
+  padding-bottom: 0 !important;
+}
+
+html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
+  padding-top: 0 !important;
+}
+
+.btn-primary {
+  border-color: transparent;
+  background: #2353CD;
+  color: #fff;
+  font-family: "Montserrat SemiBold";
+  font-size: 13px;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background: #0D39AB;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  border-radius: 30px;
+  font-family: "Montserrat SemiBold";
+  font-size: 13px;
+}
+
 .uikit-example {
   position: relative;
 }
@@ -676,6 +740,48 @@ h5 {
     margin-bottom: 15px;
     margin-right: 15px;
   }
+}
+.logo-promo {
+  display: inline-block;
+  max-width: 130px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  color: #A0A0A0;
+}
+
+.navbar-nav {
+  font-family: "Montserrat Medium";
+  font-size: 14px;
+  color: #0D39AB;
+}
+
+.navbar-nav:hover {
+  color: #2353CD;
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("assets/vendor/fonts/Montserrat_Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url("assets/vendor/fonts/Montserrat_SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AmaticSC";
+  src: url("assets/vendor/fonts/AmaticSC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=Style.css.map */

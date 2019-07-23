@@ -40,9 +40,7 @@
     <!-- Core scripts -->
     <script src="assets/vendor/js/pace.js"></script>
     <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
@@ -66,16 +64,15 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white">
-    <div class="container">
-
-        <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">Brand</a>
-
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid header-nav">
+        <a href="#" class="navbar-brand w-lg-90 text-large font-weight-bolder line-height-1 py-3 mr-0"><img
+                src="assets/img/logo.png"></a>
+        <p class="logo-promo">Онлайн сервис заказа матраса напрямую у производителя</p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-1">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="header-1 navbar-collapse collapse flex-shrink-0">
+        <div class="header-1 navbar-collapse collapse flex-shrink-0 ">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">О нас</a>
                 <a class="nav-item nav-link" href="#">Матрасы</a>
@@ -83,48 +80,47 @@
                 <a class="nav-item nav-link" href="#">Вопросы и ответы</a>
                 <a class="nav-item nav-link" href="#">Контакты</a>
             </div>
-        </div>
-
-        <div class="header-1 navbar-collapse collapse justify-content-lg-end w-lg-100">
-            <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
-                <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
-                    <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
-                        <i class="ion ion-md-cart navbar-icon align-middle"></i>
-                        <span class="badge badge-danger indicator">5</span>
-                        <span class="d-lg-none align-middle">&nbsp; Cart</span>
-                    </a>
-                    <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
-                        <div class="nav navbar-nav align-items-lg-center">
-                            <a href="#" class="btn btn-primary px-3 ml-lg-4">Купить матрас</a>
+            <div class="header-1 navbar-collapse justify-content-lg-end buy-button">
+                <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
+                    <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
+                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
+                            <i class="ion ion-md-cart navbar-icon align-middle"></i>
+                            <span class="badge badge-danger indicator">5</span>
+                            <span class="d-lg-none align-middle">&nbsp; Cart</span>
+                        </a>
+                        <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
+                            <div class="nav navbar-nav align-items-lg-center">
+                                <a href="#" class="btn btn-primary px-3 ml-lg-4">Купить матрас</a>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </nav>
 <div class="jumbotron ui-hero justify-content-center ui-bg-cover ui-bg-overlay-container text-white py-0"
-     style="background-image: url('assets/img/bg/bg-promo.jpg');">
+     style="background-image: url('assets/img/bg/bg-promo.png');">
     <div class="ui-bg-overlay bg-dark opacity-25"></div>
     <div class="d-flex flex-column w-100 ui-mh-100vh">
         <div class="container d-flex align-items-center flex-grow-1">
             <div class="row flex-basis-100">
-                <div class="col-lg-8 text-center py-5 my-5 mx-auto">
+                <div class="col-lg-8 text-center py-5 my-5 mx-auto" id="about_anchor">
 
                     <h1 class="display-4 mb-5"><strong>Делаем матрасы с которых не хочется вставать</strong></h1>
                     <div class="lead mt-4 mb-5">
                         ЖилиСпали - сервис заказа недорогих и качественных матрасов и подушек напрямую у производителя.
                     </div>
                     <a href="#" class="btn btn-primary btn-lg font-weight-semibold">Купить матрас</a> &nbsp;
-                    <a href="#" class="btn btn-outline-white btn-lg font-weight-semibold">Подробнее</a>
+                    <a href="#about_matters" class="btn btn-outline-white btn-lg font-weight-semibold">Подробнее</a>
 
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="uikit-company-example">
+<div class="uikit-company-example" id="about_matters">
     <div class="container">
         <div class="uikit-example">
             <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
@@ -483,7 +479,16 @@
         $('.header-1 .navbar-search-box').removeClass('active');
     });
 </script>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#about_anchor").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
+        });
+    });
+</script>
 
 </body>
 </html>
