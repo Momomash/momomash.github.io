@@ -98,7 +98,7 @@ header{
     display: flex;
     background-color: #ffffff;
     flex-direction: row;
-    margin: 30% 10% 0 10%;
+    margin: 40% 10% 0 10%;
     position: absolute;
     z-index: 20;
     ul{
@@ -144,7 +144,7 @@ header{
         }
         .dog-block{
             background: url("images/dog.png") no-repeat;
-            background-size: auto 100%;
+            background-size: 100% 100%;
             height:100%;
             position: absolute;
             top: 13%;
@@ -407,7 +407,6 @@ header{
 }
 @media screen and (max-device-width: 1200px) and (min-device-width: 641px){
     .advantages{
-        margin: 40% 10% 0 10%;
         ul {
             align-items: flex-start;
             li {
@@ -421,34 +420,7 @@ header{
             }
         }
     }
-    .promo{
-         .left-promo {
-             .locations{
-                 .locations-block{
-                     margin: 0 2% 0 2%;
-                 }
-             }
-             .location-baggage {
-                 width: 95%;
-             }
-         }
-        .right-promo{
-            .video{
-                h2:before{
-                    left:-20%;
-                }
-            }
-        }
-    }
-    .services{
-        .services-block{
-            .left-text {
-                left: -30%;
-            }
-            }
-        }
 }
-
 @media screen and (max-device-width: 640px) {
     header {
         flex-wrap: wrap;

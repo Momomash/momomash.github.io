@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="Fixes">
-      <change afterPath="$PROJECT_DIR$/Mattress/assets/img/bg/bg-promo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mattress/assets/img/logo.png" afterDir="false" />
+    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mattress/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mattress/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mattress/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Mattress/Style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mattress/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Mattress/Style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mattress/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mattress/index.html" afterDir="false" />
     </list>
     <list id="f8c5ed1e-7be8-4b8f-95da-39ef880082e2" name="Revert &quot;Fix adaptive mobile&quot;" comment="Revert &quot;Fix adaptive mobile&quot;&#10;&#10;This reverts commit d753c5e6">
       <change beforePath="$PROJECT_DIR$/Test (Red Diamond)/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Test (Red Diamond)/style.css" afterDir="false" />
@@ -26,8 +28,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mattress/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="831">
+              <caret line="152" column="73" selection-start-line="152" selection-start-column="73" selection-end-line="152" selection-end-column="73" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mattress/Style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -55,6 +71,7 @@
       <find>team</find>
       <find>gallery-2</find>
       <find>media</find>
+      <find>uiki</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,6 +91,8 @@
       <list>
         <option value="$PROJECT_DIR$/Project 1 (flex)/index.html" />
         <option value="$PROJECT_DIR$/Project 1 (flex)/style.css" />
+        <option value="$PROJECT_DIR$/Mattress/Style.scss" />
+        <option value="$PROJECT_DIR$/Mattress/index.html" />
       </list>
     </option>
   </component>
@@ -122,6 +141,21 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
               <item name="bg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="momomash.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="momomash.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +206,7 @@
       <workItem from="1561356168649" duration="23987000" />
       <workItem from="1561599059237" duration="51000" />
       <workItem from="1561599140798" duration="46000" />
-      <workItem from="1563913301048" duration="867000" />
+      <workItem from="1563913301048" duration="3621000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1558846279824</created>
@@ -230,21 +264,29 @@
       <option name="project" value="LOCAL" />
       <updated>1563913927862</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixes1">
+      <created>1563914205335</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563914205335</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77294000" />
+    <option name="totallyTimeSpent" value="80048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22023182" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22023182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -253,7 +295,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -309,7 +351,8 @@
     <MESSAGE value="images" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="Fixes1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Project 1 (flex)/fonts/Times New Roman Bold Italic.ttf">
@@ -390,10 +433,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Mattress/Style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mattress/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="831">
+          <caret line="152" column="73" selection-start-line="152" selection-start-column="73" selection-end-line="152" selection-end-column="73" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,6 @@
-
+body {
+    background: #ffffff;
+}
   .navbar.bg-white .navbar-nav .nav-link {
     color: #0D39AB;
     font-family: 'Montserrat Medium';
@@ -60,6 +62,34 @@
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
+.uikit-company-example{
+  background-color: #ffffff;
+}
+.promo-center-text{
+    margin: 2rem 0 5rem 0;
+}
+  .promo-center-text >h1{
+    font-family: 'AmaticSC';
+    font-size: 50px;
+    color: #2353CD;
+    font-weight: bold;
+  }
+  .promo-center-text >.lead{
+    font-family: 'Montserrat Medium';
+    font-size: 22px;
+    color: #212121 ;
+  }
+  .advantage-h5{
+    color: #0D39AB;
+    font-size: 18px;
+    font-family: 'Montserrat SemiBold';
+  }
+  .advantage-text{
+    color: #212121;
+    font-size: 14px;
+    font-family: 'Montserrat Medium';
+  }
+
 
 [dir=rtl] .uikit-example-btns {
   right: auto;
@@ -309,7 +339,20 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
+.works{
+  background-color: #f8f8f8;
+}
+.works__header{
+  background-color: white;
+}
+.imgblok1,
+.imgblok2,
+.imgblok3,
+.imgblok4,
+.imgblok5,
+.imgblok6{
+  background-size: 100% 100%;
+}
 .imgblok1 {
   background: url("assets/img/bg/bg-promo.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -579,7 +622,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  margin-right: 0px;
+  margin-right: 0;
   width: 1em;
   display: inline-block;
   cursor: pointer;
@@ -617,7 +660,6 @@
     transform: scale(1);
   }
 }
-
 .contact form .contact__btn {
   background-color: #5B0F80;
   color: #fff;
@@ -729,12 +771,7 @@ h5 {
 .advantage-block:hover {
   transform: scale(1.05);
 }
-.to-section{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: grey;
-  font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
+
 .lead{
   font-size: 1.4rem;
 }
@@ -770,7 +807,103 @@ h5 {
   .navbar-nav:hover{
     color: #2353CD;
   }
+.works__header {
+  color: #0D39AB;
+  font-size: 35px;
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+}
+.questions h1{
+  color: #0D39AB;
+  font-size: 35px;
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+}
+.questions h5{
+  font-size: 18px;
+  color: #0D39AB;
+  font-family: "Montserrat Medium";
+}
+.questions p{
+  font-size: 14px;
+  color: #212121;
+  font-family: "Montserrat";
+}
+.questions .to-section{
+  color: #0D39AB;
+  font-size: 16px;
+  font-family: "Montserrat Medium";
+}
+.questions .to-section:hover{
+  color: grey;
+  font-size: 16px;
+}
+.about-brand h1{
+  color: #ffffff;
+  font-size: 35px;
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+}
+.specifications{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  .specification{
+  display: flex;
+  flex-direction: column;
+    width: 50%;
+ }
+  .specifications> .specification> h5{
+    text-transform: uppercase;
+    color: #757575;
+    font-size: 14px;
+    font-family: "Montserrat Medium";
+    margin-bottom: 0;
+  }
+.specifications> .specification> p{
+  color: black;
+  font-size: 18px;
+  font-family: "Montserrat Medium";
+}
+.sleep-promo>h1{
+  font-family: 'Montserrat SemiBold';
+}
+.sleep-promo>p{
+  font-family: 'Montserrat Medium';
+  font-weight: 100;
+}
+.advantages>h1{
+  color: #212121;
+}
+.advantages h5{
+  color: #0D39AB;
+  font-size: 24px;
+  font-family: 'Montserrat SemiBold';
+  font-weight: bolder;
+}
+.advantages .text-muted{
+  color: #212121 !important;
+  font-size: 16px;
+  font-family: 'Montserrat SemiBold';
+  font-weight: bolder;
+}
+.works__box> h3{
+    color: #0D39AB;
+  font-family: 'Montserrat SemiBold';
+}
+.good-promo .good-specific .works__box {
+    background-color: #EFF4FF;
+}
 
+.footer.bg-white .footer-link {
+  color: #0D39AB;
+  font-family: 'Montserrat Medium';
+}
+.footer.bg-white {
+  color: #a3a4a6 ;
+  font-family: 'Montserrat Medium';
+}
   @font-face{
     font-family: "Montserrat Medium";
     src: url("assets/vendor/fonts/Montserrat_Medium.otf") format("truetype");
@@ -789,3 +922,21 @@ h5 {
     font-style: normal;
     font-weight: normal;
   }
+  @font-face{
+    font-family: "Montserrat Light";
+    src: url("assets/vendor/fonts/Montserrat_Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face{
+    font-family: "Montserrat Bold";
+    src: url("assets/vendor/fonts/Montserrat_Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+@font-face{
+  font-family: "Montserrat";
+  src: url("assets/vendor/fonts/Montserrat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
