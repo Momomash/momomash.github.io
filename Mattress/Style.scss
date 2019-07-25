@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600);
 body {
     background: #ffffff;
 }
@@ -87,7 +88,8 @@ body {
   .advantage-text{
     color: #212121;
     font-size: 14px;
-    font-family: 'Montserrat Medium';
+    font-family: 'Montserrat';
+    font-weight: 300;
   }
 
 
@@ -329,9 +331,9 @@ body {
 }
 
 .works__box p {
-  font-family: sans-serif;
+  font-family: 'Montserrat';
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: #212121;
 }
 
@@ -758,6 +760,7 @@ h5 {
   color: #ffffff;
 }
 
+
 .sleep-promo:hover {
   color: #AFAFAF;
 }
@@ -819,6 +822,10 @@ h5 {
   font-family: "Montserrat SemiBold";
   font-weight: bold;
 }
+.questions .text-muted{
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
 .questions h5{
   font-size: 18px;
   color: #0D39AB;
@@ -858,23 +865,26 @@ h5 {
     text-transform: uppercase;
     color: #757575;
     font-size: 14px;
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat";
+    font-weight: 300;
     margin-bottom: 0;
   }
 .specifications> .specification> p{
   color: black;
   font-size: 18px;
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat";
 }
 .sleep-promo>h1{
   font-family: 'Montserrat SemiBold';
 }
 .sleep-promo>p{
-  font-family: 'Montserrat Medium';
-  font-weight: 100;
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 .advantages>h1{
   color: #212121;
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 .advantages h5{
   color: #0D39AB;
@@ -885,8 +895,8 @@ h5 {
 .advantages .text-muted{
   color: #212121 !important;
   font-size: 16px;
-  font-family: 'Montserrat SemiBold';
-  font-weight: bolder;
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 .works__box> h3{
     color: #0D39AB;
