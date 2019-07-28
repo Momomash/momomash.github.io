@@ -35,6 +35,18 @@ body {
   flex-grow: 0;
 }
 
+.jumbotron h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.jumbotron .lead {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+}
+
 #about_matters, #about_anchor {
   padding-top: 80px;
   margin-top: -80px;

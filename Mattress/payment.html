@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ЖилиСпали</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+
+    <script src="assets/vendor/js/material-ripple.js"></script>
+    <script src="assets/vendor/js/layout-helpers.js"></script>
+
+    <!--&lt;!&ndash; Theme settings &ndash;&gt;-->
+    <!--&lt;!&ndash; This file MUST be included after core stylesheets and layout-helpers.js in the <head> section &ndash;&gt;-->
+    <!--<script src="assets/vendor/js/theme-settings.js"></script>-->
+    <!--<script>-->
+    <!--window.themeSettings = new ThemeSettings({-->
+    <!--cssPath: 'assets/vendor/css/rtl/',-->
+    <!--themesPath: 'assets/vendor/css/rtl/'-->
+    <!--});-->
+    <!--</script>-->
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/js/pace.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/vendor/libs/nouislider/nouislider.css">
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/vendor/libs/datatables/datatables.css">
+    <link rel="stylesheet" href="assets/vendor/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery-indicator.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid header-nav">
+        <a href="#" class="navbar-brand w-lg-90 text-large font-weight-bolder line-height-1 py-3 mr-0"><img
+                src="assets/img/logo.png"></a>
+        <p class="logo-promo">Онлайн сервис заказа матраса напрямую у производителя</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header-1 navbar-collapse collapse flex-shrink-0 ">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">О нас</a>
+                <a class="nav-item nav-link" href="#">Матрасы</a>
+                <a class="nav-item nav-link" href="#">Подушки</a>
+                <a class="nav-item nav-link" href="#">Вопросы и ответы</a>
+                <a class="nav-item nav-link" href="#">Контакты</a>
+            </div>
+            <div class="header-1 navbar-collapse justify-content-lg-end buy-button">
+                <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
+                    <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
+                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
+                            <i class="ion ion-md-cart navbar-icon align-middle"></i>
+                            <span class="badge badge-danger indicator">5</span>
+                            <span class="d-lg-none align-middle">&nbsp; Cart</span>
+                        </a>
+                        <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
+                            <div class="nav navbar-nav align-items-lg-center">
+                                <a href="#" class="btn btn-primary px-3 ml-lg-4">Купить матрас</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="footer bg-white">
+    <div class="container text-center py-3">
+        <div class="pb-3">
+            <a href="index.html" class="footer-link pt-3">О нас</a>
+            <a href="#" class="footer-link pt-3 ml-4">Матрасы</a>
+            <a href="#" class="footer-link pt-3 ml-4">Подушки</a>
+            <a href="#" class="footer-link pt-3 ml-4">Вопросы и ответы</a>
+            <a href="#" class="footer-link pt-3 ml-4">Контакты</a>
+            <a href="delivery.html" class="footer-link pt-3 ml-4">Доставка</a>
+            <a href="payment.html" class="footer-link pt-3 ml-4">Оплата</a>
+            <a href="#" class="footer-link pt-3 ml-4">Гарантия</a>
+        </div>
+        <hr class="m-0">
+        <div class="col-md-9 col-lg-7 col-xl-6 px-0 my-4 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vulputate commodo justo, a malesuada magna interdum sodales.
+            Vestibulum bibendum fermentum tortor, eu blandit orci porta quis.
+        </div>
+
+        <div class="pb-3">
+            <a href="#" class="footer-text font-weight-bolder"><img src="assets/img/logo-small.png"></a> © &nbsp; &nbsp; All rights reserved
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    $('.header-1 .navbar-search-input > input').on('focus', function () {
+        $('.header-1 .navbar-search-box').addClass('active');
+    });
+    $('.header-1 .navbar-search-cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.header-1 .navbar-search-box').removeClass('active');
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#about_anchor").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
+        });
+    });
+</script>
+
+</body>
+</html>
