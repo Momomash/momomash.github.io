@@ -4,6 +4,33 @@ body {
   background: #ffffff;
 }
 
+.text-block {
+  margin-right: 3%;
+}
+.text-block h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  color: #0D39AB;
+}
+.text-block p {
+  color: #212121 !important;
+  font-family: "Montserrat";
+  font-weight: 400 !important;
+}
+.text-block .breadcrumb-item {
+  font-size: 12px;
+  color: #757575;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.text-block .breadcrumb-item:hover {
+  color: #212121;
+}
+.text-block .breadcrumb .active {
+  color: #212121;
+}
+
 .navbar.bg-white .navbar-nav .nav-link {
   color: #0D39AB;
   font-family: "Montserrat Medium";
@@ -209,6 +236,10 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   }
 }
 @media (max-width: 575px) {
+  .jumbotron {
+    padding: 6rem 3rem 0rem 3rem !important;
+  }
+
   .works__images {
     margin: 0 0 0 0;
   }

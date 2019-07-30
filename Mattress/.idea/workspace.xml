@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c218d072-20fd-47ba-8da9-9192f474f0a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/delivery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/css/rtl/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vendor/css/rtl/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -47,28 +47,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1916">
-              <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/payment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="545">
+              <caret line="223" column="32" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/payment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="112" column="65" selection-start-line="112" selection-start-column="65" selection-end-line="112" selection-end-column="65" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +101,8 @@
       <find>speci</find>
       <find>anchor</find>
       <find>lead</find>
+      <find>jumb</find>
+      <find>media</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,10 +114,11 @@
         <option value="$PROJECT_DIR$/questions.html" />
         <option value="$PROJECT_DIR$/Index.html" />
         <option value="$PROJECT_DIR$/Style.css" />
-        <option value="$PROJECT_DIR$/Style.scss" />
-        <option value="$PROJECT_DIR$/payment.html" />
-        <option value="$PROJECT_DIR$/delivery.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Style.scss" />
+        <option value="$PROJECT_DIR$/assets/vendor/css/rtl/bootstrap.css" />
+        <option value="$PROJECT_DIR$/delivery.html" />
+        <option value="$PROJECT_DIR$/payment.html" />
       </list>
     </option>
   </component>
@@ -193,7 +191,8 @@
       <workItem from="1563905626785" duration="7436000" />
       <workItem from="1563984637577" duration="7726000" />
       <workItem from="1564087286949" duration="2010000" />
-      <workItem from="1564342021180" duration="2504000" />
+      <workItem from="1564342021180" duration="2645000" />
+      <workItem from="1564491438162" duration="5528000" />
     </task>
     <task id="LOCAL-00001" summary="Main - editing">
       <created>1563992172226</created>
@@ -216,17 +215,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564089250474</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Main- h1 fix and add 'delivery' + 'payment'">
+      <created>1564345102100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564345102100</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49701000" />
+    <option name="totallyTimeSpent" value="55370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16596417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16596417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,7 +258,9 @@
     <MESSAGE value="Main - editing" />
     <MESSAGE value="Main - editing1" />
     <MESSAGE value="Main - editing font-family" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main - editing font-family" />
+    <MESSAGE value="Main- h1 fix and add 'delivery' + 'payment'" />
+    <MESSAGE value="Block editing 'delivery' + 'payment'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Block editing 'delivery' + 'payment'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/ui_carousel.html">
@@ -308,21 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vendor/css/rtl/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret column="117067" selection-start-column="117067" selection-end-column="117067" />
-          <folding>
-            <element signature="e#43128#43277#2" expanded="true" />
-            <element signature="e#44102#44443#1" expanded="true" />
-            <element signature="e#59100#59343#2" expanded="true" />
-            <element signature="e#60186#60432#2" expanded="true" />
-            <element signature="e#84136#84326#2" expanded="true" />
-            <element signature="e#84372#84562#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_3.2.1_jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -349,24 +342,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vendor/css/rtl/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="4339" lean-forward="true" selection-start-line="4339" selection-end-line="4339" />
+          <folding>
+            <element signature="e#58681#58830#2" expanded="true" />
+            <element signature="e#59776#60117#1" expanded="true" />
+            <element signature="e#78561#78804#2" expanded="true" />
+            <element signature="e#79788#80034#2" expanded="true" />
+            <element signature="e#109481#109671#2" expanded="true" />
+            <element signature="e#109727#109917#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="545">
+          <caret line="223" column="32" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delivery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1916">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+        <state relative-caret-position="175">
+          <caret line="103" selection-start-line="103" selection-end-line="131" selection-end-column="6" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -389,6 +394,17 @@
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#h1#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="112" column="65" selection-start-line="112" selection-start-column="65" selection-end-line="112" selection-end-column="65" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
