@@ -883,6 +883,29 @@ h5 {
   color: grey;
   font-size: 16px;
 }
+.questions-block{
+  padding-top: 10rem;
+   h1{
+    color: #0D39AB;
+    font-size: 35px;
+    font-family: "Montserrat SemiBold";
+    font-weight: bold;
+  }
+  .text-muted{
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+   h5{
+    font-size: 18px;
+    color: #0D39AB;
+    font-family: "Montserrat Medium";
+  }
+   p{
+    font-size: 14px;
+    color: #212121;
+    font-family: "Montserrat";
+  }
+}
 .about-brand h1{
   color: #ffffff;
   font-size: 35px;
