@@ -611,6 +611,67 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
     height: 400px;
   }
 }
+.catalog-block:first-of-type {
+  padding: 10rem 0 1rem 0;
+}
+
+.catalog-block {
+  padding: 1rem 0;
+}
+.catalog-block h4 {
+  color: #0D39AB;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 28px;
+}
+.catalog-block li {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+}
+.catalog-block .m-0 {
+  margin: auto 0 !important;
+}
+.catalog-block .btn-outline-primary {
+  border-color: #2353CD;
+  color: #2353CD;
+  border-radius: 25px;
+}
+.catalog-block .btn-outline-primary:hover {
+  background-color: #2353CD;
+  color: #ffffff;
+}
+
+.modal-content h3 {
+  color: #2353CD;
+  font-family: "Montserrat SemiBold";
+}
+.modal-content h6 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+}
+.modal-content .badge-outline-default,
+.modal-content .badge-primary {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+}
+.modal-content .badge-primary {
+  background-color: #2353CD;
+}
+.modal-content .badge-primary:hover {
+  background-color: #0D39AB;
+}
+.modal-content .btn-default:hover {
+  border-color: #0D39AB;
+  color: #0D39AB;
+  background-color: #ffffff;
+}
+.modal-content .d-flex, .modal-content .d-inline-flex, .modal-content .media, .modal-content .media > :not(.media-body), .modal-content .jumbotron, .modal-content .card {
+  padding-top: 1rem;
+}
+
 .contact form .contact__input label {
   font-size: 16px;
   color: #212121;

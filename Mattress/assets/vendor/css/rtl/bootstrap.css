@@ -4727,18 +4727,15 @@ button.close {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 35rem;
+        max-width: 70rem;
         margin: 1.75rem auto
     }
-
     .modal-dialog-centered {
         min-height: calc(100% - (1.75rem * 2))
     }
-
     .modal-dialog-centered::before {
         height: calc(100vh - (1.75rem * 2))
     }
-
     .modal-sm {
         max-width: 22.5rem
     }
@@ -7023,9 +7020,9 @@ html:not([dir=rtl]) .rounded-0 {
     max-height: 100% !important
 }
 
-html:not([dir=rtl]) .m-0 {
-    margin: 0 !important
-}
+/*html:not([dir=rtl]) .m-0 {*/
+    /*margin: 0 !important*/
+/*}*/
 
 html:not([dir=rtl]) .mt-0, html:not([dir=rtl]) .my-0 {
     margin-top: 0 !important

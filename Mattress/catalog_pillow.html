@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ЖилиСпали</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+
+    <script src="assets/vendor/js/material-ripple.js"></script>
+    <script src="assets/vendor/js/layout-helpers.js"></script>
+
+    <!--&lt;!&ndash; Theme settings &ndash;&gt;-->
+    <!--&lt;!&ndash; This file MUST be included after core stylesheets and layout-helpers.js in the <head> section &ndash;&gt;-->
+    <!--<script src="assets/vendor/js/theme-settings.js"></script>-->
+    <!--<script>-->
+    <!--window.themeSettings = new ThemeSettings({-->
+    <!--cssPath: 'assets/vendor/css/rtl/',-->
+    <!--themesPath: 'assets/vendor/css/rtl/'-->
+    <!--});-->
+    <!--</script>-->
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/js/pace.js"></script>
+    <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/vendor/libs/nouislider/nouislider.css">
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/vendor/libs/datatables/datatables.css">
+    <link rel="stylesheet" href="assets/vendor/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery.css">
+    <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery-indicator.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid header-nav">
+        <a href="index.html" class="navbar-brand w-lg-90 text-large font-weight-bolder line-height-1 py-3 mr-0"><img
+                src="assets/img/logo.png"></a>
+        <p class="logo-promo">Онлайн сервис заказа матраса напрямую у производителя</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header-1 navbar-collapse collapse flex-shrink-0 ">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">О нас</a>
+                <a class="nav-item nav-link" href="catalog_mattres.html">Матрасы</a>
+                <a class="nav-item nav-link" href="catalog_pillow.html">Подушки</a>
+                <a class="nav-item nav-link" href="questions.html">Вопросы и ответы</a>
+                <a class="nav-item nav-link" href="#">Контакты</a>
+            </div>
+            <div class="header-1 navbar-collapse justify-content-lg-end buy-button">
+                <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
+                    <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
+                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
+                            <i class="ion ion-md-cart navbar-icon align-middle"></i>
+                            <span class="badge badge-danger indicator">5</span>
+                            <span class="d-lg-none align-middle">&nbsp; Cart</span>
+                        </a>
+                        <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
+                            <div class="nav navbar-nav align-items-lg-center">
+                                <a href="#" class="btn btn-primary px-3 ml-lg-4">Купить матрас</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="catalog-block first-child">
+    <div class="card mb-3">
+        <div class="media flex-wrap flex-md-nowrap">
+
+            <a href="#" class="d-block col-12 col-md-6 col-lg-5 text-center p-0 m-0">
+                <img src="assets/img/bg/bg-promo1.jpg" alt class="матрас 1" style="max-height: 300px">
+            </a>
+
+            <div class="media-body p-4 p-md-5">
+                <a href="#" class="float-right text-lighter">
+                    <i class="ion ion-ios-heart"></i>
+                </a>
+                <a href="#" class="float-right text-lighter mr-3">
+                    <i class="ion ion-md-share"></i>
+                </a>
+
+                <h4 class="mb-2">
+                    <a href="#">Подушка 1</a>
+                </h4>
+                <ul class="ui-list mb-4">
+                    <li>Материал..............................</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Цена от .......</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary ml-3 " data-toggle="modal"
+                   data-target="#exampleModalCenter11">
+                    <strong>Купить</strong>&#8195;<span class="ion ion-md-cart"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="card mb-3">
+                    <div class="media flex-wrap flex-lg-nowrap">
+                        <div class="col-12 col-lg-5 p-0">
+                            <img src="assets/img/bg/bg-promo1.jpg" alt class="img-fluid d-block mx-auto">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#"
+                                   class="ion ion-ios-arrow-back d-block text-muted text-big opacity-25 pr-2"></a>
+                                <a href="#" class="d-block ui-w-80 border-primary ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="ion ion-ios-arrow-forward d-block text-light text-big pl-2"></a>
+                            </div>
+                        </div>
+                        <div class="media-body p-md-5 px-4 pt-5 pb-4">
+                            <a href="#" class="float-right text-lighter">
+                                <i class="ion ion-ios-heart"></i>
+                            </a>
+                            <a href="#" class="float-right text-lighter mr-3">
+                                <i class="ion ion-md-share"></i>
+                            </a>
+                            <h3>Подушка 1</h3>
+                            <h3 class="pb-2 mb-0"><strong>$57.55</strong></h3>
+                            <h6 class="small font-weight-normal mt-4">Размеры</h6>
+                            <div class="text-big">
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 1</a>
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 2</a>
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 3</a>
+                                <a href="#" class="badge badge-primary font-weight-normal">Размер 4</a>
+                            </div>
+                            <br>
+                            <div class="input-group input-group-sm" style="width: 90px">
+        <span class="input-group-prepend">
+          <button class="btn btn-default btn-sm icon-btn md-btn-flat px-0" type="button">-</button>
+        </span>
+                                <input type="text" value="1" class="form-control text-center">
+                                <span class="input-group-append">
+          <button class="btn btn-default btn-sm icon-btn md-btn-flat px-0" type="button">+</button>
+        </span>
+                            </div>
+
+                            <div class="pt-2 mt-4">
+                                <button type="button" class="btn btn-primary btn-lg">Купить сейчас</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-default btn-lg md-btn-flat">+<span
+                                        class="ion ion-md-cart"></span>&nbsp;В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="catalog-block">
+    <div class="card mb-3">
+        <div class="media flex-wrap flex-md-nowrap">
+            <a href="#" class="d-block col-12 col-md-6 col-lg-5 text-center p-0 m-0">
+                <img src="assets/img/bg/bg-promo1.jpg" alt class="матрас 1" style="max-height: 300px">
+            </a>
+            <div class="media-body p-4 p-md-5">
+                <a href="#" class="float-right text-lighter">
+                    <i class="ion ion-ios-heart"></i>
+                </a>
+                <a href="#" class="float-right text-lighter mr-3">
+                    <i class="ion ion-md-share"></i>
+                </a>
+
+                <h4 class="mb-2">
+                    <a href="#">Подушка 2</a>
+                </h4>
+
+                <ul class="ui-list mb-4">
+                    <li>Материал..............................</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Цена от .......</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary ml-3 " data-toggle="modal"
+                   data-target="#exampleModalCenter22">
+                    <strong>Купить</strong>&#8195;<span class="ion ion-md-cart"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter22" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="card mb-3">
+                    <div class="media flex-wrap flex-lg-nowrap">
+                        <div class="col-12 col-lg-5 p-0">
+                            <img src="assets/img/bg/bg-promo1.jpg" alt class="img-fluid d-block mx-auto">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#"
+                                   class="ion ion-ios-arrow-back d-block text-muted text-big opacity-25 pr-2"></a>
+                                <a href="#" class="d-block ui-w-80 border-primary ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="d-block ui-w-80 ui-bordered mx-1">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid" alt>
+                                </a>
+                                <a href="#" class="ion ion-ios-arrow-forward d-block text-light text-big pl-2"></a>
+                            </div>
+                        </div>
+                        <div class="media-body p-md-5 px-4 pt-5 pb-4">
+                            <a href="#" class="float-right text-lighter">
+                                <i class="ion ion-ios-heart"></i>
+                            </a>
+                            <a href="#" class="float-right text-lighter mr-3">
+                                <i class="ion ion-md-share"></i>
+                            </a>
+                            <h3>Подушка 2</h3>
+                            <h3 class="pb-2 mb-0"><strong>$57.55</strong></h3>
+                            <h6 class="small font-weight-normal mt-4">Размеры</h6>
+                            <div class="text-big">
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 1</a>
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 2</a>
+                                <a href="#" class="badge badge-outline-default text-muted ">Размер 3</a>
+                                <a href="#" class="badge badge-primary font-weight-normal">Размер 4</a>
+                            </div>
+                            <br>
+                            <div class="input-group input-group-sm" style="width: 90px">
+        <span class="input-group-prepend">
+          <button class="btn btn-default btn-sm icon-btn md-btn-flat px-0" type="button">-</button>
+        </span>
+                                <input type="text" value="1" class="form-control text-center">
+                                <span class="input-group-append">
+          <button class="btn btn-default btn-sm icon-btn md-btn-flat px-0" type="button">+</button>
+        </span>
+                            </div>
+
+                            <div class="pt-2 mt-4">
+                                <button type="button" class="btn btn-primary btn-lg">Купить сейчас</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-default btn-lg md-btn-flat">+<span
+                                        class="ion ion-md-cart"></span>&nbsp;В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<nav class="footer bg-white">
+    <div class="container text-center py-3">
+        <div class="pb-3">
+            <a href="index.html" class="footer-link pt-3">О нас</a>
+            <a href="catalog_mattres.html" class="footer-link pt-3 ml-4">Матрасы</a>
+            <a href="catalog_pillow.html" class="footer-link pt-3 ml-4">Подушки</a>
+            <a href="questions.html" class="footer-link pt-3 ml-4">Вопросы и ответы</a>
+            <a href="#" class="footer-link pt-3 ml-4">Контакты</a>
+            <a href="delivery.html" class="footer-link pt-3 ml-4">Доставка</a>
+            <a href="payment.html" class="footer-link pt-3 ml-4">Оплата</a>
+            <a href="warranty.html" class="footer-link pt-3 ml-4">Гарантия</a>
+        </div>
+        <hr class="m-0">
+        <div class="col-md-9 col-lg-7 col-xl-6 px-0 my-4 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vulputate commodo justo, a malesuada magna interdum sodales.
+            Vestibulum bibendum fermentum tortor, eu blandit orci porta quis.
+        </div>
+
+        <div class="pb-3">
+            <a href="#" class="footer-text font-weight-bolder"><img src="assets/img/logo-small.png"></a> © &nbsp; &nbsp;
+            All rights reserved
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    $('.header-1 .navbar-search-input > input').on('focus', function () {
+        $('.header-1 .navbar-search-box').addClass('active');
+    });
+    $('.header-1 .navbar-search-cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.header-1 .navbar-search-box').removeClass('active');
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#about_anchor").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
+        });
+    });
+</script>
+
+</body>
+</html>

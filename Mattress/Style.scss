@@ -599,6 +599,66 @@ body {
     height: 400px;
   }
 }
+.catalog-block:first-of-type{
+  padding: 10rem 0 1rem 0;
+}
+.catalog-block{
+  padding: 1rem 0;
+  h4{
+    color: #0D39AB;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 28px;
+  }
+  li{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+  }
+ .m-0 {
+    margin: auto 0 !important;
+  }
+  .btn-outline-primary{
+    border-color: #2353CD;
+    color: #2353CD;
+    border-radius: 25px;
+  }
+  .btn-outline-primary:hover{
+    background-color: #2353CD;
+    color: #ffffff;
+  }
+}
+.modal-content{
+  h3{
+    color: #2353CD;
+    font-family: 'Montserrat SemiBold';
+  }
+  h6{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .badge-outline-default,
+  .badge-primary{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .badge-primary{
+    background-color: #2353CD;
+  }
+  .badge-primary:hover{
+    background-color: #0D39AB;
+  }
+  .btn-default:hover{
+    border-color: #0D39AB;
+    color: #0D39AB;
+    background-color: #ffffff;
+  }
+  .d-flex, .d-inline-flex, .media, .media>:not(.media-body), .jumbotron, .card {
+    padding-top: 1rem;
+  }
+}
 .contact form .contact__input label {
   font-size: 16px;
   color: #212121;
