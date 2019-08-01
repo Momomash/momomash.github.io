@@ -522,6 +522,20 @@ body {
     font-size: 12px;
   }
 }
+@media (max-width: 420px) {
+  //.jumbotron{
+  //padding-top: 8rem;
+  //}
+  a,p{
+    display: inline-block;
+  }
+  .navbar{
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
 
 
 
@@ -600,7 +614,7 @@ body {
   }
 }
 .catalog-block:first-of-type{
-  padding: 10rem 0 1rem 0;
+  padding: 10rem 0 1rem 0 !important;
 }
 .catalog-block{
   padding: 1rem 0;
@@ -654,6 +668,9 @@ body {
     border-color: #0D39AB;
     color: #0D39AB;
     background-color: #ffffff;
+  }
+  .btn-default:active{
+    background-color: #2353CD;
   }
   .d-flex, .d-inline-flex, .media, .media>:not(.media-body), .jumbotron, .card {
     padding-top: 1rem;

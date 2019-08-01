@@ -543,6 +543,18 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
     font-size: 12px;
   }
 }
+@media (max-width: 420px) {
+  a, p {
+    display: inline-block;
+  }
+
+  .navbar {
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
 .benefits .container-fluid {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -612,7 +624,7 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   }
 }
 .catalog-block:first-of-type {
-  padding: 10rem 0 1rem 0;
+  padding: 10rem 0 1rem 0 !important;
 }
 
 .catalog-block {
@@ -667,6 +679,9 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   border-color: #0D39AB;
   color: #0D39AB;
   background-color: #ffffff;
+}
+.modal-content .btn-default:active {
+  background-color: #2353CD;
 }
 .modal-content .d-flex, .modal-content .d-inline-flex, .modal-content .media, .modal-content .media > :not(.media-body), .modal-content .jumbotron, .modal-content .card {
   padding-top: 1rem;
