@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c218d072-20fd-47ba-8da9-9192f474f0a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/vendor/js/stepper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog_mattres.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_mattres.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog_pillow.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_pillow.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog_mattres.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="186" selection-end-column="42" />
+            <state relative-caret-position="48">
+              <caret line="136" column="49" lean-forward="true" selection-start-line="136" selection-end-line="137" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -45,15 +40,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog_pillow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="241" column="53" selection-start-line="241" selection-start-column="53" selection-end-line="241" selection-end-column="53" />
+            <state relative-caret-position="506">
+              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -230,7 +224,7 @@
       <workItem from="1564505950055" duration="520000" />
       <workItem from="1564562391099" duration="9997000" />
       <workItem from="1564605280194" duration="9481000" />
-      <workItem from="1564687071457" duration="15135000" />
+      <workItem from="1564687071457" duration="15640000" />
     </task>
     <task id="LOCAL-00001" summary="Main - editing">
       <created>1563992172226</created>
@@ -316,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564754367168</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixs slider in catalog">
+      <created>1564772833650</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1564772833650</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93207000" />
+    <option name="totallyTimeSpent" value="93712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -362,7 +363,8 @@
     <MESSAGE value="add block shopping cart" />
     <MESSAGE value=" fix" />
     <MESSAGE value=" fixs" />
-    <option name="LAST_COMMIT_MESSAGE" value=" fixs" />
+    <MESSAGE value="Fixs slider in catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixs slider in catalog" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/ui_carousel.html">
@@ -572,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog_mattres.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="186" selection-end-column="42" />
+        <state relative-caret-position="48">
+          <caret line="136" column="49" lean-forward="true" selection-start-line="136" selection-end-line="137" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -591,15 +593,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog_pillow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="241" column="53" selection-start-line="241" selection-start-column="53" selection-end-line="241" selection-end-column="53" />
+        <state relative-caret-position="506">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
           </folding>
