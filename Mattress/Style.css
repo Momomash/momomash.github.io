@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 body {
   background: #ffffff;
 }
@@ -64,7 +64,7 @@ body {
 
 .jumbotron h1 {
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 700;
   font-size: 48px;
 }
 
@@ -623,6 +623,15 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
     height: 400px;
   }
 }
+.card {
+  padding-top: 10rem;
+}
+.card th {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+}
+
 .catalog-block:first-of-type {
   padding: 10rem 0 1rem 0 !important;
 }
@@ -654,6 +663,9 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   color: #ffffff;
 }
 
+.modal-content .card {
+  border: none;
+}
 .modal-content h3 {
   color: #2353CD;
   font-family: "Montserrat SemiBold";
@@ -940,6 +952,10 @@ h5 {
   font-weight: bold;
 }
 
+.works {
+  background-color: #ffffff;
+}
+
 .questions h1 {
   color: #0D39AB;
   font-size: 35px;
@@ -1018,18 +1034,17 @@ h5 {
   width: 50%;
 }
 
-.specifications > .specification > h5 {
+.specifications h5 {
   text-transform: uppercase;
   color: #757575;
-  font-size: 14px;
+  font-size: 10px;
   font-family: "Montserrat";
   font-weight: 300;
   margin-bottom: 0;
 }
-
-.specifications > .specification > p {
+.specifications p {
   color: black;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Montserrat";
 }
 
@@ -1064,6 +1079,8 @@ h5 {
 
 .works__box > h3 {
   color: #0D39AB;
+  color: #0D39AB;
+  text-transform: uppercase;
   font-family: "Montserrat SemiBold";
 }
 
