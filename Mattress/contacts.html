@@ -38,7 +38,7 @@
     <!--</script>-->
 
     <!-- Core scripts -->
-    <!--<script src="assets/vendor/js/pace.js"></script>-->
+    <script src="assets/vendor/js/pace.js"></script>
     <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -78,12 +78,12 @@
                 <a class="nav-item nav-link" href="catalog_mattres.html">Матрасы</a>
                 <a class="nav-item nav-link" href="catalog_pillow.html">Подушки</a>
                 <a class="nav-item nav-link" href="questions.html">Вопросы и ответы</a>
-                <a class="nav-item nav-link" href="contacts.html">Контакты</a>
+                <a class="nav-item nav-link" href="#">Контакты</a>
             </div>
             <div class="header-1 navbar-collapse justify-content-lg-end buy-button">
                 <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
                     <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
-                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="#">
+                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="shopping_cart.html">
                             <i class="ion ion-md-cart navbar-icon align-middle"></i>
                             <span class="badge badge-danger indicator">5</span>
                             <span class="d-lg-none align-middle">&nbsp; Cart</span>
@@ -101,131 +101,76 @@
     </div>
 </nav>
 
+<div class="container contacts">
+<h1 class="display-4 text-center pb-4 mb-5">Контакты</h1>
 
-<div class="card shopping-cart">
-    <div class="card-body p-4 p-md-5">
-        <div class="table-responsive">
-            <table class="table table-bordered m-0">
-                <thead>
-                <tr>
-                    <th class="text-center py-3 px-4" style="min-width: 400px;">Товар</th>
-                    <th class="text-right py-3 px-4" style="width: 100px;">Цена</th>
-                    <th class="text-center py-3 px-4" style="width: 120px;">Количество</th>
-                    <th class="text-right py-3 px-4" style="width: 100px;">Итого</th>
-                    <th class="py-3 px-4" style="width: 40px;"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="p-4">
-                        <div class="media align-items-center">
-                            <img src="/products/appwork/v122/assets_/img/uikit/nike-1.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
-                            <div class="media-body">
-                                <a href="#" class="d-block text-dark">Nike Men Black Liteforce III Sneakers</a>
-                                <small>
-                                    <span class="text-muted">Color:</span>
-                                    <span class="ui-product-color ui-product-color-sm align-text-bottom" style="background:#e81e2c;"></span> &nbsp;
-                                    <span class="text-muted">Size: </span> EU 37 &nbsp;
-                                    <span class="text-muted">Ships from: </span> China
-                                </small>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="text-right  align-middle p-4">
-                        $57.55
-                    </td>
-                    <td class="align-middle p-4">
-                        <input type="text" class="form-control text-center" value="2">
-                    </td>
-                    <td class="text-right  align-middle p-4">
-                        $115.1
-                    </td>
-                    <td class="text-center align-middle px-0">
-                        <a href="#" class="close float-none" data-toggle="tooltip" title data-original-title="Remove">×</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-4">
-                        <div class="media align-items-center">
-                            <img src="/products/appwork/v122/assets_/img/uikit/s7edge-1.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
-                            <div class="media-body">
-                                <a href="#" class="d-block text-dark">Samsung Galaxy S7 Edge</a>
-                                <small>
-                                    <span class="text-muted">Color:</span>
-                                    <span class="ui-product-color ui-product-color-sm align-text-bottom" style="background:#000;"></span> &nbsp;
-                                    <span class="text-muted">Storage: </span> 32GB &nbsp;
-                                    <span class="text-muted">Warranty: </span> Standard - 1 year &nbsp;
-                                    <span class="text-muted">Ships from: </span> China
-                                </small>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="text-right  align-middle p-4">
-                        $1049.00
-                    </td>
-                    <td class="align-middle p-4">
-                        <input type="text" class="form-control text-center" value="1">
-                    </td>
-                    <td class="text-right  align-middle p-4">
-                        $1049.00
-                    </td>
-                    <td class="text-center align-middle px-0">
-                        <a href="#" class="close float-none" data-toggle="tooltip" title data-original-title="Remove">×</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-4">
-                        <div class="media align-items-center">
-                            <img src="/products/appwork/v122/assets_/img/uikit/sunglasses.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
-                            <div class="media-body">
-                                <a href="#" class="d-block text-dark">WALKING 400 BLUE CAT3</a>
-                                <small>
-                                    <span class="text-muted">Ships from: </span> Germany
-                                </small>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="text-right align-middle p-4">
-                        $20.55
-                    </td>
-                    <td class="align-middle p-4">
-                        <input type="text" class="form-control text-center" value="1">
-                    </td>
-                    <td class="text-right  align-middle p-4">
-                        $20.55
-                    </td>
-                    <td class="text-center align-middle px-0">
-                        <a href="#" class="close float-none" data-toggle="tooltip" title data-original-title="Remove">×</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+<div class="row">
+    <div class="col-lg-6">
+
+        <div class="media align-items-center">
+            <div class="ui-icon border-0 text-large">&nbsp;</div>
+            <div class="media-body ml-2">
+                <h5 class="m-0">Наши контакты</h5>
+            </div>
         </div>
 
-        <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-            <div class="mt-4">
-                <label>Промокод</label>
-                <input type="text" placeholder="ABC" class="form-control">
+        <div class="media">
+            <div class="ion ion-ios-call ui-icon border-0 text-lightest text-large"></div>
+            <div class="media-body pt-2 ml-2">
+
+                <div class="ui-company-text mb-2">+0 (123) 456 7891</div>
+                <div class="ui-company-text mb-2">+9 (876) 543 2198</div>
             </div>
-            <div class="d-flex">
-                <div class="text-right mt-4 mr-5">
-                    <label m-0">Скидка</label>
-                    <div class="text-large">$20</div>
-                </div>
-                <div class="text-right mt-4">
-                    <label  m-0">Итого</label>
-                    <div class="text-large">$1164.65</div>
+        </div>
+
+        <div class="media align-items-center">
+            <div class="ion ion-ios-mail ui-icon border-0 text-lightest text-large"></div>
+            <div class="media-body ml-2">
+                <a href="mailto:support@example.com" class="ui-company-text text-dark">support@example.com</a>
+            </div>
+        </div>
+
+        <div class="media align-items-center mt-3">
+            <div class="ui-icon border-0 text-lightest text-large">&nbsp;</div>
+            <div class="media-body ml-2">
+                <h5 class="m-0">Адрес</h5>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="ion ion-ios-navigate ui-icon border-0 text-lightest text-large"></div>
+            <div class="media-body pt-2 ml-2">
+
+                <div class="ui-company-text">
+                    Office 154, 330 North Brand Boulevard,<br>
+                    Glendale, CA 91203, USA
                 </div>
             </div>
         </div>
 
-        <div class="float-right">
-            <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3"><a href="catalog_mattres.html">Продолжить покупки</a></button>
-            <button type="button" class="btn btn-lg btn-primary mt-2">Оформить</button>
-        </div>
     </div>
-</div>
 
+    <hr class="d-lg-none w-100 my-5">
+
+    <form class="col-lg-6">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label class="form-label">Ваше имя</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Сообщение</label>
+            <textarea rows="6" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Оставить сообщение</button>
+    </form>
+</div>
+</div>
 
 <nav class="footer bg-white">
     <div class="container text-center py-3">
@@ -234,7 +179,7 @@
             <a href="catalog_mattres.html" class="footer-link pt-3 ml-4">Матрасы</a>
             <a href="catalog_pillow.html" class="footer-link pt-3 ml-4">Подушки</a>
             <a href="questions.html" class="footer-link pt-3 ml-4">Вопросы и ответы</a>
-            <a href="contacts.html" class="footer-link pt-3 ml-4">Контакты</a>
+            <a href="#" class="footer-link pt-3 ml-4">Контакты</a>
             <a href="delivery.html" class="footer-link pt-3 ml-4">Доставка</a>
             <a href="payment.html" class="footer-link pt-3 ml-4">Оплата</a>
             <a href="warranty.html" class="footer-link pt-3 ml-4">Гарантия</a>

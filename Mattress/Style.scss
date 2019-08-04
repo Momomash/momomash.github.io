@@ -13,6 +13,32 @@ body {
 .carousel-item{
   height: 300px;
 }
+.contacts{
+  padding-top: 8rem;
+  h1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    size: 32px;
+    color: #0D39AB;
+  }
+  h5{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    size: 24px;
+    color: #2353CD;
+  }
+  .ui-company-text{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 16px;
+    color: #3c444f;
+  }
+  form .form-label{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
 
 #myCarousel .carousel-indicators {
   position: static;
