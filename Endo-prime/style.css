@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700,800&display=swap");
+body {
+  font-family: "Montserrat Alternates";
+}
+
 .about-company {
+  margin-top: 140px;
+  margin-bottom: 0;
   background-image: url("assets/img/bg/about-us-promo.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  .about-company * {
+    padding: 3rem 0;
+  }
 }
 .about-company h1 {
   font-size: 36px;
@@ -18,14 +29,220 @@
   }
 }
 
-.about-company-slider h3 {
-  font-family: "Montserrat Alternates";
-  font-size: 24px;
-  font-weight: 400;
+.cards-block {
+  padding: 50px 0;
+  color: #2F3485;
+  font-size: 18px;
+}
+.cards-block .row {
+  margin: 0;
+}
+.cards-block i {
+  color: #080E73;
 }
 
-.col-4 {
-  margin: 0;
+.carousel-block {
+  padding-bottom: 20px;
+}
+.carousel-block .carousel {
+  position: relative;
+}
+.carousel-block .carousel .carousel-caption h3 {
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: normal;
+}
+@media (max-width: 770px) {
+  .carousel-block .carousel .carousel-caption h3 {
+    font-size: 16px;
+  }
+}
+.carousel-block .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-block .carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.carousel-block .carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-block .carousel-item {
+    transition: none;
+  }
+}
+.carousel-block .carousel-item-next,
+.carousel-block .carousel-item-prev,
+.carousel-block .carousel-item.active {
+  display: block;
+}
+.carousel-block .active.carousel-item-right,
+.carousel-block .carousel-item-next:not(.carousel-item-left) {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.carousel-block .active.carousel-item-left,
+.carousel-block .carousel-item-prev:not(.carousel-item-right) {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.carousel-block .carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  -webkit-transform: none;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-block .carousel-fade .active.carousel-item-left, .carousel-block .carousel-fade .active.carousel-item-right {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-block .carousel-control-next, .carousel-block .carousel-control-prev {
+    transition: none;
+  }
+}
+.carousel-block .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-block .carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.carousel-block .carousel-indicators .active {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-block .carousel-indicators li {
+    transition: none;
+  }
+}
+.carousel-block .carousel .carousel-indicators li {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel-block .carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+.carousel-block .carousel-multi-item {
+  margin-bottom: 5rem;
+}
+.carousel-block .carousel-multi-item .carousel-indicators {
+  margin-bottom: -2em;
+}
+.carousel-block .carousel-multi-item .carousel-indicators li {
+  height: 1.25rem;
+  width: 1.25rem;
+  max-width: 1.25rem;
+  background-color: #4D54D8;
+  margin-bottom: -3.75rem;
+}
+.carousel-block .carousel-multi-item .carousel-indicators .active {
+  height: 1.56rem;
+  width: 1.56rem;
+  max-width: 1.56rem;
+  background-color: #1921B1;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .carousel-block .carousel-multi-item .col-md-4 {
+    float: left;
+    width: 33.333333%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carousel-block .carousel-multi-item .carousel-indicators li {
+    margin-bottom: -1.88rem;
+  }
+}
+.carousel-block .carousel-thumbnails .carousel-indicators {
+  white-space: nowrap;
+  overflow-x: auto;
+  position: static;
+  left: initial;
+  width: initial;
+  margin-left: initial;
+  margin-right: initial;
+}
+.carousel-block .carousel-thumbnails .carousel-indicators li {
+  width: initial;
+  height: initial;
+  text-indent: initial;
+}
+.carousel-block .carousel-thumbnails .carousel-indicators li .active img {
+  opacity: 1;
+}
+.carousel-block h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #080E73;
+  padding: 50px 0;
+}
+@media screen and (max-width: 460px) {
+  .carousel-block h1 {
+    font-size: 26px;
+    padding-top: 5px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #080E73;
+}
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+.header {
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1150px) {
@@ -41,7 +258,6 @@
 .header .navbar .nav-link,
 .footer .navbar .nav-link {
   color: #080E73;
-  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
@@ -68,7 +284,6 @@
   margin: 0 auto;
 }
 .footer .footer-contacts {
-  font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #2F3485;

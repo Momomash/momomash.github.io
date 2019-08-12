@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <title>Главная|EndoPrime</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="fm.revealator.jquery.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="fm.revealator.jquery.js"></script>
 </head>
 <body>
-<div class="header">
+<div class="header fixed-top">
     <nav class="navbar navbar-expand-lg  ">
         <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,71 +56,68 @@
         </div>
     </div>
 </div>
-<div class="container my-4 about-company-slider">
+<div class="carousel-block">
+    <h1> Основные направления</h1>
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-        <div class="controls-top">
-            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+        </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-1.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Гибкая эндоскопия</h3>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="assets/img/slide-1.jpg">
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Гибкая эндоскопия</h3>
                         </div>
                     </div>
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-2.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Хирургия и травматология</h3>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="assets/img/slide-2.jpg">
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Хирургия и травматология </h3>
                         </div>
                     </div>
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-3.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Гинекология и урология</h3>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="assets/img/slide-3.jpg">
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Гинекология и урология </h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-4.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Ультразвуковая диагностика</h3>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src=assets/img/slide-4.jpg>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Ультразвуковая диагностика </h3>
                         </div>
                     </div>
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-5.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Анестезиология и реанимация</h3>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src=assets/img/slide-5.jpg>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Анестезиология и реанимация </h3>
                         </div>
                     </div>
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top"
-                                 src="assets/img/slide-6.jpg">
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Стерилизация, обработка и хранение</h3>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src=assets/img/slide-6.jpg>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive"> Стерилизация, обработка и хранение</h3>
                         </div>
                     </div>
                 </div>
@@ -125,8 +126,61 @@
     </div>
 </div>
 
+<div class="cards-block">
+    <h1>Наши услуги</h1>
+    <div class="row text-center">
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Поставка оборудования и инструментария собственного производства</p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Поставка эндоскопического инструментария Medi-Globe (Германия) и G-Flex (Бельгия)</p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Поставка оборудования и инструментария по официальным ценам от заводов-производителей:
+                Olympus, Pentax, Fujinon, Karl Storz, R.Wolf, ERBE, GIMMI,  Drager, Schiller</p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Поставка ЭХВЧ-аппаратов и комплектующих </p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Поставка оптических трубок различных типов и назначений </p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Квалифицированный ремонт с последующей гарантией на все отремонтированные узлы</p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Доставка приборов  за наш счет</p>
+        </div>
+        <div class="col-md-3 my-4 revealator-zoomin revealator-delay">
+            <div class="display-4 text-secondary mx-auto mb-4">
+                <span ><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </div>
+            <p>Бесплатная и оперативная диагностика</p>
+        </div>
 
-
+    </div>
+</div>
 
 <div class="footer">
     <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"></a>
