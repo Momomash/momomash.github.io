@@ -685,6 +685,9 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
     height: 400px;
   }
 }
+.card {
+  border: none;
+}
 .card th {
   font-family: "Montserrat";
   font-weight: 400;
@@ -702,12 +705,12 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   color: #0D39AB;
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 28px;
+  font-size: 30px;
 }
 .catalog-block li {
   font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 20px;
 }
 .catalog-block .m-0 {
   margin: auto 0 !important;
@@ -725,20 +728,28 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
 .modal-content .card {
   border: none;
 }
+.modal-content .price {
+  color: #2353CD;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 26px;
+}
 .modal-content h3 {
   color: #2353CD;
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 30px;
 }
 .modal-content h6 {
   font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .modal-content .badge-outline-default,
 .modal-content .badge-primary {
   font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 18px;
 }
 .modal-content .badge-primary {
   background-color: #2353CD;
@@ -989,7 +1000,7 @@ h5 {
   font-family: "Montserrat Medium";
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 11px;
   color: #A0A0A0;
 }
