@@ -4,6 +4,10 @@ body {
   background: #ffffff;
 }
 
+#myCarousel {
+  max-width: 380px;
+}
+
 #myCarousel .list-inline {
   white-space: nowrap;
 }
@@ -724,48 +728,76 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   background-color: #2353CD;
   color: #ffffff;
 }
+.catalog-block .to-section {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 20px;
+}
 
-.modal-content .card {
+.product-card {
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.product-card .card {
   border: none;
 }
-.modal-content .price {
+.product-card .price {
   color: #2353CD;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 26px;
 }
-.modal-content h3 {
+.product-card .last-price {
+  padding-left: 10px;
+  color: lightslategrey;
+  text-decoration: line-through;
+  font-weight: 300;
+  font-size: 24px;
+}
+.product-card p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #212121;
+  font-size: 15px;
+}
+.product-card h3 {
   color: #2353CD;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 30px;
 }
-.modal-content h6 {
+.product-card h5 {
+  color: #2353CD;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+}
+.product-card h6 {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 18px;
 }
-.modal-content .badge-outline-default,
-.modal-content .badge-primary {
+.product-card .badge-outline-default,
+.product-card .badge-primary {
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 18px;
 }
-.modal-content .badge-primary {
+.product-card .badge-primary {
   background-color: #2353CD;
 }
-.modal-content .badge-primary:hover {
+.product-card .badge-primary:hover {
   background-color: #0D39AB;
 }
-.modal-content .btn-default:hover {
+.product-card .btn-default:hover {
   border-color: #0D39AB;
   color: #0D39AB;
   background-color: #ffffff;
 }
-.modal-content .btn-default:active {
+.product-card .btn-default:active {
   background-color: #2353CD;
 }
-.modal-content .d-flex, .modal-content .d-inline-flex, .modal-content .media, .modal-content .media > :not(.media-body), .modal-content .jumbotron, .modal-content .card {
+.product-card .d-flex, .product-card .d-inline-flex, .product-card .media, .product-card .media > :not(.media-body), .product-card .jumbotron, .product-card .card {
   padding-top: 1rem;
 }
 
@@ -1050,7 +1082,7 @@ h5 {
   font-family: "Montserrat";
 }
 
-.questions .to-section {
+.to-section {
   color: #0D39AB;
   font-size: 16px;
   font-family: "Montserrat Medium";

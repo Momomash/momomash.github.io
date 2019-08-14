@@ -9,19 +9,24 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
           rel="stylesheet">
+
     <!-- Icon fonts -->
     <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
     <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+
     <!-- Core stylesheets -->
     <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
     <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
     <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
     <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
     <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+
     <script src="assets/vendor/js/material-ripple.js"></script>
     <script src="assets/vendor/js/layout-helpers.js"></script>
+
     <!--&lt;!&ndash; Theme settings &ndash;&gt;-->
     <!--&lt;!&ndash; This file MUST be included after core stylesheets and layout-helpers.js in the <head> section &ndash;&gt;-->
     <!--<script src="assets/vendor/js/theme-settings.js"></script>-->
@@ -42,6 +47,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+
     <!-- Libs -->
     <link rel="stylesheet" href="assets/vendor/libs/nouislider/nouislider.css">
     <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css">
@@ -54,6 +60,7 @@
     <!-- highlight.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-white fixed-top">
@@ -93,67 +100,135 @@
         </div>
     </div>
 </nav>
-<div class="catalog-block first-child">
-    <div class="card mb-3">
-        <div class="media flex-wrap flex-md-nowrap">
+<div class="product-card col-lg-10">
+    <div class="media flex-wrap flex-lg-nowrap">
+        <div class="col-12 col-lg-5 p-0">
+            <div class="container py-2">
+                <div id="slider">
+                    <div id="myCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="active carousel-item" data-slide-number="0">
+                                <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item" data-slide-number="1">
+                                <img src="assets/img/bg/bg-promo2.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item" data-slide-number="2">
+                                <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid">
+                            </div>
+                            <div class="carousel-item" data-slide-number="1">
+                                <img src="assets/img/bg/bg-promo2.jpg" class="img-fluid">
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
 
-            <a href="#" class="d-block col-12 col-md-6 col-lg-5 text-center p-0 m-0" data-toggle="modal"
-               data-target="#exampleModalCenter11">
-                <img src="assets/img/bg/bg-promo1.jpg"  class="матрас 1" style="max-height: 300px">
-            </a>
-
-            <div class="media-body p-4 p-md-5">
-                <h4 class="mb-2" >
-                    <a href="product-4.html">Подушка 1</a>
-                </h4>
-                <ul class="ui-list mb-4">
-                    <li>Материал..............................</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                    <li>Цена от .......</li>
-                </ul>
-                <a href="#" class="btn btn-outline-primary ml-3 ">
-                    <strong>Купить</strong>&#8195;<span class="ion ion-md-cart"></span>
-                </a>
-                <a href="product-4.html" class="btn btn-outline-primary ml-3 ">
-                    <strong>Подробнее</strong>
-                </a>
-                <a href="#"  class="to-section">Заказать в 1 клик</a>
+                        </div>
+                        <ul class="carousel-indicators list-inline mx-auto border ">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0"
+                                   data-target="#myCarousel">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                                    <img src="assets/img/bg/bg-promo2.jpg" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                                    <img src="assets/img/bg/bg-promo1.jpg" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                                    <img src="assets/img/bg/bg-promo2.jpg" class="img-fluid">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media-body p-md-5 px-4 pt-5 pb-4">
+            <h3>Матрас 1</h3>
+            <h3 class="pb-2 mb-0 price">$57.55 <span class="last-price">$77.55</span></h3>
+            <h6 class="small font-weight-normal mt-4">Размеры</h6>
+            <div class="text-big">
+                <a href="#" class="badge badge-outline-default ">Размер 1</a>
+                <a href="#" class="badge badge-outline-default">Размер 2</a>
+                <a href="#" class="badge badge-outline-default">Размер 3</a>
+                <a href="#" class="badge badge-primary ">Размер 4</a>
+            </div>
+            <br>
+            <div class="stepper stepper--style-2 js-spinner">
+                <input autofocus type="number" min="0" max="100" step="1" value="1" class="stepper__input">
+                <div class="stepper__controls">
+                    <button type="button" spinner-button="up">+</button>
+                    <button type="button" spinner-button="down">−</button>
+                </div>
+            </div>
+            <div class="pt-2 mt-4">
+                <button type="button" class="btn btn-primary btn-lg">Купить сейчас</button>
+                &nbsp;
+                <button type="button" class="btn btn-default btn-lg md-btn-flat" data-dismiss="modal">+<span
+                        class="ion ion-md-cart"></span>&nbsp;В корзину
+                </button>
             </div>
         </div>
     </div>
-</div>
-<div class="catalog-block">
     <div class="card mb-3">
-        <div class="media flex-wrap flex-md-nowrap">
-            <a href="#" class="d-block col-12 col-md-6 col-lg-5 text-center p-0 m-0" >
-                <img src="assets/img/bg/bg-promo1.jpg"  class="матрас 1" style="max-height: 300px">
-            </a>
-            <div class="media-body p-4 p-md-5">
-                <h4 class="mb-2" >
-                    <a href="product-5.html">Подушка 2</a>
-                </h4>
-
-                <ul class="ui-list mb-4">
-                    <li>Материал..............................</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                    <li>Цена от .......</li>
-                </ul>
-                <a href="#" class="btn btn-outline-primary ml-3 " data-toggle="modal"
-                   data-target="#exampleModalCenter11">
-                    <strong>Купить</strong>&#8195;<span class="ion ion-md-cart"></span>
-                </a>
-                <a href="product-5.html" class="btn btn-outline-primary ml-3 ">
-                    <strong>Подробнее</strong>
-                </a>
-                <a href="#"  class="to-section">Заказать в 1 клик</a>
+        <div class="card-body p-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ui-text-block text-muted mb-3">
+                        <p>
+                            Lorem ipsum dolor sit amet, magna novum eum an, pri te purto
+                            exerci ceteros. Nibh corpora honestatis mea et, convenire sapientem
+                            te quo, mel autem erant ut.
+                            Lorem ipsum dolor sit amet, magna novum eum an, pri te purto
+                            exerci ceteros. Nibh corpora honestatis mea et, convenire sapientem
+                            te quo, mel autem erant ut.
+                        </p>
+                        <p>
+                            Id mei dicat adversarium, an eos labores lobortis. Eius scaevola
+                            eum in, has agam malis nominati at, commodo evertitur cu cum.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="mb-4">Key features</h5>
+                    <p><span class="text-muted">Camera (Rear):</span>&nbsp; Dual Pixel 12.0 MP</p>
+                    <p><span class="text-muted">Camera (Front):</span>&nbsp; CMOS 5MP</p>
+                    <p><span class="text-muted">Internal Memory:</span>&nbsp; 32GB</p>
+                    <p><span class="text-muted">Processor:</span>&nbsp; 2.15GHz, 1.6GHz, Quad-Core</p>
+                    <p><span class="text-muted">Display:</span>&nbsp; 2560 x 1440 (Quad HD)</p>
+                </div>
+                <div class="col-md-8 mt-4 mt-md-0">
+                    <h5 class="mb-4">Battery statistics</h5>
+                    <p><span class="text-muted">Battery Type and Size:</span>&nbsp; 3600 mAh</p>
+                    <p><span class="text-muted">Music Play Time:</span>&nbsp; Up to 66 hours</p>
+                    <p><span class="text-muted">Video Play Time:</span>&nbsp; Up to 19 hours</p>
+                    <p><span class="text-muted">Internet Use Time:</span>&nbsp; 3G: Up to 13 hours; LTE: Up to 15 hours; Wi-Fi: Up to 15 hours</p>
+                    <p><span class="text-muted">Music Play Time:</span>&nbsp; Up to 66 hours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 <nav class="footer bg-white">
     <div class="container text-center py-3">
         <div class="pb-3">
@@ -180,7 +255,6 @@
     </div>
 </nav>
 
-
 <script>
     $('.header-1 .navbar-search-input > input').on('focus', function () {
         $('.header-1 .navbar-search-box').addClass('active');
@@ -201,6 +275,7 @@
     });
 </script>
 <script src="assets/vendor/js/stepper.js"></script>
+
 
 </body>
 </html>
