@@ -313,4 +313,68 @@ h1 {
   text-align: center;
 }
 
+section {
+  padding: 0 70px;
+  font-size: 20px;
+}
+section h5 {
+  color: #080E73;
+  font-size: 26px;
+  font-weight: 600;
+}
+section .fa {
+  color: #4D54D8;
+  font-size: 40px;
+}
+
+.steps {
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  .steps .container {
+    max-width: 1340px;
+  }
+}
+.steps .card {
+  border: 0;
+}
+.steps h5 {
+  color: #1921B1;
+  text-align: center;
+  font-size: 24px;
+}
+.steps p {
+  text-align: center;
+  font-size: 18px;
+}
+.steps img {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .revealator-zoomin {
+    transform: none;
+    opacity: 1;
+  }
+
+  .revealator-fade,
+.revealator-slideup,
+.revealator-slideleft,
+.revealator-slideright,
+.revealator-slidedown,
+.revealator-zoomin,
+.revealator-zoomout,
+.revealator-rotateleft,
+.revealator-rotateright {
+    transition: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
