@@ -719,6 +719,12 @@ html:not([dir=rtl]) .border {
   margin: 0 auto;
   padding-top: 100px;
 
+  select{
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+
   .card{
     border: none;
   }

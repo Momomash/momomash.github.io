@@ -738,6 +738,11 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   margin: 0 auto;
   padding-top: 100px;
 }
+.product-card select {
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
 .product-card .card {
   border: none;
 }
