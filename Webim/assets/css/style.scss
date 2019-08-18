@@ -144,11 +144,13 @@
     top: 70px;
     left: 60px;
   }
-
+  .dashbord-ul{
+    max-width: 830px;
+  }
   ul {
     padding-inline-start: 15px;
     margin-bottom: 0;
-    max-width: 830px;
+
 
     .aqua-text {
       font-size: 24px;
@@ -164,12 +166,34 @@
       padding-bottom: 0;
     }
   }
-
   .steps {
     list-style-type: none;
     padding: 45px 0 0 0;
     padding-bottom: 70px;
 
+    li:nth-child(1) .steps-icon {
+      background-position: 0 0;
+    }
+
+    li:nth-child(2) .steps-icon {
+      background-position: -75px 0;
+    }
+
+    li:nth-child(3) .steps-icon {
+      background-position: 0 -75px;
+    }
+
+    li:nth-child(4) .steps-icon {
+      background-position: -75px -75px;
+    }
+
+    li:nth-child(5) .steps-icon {
+      background-position: -150px 0;
+    }
+
+    li:nth-child(6) .steps-icon {
+      background-position: -150px -75px;
+    }
     li {
       padding-left: 0;
 
@@ -205,36 +229,8 @@
           width: 55%;
         }
       }
-
-
-      li:nth-child(1) .steps-icon {
-        background-position: 0 0;
-      }
-
-      li:nth-child(2) .steps-icon {
-        background-position: -75px 0;
-      }
-
-      li:nth-child(3) .steps-icon {
-        background-position: 0 -75px;
-      }
-
-      li:nth-child(4) .steps-icon {
-        background-position: -75px -75px;
-      }
-
-      li:nth-child(5) .steps-icon {
-        background-position: -150px 0;
-      }
-
-      li:nth-child(6) .steps-icon {
-        background-position: -150px -75px;
-      }
     }
-
   }
-
-
 }
 
 @media (max-width: 1024px) {
@@ -267,6 +263,105 @@
 }
 
 //section
+.integration {
+  h6{
+    color: #393e6b;
+    font-size: 18px;
+    font-weight: 400;
+    width: 700px;
+  }
+  .channels {
+    list-style-type: none;
+    padding: 45px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+
+    li:nth-child(1) .channel-icon {
+      background-position: -225px -120px;
+    }
+
+    li:nth-child(2) .channel-icon {
+      background-position: -225px -40px;
+    }
+
+    li:nth-child(3) .channel-icon {
+      background-position: -140px -150px;
+    }
+
+    li:nth-child(4) .channel-icon {
+      background-position: -225px -80px;
+    }
+
+    li:nth-child(5) .channel-icon {
+      background-position: -100px -150px;
+    }
+
+    li:nth-child(6) .channel-icon {
+      background-position: -225px 0;
+    }
+
+    li:nth-child(7) .channel-icon {
+      background-position: -180px -150px;
+    }
+
+    li {
+      padding-left: 0;
+      width: 33.33%;
+
+      .channel {
+        display: flex;
+        align-items: center;
+
+        .channel-icon {
+          width: 40px;
+          height: 40px;
+          background-image: url("../img/icons-sprite.png");
+          margin-right: 35px;
+        }
+
+        .aqua-text {
+          color: #0da088;
+          font-size: 18px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        .aqua-text:hover {
+          text-decoration: none;
+          color: #15c7aa;
+        }
+
+        span {
+          word-wrap: normal;
+          font-size: 24px;
+          font-weight: 700;
+          padding-right: 5px;
+        }
+      }
+
+      @media (max-width: 765px) {
+        a {
+          width: 55%;
+        }
+      }
+
+    }
+    @media (max-width: 1024px) {
+      li {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    h6 {
+      width: 100%;
+    }
+  }
+}
+
+
 
 //button
 .button {
