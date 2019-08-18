@@ -144,9 +144,11 @@
     top: 70px;
     left: 60px;
   }
-  .dashbord-ul{
+
+  .dashbord-ul {
     max-width: 830px;
   }
+
   ul {
     padding-inline-start: 15px;
     margin-bottom: 0;
@@ -166,6 +168,7 @@
       padding-bottom: 0;
     }
   }
+
   .steps {
     list-style-type: none;
     padding: 45px 0 0 0;
@@ -194,6 +197,7 @@
     li:nth-child(6) .steps-icon {
       background-position: -150px -75px;
     }
+
     li {
       padding-left: 0;
 
@@ -207,25 +211,29 @@
           background-image: url("../img/icons-sprite.png");
           margin-right: 35px;
         }
-        a{
+
+        a {
           color: #393e6b;
           font-size: 18px;
           font-family: 'Ubuntu';
           font-weight: 400;
         }
-        a:hover{
+
+        a:hover {
           color: #2cd3b8;
           text-decoration: none;
         }
-        span{
+
+        span {
           word-wrap: normal;
           font-size: 24px;
           font-weight: 700;
           padding-right: 5px;
         }
       }
+
       @media (max-width: 765px) {
-        a{
+        a {
           width: 55%;
         }
       }
@@ -248,8 +256,9 @@
     }
   }
 }
+
 @media (max-width: 767px) {
-  .button{
+  .button {
     width: 100%;
   }
 }
@@ -262,14 +271,15 @@
 
 }
 
-//section
+///section
 .integration {
-  h6{
+  h6 {
     color: #393e6b;
     font-size: 18px;
     font-weight: 400;
     width: 700px;
   }
+
   .channels {
     list-style-type: none;
     padding: 45px 0 0 0;
@@ -348,12 +358,14 @@
       }
 
     }
+
     @media (max-width: 1024px) {
       li {
         width: 100%;
       }
     }
   }
+
   @media (max-width: 1024px) {
     h6 {
       width: 100%;
@@ -361,8 +373,34 @@
   }
 }
 
+//footer
 
+.footer{
+  background-color: #393e6b;
+  padding: 60px 70px;
+  display: flex;
+  flex-direction: row;
+  .logo-block{
+    width: 20%;
+    color: #bfc1d3;
+    font-size: 14px;
+    img{
+      padding-bottom: 25px;
+    }
+  }
+  .phone-block{
+    width: 50%;
+    span{
+      width: 29px;
+      height: 29px;
+      background-image: url("../img/small-icons.png");
+      background-position: 0 0;
+    }
 
+  }
+}
+
+///footer
 //button
 .button {
   min-width: 240px;
@@ -414,10 +452,12 @@
     color: #ffffff;
   }
 }
+
 .b-violet {
   background-color: #393e6b;
   border: 1px solid #393e6b;
   transition: background-color 0.6s;
+
   a {
     color: #ffffff;
   }
