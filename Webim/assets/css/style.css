@@ -38,6 +38,9 @@ body {
   font-size: 16px;
 }
 .navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+.navbar .navbar-text .nav-item .nav-link:hover {
   color: #2cd3b8 !important;
 }
 
