@@ -106,6 +106,7 @@ body {
 }
 .section .number-block .aqua-text {
   padding-left: 40px;
+  display: block;
 }
 .section .number-text-1,
 .section .number-text-2 {
