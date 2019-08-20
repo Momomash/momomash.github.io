@@ -1167,6 +1167,9 @@ h5 {
 .shopping-cart {
   padding-top: 8rem;
 }
+.shopping-cart .btn-primary a {
+  color: #ffffff !important;
+}
 .shopping-cart tr th {
   font-family: "Montserrat";
   font-size: 20px;
@@ -1190,6 +1193,34 @@ h5 {
 .shopping-cart .d-flex .text-large {
   font-weight: 600;
   font-size: 17px;
+}
+
+.shipping-info h5 {
+  color: #0D39AB;
+  font-size: 35px;
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+}
+.shipping-info h4 {
+  color: #0D39AB;
+  font-size: 25px;
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+  text-align: center;
+}
+.shipping-info label {
+  color: #0D39AB;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.shipping-info .shipping-block {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.shipping-info .shipping-block .col-md-12 {
+  padding-left: 0;
 }
 
 .advantages > h1 {
