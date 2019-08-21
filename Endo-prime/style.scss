@@ -356,6 +356,50 @@ h1 {
   }
 }
 
+.pricing{
+  h1{
+    padding: 50px 0;
+  }
+  h5{
+    color: #1921B1;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .price{
+    font-size: 32px;
+    font-weight: 600;
+    color: #080E73;
+  }
+  .conditions{
+    font-weight: 500;
+  }
+}
+.repair-types{
+  background-image: url(assets/img/bg/endoscopy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  h1{
+    color: #ffffff;
+  }
+  .card{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    h4{
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .fa{
+      font-size: 30px !important;
+    }
+    i{
+      color: #ffffff;
+    }
+    .fa{
+      font-size: 18px;
+    }
+
+  }
+}
 section{
   padding: 0 70px;
   font-size: 20px;
@@ -371,7 +415,7 @@ section{
   }
 
 .steps{
-  margin-top: 50px;
+  margin: 50px;
   @media (min-width: 1200px) {
     .container {
       max-width: 1340px;

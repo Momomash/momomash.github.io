@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c218d072-20fd-47ba-8da9-9192f474f0a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog_mattres.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_mattres.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog_pillow.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_pillow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,82 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
-              <folding>
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#h1#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipping-info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#11223#11229#0" expanded="true" />
-                <element signature="e#11253#11259#0" expanded="true" />
-                <element signature="e#11260#11266#0" expanded="true" />
-                <element signature="e#11350#11356#0" expanded="true" />
-                <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="1196" column="28" selection-start-line="1196" selection-start-column="28" selection-end-line="1196" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopping_cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="223" column="97" selection-start-line="223" selection-start-column="97" selection-end-line="223" selection-end-column="97" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#small#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#small#0;n#div#0;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,13 +122,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Endo-prime" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -272,7 +186,8 @@
       <workItem from="1565729270919" duration="2488000" />
       <workItem from="1565805918947" duration="5164000" />
       <workItem from="1565952231944" duration="1470000" />
-      <workItem from="1566327767860" duration="3018000" />
+      <workItem from="1566327767860" duration="3249000" />
+      <workItem from="1566376689168" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Main - editing">
       <created>1563992172226</created>
@@ -421,15 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565954326394</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add shipping-info">
+      <created>1566331001132</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566331001132</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115487000" />
+    <option name="totallyTimeSpent" value="115754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11116965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -477,7 +398,8 @@
     <MESSAGE value="Add product cards" />
     <MESSAGE value="Fixs product cards" />
     <MESSAGE value="Fixs product cards (select)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixs product cards (select)" />
+    <MESSAGE value="add shipping-info" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shipping-info" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/ui_carousel.html">
@@ -713,6 +635,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shipping-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11223#11229#0" expanded="true" />
+            <element signature="e#11253#11259#0" expanded="true" />
+            <element signature="e#11260#11266#0" expanded="true" />
+            <element signature="e#11350#11356#0" expanded="true" />
+            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -738,6 +677,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="1197" column="22" selection-start-line="1197" selection-start-column="22" selection-end-line="1197" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shopping_cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -752,30 +698,6 @@
             <element signature="n#style#0;n#span#1;n#small#0;n#div#0;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shipping-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11223#11229#0" expanded="true" />
-            <element signature="e#11253#11259#0" expanded="true" />
-            <element signature="e#11260#11266#0" expanded="true" />
-            <element signature="e#11350#11356#0" expanded="true" />
-            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="1196" column="28" selection-start-line="1196" selection-start-column="28" selection-end-line="1196" selection-end-column="28" />
         </state>
       </provider>
     </entry>
