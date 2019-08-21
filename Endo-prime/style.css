@@ -313,20 +313,47 @@ h1 {
   text-align: center;
 }
 
-.pricing h1 {
-  padding: 50px 0;
+.pricing-block {
+  padding-bottom: 60px;
 }
-.pricing h5 {
+.pricing-block .footnote {
+  padding: 30px 0 30px 30px;
+  color: #080E73;
+  font-weight: 500;
+  font-size: 18px;
+}
+.pricing-block h1 {
+  padding: 40px 0;
+}
+.pricing-block h5 {
   color: #1921B1;
   font-size: 24px;
   font-weight: 600;
 }
-.pricing .price {
+.pricing-block .prices {
+  text-align: center;
+  background-color: rgba(150, 153, 222, 0.1);
+  padding: 40px 0;
+}
+.pricing-block .price {
   font-size: 32px;
   font-weight: 600;
   color: #080E73;
 }
-.pricing .conditions {
+.pricing-block .conditions {
+  font-weight: 500;
+}
+.pricing-block .nav-tabs .nav-item.show .nav-link, .pricing-block .nav-tabs .nav-link.active {
+  color: #080E73;
+  background-color: rgba(150, 153, 222, 0.1);
+  font-size: 24px;
+  font-weight: 500;
+}
+.pricing-block .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-size: 24px;
   font-weight: 500;
 }
 

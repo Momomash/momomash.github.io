@@ -356,89 +356,152 @@ h1 {
   }
 }
 
-.pricing{
-  h1{
-    padding: 50px 0;
+
+.pricing-block {
+  padding-bottom: 60px;
+  .footnote{
+    padding: 30px 0 30px 30px;
+    color: #080E73;
+    font-weight: 500;
+    font-size: 18px;
   }
-  h5{
+  h1 {
+    padding: 40px 0;
+  }
+
+  h5 {
     color: #1921B1;
     font-size: 24px;
     font-weight: 600;
   }
-  .price{
+  .prices{
+    text-align: center;
+    background-color: rgba(150, 153, 222, 0.1);
+    padding: 40px 0;
+  }
+  .price {
     font-size: 32px;
     font-weight: 600;
     color: #080E73;
   }
-  .conditions{
+
+  .conditions {
+    font-weight: 500;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #080E73;
+    background-color: rgba(150, 153, 222, 0.1);
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 24px;
     font-weight: 500;
   }
 }
-.repair-types{
+
+//.pricing{
+//  h1{
+//    padding: 50px 0;
+//  }
+//  h5{
+//    color: #1921B1;
+//    font-size: 24px;
+//    font-weight: 600;
+//  }
+//  .price{
+//    font-size: 32px;
+//    font-weight: 600;
+//    color: #080E73;
+//  }
+//  .conditions{
+//    font-weight: 500;
+//  }
+//}
+.repair-types {
   background-image: url(assets/img/bg/endoscopy.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  h1{
+
+  h1 {
     color: #ffffff;
   }
-  .card{
+
+  .card {
     background-color: rgba(0, 0, 0, 0.2);
     color: #ffffff;
-    h4{
+
+    h4 {
       color: #ffffff;
       text-transform: uppercase;
     }
-    .fa{
+
+    .fa {
       font-size: 30px !important;
     }
-    i{
+
+    i {
       color: #ffffff;
     }
-    .fa{
+
+    .fa {
       font-size: 18px;
     }
 
   }
 }
-section{
+
+section {
   padding: 0 70px;
   font-size: 20px;
-  h5{
+
+  h5 {
     color: #080E73;
     font-size: 26px;
     font-weight: 600;
   }
-  .fa{
+
+  .fa {
     color: #4D54D8;
     font-size: 40px;
   }
-  }
+}
 
-.steps{
+.steps {
   margin: 50px;
   @media (min-width: 1200px) {
     .container {
       max-width: 1340px;
     }
   }
-  .card{
+
+  .card {
     border: 0;
   }
-  h5{
+
+  h5 {
     color: #1921B1;
     text-align: center;
     font-size: 24px;
   }
-  p{
+
+  p {
     text-align: center;
     font-size: 18px;
   }
-  img{
+
+  img {
     width: 180px;
     height: 180px;
     margin: auto;
   }
 }
+
 @media screen and(max-width: 1024px) {
   section {
     padding: 0 5px;
