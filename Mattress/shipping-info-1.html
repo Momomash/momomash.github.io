@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="assets/vendor/libs/blueimp-gallery/gallery-indicator.css">
     <link rel="stylesheet" href="Style.css">
 
-
     <!-- highlight.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -77,7 +76,8 @@
             <div class="header-1 navbar-collapse justify-content-lg-end buy-button">
                 <div class="header-9 navbar-collapse collapse col-lg-3 justify-content-lg-end order-lg-3 w-auto px-0">
                     <div class="navbar-nav align-items-lg-center order-lg-2 py-lg-1">
-                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2" href="shopping_cart.html">
+                        <a class="nav-item nav-link dropdown-toggle hide-arrow text-nowrap ml-lg-2"
+                           href="shopping_cart.html">
                             <i class="ion ion-md-cart navbar-icon align-middle"></i>
                             <span class="badge badge-danger indicator">5</span>
                             <span class="d-lg-none align-middle">&nbsp; Cart</span>
@@ -94,149 +94,152 @@
         </div>
     </div>
 </nav>
-<div class="card shipping-info" style="padding-top: 80px">
-    <h5 class="card-header text-center py-4">Информация о заказе</h5>
-    <div class="card-body w-100 mx-auto mt-4" style="max-width: 650px;">
 
-        <div class="form-group">
-            <label class="form-label">Фамилия Имя Отчество</label>
-            <input type="text" class="form-control">
+<div class="card shopping-cart" style="padding-top: 80px">
+    <div class="card-body w-100 p-4 p-md-5 mx-auto" style="max-width: 650px;">
+
+        <!-- Shopping cart table -->
+        <h5 class=" mt-3">
+            <span class="ion ion-md-cart"></span> &nbsp; Информация о товаре
+        </h5>
+        <div class="table-responsive ">
+            <table class="table table-bordered m-0" style="min-width:550px;">
+                <tbody>
+                <tr>
+                    <td class="p-4">
+                        <div class="media align-items-center">
+                            <img src="assets/img/bg/bg-promo2.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                            <div class="media-body">
+                                <a href="#" class="d-block text-dark">Nike Men Black Liteforce III Sneakers</a>
+                                <small>
+                                    <span class="text-muted">Color:</span>
+                                    <span class="ui-product-color ui-product-color-sm align-text-bottom"
+                                          style="background:#e81e2c;"></span> &nbsp;
+                                    <span class="text-muted">Size: </span> EU 37 &nbsp;
+                                    <span class="text-muted">Ships from: </span> China
+                                </small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="align-middle p-4" style="width: 66px;">
+                        x2
+                    </td>
+                    <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                        $115.10
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-4">
+                        <div class="media align-items-center">
+                            <img src="assets/img/bg/bg-promo2.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                            <div class="media-body">
+                                <a href="#" class="d-block text-dark">Samsung Galaxy S7 Edge</a>
+                                <small>
+                                    <span class="text-muted">Color:</span>
+                                    <span class="ui-product-color ui-product-color-sm align-text-bottom"
+                                          style="background:#000;"></span> &nbsp;
+                                    <span class="text-muted">Storage: </span> 32GB &nbsp;
+                                    <span class="text-muted">Warranty: </span> Standard - 1 year &nbsp;
+                                    <span class="text-muted">Ships from: </span> China
+                                </small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="align-middle p-4">
+                        x1
+                    </td>
+                    <td class="text-right font-weight-semibold align-middle p-4">
+                        $1049.00
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-4">
+                        <div class="media align-items-center">
+                            <img src="assets/img/bg/bg-promo2.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                            <div class="media-body">
+                                <a href="#" class="d-block text-dark">WALKING 400 BLUE CAT3</a>
+                                <small>
+                                    <span class="text-muted">Ships from: </span> Germany
+                                </small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="align-middle p-4">
+                        x1
+                    </td>
+                    <td class="text-right font-weight-semibold align-middle p-4">
+                        $20.55
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-8">
-                <label class="form-label">Город</label>
-                <select class="select2-demo form-control" style="width: 100%" data-allow-clear="true">
-                    <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="CA">California</option>
-                    <option value="NV">Nevada</option>
-                    <option value="OR">Oregon</option>
-                    <option value="WA">Washington</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="CO">Colorado</option>
-                    <option value="ID">Idaho</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="UT">Utah</option>
-                    <option value="WY">Wyoming</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TX">Texas</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="IN">Indiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="OH">Ohio</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WV">West Virginia</option>
-                </select>
-                <script>
-                    $(function() {
-                        $('.select2-demo').each(function() {
-                            $(this)
-                                .wrap('<div class="position-relative"></div>')
-                                .select2({
-                                    placeholder: 'Select value',
-                                    dropdownParent: $(this).parent()
-                                });
-                        })
-                    });
-                </script>
-
-            </div>
-            <div class="form-group col-md-4">
-                <label class="form-label">Почтовый индекс</label>
-                <input type="text" class="form-control">
-
-            </div>
-
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label class="form-label">Улица</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-md-3">
-                <label class="form-label">Дом</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-md-3">
-                <label class="form-label">Квартира </label>
-                <input type="text" class="form-control">
+        <h5 class=" mt-3">
+            <span class="ion ion-md-home"></span> &nbsp; Адрес доставки
+        </h5>
+        <div class="ui-bordered p-3">
+            <div class="row">
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Получатель</div>
+                    John Doe
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Мобильный телефон</div>
+                    123-456-7891
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Почта</div>
+                    jdoe@email.com
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Город</div>
+                    California
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Почтовый индекс</div>
+                    San
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Улица </div>
+                    lorem ipsum
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Дом</div>
+                    95
+                </div>
+                <div class="col-md-3 mb-3 text">
+                    <div class="font-weight-bold">Квартира</div>
+                    95
+                </div>
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md">
-                <label class="form-label">Мобильный телефон</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-md">
-                <label class="form-label">Электронная почта</label>
-                <input type="text" class="form-control">
-            </div>
+        <h5 class=" mt-3">
+            <span class="ion ion-md-globe"></span> &nbsp; Способ доставки
+        </h5>
+        <div class="rounded ui-bordered p-3">
+            <span class="text"><strong>Seller's Shipping Method - Free</strong></span><br>
+            <small class="text">Estimated Delivery Time: 5-15 days</small>
         </div>
 
-        <h4 class="font-weight-normal my-4">Способ доставки</h4>
+        <hr class="mt-5 mb-4">
 
-        <div class="row shipping-block">
-            <div class="col-md-12">
-                <a href="#" class="d-block border-primary rounded ui-bordered text-primary p-3">
-                    <span>Seller's Shipping Method - <strong>Free</strong></span><br>
-                    <small class="text-muted">Estimated Delivery Time: 5-15 days</small>
-                </a>
-            </div>
-            <div class="col-md-12 ">
-                <a href="#" class="d-block rounded ui-bordered text-dark p-3">
-                    <span>J-NET - <strong>Free</strong></span><br>
-                    <small class="text-muted">Estimated Delivery Time: 23-41 days</small>
-                </a>
-            </div>
-            <div class="col-md-12 ">
-                <a href="#" class="d-block rounded ui-bordered text-dark p-3">
-                    <span>ePacket - <strong>$10</strong></span><br>
-                    <small class="text-muted">Estimated Delivery Time: 14-23 days</small>
-                </a>
-            </div>
+        <div class="text-right">
+            <div class="text">Итого</div>
+            <div class="text-large"><strong>$1164.65</strong></div>
         </div>
     </div>
-
     <div class="card-footer text-center py-4">
-        <button type="button" class="btn btn-lg btn-default md-btn-flat"><a href="shopping_cart.html">
-            ←&nbsp; Назад
-        </a></button> &nbsp; &nbsp;
-        <button type="button" class="btn btn-lg btn-primary">
-            <a href="shipping-info-1.html">Продолжить &nbsp;→</a>
+        <button type="button" class="btn btn-lg btn-default md-btn-flat">
+            <a href="shipping-info.html">←&nbsp; Назад</a>
+        </button> &nbsp; &nbsp;
+        <button type="button" class="btn btn-lg btn-primary"><a href="shipping-info-2.html">
+            Перейти к оплате &nbsp;→</a>
         </button>
     </div>
 </div>
+
+
 <nav class="footer bg-white">
     <div class="container text-center py-3">
         <div class="pb-3">
@@ -257,7 +260,8 @@
         </div>
 
         <div class="pb-3">
-            <a href="#" class="footer-text font-weight-bolder"><img src="assets/img/logo-small.png"></a> © &nbsp; &nbsp; All rights reserved
+            <a href="#" class="footer-text font-weight-bolder"><img src="assets/img/logo-small.png"></a> © &nbsp; &nbsp;
+            All rights reserved
         </div>
     </div>
 </nav>
