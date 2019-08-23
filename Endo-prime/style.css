@@ -4,29 +4,10 @@ body {
 }
 
 .about-company {
-  margin-top: 140px;
-  margin-bottom: 0;
-  background-image: url("assets/img/bg/about-us-promo.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-@media screen and (min-width: 576px) {
-  .about-company * {
-    padding: 3rem 0;
-  }
+  background-image: url("assets/img/bg/about-us-promo.jpg") !important;
 }
 .about-company h1 {
-  font-size: 36px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  color: #ffffff;
-}
-@media screen and (max-width: 460px) {
-  .about-company h1 {
-    font-size: 26px;
-  }
+  color: #ffffff !important;
 }
 
 .cards-block {
@@ -311,6 +292,32 @@ h1 {
   font-weight: 300;
   color: #2F3485;
   text-align: center;
+}
+
+.parallax-block {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  background-image: url("assets/img/bg/Physicians.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.parallax-block h1 {
+  color: #080E73;
+  font-size: 36px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (max-width: 460px) {
+  .parallax-block h1 {
+    font-size: 26px;
+  }
 }
 
 .pricing-block {
