@@ -144,6 +144,9 @@ html:not([dir=rtl]) .border {
     font-size: 13px;
     border-radius: 30px;
   }
+  .btn-primary a{
+    color: #ffffff;
+  }
   .btn-primary:hover {
     background: #0D39AB;
   }
@@ -1140,9 +1143,23 @@ h5 {
   font-weight: 300;
 }
 .shopping-cart{
-  padding-top: 8rem;
+  //padding-top: 8rem;
+  .font-weight-bold{
+    //color: #0D39AB;
+  }
+  .text{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 16px;
+  }
   .btn-primary a{
     color: #ffffff !important;
+  }
+  h5{
+    color: #0D39AB;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
   }
     tr th{
       font-family: 'Montserrat';

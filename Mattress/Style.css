@@ -164,6 +164,10 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   border-radius: 30px;
 }
 
+.btn-primary a {
+  color: #ffffff;
+}
+
 .btn-primary:hover {
   background: #0D39AB;
 }
@@ -1164,11 +1168,19 @@ h5 {
   font-weight: 300;
 }
 
-.shopping-cart {
-  padding-top: 8rem;
+.shopping-cart .text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 16px;
 }
 .shopping-cart .btn-primary a {
   color: #ffffff !important;
+}
+.shopping-cart h5 {
+  color: #0D39AB;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat";
 }
 .shopping-cart tr th {
   font-family: "Montserrat";
