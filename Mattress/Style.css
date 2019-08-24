@@ -702,6 +702,14 @@ html:not([dir=rtl]) .pt-3, html:not([dir=rtl]) .py-3 {
   font-size: 18px;
 }
 
+.card-header {
+  border-bottom: none;
+}
+
+.card-footer {
+  border-top: none;
+}
+
 .catalog-block:first-of-type {
   padding: 10rem 0 1rem 0 !important;
 }
@@ -1359,6 +1367,10 @@ h5 {
 .stepper--style-2 [spinner-button=down] {
   left: 0;
   margin-right: -1px;
+}
+
+#theme-settings {
+  display: none;
 }
 
 @font-face {

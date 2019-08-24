@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c218d072-20fd-47ba-8da9-9192f474f0a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shipping-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/shipping-info.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -14,12 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/complete-ui_plugins.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="5205" column="43" selection-start-line="5205" selection-start-column="36" selection-end-line="5205" selection-end-column="43" />
+            <state relative-caret-position="655">
+              <caret line="7623" column="85" lean-forward="true" selection-start-line="7601" selection-start-column="2" selection-end-line="7623" selection-end-column="85" />
               <folding>
                 <element signature="e#21814#24214#0" />
                 <element signature="e#24263#24282#0" expanded="true" />
@@ -29,27 +33,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shipping-info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+            <state relative-caret-position="281">
+              <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8853#8859#0" expanded="true" />
                 <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="1159" column="17" selection-start-line="1159" selection-start-column="17" selection-end-line="1159" selection-end-column="17" />
+            <state relative-caret-position="479">
+              <caret line="687" column="17" selection-start-line="687" selection-start-column="17" selection-end-line="687" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -66,10 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>carousel-c</find>
-      <find>stepp</find>
-      <find>exampleModalCenter</find>
-      <find>list</find>
       <find>label</find>
       <find>конт</find>
       <find>контак</find>
@@ -96,6 +95,10 @@
       <find>Select2</find>
       <find>город</find>
       <find>select2</find>
+      <find>select</find>
+      <find>select.js</find>
+      <find>select value</find>
+      <find>theme</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,11 +128,11 @@
         <option value="$PROJECT_DIR$/shipping-info1.html" />
         <option value="$PROJECT_DIR$/shopping_cart.html" />
         <option value="$PROJECT_DIR$/shipping-info-2.html" />
-        <option value="$PROJECT_DIR$/Style.scss" />
         <option value="$PROJECT_DIR$/shipping-info-1.html" />
         <option value="$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/complete-ui_plugins.html" />
         <option value="$USER_HOME$/Downloads/appwork-v1_2_0/aspnet-core-demo/AspnetCoreDemo/wwwroot/vendor/libs/select2/select2.js" />
         <option value="$PROJECT_DIR$/shipping-info.html" />
+        <option value="$PROJECT_DIR$/Style.scss" />
       </list>
     </option>
   </component>
@@ -146,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,14 +166,7 @@
               <item name="Mattress" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mattress" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mattress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mattress" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="bg" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mattress" type="b2602c69:ProjectViewProjectNode" />
@@ -180,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,7 +242,8 @@
       <workItem from="1565952231944" duration="1470000" />
       <workItem from="1566327767860" duration="3249000" />
       <workItem from="1566376689168" duration="36000" />
-      <workItem from="1566585391677" duration="5508000" />
+      <workItem from="1566585391677" duration="5653000" />
+      <workItem from="1566639016346" duration="3214000" />
     </task>
     <task id="LOCAL-00001" summary="Main - editing">
       <created>1563992172226</created>
@@ -409,17 +406,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566590670005</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add shipping-info 1,2">
+      <created>1566591622248</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1566591622248</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121262000" />
+    <option name="totallyTimeSpent" value="124621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11116965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11116965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -746,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="1159" column="17" selection-start-line="1159" selection-start-column="17" selection-end-line="1159" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shipping-info-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
@@ -810,8 +807,8 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/appwork-v1_2_0/html-demo/complete-ui_plugins.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="5205" column="43" selection-start-line="5205" selection-start-column="36" selection-end-line="5205" selection-end-column="43" />
+        <state relative-caret-position="655">
+          <caret line="7623" column="85" lean-forward="true" selection-start-line="7601" selection-start-column="2" selection-end-line="7623" selection-end-column="85" />
           <folding>
             <element signature="e#21814#24214#0" />
             <element signature="e#24263#24282#0" expanded="true" />
@@ -822,15 +819,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shipping-info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+        <state relative-caret-position="281">
+          <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8853#8859#0" expanded="true" />
             <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="687" column="17" selection-start-line="687" selection-start-column="17" selection-end-line="687" selection-end-column="17" />
         </state>
       </provider>
     </entry>

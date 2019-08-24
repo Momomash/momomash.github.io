@@ -684,6 +684,12 @@ html:not([dir=rtl]) .border {
     font-size: 18px;
   }
 }
+.card-header{
+  border-bottom: none;
+}
+.card-footer{
+  border-top: none;
+}
 .catalog-block:first-of-type{
   padding: 10rem 0 1rem 0 !important;
 }
@@ -1333,7 +1339,9 @@ h5 {
   left: 0;
   margin-right: -1px;
 }
-
+#theme-settings{
+  display: none;
+}
 
 
 
