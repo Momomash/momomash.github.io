@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en" class="landing-2 default-style">
+<head>
+    <title>Portfolio - Appwork</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800" rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="fonts/ionicons.css">
+    <link rel="stylesheet" href="fonts/linearicons.css">
+    <link rel="stylesheet" href="fonts/fontawesome.css">
+
+    <!-- Core stylesheets -->
+
+    <link rel="stylesheet" href="css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="css/rtl/uikit.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/pages/portfolio.css">
+
+    <script src="js/material-ripple.js"></script>
+    <script src="js/layout-helpers.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Core scripts -->
+    <script src="js/pace.js"></script>
+
+    <!-- Page -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="libs/swiper/swiper.css">
+    <link rel="stylesheet" href="libs/perfect-scrollbar/perfect-scrollbar.css">
+    <style>
+        .swiper-container .swiper-slide {
+            padding: 5rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            background: #ecebed;
+        }
+
+        #swiper-3d-coverflow-effect .swiper-slide {
+            max-width: 300px;
+        }
+
+        #swiper-3d-flip-effect,
+        #swiper-3d-flip-effect .swiper-slide {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Pace.js loader -->
+    <div id="portfolio-page-loader" style="background-image: linear-gradient(to right, #000, #000);">
+        <div class="page-loader border-white"></div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="landing-navbar navbar navbar-expand-lg navbar-dark fixed-top pt-lg-4">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-big font-weight-bolder line-height-1 py-3 "><span class="pacifico">impulse</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landing-navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="landing-navbar-collapse">
+                <div class="navbar-nav font-weight-light" id="menu">
+                    <a class="nav-item nav-link" href="#competencies">Компетенции</a>
+                    <a class="nav-item nav-link" href="#technology">Технологии</a>
+                    <a class="nav-item nav-link" href="#products">Работы</a>
+                    <!--<a class="nav-item nav-link" href="javascript:void(0)">Контакты</a>-->
+                </div>
+
+                <div class="navbar-nav align-items-lg-center ml-auto" id="menu-1">
+                    <!--<a class="nav-item nav-link ml-lg-4" href="javascript:void(0)">-->
+                        <!--<i class="ion ion-logo-facebook text-facebook text-big align-middle"></i>-->
+                        <!--<span class="d-lg-none align-middle">&nbsp; Facebook</span>-->
+                    <!--</a>-->
+                    <!--<a class="nav-item nav-link mr-lg-2" href="javascript:void(0)">-->
+                        <!--<i class="fab fa-telegram-plane text-twitter text-big align-middle"></i>-->
+                        <!--<span class="d-lg-none align-middle">&nbsp; Telegram</span>-->
+                    <!--</a>-->
+                    <a href="#consultation" class="btn btn-round btn-primary">Консультация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar -->
+
+    <div class="jumbotron ui-hero ui-mh-100vh ui-bg-overlay-container ui-bg-video-container text-white">
+        <div class="ui-bg-video">
+            <video preload="true" autoplay="true" loop="true">
+                <source src="video/Pexels.mp4">
+            </video>
+        </div>
+        <div class="ui-bg-overlay bg-dark opacity-50"></div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 col-xl-5 text-md-left text-center">
+                    <h1 class="display-2">Разработка сложных сервисов и приложений</h1>
+                    <p class="lead opacity-75 pb-2 my-4">
+                        ImpulseDev — это аутсорсинг веб-разработки для требовательных корпоративных клиентов.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron ui-hero bg-white">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-12 col-xl-9 text-center mx-auto">
+                    <div class="about-text">
+                        Компания Impulse Dev занимается веб-разработкой<br>
+                        сложных функциональных проектов, комплексных<br>
+                        решений и корпоративных приложений для малого и<br>
+                        среднего бизнеса и государственных структур.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-5 ui-hero bg-white" id="competencies">
+        <div class="container my-5">
+            <div>
+                <div class="display-3 mb-3 text-center">Компетенции</div>
+                <div class="row my-5 text-center">
+                    <div class="col-lg-4 col-xl-4 competence">
+                        <h4 class="font-weight-normal  text-medium">Решения</h4>
+                        <div class="small font-weight-light">
+                            <p>Корпоративные веб-приложения;<br>
+                            Портальные решения;<br>
+                            Хранилища данных;<br>
+                            Приложения для мобильных устройств;<br>
+                            Автоматизация бизнес-процессов;<br>
+                                Интеграция CRM, ERP и другого ПО.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 competence">
+                        <h4 class="font-weight-normal  text-medium">Интеграция</h4>
+                        <div class="small font-weight-light">
+                            <p>Внешние сервисы и ПО; <br>
+                            Платежные системы и процессинг;<br>
+                            Внешние хранилища данных;<br>
+                            CRM и ERP системы в веб-приложениях;<br>
+                            Аналитика и статистика.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 competence">
+                        <h4 class="font-weight-normal  text-medium">Блокчейн</h4>
+                        <div class="small font-weight-light">
+                            <p>Внедрение распределенного реестра;<br>
+                            Приложения на блокчейн технологиях;<br>
+                            Корпоративный блокчейн;<br>
+                            Интеграция платежей на криптовалютах.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-5 ui-hero bg-white" id="technology">
+        <div class="container my-5">
+            <div>
+                <div class="display-3 mb-3 text-center">Технологии</div>
+                <div class="row my-5 text-center">
+                    <div class="col-lg-3 col-xl-3 ">
+                        <h4 class="font-weight-normal  text-medium">Языки и<br> фреймворки</h4>
+                        <div class="small font-weight-light">
+                            <p>Python (Django); <br>
+                                Ruby (Ruby on Rails);<br>
+                                PHP (YII, Symphony, Laravel);<br>
+                                1С-Bitrix.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 ">
+                        <h4 class="font-weight-normal  text-medium">Базы данных и<br>управление БД</h4>
+                        <div class="small font-weight-light">
+                            <p>MySQL;<br>
+                                PostgreSQL;<br>
+                                SQLite (optional);<br>
+                                MongoDB (optional).</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 ">
+                        <h4 class="font-weight-normal  text-medium">Распределенный<br>
+                            реестр</h4>
+                        <div class="small font-weight-light">
+                            <p>MultiChain;<br>
+                                BigChain DB;<br>
+                                Python blockchain.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 ">
+                        <h4 class="font-weight-normal  text-medium">Технологии и<br>сервисы</h4>
+                        <div class="small font-weight-light">
+                            <p>Bootstrap и HTML5;<br>
+                                JavaScript, JQuery, JSON, AJAX;<br>
+                                AngularJS, Vue.js;<br>
+                                Atlassian Jira и Bitbucket.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="jumbotron ui-hero ui-mh-100vh ui-bg-cover ui-bg-fixed ui-bg-overlay-container" style="background-image: url(img/bg/moscow.jpg)">-->
+        <!--<div class="ui-bg-overlay bg-dark opacity-50"></div>-->
+        <!--<div class="container my-5">-->
+            <!--<div>-->
+                <!--<div class="display-3 mb-3 text-center text-white">Проекты</div>-->
+                <!--<div class="row my-5 text-white">-->
+                    <!--<div class="col-lg-10 text-center m-auto font-weight-light text-medium">-->
+                        <!--<p>Лаборатория ориентирована на запуск корпоративных приложений и систем, решающих конкретные задачи коммерческих и государственных структур. В основе наших решений заложены технологии распределенного реестра, CRM и ERP-систем.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row my-5">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="card mb-4">-->
+                            <!--<div class="w-100">-->
+                                <!--<a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('img/rise.png');"></a>-->
+                            <!--</div>-->
+                            <!--<div class="card-body m-lg-2">-->
+                                <!--<h4 class="mb-3">-->
+                                    <!--<a href="http://www.rise360.space" class="text-dark">Rise360</a>-->
+                                <!--</h4>-->
+                                <!--<div class="xsmall font-weight-light">-->
+                                    <!--<div class="mb-3">Сервис личностного роста с траекторией развития, рекомендациями и подтвержденными документами об образовании при помощи блокчейн-технологий.</div>-->
+                                    <!--<a href="http://rise360.space" class="text-muted">rise360.space</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="card mb-4">-->
+                            <!--<div class="w-100">-->
+                                <!--<a href="#" class="d-block ui-rect ui-bg-cover rounded-top" style="background-image: url('img/spot.png');"></a>-->
+                            <!--</div>-->
+                            <!--<div class="card-body m-lg-2">-->
+                                <!--<h4 class="mb-3">-->
+                                    <!--<a href="http://www.charityspot.space/" class="text-dark">CharitySpot</a>-->
+                                <!--</h4>-->
+                                <!--<div class="xsmall font-weight-light">-->
+                                    <!--<div class="mb-3">Краудфаундинг-платформа для благотоврительности с проверкой платежей и результатов финансирования при помощи блокчейн-технологий.</div>-->
+                                    <!--<a href="http://www.charityspot.space/" class="text-muted">www.charityspot.space</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="bg-white py-5">-->
+        <!--<div class="container">-->
+            <!--<div class="jumbotron bg-lighter py-5 m-0">-->
+                <!--<h1 class="display-3 mb-5 text-center">Консультация</h1>-->
+                <!--<form action="">-->
+                    <!--<div class="form-row align-items-center">-->
+                        <!--<div class="form-group col-md-6 col-lg-4">-->
+                            <!--<input type="text" class="form-control form-control-lg bg-lighter border-0" placeholder="Имя *" name="name" required>-->
+                        <!--</div>-->
+                        <!--<div class="form-group col-md-6 col-lg-3">-->
+                            <!--<input type="text" class="form-control form-control-lg bg-lighter border-0" placeholder="E-mail *" name="email" required>-->
+                        <!--</div>-->
+                        <!--<div class="form-group col-md-6 col-lg-3">-->
+                            <!--<input type="text" class="form-control form-control-lg bg-lighter border-0" placeholder="Телефон" name="phone">-->
+                        <!--</div>-->
+                        <!--<div class="form-group col-md-6 col-lg-2">-->
+                            <!--<button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="small my-3 text-muted">-->
+                        <!--Внимание! Нажимая на кнопку “Отправить” вы соглашаетесь с Условиями использования персональных данных.-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div class="py-5 ui-hero bg-white">-->
+        <!--<div class="container my-5">-->
+            <!--<div>-->
+                <!--<div class="display-3 mb-3 text-center">Блог</div>-->
+                <!--<div class="row my-5">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('img/bg/3.jpg');">-->
+                            <!--<div class="ui-bg-overlay bg-dark rounded opacity-25"></div>-->
+                            <!--<div class="card-body text-white p-5">-->
+                                <!--<h3 class="mt-4 mb-4">-->
+                                    <!--<a href="#" class="text-white">Internet Advertising Trends You Won T Be Disappointed</a>-->
+                                <!--</h3>-->
+                                <!--<div class="small opacity-75">-->
+                                    <!--<span><span class="ion ion-ios-eye"></span> 562</span>-->
+                                    <!--&nbsp; &nbsp; &nbsp;-->
+                                    <!--<a href="#" class="text-white"><span class="ion ion-ios-text"></span> 12</a>-->
+                                <!--</div>-->
+                                <!--<div class="media mt-4">-->
+                                    <!--<img src="img/avatars/3.png" alt class="d-block ui-w-40 rounded-circle">-->
+                                    <!--<div class="media-body ml-3">-->
+                                        <!--<a href="#" class="text-white">Allie Rodriguez</a>-->
+                                        <!--<div class="small opacity-75">May 21, 2017</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('img/bg/3.jpg');">-->
+                            <!--<div class="ui-bg-overlay bg-dark rounded opacity-25"></div>-->
+                            <!--<div class="card-body text-white p-5">-->
+                                <!--<h3 class="mt-4 mb-4">-->
+                                    <!--<a href="#" class="text-white">Internet Advertising Trends You Won T Be Disappointed</a>-->
+                                <!--</h3>-->
+                                <!--<div class="small opacity-75">-->
+                                    <!--<span><span class="ion ion-ios-eye"></span> 562</span>-->
+                                    <!--&nbsp; &nbsp; &nbsp;-->
+                                    <!--<a href="#" class="text-white"><span class="ion ion-ios-text"></span> 12</a>-->
+                                <!--</div>-->
+                                <!--<div class="media mt-4">-->
+                                    <!--<img src="img/avatars/3.png" alt class="d-block ui-w-40 rounded-circle">-->
+                                    <!--<div class="media-body ml-3">-->
+                                        <!--<a href="#" class="text-white">Allie Rodriguez</a>-->
+                                        <!--<div class="small opacity-75">May 21, 2017</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="card ui-bg-cover ui-bg-overlay-container border-0 mb-4" style="background-image: url('img/bg/3.jpg');">-->
+                            <!--<div class="ui-bg-overlay bg-dark rounded opacity-25"></div>-->
+                            <!--<div class="card-body text-white p-5">-->
+                                <!--<h3 class="mt-4 mb-4">-->
+                                    <!--<a href="#" class="text-white">Internet Advertising Trends You Won T Be Disappointed</a>-->
+                                <!--</h3>-->
+                                <!--<div class="small opacity-75">-->
+                                    <!--<span><span class="ion ion-ios-eye"></span> 562</span>-->
+                                    <!--&nbsp; &nbsp; &nbsp;-->
+                                    <!--<a href="#" class="text-white"><span class="ion ion-ios-text"></span> 12</a>-->
+                                <!--</div>-->
+                                <!--<div class="media mt-4">-->
+                                    <!--<img src="img/avatars/3.png" alt class="d-block ui-w-40 rounded-circle">-->
+                                    <!--<div class="media-body ml-3">-->
+                                        <!--<a href="#" class="text-white">Allie Rodriguez</a>-->
+                                        <!--<div class="small opacity-75">May 21, 2017</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    
+    <!--<div class="bg-white py-5">-->
+        <!--<div class="container">-->
+            <!--<div class="col-md-10 col-lg-10 col-xl-8 text-center p-0 mx-auto">-->
+                <!--<h1 class="display-3 text-center">Наша команда</h1>-->
+                <!--<div class="mx-auto text-medium font-weight-light pb-3 mt-4 mb-5">-->
+                    <!--Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum assum-->
+                    <!--inimicus an, his ne liber aeterno debitis. Te his iudico tollit-->
+                    <!--efficiendi.-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="row text-center">-->
+                <!--<div class="col-sm-6 col-lg-4 p-4">-->
+                    <!--<img src="img/evg.jpg" class="ui-w-120 rounded-circle mb-4" alt>-->
+                    <!--<h5 class="font-weight-bold mb-2">Евгений Средняков</h5>-->
+                    <!--<div class="text-light small mb-3">Эксперт по стратегическим альянскам и развитию бизнеса, визионер блокчейн-технологий.</div>-->
+                    <!--<div class="ui-user-description">-->
+                        <!--Обладает 20-летним опытом создания, поддержки и развития новых бизнес-направлений в сфере консалтинговых и ИТ-компаний.-->
+                        <!--<br>-->
+                        <!--В качестве консультанта, руководителя и куратора принял участие более чем в 50 проектах внедрения крупных ERP-систем (SAP) и реинжиниринга бизнес-процессов в широком спектре отраслей.-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-lg-4 p-4">-->
+                    <!--<img src="img/chernov.jpg" class="ui-w-120 rounded-circle mb-4" alt>-->
+                    <!--<h5 class="font-weight-bold mb-2">Владимир Чернов</h5>-->
+                    <!--<div class="text-light small mb-3">Эксперт по цифровой трансформации, product manager, специалист по блокчейн-технологиям.</div>-->
+                    <!--<div class="ui-user-description">-->
+                        <!--12 лет опыта разработки и интеграции различных цифровых продуктов для бизнеса (интегрированные веб-приложения, корпоративные приложения, CRM и ERP-системы).-->
+                        <!--<br>-->
+                        <!--С 2015 года изучает технологии распределённого реестра и блокчейн-приложения для бизнеса. Специализируется на разработке корпоративных блокчейн-приложений.-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 col-lg-4 p-4">-->
+                    <!--<img src="img/face.png" class="ui-w-120 rounded-circle mb-4" alt>-->
+                    <!--<h5 class="font-weight-bold mb-2">Татьяна Шлюндина</h5>-->
+                    <!--<div class="text-light small mb-3">Product manager</div>-->
+                    <!--<div class="ui-user-description">-->
+                        <!--Product manager, специалист по маркетинговым коммуникациям и стратегиям вывода товаров на рынок. 15 лет опыта проектной работы на рынке FCMG, управления брендами и системами качества производства.-->
+                        <!--<br>-->
+                        <!--С 2017 года изучает инструменты корпоративной социальной ответственности для решения задач бизнеса и практик построения взаимодействия заинтересованных сторон, а также применения принципов поведенческой экономики для продвижения.йн-приложений.-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <div class="container-fluid flex-grow-1 container-p-y" id="products">
+        <h1 class="display-3 text-center pb-4 mb-5 my-5">Наши работы</h1>
+        <div class="row my-5 text-black-50">
+            <div class="col-lg-10 text-center m-auto font-weight-light text-medium">
+                <p>Компания Impulse Dev занимается веб-разработкой сложных функциональных проектов,
+                    комплексных решений и корпоративных приложений для малого и среднего бизнеса и государственных структур.</p>
+            </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/work_1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>РЭУ</h3>
+                        <p>Разработка веб-приложения для Ассоциации выпускников
+                            университета с личным кабинетом, регистрацией и возможностью оплатить членство при помощи модуля оплаты.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/work_2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Сушишоп</h3>
+                        <p>Корпоративное веб-приложения для сети магазинов СушиШоп, созданное для проверки деятельности персонала
+                            и работающее на основе анализа и изучения агрегированных данных (ручной ввод, интеграция с RKeeper).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/work_3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Корпоративный блокчейн</h3>
+                        <p>Разработка собственного распределенного реестра на языке Python и оболочки для работы с данными блокчейна
+                            на фрейм-ворке Django. Тестирование гипотез и корпоративных приложений. </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="py-5 container" id="consultation">
+        <h1 class="display-3 text-center pb-4 mb-5">Контакты</h1>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="media align-items-center">
+                    <div class="ui-icon border-0 text-large">&nbsp;</div>
+                    <div class="media-body ml-2">
+                        <h5 class="m-0">Наши контакты</h5>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="ion ion-ios-call ui-icon border-0 text-lightest text-large"></div>
+                    <div class="media-body pt-2 ml-2">
+
+                        <div class="ui-company-text mb-2">+7 499 123-45-67 </div>
+                    </div>
+                </div>
+
+                <div class="media align-items-center">
+                    <div class="ion ion-ios-mail ui-icon border-0 text-lightest text-large"></div>
+                    <div class="media-body ml-2">
+                        <a href="mailto:info@basischain.ru" class="ui-company-text text-dark">info@impulsedev.ru</a>
+                    </div>
+                </div>
+                <!--<div class="media align-items-center">-->
+                    <!--<div class="fab fa-facebook ui-icon border-0 text-lightest text-large"></div>-->
+                    <!--<div class="media-body ml-2">-->
+                        <!--<a href="#" class="ui-company-text text-dark">Facebook</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="media align-items-center">-->
+                    <!--<div class="fab fa-telegram-plane ui-icon border-0 text-lightest text-large"></div>-->
+                    <!--<div class="media-body ml-2">-->
+                        <!--<a href="#" class="ui-company-text text-dark">Telegram</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+
+            <hr class="d-lg-none w-100 my-5">
+
+            <form class="col-lg-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label class="form-label">Имя *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label">Email *</label>
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label class="form-label">Телефон</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label">Компания</label>
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Сообщение</label>
+                    <textarea rows="6" class="form-control"></textarea>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button type="submit" class="btn btn-primary btn-round">Отправить</button>
+                    <div class="small ml-3 text-muted">
+                        Внимание! Нажимая на кнопку “Отправить” вы соглашаетесь с Условиями использования персональных данных.
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="my-5 xsmall text-muted text-center">
+            © 2019. Impulse Development. Разработка сложных сервисов и веб-приложений.
+            <br>Все права защищены. При использовании материалов сайта ссылка обязательна.
+            <br>Проект компании Идее Группа. ООО "Идее Группа". ОГРН 1157746876286.
+            <br>Условия использования персональных данных
+            <br><br>Разработка сайта - Агентство ADS
+        </div>
+    </div>
+
+
+
+
+    <!-- Core scripts -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 900);
+            });
+        });
+    </script><script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu-1").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 900);
+            });
+        });
+    </script>
+
+    <!-- Add this code as early as you can -->
+    <script>
+        $('#portfolio-page-loader').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+    <script src="libs/popper/popper.js"></script>
+    <script src="js/layout-helpers.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Libs -->
+    <script src="libs/swiper/swiper.js"></script>
+    <script src="libs/masonry/masonry.js"></script>
+
+    <!-- Page -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/landing.js"></script>
+    <!-- Core scripts -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sidenav.js"></script>
+
+    <!-- Libs -->
+    <script src="libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="libs/swiper/swiper.js"></script>
+
+    <!-- Demo -->
+    <script src="js/demo.js"></script>
+    <script src="js/ui_carousel.js"></script>
+
+</body>
+</html>
