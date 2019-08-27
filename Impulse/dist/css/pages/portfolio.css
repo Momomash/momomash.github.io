@@ -798,7 +798,7 @@ body.portfolio-navbar-expanded {
 }
 .technology-block{
   padding: 15px 5px;
-  border: 2px solid #012AFF;
+  /*border: 2px solid #012AFF;*/
   background-color: transparent;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -807,13 +807,13 @@ body.portfolio-navbar-expanded {
   width: 23%;
 }
 .technology-block:hover{
-  box-shadow: 0 0  30px #012AFF ;
+  box-shadow: 0 0 20px #D3D3D3 ;
   -webkit-transform: translate(0,-20px);
   -moz-transform: translate(0,-20px);
   -o-transform: translate(0,-20px);
 }
 .technology-block h4{
-  color: #012AFF;
+  color: rgb(33, 33, 33);
 }
 
 @media screen and (max-width: 414px ){
