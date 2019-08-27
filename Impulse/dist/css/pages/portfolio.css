@@ -2,10 +2,11 @@
  * Basic
 */
 @import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic);
 
 body {
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
 }
@@ -82,6 +83,49 @@ body:not(.pace-done) {
     transform: rotate(-360deg); } }
 
 
+/*langusges droopdown*/
+.dropbtn {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100px;
+}
+
+.flag-img{
+  width: 30px;
+  height: 20px;
+  padding: 0 5px 0 0;
+}
+.dropbtn
+{
+  /*background: url('../../img/ru-flag.png') no-repeat left center;*/
+  padding-left: 25px;
+  width: 40px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 2px 0 2px 0;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*languages dropdown*/
+
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -90,12 +134,20 @@ body:not(.pace-done) {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: rgba(24, 28, 33, 0.5);
   text-align: center;
 }
 .carousel-caption h3{
   font-weight: 500;
+}
+
+.c-page-header{
+  color: grey;
+}
+.c-page-header h2{
+  color: #0a0b0d;
+  font-weight: 600;
 }
 /*.container-fluid,*/
 /*.container{*/
@@ -138,9 +190,15 @@ body:not(.pace-done) {
   margin-left: 0;
   -webkit-animation-name: portfolioLoaderIndicatorAnimationRtl;
   animation-name: portfolioLoaderIndicatorAnimationRtl; }
+
+
 .pacifico{
   font-family: 'Pacifico', cursive;
+  font-weight: 400;
   font-size: 22px;
+}
+.logo-rules{
+  color: #4E5155;
 }
 .pace-done #portfolio-page-loader {
   -webkit-animation: portfolioLoaderAnimation 1s ease-in-out forwards;
@@ -319,6 +377,16 @@ body:not(.pace-done) {
 /*
  * Navbar
 */
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #a3a4a6;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #747578;
+}
+
 .portfolio-navbar,
 .portfolio-navbar-inner {
   position: fixed;
@@ -348,6 +416,9 @@ body:not(.pace-done) {
 .portfolio-navbar a {
   color: #fff !important; }
 
+.rules-navbar{
+  color: #a3a4a6 !important;
+}
 /* Light */
 html:not(.portfolio-navbar-expanded) body:not(.portfolio-navbar-expanded) .portfolio-navbar-light:not(.portfolio-navbar-alt) .portfolio-navbar-inner,
 html:not(.portfolio-navbar-expanded) body:not(.portfolio-navbar-expanded) .portfolio-navbar-light:not(.portfolio-navbar-alt) .portfolio-navbar-inner a {
@@ -706,6 +777,58 @@ body.portfolio-navbar-expanded {
   -webkit-animation: portfolioThumbnailsItemOutAnimation .3s ease-in forwards;
   animation: portfolioThumbnailsItemOutAnimation .3s ease-in forwards; }
 
+.swiper-container .swiper-slide {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  background: #ecebed;
+}
+
+#swiper-3d-coverflow-effect .swiper-slide {
+  max-width: 300px;
+}
+
+#swiper-3d-flip-effect,
+#swiper-3d-flip-effect .swiper-slide {
+  max-width: 300px;
+}
+.technologys{
+  display: flex;
+  justify-content: space-between;
+}
+.technology-block{
+  padding: 15px 5px;
+  border: 2px solid #012AFF;
+  background-color: transparent;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 23%;
+}
+.technology-block:hover{
+  box-shadow: 0 0  30px #012AFF ;
+  -webkit-transform: translate(0,-20px);
+  -moz-transform: translate(0,-20px);
+  -o-transform: translate(0,-20px);
+}
+.technology-block h4{
+  color: #012AFF;
+}
+
+@media screen and (max-width: 414px ){
+  .technologys{
+    justify-content: center;
+  }
+  .technology-block{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+.text-muted a{
+  color: #a3a4a6;
+}
 /*
  * Forms
 */
