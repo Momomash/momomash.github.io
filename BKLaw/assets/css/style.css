@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bolder-text {
+  font-family: "FreeSetDemiBold";
+}
+
+.languages {
+  padding: 10px 0 10px 50%;
+  background-color: #000513;
+}
+.languages a {
+  color: #66ccff;
+  font-size: 18px;
+  font-family: "FreeSet", sans-serif;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.languages a:hover {
+  color: #ffffff;
+}
+.languages .active {
+  text-decoration: none !important;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000513;
+  background-image: url("../img/nav-shape.png");
+  background-size: 100%;
+  padding: 20px 0;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #66ccff;
+  font-size: 24px;
+  font-family: "FreeSetRegular", sans-serif;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+.nav ul li a:hover {
+  color: #ffffff;
+}
+.nav ul .logo {
+  padding-right: 200px;
+  position: relative;
+}
+.nav ul .logo:after {
+  position: absolute;
+  content: url("../img/logo-info.png");
+  top: -10px;
+  left: -70px;
+  z-index: 10;
+}
+
+.message {
+  z-index: 1;
+  position: relative;
+  height: 770px;
+  background-image: url("../img/header-bg.jpg");
+  background-size: 100% 100%;
+  padding-left: 49%;
+}
+.message p {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "FreeSetLight", sans-serif;
+  width: 100%;
+  padding-top: 40px;
+}
+.message .big-button {
+  position: absolute;
+  bottom: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .languages a {
+    font-size: 30px;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav ul .logo {
+    padding: 15px 0;
+  }
+  .nav ul .logo:after {
+    display: none;
+  }
+
+  .message {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .message p {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+@media screen and (width: 1024px) {
+  .nav ul .logo {
+    padding-right: 0;
+  }
+  .nav ul .logo:after {
+    display: none;
+  }
+
+  .message {
+    padding-left: 35%;
+  }
+}
+.promo {
+  background-color: #dbd1ba;
+  padding: 60px 240px 60px 220px;
+  font-size: 24px;
+  font-family: "FreeSetLight", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .promo {
+    padding: 80px 40px;
+    text-align: center;
+  }
+}
+.about-us {
+  padding: 60px 0 100px 300px;
+}
+.about-us img {
+  padding-bottom: 80px;
+}
+.about-us ul li {
+  list-style: none;
+  font-size: 30px;
+  color: #1e629c;
+  font-family: "FreeSetLight", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.about-us ul li .icon {
+  background-image: url("../img/css_sprites.png");
+  display: inline-block;
+  margin-right: 20px;
+}
+.about-us ul li .icon-1 {
+  background-position: -382px -300px;
+  width: 47px;
+  height: 34px;
+}
+.about-us ul li .icon-2 {
+  background-position: 0 -835px;
+  width: 39px;
+  height: 45px;
+}
+.about-us ul li .icon-3 {
+  background-position: -100px -780px;
+  width: 42px;
+  height: 43px;
+}
+.about-us ul li .icon-4 {
+  background-position: -335px -300px;
+  width: 47px;
+  height: 60px;
+}
+.about-us ul li .icon-5 {
+  background-position: -184px -780px;
+  width: 45px;
+  height: 40px;
+}
+.about-us ul li .icon-6 {
+  background-position: -142px -780px;
+  width: 42px;
+  height: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us {
+    padding: 100px;
+  }
+  .about-us ul li {
+    font-size: 40px;
+  }
+}
+.big-button {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #66ccff;
+  font-size: 30px;
+  font-family: "FreeSetLight", sans-serif;
+  padding: 40px 0;
+  text-align: center;
+  border: 1px solid #66ccff;
+  width: 520px;
+}
+
+.big-button:hover {
+  color: #ffffff;
+  border-color: #a6d5ed;
+  background-color: rgba(166, 213, 237, 0.3);
+  transition: background-color, 0.3s;
+}
+
+@font-face {
+  font-family: "FreeSetBold";
+  src: url("../fonts/FreeSetBoldC.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FreeSet";
+  src: url("../fonts/FreeSetC.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FreeSetDemiBold";
+  src: url("../fonts/FreeSetDemiBoldC.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FreeSetLight";
+  src: url("../fonts/FreeSetLightC.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FreeSetRegular";
+  src: url("../fonts/FreeSetRegularC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
