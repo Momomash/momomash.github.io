@@ -305,6 +305,7 @@ body {
   }
 
   .arrow-top {
+    //transform: rotate(180deg);
     width: 100px;
     height: 57px;
     position: absolute;
@@ -314,14 +315,18 @@ body {
     background-position: 0 -340px;
   }
   .arrow-top-center{
-    transform: rotate(180deg);
+    //transform: rotate(180deg);
     width: 100px;
     height: 57px;
     position: absolute;
-    top: 110px;
+    top: 40px;
     right: 50%;
     background-image: url("../img/css_sprites.png");
     background-position: 0 -340px;
+  }
+  .arrow-rotate{
+    transform: rotate(180deg);
+    transition: transform, 0.3s;
   }
   //для arrow-top-center сделать при открытом виде переворот и уход вправо
 
@@ -341,6 +346,10 @@ body {
       right: 40px;
     }
   }
+}
+
+.collapse{
+  display: none;
 }
 
 .collapse-block {
@@ -609,4 +618,8 @@ body {
   src: url("../fonts/FreeSetRegularC.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+.expanded{
+  background-color: red;
 }

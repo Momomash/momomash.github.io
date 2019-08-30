@@ -258,14 +258,17 @@ body {
   background-position: 0 -340px;
 }
 .collapse-header .arrow-top-center {
-  transform: rotate(180deg);
   width: 100px;
   height: 57px;
   position: absolute;
-  top: 110px;
+  top: 40px;
   right: 50%;
   background-image: url("../img/css_sprites.png");
   background-position: 0 -340px;
+}
+.collapse-header .arrow-rotate {
+  transform: rotate(180deg);
+  transition: transform, 0.3s;
 }
 @media screen and (max-width: 1024px) {
   .collapse-header {
@@ -275,6 +278,10 @@ body {
     right: 40px;
   }
 }
+.collapse {
+  display: none;
+}
+
 .collapse-block {
   position: relative;
   border-bottom: 1px solid #cecece;
@@ -515,6 +522,9 @@ body {
   src: url("../fonts/FreeSetRegularC.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+.expanded {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
