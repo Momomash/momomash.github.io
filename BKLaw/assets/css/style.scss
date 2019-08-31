@@ -278,6 +278,7 @@ body {
 
   h2 {
     font-size: 48px;
+    max-width: 90%;
     color: #1e629c;
     font-family: 'FreeSetLight', sans-serif;
     display: flex;
@@ -582,6 +583,16 @@ body {
   border-color: #a6d5ed;
   background-color: rgba(166, 213, 237, 0.3);
   transition: background-color, 0.3s;
+}
+
+
+// input (modal-message)
+form{
+  input, textarea{
+    margin-bottom: 10px;
+    box-shadow: none;
+    border: 1px solid #66ccff;
+  }
 }
 
 //fonts
