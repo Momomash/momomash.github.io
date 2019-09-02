@@ -84,7 +84,8 @@ body {
   position: relative;
   height: 770px;
   background-image: url("../img/header-bg.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-left: 49%;
 
   p {
@@ -255,8 +256,9 @@ body {
   background-color: #1e629c;
   padding: 40px 0 40px 200px;
   background-image: url("../img/mini-header-layont.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: right;
 
   h1 {
     color: #ffffff;
@@ -278,7 +280,7 @@ body {
 
   h2 {
     font-size: 48px;
-    max-width: 90%;
+    max-width: 70%;
     color: #1e629c;
     font-family: 'FreeSetLight', sans-serif;
     display: flex;
@@ -329,20 +331,14 @@ body {
     transform: rotate(180deg);
     transition: transform, 0.3s;
   }
-  //для arrow-top-center сделать при открытом виде переворот и уход вправо
-
-  .arrow-top:hover {
-    //transform: translateY(20px);
-    //transition: transform, 0.3s;
-    //transform: rotate(180deg);
-    //transition: transform 0.5s;
-  }
 }
 
 @media screen and (max-width: 1024px) {
   .collapse-header {
     padding: 90px 0 40px 30px;
-
+      h2{
+        max-width: 70%;
+      }
     .arrow-top {
       right: 20px;
     }
