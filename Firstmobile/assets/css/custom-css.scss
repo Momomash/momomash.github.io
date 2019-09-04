@@ -20,6 +20,13 @@
   box-shadow: 0 0 15px -2px rgba(0,0,0,0.75);
 }
 
+@media screen and (max-width: 1024px){
+  .layout-sidenav{
+    box-shadow: none;
+
+  }
+}
+
 .custom-control.custom-checkbox
 .custom-control-input:indeterminate ~ .custom-control-label::before,
 .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
