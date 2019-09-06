@@ -19,6 +19,23 @@ $black: #212121;
   color: $white;
   border-color: transparent;
 }
+
+.desktop-menu{
+  position: relative;
+}
+
+.dropdown-desktop-menu{
+  position: absolute;
+  left: 250px;
+}
+#dropdown-desktop-menu-1{
+  z-index: 9;
+}
+.dropdown-desktop-menu-open{
+  transform: translateX(250px);
+  transition: 0.5s;
+}
+
 .error{
   display: block;
   color: $red;
@@ -35,7 +52,8 @@ $black: #212121;
   background-color: $white;
 }
 .layout-sidenav{
-  box-shadow: 0 0 15px -2px rgba(0,0,0,0.75);
+  box-shadow: 0 0 20px -2px rgba(0,0,0,0.20);
+  height: 100%;
 }
 .logo-block{
   svg{
@@ -63,6 +81,16 @@ $black: #212121;
   }
 }
 
+@media screen and (min-width: 768px){
+  .mobile-menu{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .desktop-menu{
+    display: none;
+  }
+}
 
 
 .custom-control.custom-checkbox
