@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<body>
+
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logotype">
+        <a href="/" class="logotype__link">IMPULSE</a>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list list-unstyled">
+          
+          <li class="nav-menu__item">
+            <a href="#company" class="nav-menu__link">Компания</a>
+          </li>
+          
+          <li class="nav-menu__item">
+            <a href="#knowledge" class="nav-menu__link">Знания и компетенции</a>
+          </li>
+          
+          <li class="nav-menu__item">
+            <a href="#exp" class="nav-menu__link">Наш опыт</a>
+          </li>
+          
+          <li class="nav-menu__item">
+            <a href="#contacts" class="nav-menu__link">Контакты</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <ul class="header__aside list-unstyled">
+        <li class="lang">
+          <button class="button button-light button_lang">En</button>
+        </li>
+        <li class="online-send">
+          <button class="button button-outline button_send js-open-modal" data-modal="form-modal">
+            Онлайн заявка
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="backdrop">
+  <div class="form-wrapper">
+    <form class="form form-modal">
+      <button type="button" class="button button-close js-close-modal" data-modal="form-modal">
+        <img src="./images/close-button.png" alt="Закрыть окно">
+      </button>
+      <header>
+        <h3 class="form__title">Обратная связь</h3>
+      </header>
+      <div class="form-field">
+        <input type="text" name="name" class="input-field" placeholder="Ваше имя *">
+      </div>
+      <div class="form-field">
+          <input type="tel" name="tel" class="input-field" placeholder="Контактный телефон *">
+        </div>
+      <div class="form-field">
+          <input type="text" name="name" class="input-field" placeholder="Ваше сообщение, вопрос или комментарий *">
+      </div>
+      <div class="button-wrapper">
+        <button class="button button-send js-close">Отправить</button>
+      </div>
+    </form>
+    <div>
+      <span class="form__bottom">
+          Нажимая кнопку Отправить, вы соглашаетесь с
+          Условиями использования персональных данных
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="backdrop">
+  <div class="exp-modal">
+    <button class="button button-close js-close-modal" data-modal="exp-modal">
+      <img src="./images/close-button.png" alt="Закрыть окно">
+    </button>
+    <div class="exp-modal__inner">
+      <header class="exp-modal__header">
+        <span class="exp-modal__logotype">
+          <img src="./images/slide-1.png" alt="Логотип организации">
+        </span>
+        <h3>РЭУ им. Г.В. Плеханова</h3>
+      </header>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <header>
+            <h4>О проекте
+          </h4></header>
+          <p>
+            Разработка веб-приложения для Ассоциации
+            выпускников университета с личным кабинетом,
+            регистрацией и возможностью оплатить членство при помощи модуля оплаты.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <header>
+            <h4>Команда</h4>
+          </header>
+          <ul class="list-unstyled">
+            <li>Владимир Чернов - технический директор</li>
+            <li>Алексей Гарькин - Teamlead</li>
+            <li>Алексей Захаров - менеджер проекта</li>
+            <li>Михаил Андреев - front-end</li>
+            <li>Михаил Слободских - PHP-программист</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <header>
+            <h4>Подробнее</h4>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="app">
+    <section class="section s-header">
+  <div class="hero h-100">
+  <div class="container">
+    <h1 class="hero__title">
+      Разработка сложных сервисов и веб-приложений.
+    </h1>
+    <p class="hero__description text-muted">
+      Impulse Development разрабатывает сложные функциональные проекты,
+      комплексные решения и корпоративные приложения для малого
+      и среднего бизнеса и государственных структур.
+    </p>
+  </div>
+</div>
+
+</section>
+
+    
+<section id="company" class="section s-company" style="background-image: url('./images/company-bg.jpg'), url('./images/shadow.png')">
+  <div class="container h-100">
+    <div class="s-company__inner">
+    <header class="s-company__header mb-2 mb-md-5">
+      <h2 class="s-company__title">Компания</h2>
+    </header>
+    <div class="s-company__text">
+      <p>
+          IT-компания Impulse Development была основана
+          в 2015 году в Москве группой профессионалов
+          работающих в различных сферах IT-бизнеса:
+          интеграция решений, поставки программного
+          обеспечения и разработка архитектуры информационных систем.
+        </p>
+        <p>
+          Мы занимаемся разработкой и интеграцией
+          сложных функциональных проектов,
+          приложений и корпоративных решений.
+          В своей работе мы используем языки Python и Ruby,
+          фреймворки Django и Ruby on rails.
+        </p>
+        <p>
+          Наши компетенции, знания и опыт позволяют
+          решать задачи разного уровня сложности.
+          Поэтому наши клиенты всегда уверены в том,
+          что мы предложим интересное, эффективное и
+          правильное решение конкретной задачи.
+        </p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="knowledge" class="section s-knownledge bg-white">
+  <div class="container h-100">
+    <div class="s-knownledge__inner">
+      <header class="s-knownledge__header mb-2 mb-md-5">
+        <h2>Знания и компетенции</h2>
+      </header>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="list-block">
+  <header>
+    <h4 class="list-block__title">Языки программирования и фреймворки</h4>
+  </header>
+  <ul class="list-dashed">
+    <li>Python, Rubu, PHP;</li>
+    <li>Django, Ruby on Rails, YII и Symphony.</li>
+  </ul>
+</div>
+
+
+<div class="list-block">
+  <header>
+    <h4 class="list-block__title">Основные технологии и базы данных:</h4>
+  </header>
+  <ul class="list-dashed">
+    <li>MySQL, SQLite, PostgreSQL;</li>
+    <li>JavaScript, JQuery, JSON, AJAX;</li>
+    <li>Bootstrap и HTML5;</li>
+    <li>Распределенный реестр (Blockchain).</li>
+  </ul>
+</div>
+
+
+<div class="list-block">
+  <header>
+    <h4 class="list-block__title">Другие технологии и сервисы:</h4>
+  </header>
+  <ul class="list-dashed">
+    <li>AngularJS, Vue.js;</li>
+    <li>MongoDB, BigchainDB;</li>
+    <li>Atlassian Jira, Atlassian Bitbucket.</li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-12 col-sm-6 mb-3">
+          <div class="quote">
+  <p class="quote__text">
+    В Impulse Development внимательно изучают бизнес-процессы компании,
+    точки обмена информацией и технологические возможности бизнеса.
+    Благодаря этому создается масштабируемая архитектура,
+    являющаяся основой эффективного и успешного проекта.
+  </p>
+  <div class="quote__author d-flex">
+    <span class="quote__img">
+      <img src="./images/author.jpg" width="32" height="32" alt="Фото автора цитаты">
+    </span>
+    <div class="quote__info ml-3">
+      <span class="quote__name">Владимир Чернов</span>
+      <small class="quote__quality">Технический директор</small>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <div class="col-12 mt-3 mt-md-5">
+          <div class="row">
+  <div class="col-12 col-sm-4">
+    <div class="list-block">
+      <header>
+        <h4 class="list-block__title">Решения:</h4>
+      </header>
+      <ul class="list-dashed">
+        <li>Корпоративные веб-приложения;</li>
+        <li>Портальные решения;</li>
+        <li>Хранилища данных;</li>
+        <li>Приложения для мобильных устройств;</li>
+        <li>Автоматизация бизнес-процессов;</li>
+        <li>Интеграция CRM, ERP и другого ПО.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-4">
+    <div class="list-block">
+      <header>
+        <h4 class="list-block__title">Интеграция:</h4>
+      </header>
+      <ul class="list-dashed">
+        <li>Внешние сервисы и SaaS ПО;</li>
+        <li>Платежные системы и процессинг;</li>
+        <li>Внешние хранилища данных;</li>
+        <li>CRM и ERP систем в веб-приложения;</li>
+        <li>Аналитика и статистика.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-4">
+    <div class="list-block">
+      <header>
+        <h4 class="list-block__title">Блокчейн:</h4>
+      </header>
+      <ul class="list-dashed">
+        <li>Внедрение распределенного реестра;</li>
+        <li>Приложения на блокчейн технологиях;</li>
+        <li>Корпоративный блокчейн;</li>
+        <li>Интеграция платежей на криптовалютах.</li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="section s-exp">
+  <div class="container h-100">
+    <div class="s-exp__inner h-100">
+      <header class="s-exp__header mb-2 mb-md-5">
+        <h2>Наш опыт</h2>
+      </header>
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <p class="s-exp__subtitle w-100 mb-3">
+  Богатый опыт для решения ваших задач
+</p>
+<p>
+  <span class="s-exp__subdescription">
+    Мы создаем масштабируемые и функциональные веб-приложения, портальные решения, специализированные хранилища данных, приложения
+    для мобильных устройств и информационные системы основанные на технологиях распределенного реестра (блокчейн).
+  </span>
+</p>
+
+        </div>
+        <div class="col-12">
+          
+
+<div class="row s-exp__list mt-5">
+  
+    <div class="col-12 col-sm-6 col-md-4 d-flex">
+      <div class="s-exp__item">
+        <span class="s-exp__logotype">
+          <img src="./images/slide-1.png" alt="Логотип компании">
+        </span>
+        <a href="javascript:void(0)" class="s-exp__title js-open-modal" data-modal="exp-modal">
+          Московская торгово-промышленная палата
+        </a>
+        <p class="s-exp__description">
+          Разработка веб-приложения для Ассоциации выпускников университета.
+        </p>
+      </div>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-md-4 d-flex">
+      <div class="s-exp__item">
+        <span class="s-exp__logotype">
+          <img src="./images/slide-2.png" alt="Логотип компании">
+        </span>
+        <a href="javascript:void(0)" class="s-exp__title js-open-modal" data-modal="exp-modal">
+          РЭУ им. Г.В. Плеханова
+        </a>
+        <p class="s-exp__description">
+          Разработка веб-приложения для Ассоциации выпускников университета.
+        </p>
+      </div>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-md-4 d-flex">
+      <div class="s-exp__item">
+        <span class="s-exp__logotype">
+          <img src="./images/slide-2.png" alt="Логотип компании">
+        </span>
+        <a href="javascript:void(0)" class="s-exp__title js-open-modal" data-modal="exp-modal">
+          РЭУ им. Г.В. Плеханова
+        </a>
+        <p class="s-exp__description">
+          Разработка веб-приложения для Ассоциации выпускников университета.
+        </p>
+      </div>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-md-4 d-flex">
+      <div class="s-exp__item">
+        <span class="s-exp__logotype">
+          <img src="./images/slide-3.png" alt="Логотип компании">
+        </span>
+        <a href="javascript:void(0)" class="s-exp__title js-open-modal" data-modal="exp-modal">
+          СУШИШОП
+        </a>
+        <p class="s-exp__description">
+          Разработка веб-приложения для проверки деятельности персонала компании.
+        </p>
+      </div>
+    </div>
+  
+    <div class="col-12 col-sm-6 col-md-4 d-flex">
+      <div class="s-exp__item">
+        <span class="s-exp__logotype">
+          <img src="./images/slide-3.png" alt="Логотип компании">
+        </span>
+        <a href="javascript:void(0)" class="s-exp__title js-open-modal" data-modal="exp-modal">
+          СУШИШОП
+        </a>
+        <p class="s-exp__description">
+          Разработка веб-приложения для проверки деятельности персонала компании.
+        </p>
+      </div>
+    </div>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="section s-contacts bg-white" data-percentage="80" data-centered="true">
+  <div class="container h-100">
+    <div class="s-contacts__inner h-100">
+      <header class="s-contacts__header mb-5">
+        <h2>Контакты</h2>
+      </header>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="s-contacts__info">
+    <p>
+      Уважаемые клиенты, прямо сейчас мы готовы обсудить вашу задачу и предложить наиболее эффективное решение.
+    </p>
+    <p class="mb-5">
+      Как правило, мы работаем с понедельника по пятницу, с 9:00 до 18:00 (время московское).
+    </p>
+    <p>
+      <small>Контактный телефон:</small>
+      <br>
+      <a href="tel:79857674796" class="text-muted">
+        <b>+7 (985) 767-47-96</b>
+      </a>
+    </p>
+    <p>
+      <small>Электронная почта:</small>
+      <br>
+      <a href="mailto:79857674796" class="text-muted">
+        <b>info@impulsedev.ru</b>
+      </a>
+    </p>
+</div>
+
+
+
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="form-wrapper">
+  <form class="form">
+    <header>
+      <h3 class="form__title">Обратная связь</h3>
+    </header>
+    <div class="form-field">
+      <input type="text" name="name" class="input-field" placeholder="Ваше имя *">
+    </div>
+    <div class="form-field">
+        <input type="tel" name="tel" class="input-field" placeholder="Контактный телефон *">
+      </div>
+    <div class="form-field">
+        <input type="text" name="name" class="input-field" placeholder="Ваше сообщение, вопрос или комментарий *">
+    </div>
+    <div class="button-wrapper">
+      <button class="button button-send">Отправить</button>
+    </div>
+  </form>
+  <div>
+    <span class="form__bottom" class="text-muted">
+        Нажимая кнопку Отправить, вы соглашаетесь с
+        <a href="/" class="text-muted">Условиями использования персональных данных</a>
+    </span>
+  </div>
+</div>
+
+        </div>
+        <div class="col-12 mt-3 mt-md-5">
+          <footer class="footer">
+    <div class="row mt-3">
+      <div class="col-12 col-md-6">
+        <p class="text-center text-md-left">
+          <small>
+              Impulse Development. Разработка сложных сервисов и веб-приложений.
+              Все права защищены. При использовании материалов сайта ссылка обязательна.
+              Проект компании Идее Группа. ООО "Идее Группа". ОГРН 1157746876286.
+          </small>
+        </p>
+        <p>
+          <a href="#" class="text-muted"><small>Условия использования персональных данных</small></a>
+
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="https://impulsedev.ru" class="footer-link d-block text-muted text-center text-md-right">
+          <small> Разработка сайта - Агенство ADS</small>
+        </a>
+      </div>
+    </div>
+
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer="defer" src="./js/scripts.js"></script>
+</body>
+</html>

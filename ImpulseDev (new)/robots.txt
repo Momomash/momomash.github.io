@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets
+Disallow: /old
+Disallow: /old2
+Disallow: /cgi-bin
+Host: https://impulsedev.ru
+Sitemap: https://impulsedev.ru/sitemap.xml
