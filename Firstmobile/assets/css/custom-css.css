@@ -45,12 +45,25 @@
   font-weight: 300 !important;
 }
 
+.navbar-collapse {
+  font-weight: 300 !important;
+  color: #757575;
+}
+.navbar-collapse .dropdown-menu-right .dropdown-item {
+  font-weight: 300 !important;
+  color: #757575;
+}
+.navbar-collapse .navbar-search-box .navbar-search-input .form-control {
+  font-weight: 300 !important;
+  color: #757575;
+}
+
 .layout-container {
   background-color: #ffffff;
 }
 
 .layout-sidenav {
-  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.05);
   height: 100%;
 }
 
@@ -106,6 +119,10 @@
     transform: translateX(170px);
   }
 }
+.sidenav-link h5 {
+  font-size: 18px !important;
+}
+
 .custom-control.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before,
 .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
