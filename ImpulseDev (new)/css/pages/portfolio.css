@@ -215,6 +215,14 @@ body:not(.pace-done) {
     font-weight: lighter;
 }
 
+.swiper-slide .white-btn-big {
+    background-color: #ffffff;
+    border: 1px solid #003EFF;
+    padding: 0.438rem 1.125rem;
+    font-size: 0.894rem;
+    color: #003EFF;
+}
+
 .carousel-indicators{
     bottom: 20px !important;
 }
@@ -283,7 +291,6 @@ body:not(.pace-done) {
 
 
 .white-btn{
-    margin-left: 60px;
     background-color: #ffffff;
     padding: 5px 8px;
     border: 1px solid #003EFF;
