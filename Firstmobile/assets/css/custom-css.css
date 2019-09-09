@@ -16,20 +16,20 @@
 
 .desktop-menu {
   position: relative;
+  z-index: 11;
 }
 
 .dropdown-desktop-menu {
   position: absolute;
-  left: 250px;
+  left: 0;
+}
+
+.dropdown-left {
+  transform: translateX(250px);
 }
 
 #dropdown-desktop-menu-1 {
   z-index: 9;
-}
-
-.dropdown-desktop-menu-open {
-  transform: translateX(250px);
-  transition: 0.5s;
 }
 
 .error {
@@ -76,14 +76,34 @@
     box-shadow: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mobile-menu {
     display: none;
   }
+
+  .layout-sidenav-toggle {
+    display: none !important;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
+  }
+
+  #dropdown_menu_1,
+#dropdown_menu_2,
+#dropdown_menu_3,
+#dropdown_menu_4 {
+    display: none;
+  }
+}
+@media screen and (width: 1024px) {
+  .sidenav-vertical {
+    width: 11rem;
+  }
+
+  .dropdown-left {
+    transform: translateX(170px);
   }
 }
 .custom-control.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before,
@@ -110,7 +130,7 @@ h5 {
   position: relative;
   display: inline-block;
   padding-top: 6px;
-  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-family: var(--pure-material-font, "Roboto");
   font-size: 14px !important;
   font-weight: 300 !important;
   line-height: 1.5;
