@@ -4,6 +4,13 @@ a {
   text-decoration: none !important;
 }
 
+#ownd-footer .footer-nav__link {
+  color: #757575 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
 .about-order {
   padding: 0 0 0 30px !important;
   width: 220px !important;
