@@ -1,0 +1,116 @@
+$(document).ready(function () {
+
+    function svg() {
+        $('img.svg').each(function(){
+            var $img = $(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            $.get(imgURL, function(data) {
+                var $svg = $(data).find('svg');
+
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                $svg = $svg.removeAttr('xmlns:a');
+
+                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                }
+
+                $img.replaceWith($svg);
+
+            }, 'xml');
+            console.log($img)
+        });
+    }
+    svg();
+
+
+     function catalog_btn_click() {
+        var btn_catalog = $('.header-menu__container-btn'),
+            menu_container = $('.header-menu__container');
+        btn_catalog.hover(function () {
+            if (menu_container.hasClass('active')) {
+                menu_container.removeClass('active');
+            } else {
+                menu_container.addClass('active');
+            }
+        })
+        $(document).mouseup(function (e) {
+            if (!menu_container.is(e.target) && menu_container.has(e.target).length === 0) {
+                menu_container.removeClass('active');
+            }
+        })
+    }
+    catalog_btn_click();
+
+    function header_event_click() {
+        var event_element = $('.header-event-link'),
+            hiddenContainer = $('.header-menu__container-product');
+        event_element.each(function () {
+            var $this = $(this);
+            var event_element_attr = $this.attr('data-hidden');
+            $this.on('click', function (e) {
+                e.preventDefault();
+                if (hiddenContainer.hasClass(event_element_attr)) {
+                    if($('#' + event_element_attr).hasClass('active')){
+                        $('#' + event_element_attr).removeClass('active');
+                    }else{
+                        hiddenContainer.removeClass('active');
+                        $('#' + event_element_attr).addClass('active');
+                    }
+
+                }
+            })
+            $(document).mouseup(function (e) {
+                if (!hiddenContainer.is(e.target) && hiddenContainer.has(e.target).length === 0 && !event_element.is(e.target) && event_element.has(e.target).length === 0) {
+                    hiddenContainer.removeClass('active');
+                }
+            })
+        })
+
+
+    }
+    header_event_click();
+    
+    function mobile_menu() {
+        var fixed_menu = $('.header-mobile__fixed'),
+            chisel = $('.chisel-black');
+        $('.mobile-line').click(function () {
+            fixed_menu.addClass('active');
+            chisel.addClass('active');
+        })
+        $(document).mouseup(function (e) {
+            if (!fixed_menu.is(e.target) && fixed_menu.has(e.target).length === 0) {
+                fixed_menu.removeClass('active');
+                chisel.removeClass('active');
+            }
+        })
+    }
+    mobile_menu();
+	
+	
+	$( '#ownd-how-to .ownd-how-to-link a' ).click(
+		function ()
+		{
+			if ( $( this ).hasClass( 'active' ) )
+			{
+				$( this ).removeClass( 'active' );
+				$( this ).text( 'Читать далее' );
+				$( '#ownd-how-to .ownd-how-to-text' ).removeClass( 'open' );
+			}
+			else
+			{
+				$( this ).addClass( 'active' );
+				$( this ).text( 'Скрыть' );
+				$( '#ownd-how-to .ownd-how-to-text' ).addClass( 'open' );
+			}
+		}
+	);
+})
