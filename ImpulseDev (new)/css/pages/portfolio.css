@@ -201,7 +201,7 @@ body:not(.pace-done) {
     color: #d9d9d9;
 }
 
- .swiper-slide h4 {
+ .swiper-slide h3 {
     color: #003EFF;
     font-size: 26px;
     font-weight: bold;
@@ -1073,8 +1073,8 @@ body.portfolio-navbar-expanded {
     -o-transform: translate(0, -20px);
 }
 
-.technology-block h4 {
-    color: rgb(33, 33, 33);
+.technology-block h3 {
+    color: rgb(33, 33, 33) !important;
 }
 
 @media screen and (max-width: 414px ) {
