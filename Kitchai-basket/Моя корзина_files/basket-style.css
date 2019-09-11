@@ -42,6 +42,11 @@ a {
     right: 0;
   }
 }
+@media screen and (max-width: 1229px) {
+  .about-order {
+    display: none;
+  }
+}
 .about-order-text {
   width: 740px;
   text-align: right;
@@ -315,6 +320,82 @@ a {
     max-width: 1000px !important;
   }
 }
+#exampleModalCenter .modal-body {
+  width: 570px;
+}
+#exampleModalCenter .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 25px 15px;
+  width: 600px;
+}
+#exampleModalCenter h4 {
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #212121;
+  padding-bottom: 20px;
+}
+#exampleModalCenter h5 {
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  color: #757575;
+  padding-bottom: 30px;
+}
+#exampleModalCenter form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#exampleModalCenter form input {
+  width: 200px;
+  height: 42px;
+  border: 1px solid #DEDEDE;
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 16px;
+  align-items: center;
+  color: #757575;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+#exampleModalCenter .red-button {
+  margin: 0 auto 25px auto;
+  width: 170px !important;
+  padding: 10px 20px;
+  background: #AD0404;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+#exampleModalCenter p {
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px !important;
+  line-height: 15px;
+  text-align: center;
+  color: #A7A7A7;
+}
+
 .green-text {
   color: #14A807;
 }
