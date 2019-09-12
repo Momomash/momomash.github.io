@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.grey-text {
+  font-family: "Roboto", sans-serif;
+  color: #D3D3D3;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-color {
+  color: #5AE2EB;
+}
+
+.small-text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+  color: #4E5155 !important;
+  margin: auto 0;
+}
+.logo svg {
+  margin-right: 10px;
+}
+.logo .brand-logo {
+  display: inline-block !important;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.438rem 1.125rem;
+  font-size: 0.894rem;
+  line-height: 1.54;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-blue {
+  background-color: #5AE2EB;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.custom-control {
+  position: relative;
+  min-height: 1.125rem;
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.31418rem;
+  padding-left: 1.563rem;
+}
+
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+input {
+  overflow: visible;
+}
+
+.custom-control-label {
+  position: static;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: #212121 !important;
+}
+
+.custom-checkbox .custom-control-label::before {
+  background-size: 65%;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0.25rem;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.5 7.5'%3E%3Cpolyline points='0.75 4.35 4.18 6.75 8.75 0.75' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px'/%3E%3C/svg%3E");
+}
+
+.custom-control.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before,
+.custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #5AE2EB !important;
+  border-color: #5AE2EB !important;
+}
+
+.custom-control-label::before {
+  top: 0.0625rem;
+  left: 0;
+  border: 1px solid rgba(24, 28, 33, 0.1);
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+
+.custom-control-label::before {
+  position: absolute;
+  top: 0.09459rem;
+  left: -1.563rem;
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+}
+
+.error {
+  display: block;
+  color: #FF0000;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.outlined-input {
+  width: 285px;
+}
+
+@media screen and (max-width: 320px) {
+  .outlined-input {
+    width: 220px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .outlined-input {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .outlined-input {
+    width: 316px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 1024px) {
+  .outlined-input {
+    width: 280px;
+  }
+}
+.outlined-input {
+  --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  position: relative;
+  display: inline-block;
+  padding-top: 6px;
+  font-family: var(--pure-material-font, "Roboto");
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Input, Textarea */
+.outlined-input > input,
+.outlined-input > textarea {
+  box-sizing: border-box;
+  margin: 0;
+  border: solid 1px;
+  /* Safari */
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+  border-radius: 4px;
+  padding: 15px 13px 15px;
+  width: 100%;
+  height: 44px !important;
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+  background-color: transparent;
+  box-shadow: none;
+  /* Firefox */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  caret-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Span */
+.outlined-input > input + span,
+.outlined-input > textarea + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  width: 100%;
+  max-height: 100%;
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  font-size: 90%;
+  line-height: 15px;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.outlined-input > input + span::before,
+.outlined-input > input + span::after,
+.outlined-input > textarea + span::before,
+.outlined-input > textarea + span::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-top: 6px;
+  border-top: solid 1px;
+  border-top-color: #D3D3D3;
+  min-width: 10px;
+  height: 8px;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.outlined-input > input + span::before,
+.outlined-input > textarea + span::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 4px 0;
+}
+
+.outlined-input > input + span::after,
+.outlined-input > textarea + span::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 4px;
+}
+
+/* Hover */
+.outlined-input:hover > input,
+.outlined-input:hover > textarea {
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+}
+
+.outlined-input:hover > input + span::before,
+.outlined-input:hover > textarea + span::before,
+.outlined-input:hover > input + span::after,
+.outlined-input:hover > textarea + span::after {
+  border-top-color: #D3D3D3;
+}
+
+.outlined-input:hover > input:not(:focus):placeholder-shown,
+.outlined-input:hover > textarea:not(:focus):placeholder-shown {
+  border-color: #D3D3D3;
+}
+
+/* Placeholder-shown */
+.outlined-input > input:not(:focus):placeholder-shown,
+.outlined-input > textarea:not(:focus):placeholder-shown {
+  border-top-color: #D3D3D3;
+}
+
+.outlined-input > input:not(:focus):placeholder-shown + span,
+.outlined-input > textarea:not(:focus):placeholder-shown + span {
+  font-size: inherit;
+  line-height: 60px;
+}
+
+.outlined-input > input:not(:focus):placeholder-shown + span::before,
+.outlined-input > textarea:not(:focus):placeholder-shown + span::before,
+.outlined-input > input:not(:focus):placeholder-shown + span::after,
+.outlined-input > textarea:not(:focus):placeholder-shown + span::after {
+  border-top-color: transparent;
+}
+
+/* Focus */
+.outlined-input > input:focus,
+.outlined-input > textarea:focus {
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+  box-shadow: inset 1px 0 #D3D3D3, inset -1px 0 #D3D3D3, inset 0 -1px #D3D3D3;
+  outline: none;
+}
+
+.outlined-input > input:focus + span,
+.outlined-input > textarea:focus + span {
+  color: #D3D3D3;
+}
+
+.outlined-input > input:focus + span::before,
+.outlined-input > input:focus + span::after,
+.outlined-input > textarea:focus + span::before,
+.outlined-input > textarea:focus + span::after {
+  border-top-color: #D3D3D3 !important;
+  box-shadow: inset 0 1px #D3D3D3;
+}
+
+/* Disabled */
+.outlined-input > input:disabled,
+.outlined-input > input:disabled + span,
+.outlined-input > textarea:disabled,
+.outlined-input > textarea:disabled + span {
+  border-color: #D3D3D3 !important;
+  border-top-color: transparent !important;
+  color: #D3D3D3;
+  pointer-events: none;
+}
+
+.outlined-input > input:disabled + span::before,
+.outlined-input > input:disabled + span::after,
+.outlined-input > textarea:disabled + span::before,
+.outlined-input > textarea:disabled + span::after {
+  border-top-color: #D3D3D3 !important;
+}
+
+.outlined-input > input:disabled:placeholder-shown,
+.outlined-input > input:disabled:placeholder-shown + span,
+.outlined-input > textarea:disabled:placeholder-shown,
+.outlined-input > textarea:disabled:placeholder-shown + span {
+  border-top-color: #D3D3D3 !important;
+}
+
+.outlined-input > input:disabled:placeholder-shown + span::before,
+.outlined-input > input:disabled:placeholder-shown + span::after,
+.outlined-input > textarea:disabled:placeholder-shown + span::before,
+.outlined-input > textarea:disabled:placeholder-shown + span::after {
+  border-top-color: transparent !important;
+}
+
+/* Faster transition in Safari for less noticable fractional font-size issue */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .outlined-input > input,
+.outlined-input > input + span,
+.outlined-input > textarea,
+.outlined-input > textarea + span,
+.outlined-input > input + span::before,
+.outlined-input > input + span::after,
+.outlined-input > textarea + span::before,
+.outlined-input > textarea + span::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
+.outlined-input > input,
+.outlined-input > textarea {
+  box-sizing: border-box;
+  margin: 0;
+  border: solid 1px;
+  /* Safari */
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+  border-radius: 4px;
+  padding: 15px 13px 15px;
+  width: 100%;
+  height: inherit;
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+  background-color: transparent;
+  box-shadow: none;
+  /* Firefox */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  caret-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Span */
+.outlined-input > input + span,
+.outlined-input > textarea + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  width: 100%;
+  max-height: 100%;
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  font-size: 90%;
+  line-height: 15px;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.outlined-input > input + span::before,
+.outlined-input > input + span::after,
+.outlined-input > textarea + span::before,
+.outlined-input > textarea + span::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-top: 6px;
+  border-top: solid 1px;
+  border-top-color: #D3D3D3;
+  min-width: 10px;
+  height: 8px;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.outlined-input > input + span::before,
+.outlined-input > textarea + span::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 4px 0;
+}
+
+.outlined-input > input + span::after,
+.outlined-input > textarea + span::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 4px;
+}
+
+/* Hover */
+.outlined-input:hover > input,
+.outlined-input:hover > textarea {
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+}
+
+.outlined-input:hover > input + span::before,
+.outlined-input:hover > textarea + span::before,
+.outlined-input:hover > input + span::after,
+.outlined-input:hover > textarea + span::after {
+  border-top-color: #D3D3D3;
+}
+
+.outlined-input:hover > input:not(:focus):placeholder-shown,
+.outlined-input:hover > textarea:not(:focus):placeholder-shown {
+  border-color: #D3D3D3;
+}
+
+/* Placeholder-shown */
+.outlined-input > input:not(:focus):placeholder-shown,
+.outlined-input > textarea:not(:focus):placeholder-shown {
+  border-top-color: #D3D3D3;
+}
+
+.outlined-input > input:not(:focus):placeholder-shown + span,
+.outlined-input > textarea:not(:focus):placeholder-shown + span {
+  font-size: inherit;
+  line-height: 60px;
+}
+
+.outlined-input > input:not(:focus):placeholder-shown + span::before,
+.outlined-input > textarea:not(:focus):placeholder-shown + span::before,
+.outlined-input > input:not(:focus):placeholder-shown + span::after,
+.outlined-input > textarea:not(:focus):placeholder-shown + span::after {
+  border-top-color: transparent;
+}
+
+/* Focus */
+.outlined-input > input:focus,
+.outlined-input > textarea:focus {
+  border-color: #D3D3D3;
+  border-top-color: transparent;
+  box-shadow: inset 1px 0 #D3D3D3, inset -1px 0 #D3D3D3, inset 0 -1px #D3D3D3;
+  outline: none;
+}
+
+.outlined-input > input:focus + span,
+.outlined-input > textarea:focus + span {
+  color: #D3D3D3;
+}
+
+.outlined-input > input:focus + span::before,
+.outlined-input > input:focus + span::after,
+.outlined-input > textarea:focus + span::before,
+.outlined-input > textarea:focus + span::after {
+  border-top-color: #D3D3D3 !important;
+  box-shadow: inset 0 1px #D3D3D3;
+}
+
+/* Disabled */
+.outlined-input > input:disabled,
+.outlined-input > input:disabled + span,
+.outlined-input > textarea:disabled,
+.outlined-input > textarea:disabled + span {
+  border-color: #D3D3D3 !important;
+  border-top-color: transparent !important;
+  color: #D3D3D3;
+  pointer-events: none;
+}
+
+.outlined-input > input:disabled + span::before,
+.outlined-input > input:disabled + span::after,
+.outlined-input > textarea:disabled + span::before,
+.outlined-input > textarea:disabled + span::after {
+  border-top-color: #D3D3D3 !important;
+}
+
+.outlined-input > input:disabled:placeholder-shown,
+.outlined-input > input:disabled:placeholder-shown + span,
+.outlined-input > textarea:disabled:placeholder-shown,
+.outlined-input > textarea:disabled:placeholder-shown + span {
+  border-top-color: #D3D3D3 !important;
+}
+
+.outlined-input-error > input,
+.outlined-input-error > textarea {
+  border-color: #FF0000;
+  border-top-color: transparent;
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+  box-shadow: none;
+  /* Firefox */
+  caret-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Span */
+.outlined-input-error > input + span,
+.outlined-input-error > textarea + span {
+  border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.outlined-input-error > input + span::before,
+.outlined-input-error > input + span::after,
+.outlined-input-error > textarea + span::before,
+.outlined-input-error > textarea + span::after {
+  border-top-color: #FF0000;
+  box-shadow: inset 0 1px transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.outlined-input-error > input + span::after,
+.outlined-input-error > textarea + span::after {
+  border-right: solid 1px transparent;
+}
+
+/* Hover */
+.outlined-input-error:hover > input,
+.outlined-input-error:hover > textarea {
+  border-color: #FF0000;
+  border-top-color: transparent;
+}
+
+.outlined-input-error:hover > input + span::before,
+.outlined-input-error:hover > textarea + span::before,
+.outlined-input-error:hover > input + span::after,
+.outlined-input-error:hover > textarea + span::after {
+  border-top-color: #FF0000;
+}
+
+.outlined-input-error:hover > input:not(:focus):placeholder-shown,
+.outlined-input-error:hover > textarea:not(:focus):placeholder-shown {
+  border-color: #FF0000;
+}
+
+/* Placeholder-shown */
+.outlined-input-error > input:not(:focus):placeholder-shown,
+.outlined-input-error > textarea:not(:focus):placeholder-shown {
+  border-top-color: #FF0000;
+}
+
+.outlined-input-error > input:not(:focus):placeholder-shown + span,
+.outlined-input-error > textarea:not(:focus):placeholder-shown + span {
+  font-size: inherit;
+  line-height: 60px;
+}
+
+.outlined-input-error > input:not(:focus):placeholder-shown + span::before,
+.outlined-input-error > textarea:not(:focus):placeholder-shown + span::before,
+.outlined-input-error > input:not(:focus):placeholder-shown + span::after,
+.outlined-input-error > textarea:not(:focus):placeholder-shown + span::after {
+  border-top-color: transparent;
+}
+
+/* Focus */
+.outlined-input-error > input:focus,
+.outlined-input-error > textarea:focus {
+  border-color: #FF0000;
+  border-top-color: transparent;
+  box-shadow: inset 1px 0 #FF0000, inset -1px 0 #FF0000, inset 0 -1px #FF0000;
+  outline: none;
+}
+
+.outlined-input-error > input:focus + span,
+.outlined-input-error > textarea:focus + span {
+  color: #FF0000;
+}
+
+.outlined-input-error > input:focus + span::before,
+.outlined-input-error > input:focus + span::after,
+.outlined-input-error > textarea:focus + span::before,
+.outlined-input-error > textarea:focus + span::after {
+  border-top-color: #FF0000 !important;
+  box-shadow: inset 0 1px #FF0000;
+}
+
+/* Disabled */
+.outlined-input-error > input:disabled,
+.outlined-input-error > input:disabled + span,
+.outlined-input-error > textarea:disabled,
+.outlined-input-error > textarea:disabled + span {
+  border-color: #FF0000 !important;
+  border-top-color: transparent !important;
+  color: #FF0000;
+}
+
+.outlined-input-error > input:disabled + span::before,
+.outlined-input-error > input:disabled + span::after,
+.outlined-input-error > textarea:disabled + span::before,
+.outlined-input-error > textarea:disabled + span::after {
+  border-top-color: #FF0000 !important;
+}
+
+.outlined-input-error > input:disabled:placeholder-shown,
+.outlined-input-error > input:disabled:placeholder-shown + span,
+.outlined-input-error > textarea:disabled:placeholder-shown,
+.outlined-input-error > textarea:disabled:placeholder-shown + span {
+  border-top-color: #FF0000 !important;
+}
+
+/*# sourceMappingURL=global-template-css.css.map */
