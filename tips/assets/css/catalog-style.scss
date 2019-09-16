@@ -2,21 +2,43 @@ $white: #ffffff;
 $violet: #6202EE;
 $black-violet: #541ca6;
 $light-grey: #F2F2F2;
+$black: #212121;
+$grey: #757575;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&display=swap');
-a{
+a {
   color: inherit;
 }
-.button{
+
+.button {
   padding: 11px 20px;
-  border: none;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
+  background-color: inherit;
+  border: 1px solid #CBCBCB;
+  color: #A6A6A6;
 }
 
-.client{
+.breadcrumbs {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: $grey;
+}
+
+.cards {
+  display: flex;
+  //justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+
+.client {
   display: inline-block;
   font-size: 14px;
   font-weight: 300;
@@ -26,58 +48,208 @@ a{
 
 }
 
-.mdc-top-app-bar{
+.company-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.company-stars {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  .yellow-star{
+    color: #EEF168;
+  }
+  .grey-star{
+    color: #DCDCDC;
+  }
+}
+
+.content-container {
+  padding: 0 50px 50px 50px;
+  margin-top: 90px;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 90%;
+  color: $black;
+  padding-bottom: 10px;
+}
+
+.mdc-top-app-bar {
   background-color: inherit;
   padding: 15px 12px;
-  .mdc-top-app-bar__section--align-end{
+  position: fixed;
+  top: 0;
+
+  .mdc-top-app-bar__section--align-end {
     padding: 8px 120px 8px 12px;
   }
 }
-@media screen and (max-width: 450px){
-  .mdc-top-app-bar{
-    padding: 15px 5px;
-    .mdc-top-app-bar__section--align-end{
-      padding: 8px 10px 8px 12px;
-      justify-content: space-around;
-      .violet-btn{
-        margin-right: 0;
-      }
-      .person-button{
-        margin-right: 0;
-      }
+
+
+.mdc-card {
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+  .mdc-card__media {
+    width: 360px;
+    height: 230px;
+    position: relative;
+  }
+
+  .mdc-card-content {
+    border: 1px solid #EDEDED;
+    padding: 30px 20px;
+    font-family: 'Roboto', sans-serif;
+
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 90%;
+      color: #212121;
+      margin: 0;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 11px;
+      //line-height: 120%;
+      color: $grey;
+    }
+
+    .card-descriptions {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 140%;
+      color: $grey;
+      max-width: 70%;
+    }
+
+    .card-contacts {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 120%;
+      color: $black;
+      margin-bottom: 30px;
     }
   }
 }
 
+.mdc-card__primary-action::before, .mdc-card__primary-action::after {
+  background-color: inherit;
+}
 
-.person-button{
+.mdc-card:hover {
+  box-shadow: 0px 0px 40px rgba(138, 138, 138, 0.25);
+  background-color: inherit;
+}
+
+.mdc-card:hover .mdc-card-content > .button {
+  background-color: $violet;
+  transition-duration: 0.3s;
+  color: $white;
+  margin-right: 25px;
+  border: 1px solid $violet;
+}
+
+.person-button {
   width: 32px;
   height: 32px;
   background-image: url("../img/person1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: $light-grey;
-  border: none ;
-  border-radius: 15px ;
+  border: none;
+  border-radius: 15px;
   margin-right: 30px;
 }
-.person-button:hover{
+
+.person-button:hover {
   background-color: #dbdbdb;
   transition-duration: 0.3s;
 }
 
-.violet-btn{
+.violet-btn {
   background-color: $violet;
   color: $white;
-  margin-right: 25px
+  margin-right: 25px;
+  border: 1px solid $violet;
 }
-.violet-btn:hover{
+
+.violet-btn:hover {
   background-color: $black-violet;
   transition-duration: 0.3s;
 }
-.violet-text{
+
+.violet-text {
   color: $violet;
   font-weight: 500;
   font-size: 10px;
   text-align: left;
+}
+
+//media
+
+
+@media screen and (width: 320px) {
+  .mdc-card .mdc-card__media {
+    width: 320px !important;
+  }
+  .content-container {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .content-container {
+    padding: 0 0 0 10px;
+  }
+  .client {
+    display: none;
+  }
+  .mdc-top-app-bar {
+    padding: 15px 5px;
+
+    .mdc-top-app-bar__section--align-end {
+      padding: 8px 10px 8px 12px;
+      justify-content: space-around;
+
+      .violet-btn {
+        margin-right: 0;
+      }
+
+      .person-button {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 1329px) {
+  .content-container {
+    padding: 20px;
+  }
+  .cards {
+    justify-content: center;
+    .mdc-card {
+      width: 320px;
+      margin-right: 20px;
+    }
+  }
 }
