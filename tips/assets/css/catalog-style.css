@@ -78,7 +78,7 @@ body, html {
 }
 
 .dropdown-left {
-  transform: translateX(100px);
+  transform: translateX(140px);
   transition-duration: 0.8s;
 }
 
@@ -93,7 +93,7 @@ h1 {
 
 .LeftBlock {
   background-color: #ffffff;
-  width: 100px;
+  width: 140px;
   min-width: 100px;
   height: 100%;
   min-height: 100vh;
@@ -229,6 +229,14 @@ h1 {
   z-index: 1;
 }
 
+.fas,
+.far {
+  font-size: 22px;
+  color: #b7b6b6;
+  display: block;
+  margin-bottom: 5px;
+}
+
 .violet-btn {
   background-color: #6202EE;
   color: #ffffff;
@@ -265,7 +273,7 @@ h1 {
 @media screen and (max-width: 450px) {
   .LeftBlock {
     z-index: 2;
-    left: -100px;
+    left: -140px;
     position: fixed;
   }
 
@@ -275,6 +283,10 @@ h1 {
 
   .cards .mdc-card {
     margin: 0 0 50px 0;
+  }
+
+  .fas {
+    display: none !important;
   }
 
   .mdc-top-app-bar {
