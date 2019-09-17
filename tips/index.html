@@ -12,49 +12,52 @@
 </head>
 <body>
 <div class="Catalog">
-    <div class="LeftBlock ">
-        <img class="logo" src="assets/img/logo.png" alt="">
-        <ul class="left-menu">
-            <li>
-                <img src="assets/img/menu-1.png" alt="">
-                <a href="#">Сотрудники</a>
-            </li>
-            <li>
-                <img src="assets/img/menu-2.png" alt="">
-                <a href="#">Регламенты</a>
-            </li>
-            <li>
-                <img src="assets/img/menu-3.png" alt="">
-                <a href="#">Новости</a>
-            </li>
-            <li>
-                <img src="assets/img/menu-4.png" alt="">
-                <a href="#">Маркетинг</a>
-            </li>
-            <li>
-                <img src="assets/img/menu-5.png" alt="">
-                <a href="#">Обучение</a>
-            </li>
-            <li>
-                <img src="assets/img/menu-6.png" alt="">
-                <a href="#">Техкарты</a>
-            </li>
-            <li style="margin-bottom: 40px">
-                <img src="assets/img/menu-7.png" alt="">
-                <a href="#">Перед<br> открытием</a>
-            </li>
-            <li>
-                <a href="#"><img src="assets/img/menu-8.png" alt=""></a>
-            </li>
-            <li>
-                <a href="#"><img src="assets/img/menu-9.png" alt=""></a>
-            </li>
-        </ul>
+    <div class="LeftBlock " id="left_menu">
+        <div class="LeftBlock_content">
+            <img class="logo" src="assets/img/logo.png" alt="">
+            <ul class="left-menu">
+                <li>
+                    <img src="assets/img/menu-1.png" alt="">
+                    <a href="#">Сотрудники</a>
+                </li>
+                <li>
+                    <img src="assets/img/menu-2.png" alt="">
+                    <a href="#">Регламенты</a>
+                </li>
+                <li>
+                    <img src="assets/img/menu-3.png" alt="">
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <img src="assets/img/menu-4.png" alt="">
+                    <a href="#">Маркетинг</a>
+                </li>
+                <li>
+                    <img src="assets/img/menu-5.png" alt="">
+                    <a href="#">Обучение</a>
+                </li>
+                <li>
+                    <img src="assets/img/menu-6.png" alt="">
+                    <a href="#">Техкарты</a>
+                </li>
+                <li style="margin-bottom: 40px">
+                    <img src="assets/img/menu-7.png" alt="">
+                    <a href="#">Перед<br> открытием</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/menu-8.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/menu-9.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="RightBlock">
+    <div class="RightBlock" >
         <header class=" mdc-top-app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    <img id="sidenav_drop_1" src="assets/img/burger-button.png" class="burger-button" alt="">
                     <button class="button violet-btn"><a href="#">Служба поддержки</a></button>
                     <button class="person-button"><a href="#"></a></button>
                     <p class="client">Владислав <br>
@@ -63,21 +66,7 @@
                 </section>
             </div>
         </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="content-container">
+        <div class="content-container" id="closed_menu">
             <h1>Рестораны</h1>
             <div class="breadcrumbs">
                 <a href="#">Главная /</a>
@@ -170,5 +159,6 @@
     </div>
 </div>
 <script src="assets/js/bundle.js" async></script>
+<script src="assets/js/collapse.js"></script>
 </body>
 </html>
