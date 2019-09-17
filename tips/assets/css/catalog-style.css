@@ -3,6 +3,10 @@ a {
   color: inherit;
 }
 
+body, html {
+  height: 100%;
+}
+
 .burger-button {
   width: 32px;
   height: 32px;
@@ -75,6 +79,7 @@ a {
 
 .dropdown-left {
   transform: translateX(100px);
+  transition-duration: 0.8s;
 }
 
 h1 {
@@ -90,9 +95,10 @@ h1 {
   background-color: #ffffff;
   width: 100px;
   min-width: 100px;
-  height: auto;
-  min-height: 1080px;
+  height: 100%;
+  min-height: 100vh;
   box-shadow: 0 0 30px rgba(197, 197, 197, 0.25);
+  overflow-y: auto;
 }
 .LeftBlock .logo {
   display: block;
@@ -256,7 +262,7 @@ h1 {
   .LeftBlock {
     z-index: 2;
     left: -100px;
-    position: absolute;
+    position: fixed;
   }
 
   .content-container {
@@ -281,6 +287,10 @@ h1 {
     margin-right: 0;
   }
 }
+.LeftBlock_content {
+  overflow-y: auto;
+}
+
 @media screen and (min-width: 451px) {
   .LeftBlock_content {
     position: fixed;
