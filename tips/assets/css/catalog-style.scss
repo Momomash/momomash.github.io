@@ -267,7 +267,11 @@ h1 {
   }
 }
 
-
+@media screen and (max-width: 544px){
+  .client {
+    display: none;
+  }
+}
 @media screen and (max-width: 450px) {
   .LeftBlock{
     z-index: 2;
@@ -277,9 +281,7 @@ h1 {
   .content-container {
     padding: 0 0 0 5px !important;
   }
-  .client {
-    display: none;
-  }
+
 
   .cards .mdc-card{
     margin: 0 0 50px 0;
