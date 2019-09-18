@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic');
+$black-grey: #333333;
+$orange: #d34f2a;
+$black-orange: #b04a2e;
+$white: #ffffff;
+$light-grey: #f7f7f7;
+
+body{
+  margin: 0;
+  color: $black-grey;
+}
+button{
+  background-color: $white;
+  padding: 20px 25px;
+  font-size: 16px;
+  font-family: 'Gotham Pro Medium', sans-serif;
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  .menu{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li{
+      display: inline-block;
+      word-wrap: normal;
+      margin-left: 20px;
+      padding: 20px 0;
+      font-size: 16px;
+      font-family: 'Gotham Pro Medium', sans-serif;
+      color: $black-grey;
+    }
+    li:last-child{
+      padding: 0;
+
+    }
+  }
+}
+.logo{
+  font-family: 'PT Sans', sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.outlined_orange_btn{
+  border: 1px solid $orange;
+  color: $orange;
+}
+.outlined_orange_btn:hover{
+  border: 1px solid $black-orange;
+  color: $black-orange;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/Gotham_Pro_Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
