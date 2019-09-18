@@ -48,7 +48,7 @@ a {
   }
 }
 .about-order-text {
-  width: 740px;
+  width: 100%;
   text-align: right;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -123,7 +123,7 @@ a {
 }
 .buttons .bx_ordercart_order_pay #coupons_block {
   margin-bottom: 10px;
-  margin-right: 60px;
+  margin-right: 295px;
 }
 .buttons .bx_ordercart_order_pay #coupons_block input {
   height: 42px;
@@ -420,7 +420,7 @@ h3 {
 }
 
 .LeftBlock {
-  width: 740px !important;
+  width: 100% !important;
 }
 
 .minus {
