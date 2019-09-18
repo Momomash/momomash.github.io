@@ -415,11 +415,13 @@ button {
   background-color: #cd406b;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-prev {
+  z-index: 10;
   left: 250px;
   top: -90px;
   height: 280px;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-next {
+  z-index: 10;
   left: 300px;
   top: -90px;
   height: 280px;

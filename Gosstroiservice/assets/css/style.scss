@@ -490,11 +490,13 @@ button {
         }
       }
       .carousel-control-prev{
+        z-index: 10;
         left: 250px;
         top: -90px;
         height: 280px;
       }
       .carousel-control-next{
+        z-index: 10;
         left: 300px;
         top: -90px;
         height: 280px;
