@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic');
+
 $black-grey: #333333;
 $orange: #d34f2a;
 $black-orange: #b04a2e;
 $white: #ffffff;
 $light-grey: #f7f7f7;
 
-body{
+body {
   margin: 0;
   color: $black-grey;
+  width: 100%;
+  height: 100%;
 }
-button{
+
+button {
   background-color: $white;
   padding: 20px 25px;
   font-size: 16px;
   font-family: 'Gotham Pro Medium', sans-serif;
 }
 
-.header{
+.desktop-header{
   width: 100%;
   position: fixed;
   display: flex;
   justify-content: center;
   padding: 10px 0;
 
-  .menu{
+  .menu {
     padding: 0;
     margin: 0 auto;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    li{
+
+    li {
       display: inline-block;
       word-wrap: normal;
       margin-left: 20px;
@@ -38,26 +43,153 @@ button{
       font-size: 16px;
       font-family: 'Gotham Pro Medium', sans-serif;
       color: $black-grey;
+      a{
+        color: inherit;
+      }
     }
-    li:last-child{
+
+    li:last-child {
       padding: 0;
 
     }
   }
 }
-.logo{
+
+.logo {
   font-family: 'PT Sans', sans-serif !important;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 4px;
 }
-.outlined_orange_btn{
+
+.mobile-header{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  .logos {
+    display: flex;
+    flex-direction: row;
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    a:first-child{
+      margin-right: 20px;
+      position: relative;
+    }
+    a:first-child:before{
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 32px;
+      top: 0;
+      right: -20px;
+      background-color: #606060;
+    }
+    a:nth-child(2){
+      margin-left: 20px;
+
+    }
+  }
+  .menu{
+    display: flex;
+    width: auto;
+    a {
+      display: inline-block;
+    }
+    .phone-logo{
+      margin: auto 25px auto 0;
+      display: block;
+      width: auto;
+      height: 28px;
+    }
+  }
+  .navbar{
+    padding: 0 !important;
+    width: 100%;
+    .navbar-toggler-icon {
+      background-image: url(../img/toggle-icon.png);
+    }
+    .navbar-toggler{
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar-nav{
+      font-size: 16px;
+      font-family: 'Gotham Pro Medium', sans-serif;
+      color: $black-grey;
+      a{
+        color: inherit;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.modal-content{
+  border-radius: 0;
+  padding: 40px 30px;
+  h3{
+    font-family: 'Noah Bold', sans-serif;
+    font-size: 24px;
+    color: $black-grey;
+    text-align: center;
+  }
+  form{
+    width: 100%;
+    input{
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 15px 10px;
+      border: 2px solid #cccccc;
+      border-radius: 5px;
+      ::placeholder{
+        font-family: 'Gotham Pro', sans-serif !important;
+        font-size: 16px;
+        color: #cccccc ;
+      }
+    }
+  }
+  textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid #999999;
+    ::placeholder{
+      color: #333333;
+    }
+  }
+  .orange_btn{
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 16px 0;
+  }
+}
+
+.outlined_orange_btn {
   border: 1px solid $orange;
   color: $orange;
 }
-.outlined_orange_btn:hover{
+
+.outlined_orange_btn:hover {
   border: 1px solid $black-orange;
   color: $black-orange;
+}
+.orange_btn {
+  border: 1px solid $orange;
+  color: $white;
+  background-color: $orange;
+}
+
+.orange_btn:hover {
+  border: 1px solid $black-orange;
+  background-color: $black-orange;
 }
 
 
@@ -66,11 +198,34 @@ button{
 
 
 
+@media screen and (max-device-width: 768px){
+  .desktop-header{
+    display: none !important;
+  }
+}
+
+@media screen and (min-device-width: 769px){
+  .mobile-header{
+    display: none;
+  }
+}
 
 
 @font-face {
   font-family: "Gotham Pro Medium";
   src: url("../fonts/Gotham_Pro_Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Pro ";
+  src: url("../fonts/Gotham_Pro.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noah Bold";
+  src: url("../fonts/Noah_Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
