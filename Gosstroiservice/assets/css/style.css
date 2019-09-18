@@ -361,6 +361,15 @@ button {
   height: 281px;
   width: 35%;
 }
+.promo .promo-small-carousel .bd-example {
+  height: 281px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall {
+  height: 281px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-inner {
+  height: 100%;
+}
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption {
   padding: 50px 0 50px 50px;
   display: flex;
@@ -372,6 +381,9 @@ button {
   color: #666666;
   font-family: "Gotham Pro", sans-serif;
   margin-bottom: 20px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a:hover {
+  text-decoration: none;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a {
   max-width: 300px;
@@ -402,8 +414,31 @@ button {
   width: 78px;
   background-color: #cd406b;
 }
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-prev {
+  left: 250px;
+  top: -90px;
+  height: 280px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-next {
+  left: 300px;
+  top: -90px;
+  height: 280px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-prev-icon {
+  background: url("../img/prev.png") 100% 100% no-repeat;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
 
 @media screen and (max-width: 1024px) {
+  #carouselExampleCaptionsSmall .carousel-control-prev {
+    display: none !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-control-next {
+    display: none !important;
+  }
+
   .socials {
     display: none !important;
   }
