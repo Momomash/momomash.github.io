@@ -7,7 +7,7 @@ body {
 }
 
 button {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 20px 25px;
   font-size: 16px;
   font-family: "Gotham Pro Medium", sans-serif;
@@ -121,7 +121,7 @@ button {
 }
 
 .modal-content {
-  border-radius: 0;
+  border-radius: 0 !important;
   padding: 40px 30px;
 }
 .modal-content h3 {
@@ -179,6 +179,10 @@ button {
   background-color: #b04a2e;
 }
 
+.orange-text {
+  color: #d34f2a;
+}
+
 .promo {
   display: block;
 }
@@ -186,12 +190,90 @@ button {
   position: relative;
   z-index: 1;
 }
+.promo #carouselExampleCaptions .carousel-item {
+  min-height: 720px;
+}
+.promo #carouselExampleCaptions .carousel-item-1 {
+  background: url("../img/promo-1.jpg") no-repeat;
+  background-size: cover;
+}
+.promo #carouselExampleCaptions .carousel-item-2 {
+  background: url("../img/promo-1.jpg") no-repeat;
+  background-size: cover;
+}
+.promo #carouselExampleCaptions .carousel-item-3 {
+  background: url("../img/promo-1.jpg") no-repeat;
+  background-size: cover;
+}
+.promo #carouselExampleCaptions .carousel-item-4 {
+  background: url("../img/promo-1.jpg") no-repeat;
+  background-size: cover;
+}
+.promo #carouselExampleCaptions .carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px 0 0 20px;
+  margin: 0 auto;
+  width: 1020px;
+  text-align: left;
+  display: flex !important;
+  flex-direction: row;
+}
+.promo #carouselExampleCaptions .carousel-caption .carousel-left-block {
+  width: 96%;
+}
+.promo #carouselExampleCaptions .carousel-caption p {
+  color: #333333;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.promo #carouselExampleCaptions .carousel-caption h1 {
+  font-size: 64px;
+  font-family: "Noah Bold", sans-serif;
+  color: #333333;
+  max-width: 60%;
+  margin-bottom: 20px;
+}
+.promo #carouselExampleCaptions .carousel-caption .socials {
+  display: flex;
+  flex-direction: column;
+  width: 3%;
+  margin: 0;
+  justify-content: flex-start;
+}
+.promo #carouselExampleCaptions .carousel-caption .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333333;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+.promo #carouselExampleCaptions .carousel-caption .socials a .fa {
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+}
+.promo #carouselExampleCaptions .carousel-caption .socials a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.promo #carouselExampleCaptions .carousel-caption .socials a:hover .fa {
+  color: #ffffff;
+}
 .promo .promo-carousel-control {
   background-color: #333333;
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 20;
   height: 120px;
   width: 44%;
   display: flex;
@@ -271,10 +353,205 @@ button {
 .promo .promo-carousel-control .carousel-control-pre .carousel-control-prev-icon {
   background: url("../img/prev.png") 100% 100% no-repeat;
 }
+.promo .promo-small-carousel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  height: 281px;
+  width: 35%;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption {
+  padding: 50px 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption p {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666666;
+  font-family: "Gotham Pro", sans-serif;
+  margin-bottom: 20px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a {
+  max-width: 300px;
+  position: relative;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a img {
+  position: absolute;
+  top: 0;
+  right: 8%;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a .project-text {
+  text-align: right;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption h5 {
+  position: relative;
+  color: #333333;
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 24px;
+  margin-bottom: 25px;
+  max-width: 300px;
+}
+.promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption h5:before {
+  content: "";
+  bottom: -40px;
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 78px;
+  background-color: #cd406b;
+}
 
+@media screen and (max-width: 1024px) {
+  .socials {
+    display: none !important;
+  }
+
+  .promo-small-carousel .carousel-caption {
+    padding: 50px 0 0 40px !important;
+  }
+
+  .desktop-header .logo {
+    display: none !important;
+  }
+  .desktop-header li {
+    margin-left: 5px !important;
+  }
+}
+@media screen and (max-device-width: 990px) {
+  #carouselExampleCaptionsSmall .carousel-caption h5 {
+    max-width: 250px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption a .project-text {
+    display: none;
+  }
+}
+@media screen and (max-device-width: 900px) {
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    right: 18% !important;
+  }
+
+  .promo-small-carousel .carousel-caption {
+    padding: 50px 0 0 30px !important;
+  }
+
+  .promo-carousel-control .control-number {
+    display: flex;
+    order: 2;
+  }
+  .promo-carousel-control .carousel-control-nex {
+    display: flex;
+    order: 3;
+  }
+  .promo-carousel-control .carousel-control-pre {
+    display: flex;
+    order: 1;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #carouselExampleCaptionsSmall .carousel-caption h5 {
+    font-size: 18px !important;
+    max-width: 150px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    right: 40% !important;
+  }
+}
 @media screen and (max-device-width: 768px) {
   .desktop-header {
     display: none !important;
+  }
+
+  .promo-carousel-control {
+    min-width: 170px !important;
+  }
+  .promo-carousel-control .control-number {
+    margin-right: 10px !important;
+  }
+  .promo-carousel-control .carousel-control-pre {
+    margin-right: 10px !important;
+  }
+  .promo-carousel-control .carousel-control-nex {
+    margin-right: 10px !important;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  #carouselExampleCaptionsSmall .carousel-caption {
+    padding: 50px 0 0 20px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption h5 {
+    font-size: 18px !important;
+    max-width: 150px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    right: 50% !important;
+  }
+
+  .carousel-left-block p {
+    max-width: 400px !important;
+  }
+  .carousel-left-block h1 {
+    font-size: 40px !important;
+    max-width: 400px !important;
+  }
+
+  .carousel-item {
+    min-height: 620px !important;
+  }
+
+  .promo-small-carousel {
+    width: 40% !important;
+  }
+}
+@media screen and (max-device-width: 500px) {
+  #carouselExampleCaptionsSmall .carousel-caption h5 {
+    font-size: 18px !important;
+    max-width: 150px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption h5:before {
+    display: none;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    right: 55% !important;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  #carouselExampleCaptionsSmall .carousel-caption {
+    padding: 50px 0 0 5px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption h5 {
+    font-size: 13px !important;
+    max-width: 120px !important;
+  }
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    right: 65% !important;
+  }
+
+  .carousel-left-block p {
+    max-width: 300px !important;
+  }
+  .carousel-left-block h1 {
+    font-size: 30px !important;
+    max-width: 300px !important;
+  }
+
+  .carousel-item {
+    min-height: 520px !important;
+  }
+
+  .promo-small-carousel {
+    height: 238px !important;
+    width: 35% !important;
+  }
+}
+@media screen and (min-device-width: 990px) {
+  #carouselExampleCaptionsSmall .carousel-caption a img {
+    display: none;
   }
 }
 @media screen and (min-device-width: 769px) {
@@ -289,7 +566,7 @@ button {
   font-weight: normal;
 }
 @font-face {
-  font-family: "Gotham Pro ";
+  font-family: "Gotham Pro";
   src: url("../fonts/Gotham_Pro.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
