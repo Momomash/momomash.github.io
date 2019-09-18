@@ -20,9 +20,8 @@ button {
   font-family: 'Gotham Pro Medium', sans-serif;
 }
 
-.desktop-header{
+.desktop-header {
   width: 100%;
-  position: fixed;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -43,7 +42,8 @@ button {
       font-size: 16px;
       font-family: 'Gotham Pro Medium', sans-serif;
       color: $black-grey;
-      a{
+
+      a {
         color: inherit;
       }
     }
@@ -55,6 +55,7 @@ button {
   }
 }
 
+
 .logo {
   font-family: 'PT Sans', sans-serif !important;
   font-size: 20px;
@@ -62,14 +63,17 @@ button {
   letter-spacing: 4px;
 }
 
-.mobile-header{
+
+.mobile-header {
   width: 100%;
   padding: 15px;
   display: flex;
   justify-content: space-between;
+
   .logos {
     display: flex;
     flex-direction: row;
+
     a {
       width: 100%;
       height: 100%;
@@ -80,11 +84,13 @@ button {
         height: 100%;
       }
     }
-    a:first-child{
+
+    a:first-child {
       margin-right: 20px;
       position: relative;
     }
-    a:first-child:before{
+
+    a:first-child:before {
       position: absolute;
       content: '';
       width: 1px;
@@ -93,40 +99,49 @@ button {
       right: -20px;
       background-color: #606060;
     }
-    a:nth-child(2){
+
+    a:nth-child(2) {
       margin-left: 20px;
 
     }
   }
-  .menu{
+
+  .menu {
     display: flex;
     width: auto;
+
     a {
       display: inline-block;
     }
-    .phone-logo{
+
+    .phone-logo {
       margin: auto 25px auto 0;
       display: block;
       width: auto;
       height: 28px;
     }
   }
-  .navbar{
+
+  .navbar {
     padding: 0 !important;
     width: 100%;
+
     .navbar-toggler-icon {
       background-image: url(../img/toggle-icon.png);
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
       border: none;
       padding: 0;
       margin: 0;
     }
-    .navbar-nav{
+
+    .navbar-nav {
       font-size: 16px;
       font-family: 'Gotham Pro Medium', sans-serif;
       color: $black-grey;
-      a{
+
+      a {
         color: inherit;
         padding: 5px 0;
       }
@@ -134,38 +149,45 @@ button {
   }
 }
 
-.modal-content{
+.modal-content {
   border-radius: 0;
   padding: 40px 30px;
-  h3{
+
+  h3 {
     font-family: 'Noah Bold', sans-serif;
     font-size: 24px;
     color: $black-grey;
     text-align: center;
   }
-  form{
+
+  form {
     width: 100%;
-    input{
+
+    input {
       width: 100%;
       margin-bottom: 20px;
       padding: 15px 10px;
       border: 2px solid #cccccc;
       border-radius: 5px;
-      ::placeholder{
+
+      ::placeholder {
         font-family: 'Gotham Pro', sans-serif !important;
         font-size: 16px;
-        color: #cccccc ;
+        color: #cccccc;
       }
     }
   }
-  textarea:focus, input:focus{
+
+  textarea:focus, input:focus {
     outline: none;
     border: 2px solid #999999;
-    ::placeholder{
+
+    ::placeholder {
       color: #333333;
     }
   }
-  .orange_btn{
+
+  .orange_btn {
     border-radius: 5px;
     text-transform: uppercase;
     padding: 16px 0;
@@ -181,6 +203,7 @@ button {
   border: 1px solid $black-orange;
   color: $black-orange;
 }
+
 .orange_btn {
   border: 1px solid $orange;
   color: $white;
@@ -192,20 +215,116 @@ button {
   background-color: $black-orange;
 }
 
+.promo {
+  display: block;
+
+  #carouselExampleCaptions {
+    position: relative;
+    z-index: 1;
+  }
+
+  .promo-carousel-control {
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 120px;
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .control-number{
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-family: 'Gotham Pro', sans-serif;
+      color: #666666;
+      #total_slider{
+        margin-left: 15px;
+      }
+      #current_slider{
+        position: relative;
+        margin-right: 15px;
+        color: $white;
+        font-family: 'Gotham Pro', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      #current_slider:before{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 32px;
+        top: 5px;
+        right: -15px;
+        background-color: #606060;
+      }
+    }
+
+    .carousel-indicators{
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 70px 0 0;
+      li {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+      }
+      li.active{
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .carousel-control-nex,
+    .carousel-control-pre {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      transition: opacity .15s ease;
+    }
+
+    .carousel-control-nex {
+      right: 0;
+      margin-right: 40px ;
+      .carousel-control-next-icon {
+        background: url("../img/next.png") 100% 100% no-repeat;
+      }
+    }
+
+    .carousel-control-pre {
+      right: 0;
+      margin-right: 40px;
+      .carousel-control-prev-icon {
+        background: url("../img/prev.png") 100% 100% no-repeat;
+      }
+    }
+  }
+
+}
 
 
-
-
-
-
-@media screen and (max-device-width: 768px){
-  .desktop-header{
+@media screen and (max-device-width: 768px) {
+  .desktop-header {
     display: none !important;
   }
 }
 
-@media screen and (min-device-width: 769px){
-  .mobile-header{
+@media screen and (min-device-width: 769px) {
+  .mobile-header {
     display: none;
   }
 }
@@ -217,12 +336,14 @@ button {
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Gotham Pro ";
   src: url("../fonts/Gotham_Pro.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Noah Bold";
   src: url("../fonts/Noah_Bold.ttf") format("truetype");

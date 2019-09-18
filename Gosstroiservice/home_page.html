@@ -3,81 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <title>ГОССТРОЙСЕРВИС</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script  src="assets/js/slider-number.js"></script>
 </head>
 <body>
-<div class="header">
-    <div class="desktop-header">
-        <ul class="menu">
-            <li class="logo"><a>ГОССТРОЙСЕРВИС</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Объекты</a></li>
-            <li><a href="#">Сотрудничество</a></li>
-            <li><a href="#">Лицензии</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li>
-                <button class="outlined_orange_btn" data-toggle="modal" data-target="#modal_call">Обратный звонок
-                </button>
-            </li>
-        </ul>
-    </div>
-    <div class="mobile-header">
+<div class="desktop-header">
+    <ul class="menu">
+        <li class="logo"><a>ГОССТРОЙСЕРВИС</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Объекты</a></li>
+        <li><a href="#">Сотрудничество</a></li>
+        <li><a href="#">Лицензии</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li>
+            <button class="outlined_orange_btn" data-toggle="modal" data-target="#modal_call">Обратный звонок
+            </button>
+        </li>
+    </ul>
+</div>
+<div class="mobile-header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="logos">
+            <a href="https://www.3ds.com/ru/"><img src="assets/img/dassault-logo.png" alt=""></a>
+            <a href="https://igatec.com/"><img src="assets/img/iga-logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <a class="phone-logo" href="#"><img src="assets/img/phone-logo.png" alt="" data-toggle="modal"
+                                                data-target="#modal_call"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="logos">
-                <a href="https://www.3ds.com/ru/"><img src="assets/img/dassault-logo.png" alt=""></a>
-                <a href="https://igatec.com/"><img src="assets/img/iga-logo.png" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="#">О компании</a>
+                <a href="#">Объекты</a>
+                <a href="#">Сотрудничество</a>
+                <a href="#">Лицензии</a>
+                <a href="#">Контакты</a>
             </div>
-            <div class="menu">
-                <a class="phone-logo" href="#"><img src="assets/img/phone-logo.png" alt="" data-toggle="modal"
-                                                    data-target="#modal_call"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a href="#">О компании</a>
-                    <a href="#">Объекты</a>
-                    <a href="#">Сотрудничество</a>
-                    <a href="#">Лицензии</a>
-                    <a href="#">Контакты</a>
-                </div>
-            </div>
-        </nav>
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-    <div class="modal fade" id="modal_call" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <h3>Узнайте, как добиться идеального качества отделочных работ в рекордные сроки</h3>
-                <form>
-                    <input type="text" placeholder="Ваше Имя">
-                    <input type="text" placeholder="Ваш Телефон">
-                </form>
-                <button class="orange_btn" data-toggle="modal" data-target="#modal_call">Обратный звонок
-                </button>
-            </div>
+        </div>
+    </nav>
+</div>
+<div class="modal fade" id="modal_call" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <h3>Узнайте, как добиться идеального качества отделочных работ в рекордные сроки</h3>
+            <form>
+                <input type="text" placeholder="Ваше Имя">
+                <input type="text" placeholder="Ваш Телефон">
+            </form>
+            <button class="orange_btn" data-toggle="modal" data-target="#modal_call">Обратный звонок
+            </button>
         </div>
     </div>
 </div>
 <div class="promo">
-
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4000">
+                    <img src="assets/img/promo-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--<h5>First slide label</h5>-->
+                        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <img src="assets/img/promo-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--<h5>Second slide label</h5>-->
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <img src="assets/img/promo-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--<h5>Third slide label</h5>-->
+                        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <img src="assets/img/promo-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--<h5>Third slide label</h5>-->
+                        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="promo-carousel-control">
+                <div class="control-number">
+                    <div id="current_slider">01</div>
+                    <div id="total_slider">04</div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="carousel-indicator active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1" class="carousel-indicator"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2" class="carousel-indicator"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3" class="carousel-indicator"></li>
+                </ol>
+                <a class="carousel-control-pre" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-nex" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 

@@ -15,7 +15,6 @@ button {
 
 .desktop-header {
   width: 100%;
-  position: fixed;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -178,6 +177,99 @@ button {
 .orange_btn:hover {
   border: 1px solid #b04a2e;
   background-color: #b04a2e;
+}
+
+.promo {
+  display: block;
+}
+.promo #carouselExampleCaptions {
+  position: relative;
+  z-index: 1;
+}
+.promo .promo-carousel-control {
+  background-color: #333333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 120px;
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.promo .promo-carousel-control .control-number {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Gotham Pro", sans-serif;
+  color: #666666;
+}
+.promo .promo-carousel-control .control-number #total_slider {
+  margin-left: 15px;
+}
+.promo .promo-carousel-control .control-number #current_slider {
+  position: relative;
+  margin-right: 15px;
+  color: #ffffff;
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.promo .promo-carousel-control .control-number #current_slider:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 32px;
+  top: 5px;
+  right: -15px;
+  background-color: #606060;
+}
+.promo .promo-carousel-control .carousel-indicators {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 70px 0 0;
+}
+.promo .promo-carousel-control .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+.promo .promo-carousel-control .carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+}
+.promo .promo-carousel-control .carousel-control-nex,
+.promo .promo-carousel-control .carousel-control-pre {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.15s ease;
+}
+.promo .promo-carousel-control .carousel-control-nex {
+  right: 0;
+  margin-right: 40px;
+}
+.promo .promo-carousel-control .carousel-control-nex .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.promo .promo-carousel-control .carousel-control-pre {
+  right: 0;
+  margin-right: 40px;
+}
+.promo .promo-carousel-control .carousel-control-pre .carousel-control-prev-icon {
+  background: url("../img/prev.png") 100% 100% no-repeat;
 }
 
 @media screen and (max-device-width: 768px) {
