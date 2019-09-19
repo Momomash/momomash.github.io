@@ -376,6 +376,15 @@ button {
   }
 }
 
+.copyright-block{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  .designer{
+    margin-right: 25px;
+  }
+}
+
 .desktop-header {
   background-color: $white;
   width: 100%;
@@ -462,9 +471,7 @@ button {
     }
   }
 
-  .designer {
-    display: none;
-  }
+
 }
 
 h1{
@@ -1068,6 +1075,14 @@ p {
     display: none;
   }
 
+  .copyright-block{
+    justify-content: flex-start;
+    flex-direction: column;
+    .designer{
+      margin-right: 25px;
+    }
+  }
+
   .desktop-header {
     .logo {
       display: none !important;
@@ -1096,11 +1111,8 @@ p {
       margin-left: 18px;
     }
 
-    .designer {
-      display: block;
-    }
-  }
 
+  }
 
 
   .promo-small-carousel {

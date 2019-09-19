@@ -310,6 +310,15 @@ button {
   font-size: 18px;
 }
 
+.copyright-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.copyright-block .designer {
+  margin-right: 25px;
+}
+
 .desktop-header {
   background-color: #ffffff;
   width: 100%;
@@ -381,9 +390,6 @@ button {
   color: inherit;
   text-decoration: underline !important;
   text-decoration-color: #404040;
-}
-.footer .designer {
-  display: none;
 }
 
 h1 {
@@ -886,6 +892,14 @@ p {
     display: none;
   }
 
+  .copyright-block {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .copyright-block .designer {
+    margin-right: 25px;
+  }
+
   .desktop-header .logo {
     display: none !important;
   }
@@ -904,9 +918,6 @@ p {
   }
   .footer p {
     margin-left: 18px;
-  }
-  .footer .designer {
-    display: block;
   }
 
   .promo-small-carousel .carousel-caption {
