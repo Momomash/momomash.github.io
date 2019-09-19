@@ -396,7 +396,7 @@ h1 {
   font-size: 64px !important;
   font-family: "Noah Bold", sans-serif;
   color: #333333;
-  padding: 40px 0 60px 0;
+  padding: 40px 0 40px 0;
   margin: 0 !important;
 }
 
@@ -421,6 +421,62 @@ h5 {
   font-family: "Gotham Pro Medium", sans-serif !important;
   padding: 10px 0;
   margin: 0;
+}
+
+.licenses-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.licenses-block .left-block {
+  width: 50%;
+  padding-left: 20%;
+}
+.licenses-block .left-block p {
+  max-width: 80%;
+}
+.licenses-block .right-block {
+  width: 50%;
+  padding: 45px 0 45px 45px;
+  height: 800px;
+  background-color: #d34f2a;
+}
+.licenses-block .right-block .bd-example {
+  max-width: 450px;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item {
+  position: relative;
+  z-index: 0;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe {
+  position: absolute;
+  z-index: 5;
+  width: 56px;
+  height: 56px;
+  left: 45%;
+  top: 45%;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next,
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev {
+  opacity: 1;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon {
+  background: url("../img/prev-orange.png") 100% 100% no-repeat;
+  width: 56px;
+  height: 56px;
+}
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon {
+  background: url("../img/next-orange.png") 100% 100% no-repeat;
+  width: 56px;
+  height: 56px;
 }
 
 .logo {
@@ -920,14 +976,81 @@ p {
     margin-left: 18px;
   }
 
-  .promo-small-carousel .carousel-caption {
-    padding: 50px 0 0 40px !important;
+  .licenses-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-
-  .socials {
-    display: none !important;
+  .licenses-block .left-block {
+    width: 100% !important;
+    padding-left: 30px;
+  }
+  .licenses-block .left-block p {
+    max-width: 95%;
+  }
+  .licenses-block .right-block {
+    width: 100% !important;
+    padding: 45px 0 0 0;
+    height: 800px;
+    background-color: inherit;
+  }
+  .licenses-block .right-block .bd-example {
+    margin: 0 auto;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-inner {
+    width: 80%;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev,
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next {
+    position: relative;
+    width: 5%;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next {
+    margin-left: 10px;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev {
+    margin-right: 10px;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon {
+    background: url("../img/prev.png") 100% 100% no-repeat;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #666666 !important;
+    opacity: 1;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    background: #d34f2a !important;
   }
 }
+.promo-small-carousel .carousel-caption {
+  padding: 50px 0 0 40px !important;
+}
+
+.socials {
+  display: none !important;
+}
+
 @media screen and (max-device-width: 990px) {
   .about-company .left-text {
     max-width: 100% !important;

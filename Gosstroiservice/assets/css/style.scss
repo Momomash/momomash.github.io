@@ -314,16 +314,19 @@ body {
 
 .breadcrumbs {
   ul {
-    padding-left: 0 ;
+    padding-left: 0;
     margin: 0;
+
     li {
       list-style: none;
-      a{
+
+      a {
         color: #656565;
         font-size: 16px;
         font-family: 'Gotham Pro Light', sans-serif !important;
       }
-      a:hover{
+
+      a:hover {
         color: $black-grey;
         text-decoration: none;
       }
@@ -344,43 +347,50 @@ button {
   padding: 100px 0 0 0 !important;
 }
 
-.contacts{
+.contacts {
   display: flex;
   flex-direction: row;
-  .left-block{
+
+  .left-block {
     width: 50%;
     background-image: url("../img/black-map.jpg");
     background-position: right;
     background-size: cover;
   }
-  .right-block{
+
+  .right-block {
     width: 50%;
     padding: 120px 0 120px 90px;
     background-color: $orange;
-    p{
+
+    p {
       padding-left: 30px;
       text-transform: uppercase;
       font-family: 'Gotham Pro', sans-serif !important;
       color: $white;
-      a{
+
+      a {
         color: inherit;
       }
-      a:hover{
+
+      a:hover {
         text-decoration: none;
       }
     }
-    span{
+
+    span {
       margin-right: 10px;
       font-size: 18px;
     }
   }
 }
 
-.copyright-block{
+.copyright-block {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  .designer{
+
+  .designer {
     margin-right: 25px;
   }
 }
@@ -474,11 +484,11 @@ button {
 
 }
 
-h1{
+h1 {
   font-size: 64px !important;
   font-family: 'Noah Bold', sans-serif;
   color: $black-grey;
-  padding: 40px 0 60px 0;
+  padding: 40px 0 40px 0;
   margin: 0 !important;
 }
 
@@ -497,12 +507,77 @@ h3 {
   padding-bottom: 20px;
 }
 
-h5{
+h5 {
   font-size: 16px !important;
   text-transform: uppercase;
   font-family: 'Gotham Pro Medium', sans-serif !important;
   padding: 10px 0;
   margin: 0;
+}
+
+.licenses-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .left-block {
+    width: 50%;
+    padding-left: 20%;
+
+    p {
+      max-width: 80%;
+    }
+  }
+
+  .right-block {
+    width: 50%;
+    padding: 45px 0 45px 45px;
+    height: 800px;
+    background-color: $orange;
+
+    .bd-example {
+      max-width: 450px;
+      //margin: 0 auto;
+      #carouselLicenses {
+        .carousel-item {
+          position: relative;
+          z-index: 0;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .carousel-loupe{
+            position: absolute;
+            z-index: 5;
+            width: 56px;
+            height: 56px;
+            left: 45%;
+            top: 45%;
+          }
+          .carousel-loupe:hover{
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+          }
+        }
+
+
+        .carousel-control-next,
+        .carousel-control-prev{
+          opacity: 1;
+        }
+        .carousel-control-prev-icon{
+          background: url("../img/prev-orange.png") 100% 100% no-repeat;
+          width: 56px;
+          height: 56px;
+        }
+        .carousel-control-next-icon{
+          background: url("../img/next-orange.png") 100% 100% no-repeat;
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
 }
 
 .logo {
@@ -512,8 +587,8 @@ h5{
   letter-spacing: 4px;
 }
 
-.mini-header{
-  .container{
+.mini-header {
+  .container {
     padding-top: 80px !important;
   }
 }
@@ -1062,23 +1137,26 @@ p {
       background-size: cover;
       min-height: 500px;
     }
+
     .right-block {
       width: 100%;
       padding: 40px 0 40px 50px;
     }
-    hr{
+
+    hr {
       display: none !important;
     }
   }
 
-  .contacts_hr{
+  .contacts_hr {
     display: none;
   }
 
-  .copyright-block{
+  .copyright-block {
     justify-content: flex-start;
     flex-direction: column;
-    .designer{
+
+    .designer {
       margin-right: 25px;
     }
   }
@@ -1114,6 +1192,78 @@ p {
 
   }
 
+  .licenses-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .left-block {
+      width: 100% !important;
+      padding-left: 30px;
+
+      p {
+        max-width: 95%;
+      }
+    }
+
+    .right-block {
+      width: 100% !important;
+      padding: 45px 0 0 0;
+      height: 800px;
+      background-color: inherit;
+
+      .bd-example {
+        margin: 0 auto;
+
+        #carouselLicenses {
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          .carousel-inner {
+            width: 80%;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            position: relative;
+            width: 5%;
+          }
+          .carousel-control-next{
+            margin-left: 10px;
+          }
+          .carousel-control-prev{
+            margin-right: 10px;
+          }
+          .carousel-control-prev-icon{
+            background: url("../img/prev.png") 100% 100% no-repeat;
+          }
+          .carousel-control-next-icon{
+            background: url("../img/next.png") 100% 100% no-repeat;
+          }
+          .carousel-indicators{
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+            li {
+              width: 8px;
+              height: 8px;
+              border-radius: 100%;
+              background: #666666 !important;
+              opacity: 1;
+              box-sizing: border-box !important;
+              border: none !important;
+            }
+            li.active {
+              width: 12px;
+              height: 12px;
+              background: $orange !important;
+            }
+          }
+          }
+        }
+      }
+    }
+  }
 
   .promo-small-carousel {
     .carousel-caption {
@@ -1126,7 +1276,7 @@ p {
   }
 
 
-}
+
 
 @media screen and (max-device-width: 990px) {
   .about-company {
@@ -1246,6 +1396,8 @@ p {
   .desktop-header {
     display: none !important;
   }
+
+
   .promo-carousel-control {
     min-width: 170px !important;
 
@@ -1350,7 +1502,7 @@ p {
     }
   }
 
-  h1{
+  h1 {
     font-size: 46px !important;
   }
 }
