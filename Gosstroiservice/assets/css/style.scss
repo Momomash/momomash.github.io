@@ -6,24 +6,78 @@ $black-orange: #b04a2e;
 $white: #ffffff;
 $light-grey: #f7f7f7;
 
-.about-services{
-  .services-texts{
+.about-services {
+  .texts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
     .left-text,
-    .right-text{
+    .right-text {
       max-width: 450px;
     }
-    .left-text{
+
+    .left-text {
       margin-left: 10px;
     }
-    .text{
+
+    .text {
       margin-bottom: 40px;
+
     }
   }
 }
+
+.about-company {
+  .texts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left-text {
+      max-width: 450px;
+
+      a {
+        color: $orange !important;
+        text-decoration: none;
+        font-family: 'Gotham Pro Medium', sans-serif !important;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $black-orange !important;
+      }
+    }
+
+    .right-icons {
+      max-width: 560px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .text {
+        width: 210px;
+
+        p {
+          max-width: 210px;
+        }
+
+        img {
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          padding-bottom: 10px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 
 body {
   margin: 0;
@@ -40,7 +94,7 @@ button {
   font-family: 'Gotham Pro Medium', sans-serif;
 }
 
-.container{
+.container {
   width: 1150px;
   margin: 0 auto;
   padding: 100px 0 0 0 !important;
@@ -82,14 +136,15 @@ button {
   }
 }
 
-h2{
+h2 {
   padding: 50px 0;
   text-transform: uppercase;
   text-align: center;
   font-size: 24px !important;
   font-family: 'Gotham Pro Medium', sans-serif !important;
 }
-h3{
+
+h3 {
   text-transform: uppercase;
   font-size: 18px !important;
   font-family: 'Gotham Pro Medium', sans-serif !important;
@@ -259,20 +314,22 @@ h3{
   color: $orange;
 }
 
-.orange-link{
+.orange-link {
   color: $orange;
   text-decoration: underline;
 }
-.orange-link:hover{
+
+.orange-link:hover {
   color: $black-orange;
 }
 
 
-p{
+p {
   font-family: 'Gotham Pro', sans-serif;
   font-size: 16px;
   color: #606060;
 }
+
 .promo {
   display: block;
 
@@ -480,9 +537,10 @@ p{
   }
 
   .promo-small-carousel {
-    .bd-example{
+    .bd-example {
       height: 281px;
     }
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -492,9 +550,11 @@ p{
 
     #carouselExampleCaptionsSmall {
       height: 281px;
-      .carousel-inner{
+
+      .carousel-inner {
         height: 100%;
       }
+
       .carousel-caption {
         padding: 50px 0 50px 50px;
         display: flex;
@@ -507,9 +567,11 @@ p{
           font-family: 'Gotham Pro', sans-serif;
           margin-bottom: 20px;
         }
-        a:hover{
+
+        a:hover {
           text-decoration: none;
         }
+
         a {
           max-width: 300px;
           position: relative;
@@ -545,29 +607,42 @@ p{
           background-color: #cd406b;
         }
       }
-      .carousel-control-prev{
+
+      .carousel-control-prev {
         z-index: 10;
         left: 250px;
         top: -90px;
         height: 280px;
       }
-      .carousel-control-next{
+
+      .carousel-control-next {
         z-index: 10;
         left: 300px;
         top: -90px;
         height: 280px;
       }
-      .carousel-control-prev-icon{
+
+      .carousel-control-prev-icon {
         background: url("../img/prev.png") 100% 100% no-repeat;
       }
-      .carousel-control-next-icon{
+
+      .carousel-control-next-icon {
         background: url("../img/next.png") 100% 100% no-repeat;
       }
     }
   }
 }
 
-
+@media screen and (max-width: 1200px){
+  .about-company{
+    .left-text{
+      max-width: 420px !important;
+    }
+    .right-icons{
+      max-width: 520px !important;
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   #carouselExampleCaptionsSmall {
     .carousel-control-prev {
@@ -611,9 +686,10 @@ p{
 @media screen and (max-device-width: 990px) {
   #carouselExampleCaptionsSmall {
     .carousel-caption {
-      h5{
+      h5 {
         max-width: 250px !important;
       }
+
       a {
         .project-text {
           display: none;
@@ -624,7 +700,7 @@ p{
 }
 
 @media screen and (max-device-width: 900px) {
-      .carousel-indicators {
+  .carousel-indicators {
     display: none !important;
   }
   #carouselExampleCaptionsSmall {
@@ -632,7 +708,7 @@ p{
 
       a {
 
-        img{
+        img {
           right: 18% !important;
         }
       }
@@ -665,10 +741,11 @@ p{
 @media screen and (max-device-width: 768px) {
   #carouselExampleCaptionsSmall {
     .carousel-caption {
-      h5{
+      h5 {
         font-size: 18px !important;
         max-width: 150px !important;
       }
+
       a {
         img {
           right: 40% !important;
@@ -702,12 +779,23 @@ p{
 @media screen and (max-device-width: 600px) {
 
   #carouselExampleCaptionsSmall {
+    .about-company {
+      margin-top: 10px;
+      .right-icons {
+        .text {
+          width: 220px !important;
+        }
+      }
+    }
+
     .carousel-caption {
       padding: 50px 0 0 20px !important;
-      h5{
+
+      h5 {
         font-size: 18px !important;
         max-width: 150px !important;
       }
+
       a {
         img {
           right: 50% !important;
@@ -731,16 +819,28 @@ p{
   .promo-small-carousel {
     width: 40% !important;
   }
+  .container{
+    padding: 30px 10px 0 5px !important;
+  }
+
 }
 
 @media screen and (max-device-width: 500px) {
+  .about-company {
+    .right-icons {
+      .text {
+        width: 200px !important;
+      }
+    }
+  }
   #carouselExampleCaptionsSmall {
     .carousel-caption {
       h5 {
         font-size: 18px !important;
         max-width: 150px !important;
       }
-      h5:before{
+
+      h5:before {
         display: none;
       }
 
@@ -754,9 +854,18 @@ p{
 }
 
 @media screen and (max-device-width: 400px) {
+  .about-company {
+    .right-icons {
+      margin-top: 10px;
+      .text {
+        width: 150px !important;
+      }
+    }
+  }
   #carouselExampleCaptionsSmall {
     .carousel-caption {
       padding: 50px 0 0 5px !important;
+
       h5 {
         font-size: 13px !important;
         max-width: 120px !important;
