@@ -18,6 +18,7 @@
   color: #b04a2e !important;
 }
 .about-company .texts .right-icons {
+  margin-left: 10px;
   max-width: 560px;
   display: flex;
   flex-direction: row;
@@ -60,7 +61,7 @@
   width: 460px;
   height: 180px;
   background-color: #d34f2a;
-  padding: 30px 0 30px 30px;
+  padding: 30px 0 30px 20px;
 }
 .about-map .addres p {
   text-transform: uppercase;
@@ -154,6 +155,7 @@
 }
 .about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-nex .carousel-control-next-icon {
   background: url("../img/next.png") 100% 100% no-repeat;
+  background-position: center center;
 }
 .about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-pre {
   display: flex;
@@ -163,11 +165,12 @@
 }
 .about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-pre .carousel-control-prev-icon {
   background: url("../img/prev.png") 100% 100% no-repeat;
+  background-position: center center;
 }
 .about-projects .home-gallery-mobile #carousel_gallery_home .carousel-indicators {
   position: relative;
   width: 100%;
-  margin: 60px 0 0 0;
+  margin: 60px 0 20px 0;
 }
 .about-projects .home-gallery-mobile #carousel_gallery_home .carousel-indicators li {
   width: 8px;
@@ -193,8 +196,6 @@
 .about-services .texts .left-text,
 .about-services .texts .right-text {
   max-width: 450px;
-}
-.about-services .texts .left-text {
   margin-left: 10px;
 }
 .about-services .texts .text {
@@ -368,7 +369,7 @@ button {
 .footer .menu li {
   display: inline-block;
   word-wrap: normal;
-  margin-left: 20px;
+  margin-left: 17px;
   padding: 20px 0;
   font-size: 16px;
   font-family: "Gotham Pro Medium", sans-serif;
@@ -653,20 +654,28 @@ p {
   min-height: 720px;
 }
 .promo #carouselExampleCaptions .carousel-item-1 {
-  background: url("../img/promo-1.jpg") no-repeat;
+  background-image: url("../img/promo-1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .promo #carouselExampleCaptions .carousel-item-2 {
-  background: url("../img/promo-1.jpg") no-repeat;
+  background-image: url("../img/promo-1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .promo #carouselExampleCaptions .carousel-item-3 {
-  background: url("../img/promo-1.jpg") no-repeat;
+  background-image: url("../img/promo-1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .promo #carouselExampleCaptions .carousel-item-4 {
-  background: url("../img/promo-1.jpg") no-repeat;
+  background-image: url("../img/promo-1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .promo #carouselExampleCaptions .carousel-caption {
   top: 0;
@@ -904,6 +913,7 @@ p {
 @media screen and (max-width: 1200px) {
   .about-company .left-text {
     max-width: 420px !important;
+    margin-left: 10px;
   }
   .about-company .right-icons {
     max-width: 520px !important;
@@ -1050,6 +1060,9 @@ p {
     background: #d34f2a !important;
   }
 
+  .promo-small-carousel {
+    width: 40% !important;
+  }
   .promo-small-carousel .carousel-caption {
     padding: 50px 0 0 40px !important;
   }
@@ -1084,6 +1097,10 @@ p {
   #carouselExampleCaptionsSmall .carousel-caption a .project-text {
     display: none;
   }
+
+  .promo-small-carousel {
+    width: 43% !important;
+  }
 }
 @media screen and (max-device-width: 900px) {
   #carouselExampleCaptions .carousel-indicators {
@@ -1094,6 +1111,9 @@ p {
     right: 18% !important;
   }
 
+  .promo-small-carousel {
+    width: 45% !important;
+  }
   .promo-small-carousel .carousel-caption {
     padding: 50px 0 0 30px !important;
   }
@@ -1147,6 +1167,10 @@ p {
   .promo-carousel-control .carousel-control-nex {
     margin-right: 10px !important;
   }
+
+  .promo-small-carousel {
+    width: 45% !important;
+  }
 }
 @media screen and (max-device-width: 600px) {
   .about-questions form input {
@@ -1182,7 +1206,7 @@ p {
   }
 
   .promo-small-carousel {
-    width: 40% !important;
+    width: 45% !important;
   }
 
   .privacy_h {
@@ -1190,7 +1214,7 @@ p {
   }
 
   .container {
-    padding: 30px 10px 0 5px !important;
+    padding: 30px 5px 0 5px !important;
   }
 }
 @media screen and (max-device-width: 500px) {
@@ -1249,7 +1273,7 @@ p {
 
   .promo-small-carousel {
     height: 238px !important;
-    width: 35% !important;
+    width: 45% !important;
   }
 }
 @media screen and (min-device-width: 990px) {
