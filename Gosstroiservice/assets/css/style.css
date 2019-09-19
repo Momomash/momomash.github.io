@@ -1131,6 +1131,10 @@ p {
     display: none !important;
   }
 
+  .privacy_h {
+    font-size: 56px !important;
+  }
+
   .promo-carousel-control {
     min-width: 170px !important;
   }
@@ -1181,6 +1185,10 @@ p {
     width: 40% !important;
   }
 
+  .privacy_h {
+    font-size: 46px !important;
+  }
+
   .container {
     padding: 30px 10px 0 5px !important;
   }
@@ -1203,6 +1211,10 @@ p {
 
   h1 {
     font-size: 46px !important;
+  }
+
+  .privacy_h {
+    font-size: 30px !important;
   }
 }
 @media screen and (max-device-width: 400px) {
