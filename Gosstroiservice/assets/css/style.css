@@ -248,6 +248,23 @@ body {
   background-color: #fafafa !important;
 }
 
+.breadcrumbs ul {
+  padding-left: 0;
+  margin: 0;
+}
+.breadcrumbs ul li {
+  list-style: none;
+}
+.breadcrumbs ul li a {
+  color: #656565;
+  font-size: 16px;
+  font-family: "Gotham Pro Light", sans-serif !important;
+}
+.breadcrumbs ul li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
 button {
   background-color: transparent;
   padding: 20px 25px;
@@ -259,6 +276,38 @@ button {
   width: 1150px;
   margin: 0 auto;
   padding: 100px 0 0 0 !important;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+}
+.contacts .left-block {
+  width: 50%;
+  background-image: url("../img/black-map.jpg");
+  background-position: right;
+  background-size: cover;
+}
+.contacts .right-block {
+  width: 50%;
+  padding: 120px 0 120px 90px;
+  background-color: #d34f2a;
+}
+.contacts .right-block p {
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro", sans-serif !important;
+  color: #ffffff;
+}
+.contacts .right-block p a {
+  color: inherit;
+}
+.contacts .right-block p a:hover {
+  text-decoration: none;
+}
+.contacts .right-block span {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .desktop-header {
@@ -337,6 +386,14 @@ button {
   display: none;
 }
 
+h1 {
+  font-size: 64px;
+  font-family: "Noah Bold", sans-serif;
+  color: #333333;
+  padding: 40px 0 60px 0;
+  margin: 0 !important;
+}
+
 h2 {
   padding: 50px 0;
   text-transform: uppercase;
@@ -352,11 +409,23 @@ h3 {
   padding-bottom: 20px;
 }
 
+h5 {
+  font-size: 16px !important;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Medium", sans-serif !important;
+  padding: 10px 0;
+  margin: 0;
+}
+
 .logo {
   font-family: "PT Sans", sans-serif !important;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 4px;
+}
+
+.mini-header .container {
+  padding-top: 80px !important;
 }
 
 .mobile-header {
@@ -794,6 +863,29 @@ p {
     display: none !important;
   }
 
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts .left-block {
+    width: 100%;
+    background-image: url("../img/black-map.jpg");
+    background-position-x: 500px;
+    background-size: cover;
+    min-height: 500px;
+  }
+  .contacts .right-block {
+    width: 100%;
+    padding: 40px 0 40px 50px;
+  }
+  .contacts hr {
+    display: none !important;
+  }
+
+  .contacts_hr {
+    display: none;
+  }
+
   .desktop-header .logo {
     display: none !important;
   }
@@ -1016,6 +1108,12 @@ p {
 @font-face {
   font-family: "Gotham Pro Medium";
   src: url("../fonts/Gotham_Pro_Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/Gotham_Pro_Light.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

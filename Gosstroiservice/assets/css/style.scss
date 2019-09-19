@@ -312,6 +312,25 @@ body {
   background-color: #fafafa !important;
 }
 
+.breadcrumbs {
+  ul {
+    padding-left: 0 ;
+    margin: 0;
+    li {
+      list-style: none;
+      a{
+        color: #656565;
+        font-size: 16px;
+        font-family: 'Gotham Pro Light', sans-serif !important;
+      }
+      a:hover{
+        color: $black-grey;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 button {
   background-color: transparent;
   padding: 20px 25px;
@@ -319,11 +338,42 @@ button {
   font-family: 'Gotham Pro Medium', sans-serif;
 }
 
-
 .container {
   width: 1150px;
   margin: 0 auto;
   padding: 100px 0 0 0 !important;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: row;
+  .left-block{
+    width: 50%;
+    background-image: url("../img/black-map.jpg");
+    background-position: right;
+    background-size: cover;
+  }
+  .right-block{
+    width: 50%;
+    padding: 120px 0 120px 90px;
+    background-color: $orange;
+    p{
+      padding-left: 30px;
+      text-transform: uppercase;
+      font-family: 'Gotham Pro', sans-serif !important;
+      color: $white;
+      a{
+        color: inherit;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+    span{
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
 }
 
 .desktop-header {
@@ -362,12 +412,15 @@ button {
   }
 }
 
-.footer{
+.footer {
   padding-bottom: 50px;
-  .container{
+
+  .container {
     padding-top: 50px !important;
   }
+
   background-color: #000000;
+
   .menu {
     padding: 0 0 10px 0;
     margin: 0 auto;
@@ -395,20 +448,31 @@ button {
 
     }
   }
-  p{
+
+  p {
     margin-left: 40px;
     color: #dfdfdf;
     font-size: 14px !important;
     font-family: 'Gotham Pro', sans-serif !important;
-    a{
+
+    a {
       color: inherit;
-      text-decoration: underline  !important;
+      text-decoration: underline !important;
       text-decoration-color: #404040;
     }
   }
-  .designer{
+
+  .designer {
     display: none;
   }
+}
+
+h1{
+  font-size: 64px;
+  font-family: 'Noah Bold', sans-serif;
+  color: $black-grey;
+  padding: 40px 0 60px 0;
+  margin: 0 !important;
 }
 
 h2 {
@@ -426,11 +490,25 @@ h3 {
   padding-bottom: 20px;
 }
 
+h5{
+  font-size: 16px !important;
+  text-transform: uppercase;
+  font-family: 'Gotham Pro Medium', sans-serif !important;
+  padding: 10px 0;
+  margin: 0;
+}
+
 .logo {
   font-family: 'PT Sans', sans-serif !important;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 4px;
+}
+
+.mini-header{
+  .container{
+    padding-top: 80px !important;
+  }
 }
 
 .mobile-header {
@@ -912,10 +990,10 @@ p {
   color: $white;
 }
 
-@media screen and (max-width: 1400px){
-  .about-map{
-    .addres{
-     left: 15% !important;
+@media screen and (max-width: 1400px) {
+  .about-map {
+    .addres {
+      left: 15% !important;
     }
   }
 }
@@ -930,8 +1008,8 @@ p {
       max-width: 520px !important;
     }
   }
-  .about-map{
-    .addres{
+  .about-map {
+    .addres {
       left: 10% !important;
     }
   }
@@ -939,8 +1017,8 @@ p {
 
 @media screen and (max-width: 1024px) {
 
-  .about-map{
-    .addres{
+  .about-map {
+    .addres {
       position: relative;
       width: 100%;
       left: 0 !important;
@@ -966,6 +1044,30 @@ p {
     }
   }
 
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    .left-block {
+      width: 100%;
+      background-image: url("../img/black-map.jpg");
+      background-position-x: 500px;
+      background-size: cover;
+      min-height: 500px;
+    }
+    .right-block {
+      width: 100%;
+      padding: 40px 0 40px 50px;
+    }
+    hr{
+      display: none !important;
+    }
+  }
+
+  .contacts_hr{
+    display: none;
+  }
+
   .desktop-header {
     .logo {
       display: none !important;
@@ -977,23 +1079,29 @@ p {
     }
   }
 
-  .footer{
-    .menu{
+  .footer {
+    .menu {
       flex-direction: column;
       align-items: flex-start;
-      li{
+
+      li {
         display: block !important;
         padding: 10px 0;
       }
+
       margin-bottom: 15px;
     }
-    p{
+
+    p {
       margin-left: 18px;
     }
-    .designer{
+
+    .designer {
       display: block;
     }
   }
+
+
 
   .promo-small-carousel {
     .carousel-caption {
@@ -1304,6 +1412,13 @@ p {
 @font-face {
   font-family: "Gotham Pro Medium";
   src: url("../fonts/Gotham_Pro_Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/Gotham_Pro_Light.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
