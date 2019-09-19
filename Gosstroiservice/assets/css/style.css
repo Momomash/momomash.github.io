@@ -444,6 +444,9 @@ h5 {
 .licenses-block .right-block .bd-example {
   max-width: 450px;
 }
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators {
+  display: none !important;
+}
 .licenses-block .right-block .bd-example #carouselLicenses .carousel-item {
   position: relative;
   z-index: 0;
@@ -1006,6 +1009,9 @@ p {
   .licenses-block .right-block .bd-example #carouselLicenses .carousel-inner {
     width: 80%;
   }
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-loupe {
+    display: none;
+  }
   .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev,
 .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next {
     position: relative;
@@ -1024,6 +1030,7 @@ p {
     background: url("../img/next.png") 100% 100% no-repeat;
   }
   .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators {
+    display: flex !important;
     position: relative;
     width: 100%;
     margin-top: 30px;
@@ -1042,15 +1049,15 @@ p {
     height: 12px;
     background: #d34f2a !important;
   }
-}
-.promo-small-carousel .carousel-caption {
-  padding: 50px 0 0 40px !important;
-}
 
-.socials {
-  display: none !important;
-}
+  .promo-small-carousel .carousel-caption {
+    padding: 50px 0 0 40px !important;
+  }
 
+  .socials {
+    display: none !important;
+  }
+}
 @media screen and (max-device-width: 990px) {
   .about-company .left-text {
     max-width: 100% !important;
