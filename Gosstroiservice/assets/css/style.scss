@@ -6,28 +6,6 @@ $black-orange: #b04a2e;
 $white: #ffffff;
 $light-grey: #f7f7f7;
 
-.about-services {
-  .texts {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .left-text,
-    .right-text {
-      max-width: 450px;
-    }
-
-    .left-text {
-      margin-left: 10px;
-    }
-
-    .text {
-      margin-bottom: 40px;
-
-    }
-  }
-}
 
 .about-company {
   .texts {
@@ -78,6 +56,158 @@ $light-grey: #f7f7f7;
   }
 }
 
+.about-projects {
+  .home-gallery-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 160px;
+
+    .gallery-block {
+      width: 25%;
+      position: relative;
+      z-index: 1;
+
+      p{
+        z-index: 5;
+        top: 25px;
+        left: 25px;
+        position: absolute;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 18px;
+        font-family: 'Gotham Pro Medium', sans-serif !important;
+        font-weight: 300 !important;
+      }
+      img {
+        width: 100%;
+        filter: brightness(40%);
+      }
+      .loupe{
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        z-index: 5;
+        top: 45%;
+        left: 40%;
+        display: none;
+      }
+      .loupe:hover{
+        transform: scale(1.2);
+      }
+    }
+    .gallery-block:hover{
+      p{
+        display: none;
+      }
+      .loupe{
+        display: block;
+        transition-duration: 0.7s;
+      }
+      img{
+        filter: none;
+        transition-duration: 0.7s;
+      }
+    }
+  }
+
+  .home-gallery-mobile{
+    display: none;
+    .bd-example{
+
+    }
+    #carousel_gallery_home{
+      display: flex !important;
+      flex-direction: row !important;
+      width: 100% !important;
+      flex-wrap: wrap;
+      .carousel-inner{
+        width: 90% !important;
+        .carousel-caption{
+          display: block !important;
+          top: 20px;
+          left: 20px;
+          right: 0;
+          bottom: 0;
+          p{
+            text-align: left !important;
+            text-transform: uppercase;
+            color: $white;
+            font-size: 18px;
+            font-family: 'Gotham Pro Medium', sans-serif !important;
+            font-weight: 300 !important;
+          }
+        }
+      }
+      .carousel-control-nex{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 5%;
+
+        .carousel-control-next-icon{
+          background: url("../img/next.png") 100% 100% no-repeat;
+        }
+      }
+      .carousel-control-pre{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 5%;
+
+        .carousel-control-prev-icon{
+          background: url("../img/prev.png") 100% 100% no-repeat;
+        }
+      }
+      .carousel-indicators{
+        position: relative;
+        width: 100%;
+        margin: 60px 0 0 0;
+        li {
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: #666666;
+          opacity: 1;
+          box-sizing: border-box !important;
+          border: none !important;
+        }
+
+        li.active {
+          width: 12px;
+          height: 12px;
+          background: $orange;
+        }
+      }
+
+    }
+  }
+
+}
+
+.about-services {
+  .texts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left-text,
+    .right-text {
+      max-width: 450px;
+    }
+
+    .left-text {
+      margin-left: 10px;
+    }
+
+    .text {
+      margin-bottom: 40px;
+
+    }
+  }
+}
+
 
 body {
   margin: 0;
@@ -93,6 +223,7 @@ button {
   font-size: 16px;
   font-family: 'Gotham Pro Medium', sans-serif;
 }
+
 
 .container {
   width: 1150px;
@@ -633,16 +764,20 @@ p {
   }
 }
 
-@media screen and (max-width: 1200px){
-  .about-company{
-    .left-text{
+@media screen and (max-width: 1200px) {
+  .about-company {
+    .left-text {
       max-width: 420px !important;
     }
-    .right-icons{
+
+    .right-icons {
       max-width: 520px !important;
     }
   }
-}
+
+  }
+
+
 @media screen and (max-width: 1024px) {
   #carouselExampleCaptionsSmall {
     .carousel-control-prev {
@@ -684,6 +819,35 @@ p {
 }
 
 @media screen and (max-device-width: 990px) {
+  .about-company{
+    .left-text{
+      max-width: 100% !important;
+    }
+    .right-icons{
+      margin: 20px auto 0 auto;
+    }
+  }
+
+  .about-projects {
+    .home-gallery-desktop{
+      .gallery-block{
+        .loupe {
+          top: 40% !important;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .about-services{
+    .left-text,
+    .right-text{
+      max-width: 100% !important;
+    }
+  }
+
   #carouselExampleCaptionsSmall {
     .carousel-caption {
       h5 {
@@ -700,9 +864,12 @@ p {
 }
 
 @media screen and (max-device-width: 900px) {
+
+#carouselExampleCaptions {
   .carousel-indicators {
     display: none !important;
   }
+}
   #carouselExampleCaptionsSmall {
     .carousel-caption {
 
@@ -739,6 +906,16 @@ p {
 }
 
 @media screen and (max-device-width: 768px) {
+
+  .about-projects {
+    .home-gallery-desktop {
+      display: none;
+    }
+    .home-gallery-mobile{
+      display: block;
+    }
+  }
+
   #carouselExampleCaptionsSmall {
     .carousel-caption {
       h5 {
@@ -753,9 +930,6 @@ p {
       }
     }
   }
-}
-
-@media screen and (max-device-width: 768px) {
   .desktop-header {
     display: none !important;
   }
@@ -776,11 +950,13 @@ p {
   }
 }
 
+
 @media screen and (max-device-width: 600px) {
 
   #carouselExampleCaptionsSmall {
     .about-company {
       margin-top: 10px;
+
       .right-icons {
         .text {
           width: 220px !important;
@@ -802,6 +978,9 @@ p {
         }
       }
     }
+    .carousel-item {
+      min-height: 620px !important;
+    }
   }
   .carousel-left-block {
     p {
@@ -813,13 +992,11 @@ p {
       max-width: 400px !important;
     }
   }
-  .carousel-item {
-    min-height: 620px !important;
-  }
+
   .promo-small-carousel {
     width: 40% !important;
   }
-  .container{
+  .container {
     padding: 30px 10px 0 5px !important;
   }
 
@@ -854,9 +1031,13 @@ p {
 }
 
 @media screen and (max-device-width: 400px) {
+
+
+
   .about-company {
     .right-icons {
       margin-top: 10px;
+
       .text {
         width: 150px !important;
       }
@@ -877,6 +1058,9 @@ p {
         }
       }
     }
+    .carousel-item {
+      min-height: 520px !important;
+    }
   }
 
   .carousel-left-block {
@@ -889,9 +1073,7 @@ p {
       max-width: 300px !important;
     }
   }
-  .carousel-item {
-    min-height: 520px !important;
-  }
+
   .promo-small-carousel {
     height: 238px !important;
     width: 35% !important;

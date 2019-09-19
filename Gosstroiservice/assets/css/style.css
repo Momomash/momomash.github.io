@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic");
-.about-services .texts {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.about-services .texts .left-text,
-.about-services .texts .right-text {
-  max-width: 450px;
-}
-.about-services .texts .left-text {
-  margin-left: 10px;
-}
-.about-services .texts .text {
-  margin-bottom: 40px;
-}
-
 .about-company .texts {
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +36,137 @@
 .about-company .texts .right-icons .text h3 {
   padding-bottom: 10px;
   margin: 0;
+}
+
+.about-projects .home-gallery-desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+.about-projects .home-gallery-desktop .gallery-block {
+  width: 25%;
+  position: relative;
+  z-index: 1;
+}
+.about-projects .home-gallery-desktop .gallery-block p {
+  z-index: 5;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Gotham Pro Medium", sans-serif !important;
+  font-weight: 300 !important;
+}
+.about-projects .home-gallery-desktop .gallery-block img {
+  width: 100%;
+  filter: brightness(40%);
+}
+.about-projects .home-gallery-desktop .gallery-block .loupe {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  z-index: 5;
+  top: 45%;
+  left: 40%;
+  display: none;
+}
+.about-projects .home-gallery-desktop .gallery-block .loupe:hover {
+  transform: scale(1.2);
+}
+.about-projects .home-gallery-desktop .gallery-block:hover p {
+  display: none;
+}
+.about-projects .home-gallery-desktop .gallery-block:hover .loupe {
+  display: block;
+  transition-duration: 0.7s;
+}
+.about-projects .home-gallery-desktop .gallery-block:hover img {
+  filter: none;
+  transition-duration: 0.7s;
+}
+.about-projects .home-gallery-mobile {
+  display: none;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100% !important;
+  flex-wrap: wrap;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-inner {
+  width: 90% !important;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-inner .carousel-caption {
+  display: block !important;
+  top: 20px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-inner .carousel-caption p {
+  text-align: left !important;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Gotham Pro Medium", sans-serif !important;
+  font-weight: 300 !important;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-nex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 5%;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-nex .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-pre {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 5%;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-control-pre .carousel-control-prev-icon {
+  background: url("../img/prev.png") 100% 100% no-repeat;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-indicators {
+  position: relative;
+  width: 100%;
+  margin: 60px 0 0 0;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #666666;
+  opacity: 1;
+  box-sizing: border-box !important;
+  border: none !important;
+}
+.about-projects .home-gallery-mobile #carousel_gallery_home .carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  background: #d34f2a;
+}
+
+.about-services .texts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-services .texts .left-text,
+.about-services .texts .right-text {
+  max-width: 450px;
+}
+.about-services .texts .left-text {
+  margin-left: 10px;
+}
+.about-services .texts .text {
+  margin-bottom: 40px;
 }
 
 body {
@@ -560,6 +674,25 @@ p {
   }
 }
 @media screen and (max-device-width: 990px) {
+  .about-company .left-text {
+    max-width: 100% !important;
+  }
+  .about-company .right-icons {
+    margin: 20px auto 0 auto;
+  }
+
+  .about-projects .home-gallery-desktop .gallery-block .loupe {
+    top: 40% !important;
+  }
+  .about-projects .home-gallery-desktop .gallery-block p {
+    font-size: 14px;
+  }
+
+  .about-services .left-text,
+.about-services .right-text {
+    max-width: 100% !important;
+  }
+
   #carouselExampleCaptionsSmall .carousel-caption h5 {
     max-width: 250px !important;
   }
@@ -568,7 +701,7 @@ p {
   }
 }
 @media screen and (max-device-width: 900px) {
-  .carousel-indicators {
+  #carouselExampleCaptions .carousel-indicators {
     display: none !important;
   }
 
@@ -594,6 +727,13 @@ p {
   }
 }
 @media screen and (max-device-width: 768px) {
+  .about-projects .home-gallery-desktop {
+    display: none;
+  }
+  .about-projects .home-gallery-mobile {
+    display: block;
+  }
+
   #carouselExampleCaptionsSmall .carousel-caption h5 {
     font-size: 18px !important;
     max-width: 150px !important;
@@ -601,8 +741,7 @@ p {
   #carouselExampleCaptionsSmall .carousel-caption a img {
     right: 40% !important;
   }
-}
-@media screen and (max-device-width: 768px) {
+
   .desktop-header {
     display: none !important;
   }
@@ -637,6 +776,9 @@ p {
   #carouselExampleCaptionsSmall .carousel-caption a img {
     right: 50% !important;
   }
+  #carouselExampleCaptionsSmall .carousel-item {
+    min-height: 620px !important;
+  }
 
   .carousel-left-block p {
     max-width: 400px !important;
@@ -644,10 +786,6 @@ p {
   .carousel-left-block h1 {
     font-size: 40px !important;
     max-width: 400px !important;
-  }
-
-  .carousel-item {
-    min-height: 620px !important;
   }
 
   .promo-small-carousel {
@@ -692,6 +830,9 @@ p {
   #carouselExampleCaptionsSmall .carousel-caption a img {
     right: 65% !important;
   }
+  #carouselExampleCaptionsSmall .carousel-item {
+    min-height: 520px !important;
+  }
 
   .carousel-left-block p {
     max-width: 300px !important;
@@ -699,10 +840,6 @@ p {
   .carousel-left-block h1 {
     font-size: 30px !important;
     max-width: 300px !important;
-  }
-
-  .carousel-item {
-    min-height: 520px !important;
   }
 
   .promo-small-carousel {
