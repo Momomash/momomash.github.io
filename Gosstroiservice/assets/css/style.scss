@@ -475,7 +475,7 @@ button {
 }
 
 h1{
-  font-size: 64px;
+  font-size: 64px !important;
   font-family: 'Noah Bold', sans-serif;
   color: $black-grey;
   padding: 40px 0 60px 0;
@@ -1263,7 +1263,6 @@ p {
   }
 }
 
-
 @media screen and (max-device-width: 600px) {
 
   .about-questions {
@@ -1349,6 +1348,10 @@ p {
         }
       }
     }
+  }
+
+  h1{
+    font-size: 46px !important;
   }
 }
 

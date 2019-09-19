@@ -393,7 +393,7 @@ button {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 64px !important;
   font-family: "Noah Bold", sans-serif;
   color: #333333;
   padding: 40px 0 60px 0;
@@ -1069,6 +1069,10 @@ p {
   }
   #carouselExampleCaptionsSmall .carousel-caption a img {
     right: 55% !important;
+  }
+
+  h1 {
+    font-size: 46px !important;
   }
 }
 @media screen and (max-device-width: 400px) {
