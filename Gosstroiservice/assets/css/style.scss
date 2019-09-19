@@ -406,6 +406,9 @@ button {
       text-decoration-color: #404040;
     }
   }
+  .designer{
+    display: none;
+  }
 }
 
 h2 {
@@ -986,6 +989,9 @@ p {
     }
     p{
       margin-left: 18px;
+    }
+    .designer{
+      display: block;
     }
   }
 

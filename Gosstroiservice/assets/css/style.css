@@ -333,6 +333,9 @@ button {
   text-decoration: underline !important;
   text-decoration-color: #404040;
 }
+.footer .designer {
+  display: none;
+}
 
 h2 {
   padding: 50px 0;
@@ -809,6 +812,9 @@ p {
   }
   .footer p {
     margin-left: 18px;
+  }
+  .footer .designer {
+    display: block;
   }
 
   .promo-small-carousel .carousel-caption {
