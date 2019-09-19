@@ -169,6 +169,45 @@
   margin-bottom: 40px;
 }
 
+.about-questions {
+  background-color: #393939 !important;
+}
+.about-questions h2 {
+  padding-bottom: 20px !important;
+}
+.about-questions p {
+  text-align: center;
+  color: #fafafa !important;
+  font-family: "Gotham Pro", sans-serif !important;
+  padding-bottom: 40px !important;
+}
+.about-questions form {
+  width: 90%;
+  padding-bottom: 50px;
+  margin: 0 auto 0 auto !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-questions form input {
+  width: 360px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 20px 10px 20px 20px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+.about-questions form input ::placeholder {
+  font-family: "Gotham Pro", sans-serif !important;
+  font-size: 16px;
+  color: #cccccc;
+}
+.about-questions form button {
+  height: 68px;
+  width: 200px;
+}
+
 body {
   margin: 0;
   color: #333333;
@@ -642,6 +681,10 @@ p {
   background: url("../img/next.png") 100% 100% no-repeat;
 }
 
+.white-text {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
   .about-company .left-text {
     max-width: 420px !important;
@@ -760,6 +803,10 @@ p {
   }
 }
 @media screen and (max-device-width: 600px) {
+  .about-questions form input {
+    margin-right: 0 !important;
+  }
+
   #carouselExampleCaptionsSmall .about-company {
     margin-top: 10px;
   }
