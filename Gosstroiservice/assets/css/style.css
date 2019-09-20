@@ -71,6 +71,11 @@
   line-height: 30px;
 }
 
+.about-projects .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .about-projects .home-gallery-desktop {
   display: flex;
   flex-direction: row;
@@ -391,6 +396,13 @@ button {
   color: inherit;
   text-decoration: underline !important;
   text-decoration-color: #404040;
+}
+
+.grey-button {
+  border: 2px solid #606060;
+  color: #606060;
+  font-family: "Gotham Pro Medium", sans-serif;
+  margin: 0 auto;
 }
 
 h1 {
@@ -1079,6 +1091,9 @@ p {
     margin: 20px auto 0 auto;
   }
 
+  .about-projects .container {
+    display: flex;
+  }
   .about-projects .home-gallery-desktop .gallery-block .loupe {
     top: 40% !important;
   }
