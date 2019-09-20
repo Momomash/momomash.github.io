@@ -396,9 +396,7 @@ button {
   justify-content: space-between;
   flex-direction: row;
 
-  .designer {
-    margin-right: 25px;
-  }
+
 }
 
 .desktop-header {
@@ -744,9 +742,6 @@ h5 {
     padding: 16px 0;
   }
 }
-
-
-
 
 .outlined_orange_btn {
   border: 1px solid $orange;
@@ -1178,9 +1173,7 @@ p {
     justify-content: flex-start;
     flex-direction: column;
 
-    .designer {
-      margin-right: 25px;
-    }
+
   }
 
   .desktop-header {
@@ -1192,6 +1185,10 @@ p {
       margin-left: 5px !important;
 
     }
+  }
+
+  .grey-button{
+    margin: 40px auto 100px auto;
   }
 
   .footer {

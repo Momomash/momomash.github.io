@@ -321,9 +321,6 @@ button {
   justify-content: space-between;
   flex-direction: row;
 }
-.copyright-block .designer {
-  margin-right: 25px;
-}
 
 .desktop-header {
   background-color: #ffffff;
@@ -977,15 +974,16 @@ p {
     justify-content: flex-start;
     flex-direction: column;
   }
-  .copyright-block .designer {
-    margin-right: 25px;
-  }
 
   .desktop-header .logo {
     display: none !important;
   }
   .desktop-header li {
     margin-left: 5px !important;
+  }
+
+  .grey-button {
+    margin: 40px auto 100px auto;
   }
 
   .footer .menu {
