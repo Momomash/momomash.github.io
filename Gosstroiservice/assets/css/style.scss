@@ -360,6 +360,7 @@ body {
 
     li {
       list-style: none;
+      display: inline-block;
 
       a {
         color: #656565;
@@ -827,6 +828,26 @@ h5 {
   }
 }
 
+.object-header{
+  height: 700px;
+  background-position: center center;
+  background-size: cover;
+
+  .object-name{
+    text-transform: uppercase;
+    color: $white;
+  }
+  .breadcrumbs{
+    a{
+      color: $white;
+    }
+  }
+  p{
+    color: $white;
+  }
+}
+
+
 .outlined_orange_btn {
   border: 1px solid $orange;
   color: $orange;
@@ -1238,6 +1259,15 @@ p {
       display: flex;
       flex-direction: column;
       padding-bottom: 0;
+    }
+  }
+  .object-header{
+    height: 770px;
+    .container{
+      padding-top: 25px !important;
+    }
+    h1{
+      padding: 20px 0 80px 0;
     }
   }
 }

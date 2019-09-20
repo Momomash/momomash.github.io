@@ -287,6 +287,7 @@ body {
 }
 .breadcrumbs ul li {
   list-style: none;
+  display: inline-block;
 }
 .breadcrumbs ul li a {
   color: #656565;
@@ -690,6 +691,22 @@ h5 {
   padding: 16px 0;
 }
 
+.object-header {
+  height: 700px;
+  background-position: center center;
+  background-size: cover;
+}
+.object-header .object-name {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.object-header .breadcrumbs a {
+  color: #ffffff;
+}
+.object-header p {
+  color: #ffffff;
+}
+
 .outlined_orange_btn {
   border: 1px solid #d34f2a;
   color: #d34f2a;
@@ -1040,6 +1057,16 @@ p {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+  }
+
+  .object-header {
+    height: 770px;
+  }
+  .object-header .container {
+    padding-top: 25px !important;
+  }
+  .object-header h1 {
+    padding: 20px 0 80px 0;
   }
 }
 @media screen and (max-width: 1024px) {
