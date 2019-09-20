@@ -67,6 +67,24 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="modal_price" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <h3>Узнайте, как добиться идеального качества отделочных работ в рекордные сроки</h3>
+            <form>
+                <input type="text" placeholder="Ваше Имя">
+                <input type="text" placeholder="Ваш Email">
+                <input type="text" placeholder="Ваш Телефон">
+                <input type="text" placeholder="Название вашей компании">
+            </form>
+            <button class="orange_btn" data-toggle="modal" data-target="#modal_call">Отправить
+            </button>
+            <p class="form-text">Нажимая на кнопку, вы даете <span class="orange-underline">согласие на обработку своих
+                персональных данных</span></p>
+        </div>
+    </div>
+</div>
 <div class="mini-header">
     <div class="container">
         <div class="breadcrumbs">
@@ -100,22 +118,22 @@
                     </a>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/img/about-company-1.jpg"  alt="">
+                            <img src="assets/img/about-company-1.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/about-company-2.jpg"  alt="">
+                            <img src="assets/img/about-company-2.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/about-company-1.jpg"  alt="">
+                            <img src="assets/img/about-company-1.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/about-company-2.jpg"  alt="">
+                            <img src="assets/img/about-company-2.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/about-company-1.jpg"  alt="">
+                            <img src="assets/img/about-company-1.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/about-company-2.jpg"  alt="">
+                            <img src="assets/img/about-company-2.jpg" alt="">
                         </div>
                     </div>
                     <a class="carousel-control-next" href="#carouselLicenses" role="button" data-slide="next">
@@ -173,7 +191,8 @@
                 </div>
                 <div class="text">
                     <h3 class="orange-text">Обязательно идем навстречу</h3>
-                    <p>Мы понимаем, что желание внести изменения в проект могут возникнуть на любом этапе. Желание клиента
+                    <p>Мы понимаем, что желание внести изменения в проект могут возникнуть на любом этапе. Желание
+                        клиента
                         – закон, поэтому мы совместно проработаем все необходимые дополнения и воплотим их в жизнь
                         в максимально короткий срок. В любом случае, вы обязательно останетесь довольны результатом.</p>
                 </div>
@@ -182,7 +201,8 @@
                     <p>Работая с нами, вы можете быть уверены в качестве и своевременности всех выполняемых работ.
                         Если же вы любите все контролировать самостоятельно, но времени постоянно
                         присутствовать на объекте нет, вы всегда сможете проверить выполнение каждого этапа благодаря
-                        ежедневному фотоотчету. Более того, Вы получаете доступ ко всем графикам работ, где сможете лично
+                        ежедневному фотоотчету. Более того, Вы получаете доступ ко всем графикам работ, где сможете
+                        лично
                         отслеживать соблюдение сроков монтажа.</p>
                 </div>
             </div>
@@ -194,21 +214,15 @@
         <h2 class="white-text">Остались <span class="orange-text">вопросы?</span></h2>
         <p>Закажите бесплатную консультацию по вашему проекту<br>
             и мы перезвоним вам в ближайшее время!</p>
-        <form>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
-            <button class="orange_btn" data-toggle="modal" data-target="#modal_call">Узнать стоимость</button>
-        </form>
-
-
+        <div class="buttons">
+            <form>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+            </form>
+            <button class="orange_btn" data-toggle="modal" data-target="#modal_price">Узнать стоимость</button>
+        </div>
     </div>
 </div>
-
-
-
-
-
-
 
 
 <div class="footer">
@@ -226,11 +240,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

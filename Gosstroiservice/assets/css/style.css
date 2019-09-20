@@ -220,13 +220,7 @@
   padding-bottom: 40px !important;
 }
 .about-questions form {
-  width: 90%;
   padding-bottom: 50px;
-  margin: 0 auto 0 auto !important;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .about-questions form input {
   width: 360px;
@@ -241,9 +235,16 @@
   font-size: 16px;
   color: #cccccc;
 }
-.about-questions form button {
+.about-questions button {
   height: 68px;
   width: 200px;
+}
+.about-questions .buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 0 auto !important;
 }
 
 body {
@@ -942,6 +943,26 @@ p {
   .about-map .addres {
     left: 10% !important;
   }
+
+  .about-questions .buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .about-questions button {
+    height: 68px;
+    width: 200px;
+    margin: 0 auto 40px auto;
+    display: block;
+  }
+  .about-questions form {
+    margin: 0 auto;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 1024px) {
   .about-map .addres {
@@ -1197,10 +1218,6 @@ p {
   }
 }
 @media screen and (max-device-width: 600px) {
-  .about-questions form input {
-    margin-right: 0 !important;
-  }
-
   #carouselExampleCaptionsSmall .about-company {
     margin-top: 10px;
   }
@@ -1240,6 +1257,17 @@ p {
   .container {
     padding: 30px 5px 0 5px !important;
   }
+  .container p, .container h1, .container h3 {
+    padding-left: 20px;
+  }
+  .container .breadcrumbs {
+    padding-left: 30px;
+  }
+
+  .left-text,
+.right-text {
+    margin-left: 0 !important;
+  }
 }
 @media screen and (max-device-width: 500px) {
   .about-company .right-icons .text {
@@ -1271,6 +1299,30 @@ p {
   }
   .about-company .right-icons .text {
     width: 150px !important;
+  }
+
+  .about-questions .buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .about-questions button {
+    height: 68px;
+    width: 200px;
+    margin: 0 auto 40px auto;
+    display: block;
+  }
+  .about-questions form {
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .about-questions form input {
+    max-width: 290px;
+    margin-right: 0;
   }
 
   #carouselExampleCaptionsSmall .carousel-caption {

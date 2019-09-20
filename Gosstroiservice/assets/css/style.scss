@@ -280,13 +280,8 @@ $light-grey: #f7f7f7;
   }
 
   form {
-    width: 90%;
+    //width: 90%;
     padding-bottom: 50px;
-    margin: 0 auto 0 auto !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 
     input {
       width: 360px;
@@ -302,11 +297,17 @@ $light-grey: #f7f7f7;
         color: #cccccc;
       }
     }
-
-    button {
-      height: 68px;
-      width: 200px;
-    }
+  }
+  button {
+    height: 68px;
+    width: 200px;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 0 auto !important;
   }
 }
 
@@ -1131,6 +1132,27 @@ p {
       left: 10% !important;
     }
   }
+  .about-questions{
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+    button {
+      height: 68px;
+      width: 200px;
+      margin: 0 auto 40px auto;
+      display: block;
+    }
+    form{
+      margin: 0 auto;
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1473,13 +1495,7 @@ p {
 
 @media screen and (max-device-width: 600px) {
 
-  .about-questions {
-    form {
-      input {
-        margin-right: 0 !important;
-      }
-    }
-  }
+
 
   #carouselExampleCaptionsSmall {
     .about-company {
@@ -1532,6 +1548,16 @@ p {
 
   .container {
     padding: 30px 5px 0 5px !important;
+    p, h1, h3{
+      padding-left: 20px;
+    }
+    .breadcrumbs{
+      padding-left: 30px;
+    }
+  }
+  .left-text,
+  .right-text{
+    margin-left: 0 !important;
   }
 
 }
@@ -1583,6 +1609,33 @@ p {
       }
     }
   }
+
+  .about-questions{
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+    button {
+      height: 68px;
+      width: 200px;
+      margin: 0 auto 40px auto;
+      display: block;
+    }
+    form{
+      margin: 0 auto;
+      width: auto;
+      input{
+        max-width: 290px;
+        margin-right: 0;
+      }
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+  }
+
   #carouselExampleCaptionsSmall {
     .carousel-caption {
       padding: 50px 0 0 5px !important;
