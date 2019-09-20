@@ -7,6 +7,23 @@ $white: #ffffff;
 $light-grey: #f7f7f7;
 
 
+
+
+#carouselLicenses{
+  .carousel-item .active{
+    position: relative;
+  }
+  .carousel-item~.active::before{
+    content: url("../img/about-company-1.jpg") !important;
+    width: 250px !important;
+    height: 240px !important;
+    position: absolute !important;
+    left: 800px !important;
+    top: 0 !important;
+    z-index: 50;
+  }
+}
+
 .about-company {
   .texts {
     display: flex;
@@ -1013,10 +1030,15 @@ h5 {
   padding: 40px 30px;
 
   h3 {
-    font-family: 'Noah Bold', sans-serif;
+    font-family: 'Noah Bold', sans-serif !important;
     font-size: 24px;
     color: $black-grey;
     text-align: center;
+  }
+   .modal_thanks{
+     max-width: 450px !important;
+    font-size: 28px !important;
+    text-transform: none !important;
   }
 
   form {
