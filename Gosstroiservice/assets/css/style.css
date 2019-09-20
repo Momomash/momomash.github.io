@@ -395,6 +395,13 @@ button {
   text-decoration-color: #404040;
 }
 
+.form-text {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Gotham Pro", sans-serif;
+  padding-top: 20px;
+}
+
 .grey-button {
   border: 2px solid #606060;
   color: #606060;
@@ -644,6 +651,10 @@ h5 {
 
 .orange-link:hover {
   color: #b04a2e;
+}
+
+.orange-underline {
+  border-bottom: 2px solid #d34f2a;
 }
 
 p {
