@@ -97,6 +97,54 @@
   line-height: 30px;
 }
 
+.about-object {
+  margin-bottom: 200px !important;
+}
+.about-object .home-gallery-mobile {
+  max-width: 530px;
+  margin: 0 auto 0 auto;
+  height: 360px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-inner {
+  height: 320px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-inner .carousel-item img {
+  height: 100% !important;
+  display: block;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+  top: 490px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+  left: 420px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev .carousel-control-prev-icon {
+  background: url("../img/prev-or.png") 100% 100% no-repeat;
+  opacity: 1;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators {
+  opacity: 1 !important;
+  bottom: -140px !important;
+  display: flex;
+  margin: 0 !important;
+  justify-content: space-between;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
+  background-color: transparent;
+  text-indent: 0 !important;
+  display: block;
+  width: 30%;
+  height: 90px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators li img {
+  width: 100%;
+  height: 90px;
+}
+
 .about-projects .container {
   display: flex;
   justify-content: center;
@@ -271,6 +319,42 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto 0 auto !important;
+}
+
+.about-work .texts {
+  display: flex;
+  flex-direction: row;
+}
+.about-work .texts .left-text {
+  margin-left: 0 !important;
+  width: 50%;
+}
+.about-work .texts .left-text ul {
+  list-style-type: square;
+}
+.about-work .texts .left-text ul li {
+  color: #333333;
+  list-style: none;
+  padding-bottom: 20px;
+  max-width: 90%;
+}
+.about-work .texts .left-text ul li::before {
+  content: "";
+  background-color: red;
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  margin-left: -1em;
+  margin-right: 10px;
+}
+.about-work .texts .right-text {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 50px 0 0 50px;
+}
+.about-work .texts .right-text p {
+  max-width: 400px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -466,6 +550,42 @@ h5 {
   font-family: "Gotham Pro Medium", sans-serif !important;
   padding: 10px 0;
   margin: 0;
+}
+
+.icons {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icons .left-icons,
+.icons .right-icons {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icons .left-icons .text,
+.icons .right-icons .text {
+  height: 50%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons .left-icons .text p, .icons .left-icons .text h3,
+.icons .right-icons .text p,
+.icons .right-icons .text h3 {
+  text-align: center;
+}
+.icons .right-icons {
+  align-items: flex-end;
+}
+
+.large-text {
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 24px;
 }
 
 .left-block-team {
@@ -1039,6 +1159,18 @@ p {
     left: 10% !important;
   }
 
+  .about-object {
+    margin-bottom: 200px !important;
+  }
+  .about-object .home-gallery-mobile {
+    height: 370px;
+    max-width: 450px;
+    margin: 0 auto 0 auto;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+    left: 360px;
+  }
+
   .about-questions .buttons {
     display: flex;
     flex-direction: column;
@@ -1077,6 +1209,74 @@ p {
     top: 0 !important;
   }
 
+  .about-object {
+    margin-bottom: 200px !important;
+  }
+  .about-object .texts .left-text ul li {
+    max-width: 99%;
+  }
+  .about-object .home-gallery-mobile {
+    height: 100%;
+    max-width: 100% !important;
+    margin: 0 auto 0 auto !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel {
+    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-inner {
+    width: 85% !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-loupe {
+    display: none;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    position: relative !important;
+    width: 5% !important;
+    top: 0;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    margin-left: 10px;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+    left: 0;
+    margin-right: 10px;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev-icon {
+    background: url("../img/prev.png") 100% 100% no-repeat !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators {
+    bottom: -50px !important;
+    display: flex !important;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #666666 !important;
+    opacity: 1;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li img {
+    display: none;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    background: #d34f2a !important;
+  }
+
   .about-company-text .left-block {
     max-width: 960px !important;
     margin: 0 auto;
@@ -1108,6 +1308,26 @@ p {
   }
   .about-company_carousel_block .control-number {
     display: none;
+  }
+
+  .about-work .texts {
+    flex-wrap: wrap;
+  }
+  .about-work .texts .left-text {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .about-work .texts .left-text ul li {
+    padding-bottom: 20px;
+    max-width: 98%;
+  }
+  .about-work .texts .right-text {
+    width: 100%;
+    padding: 50px 0 0 40px;
+  }
+  .about-work .texts .right-text p {
+    max-width: 400px;
+    margin-bottom: 30px;
   }
 
   #carouselExampleCaptionsSmall .carousel-control-prev {
@@ -1352,6 +1572,59 @@ p {
     display: block;
   }
 
+  .about-object .home-gallery-mobile {
+    height: 560px;
+  }
+  .about-object .home-gallery-mobile #object_carousel {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-inner {
+    width: 85%;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-loupe {
+    display: none;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    position: relative;
+    width: 5%;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    margin-left: 10px;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+    margin-right: 10px;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev-icon {
+    background: url("../img/prev.png") 100% 100% no-repeat;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators {
+    display: flex !important;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #666666 !important;
+    opacity: 1;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    background: #d34f2a !important;
+  }
+
   #carouselExampleCaptionsSmall .carousel-caption h5 {
     font-size: 18px !important;
     max-width: 150px !important;
@@ -1388,6 +1661,30 @@ p {
 @media screen and (max-device-width: 600px) {
   .about-company-text .left-block {
     padding-left: 30px !important;
+  }
+
+  .about-company .texts .right-icons .text img {
+    margin-left: 20px;
+  }
+
+  .about-work .texts {
+    flex-wrap: wrap;
+  }
+  .about-work .texts .left-text {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .about-work .texts .left-text ul li {
+    padding-bottom: 10px;
+  }
+  .about-work .texts .right-text {
+    width: 100%;
+    padding: 50px 0 0 40px;
+  }
+  .about-work .texts .right-text p {
+    max-width: 400px;
+    padding-left: 0;
+    margin-bottom: 10px;
   }
 
   #carouselExampleCaptionsSmall .about-company {
@@ -1446,6 +1743,101 @@ p {
     width: 200px !important;
   }
 
+  .about-object {
+    margin-bottom: 200px !important;
+  }
+  .about-object .texts .left-text ul li {
+    max-width: 99%;
+  }
+  .about-object .home-gallery-mobile {
+    height: 360px;
+    max-width: 100% !important;
+    margin: 0 auto 0 auto !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel {
+    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-inner {
+    width: 85% !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-loupe {
+    display: none;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    position: relative !important;
+    width: 3% !important;
+    top: 0;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+    margin-left: 0;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+    left: 0;
+    margin-right: 0;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-prev-icon {
+    background: url("../img/prev.png") 100% 100% no-repeat !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators {
+    bottom: -50px !important;
+    display: flex !important;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #666666 !important;
+    opacity: 1;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li img {
+    display: none;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    background: #d34f2a !important;
+  }
+
+  .about-work h2 {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .about-work .texts {
+    flex-wrap: wrap;
+  }
+  .about-work .texts .left-text {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .about-work .texts .left-text ul {
+    padding-left: 40px;
+  }
+  .about-work .texts .left-text ul li {
+    padding-bottom: 10px;
+  }
+  .about-work .texts .right-text {
+    width: 100%;
+    padding: 50px 0 0 25px;
+  }
+  .about-work .texts .right-text p {
+    max-width: 400px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
   #carouselExampleCaptionsSmall .carousel-caption h5 {
     font-size: 18px !important;
     max-width: 150px !important;
@@ -1471,6 +1863,16 @@ p {
   }
   .about-company .right-icons .text {
     width: 150px !important;
+  }
+
+  .about-object {
+    margin-bottom: 200px !important;
+  }
+  .about-object .texts .left-text ul li {
+    max-width: 99%;
+  }
+  .about-object .home-gallery-mobile {
+    height: 360px;
   }
 
   .about-questions .buttons {
@@ -1517,6 +1919,28 @@ p {
   .carousel-left-block h1 {
     font-size: 30px !important;
     max-width: 300px !important;
+  }
+
+  .icons .left-icons .text,
+.icons .right-icons .text {
+    height: 50%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icons .left-icons .text p, .icons .left-icons .text h3,
+.icons .right-icons .text p,
+.icons .right-icons .text h3 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .icons .left-icons .text img,
+.icons .right-icons .text img {
+    margin-left: 20px;
+  }
+  .icons .right-icons {
+    align-items: flex-end;
   }
 
   .promo-small-carousel {
