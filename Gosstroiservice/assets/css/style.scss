@@ -57,6 +57,13 @@ $light-grey: #f7f7f7;
   }
 }
 
+.about-company_carousel_block{
+  max-height: 330px;
+  .carousel-item{
+    height: 240px !important;
+  }
+}
+
 .about-map {
   min-height: 300px;
   position: relative;
@@ -1166,6 +1173,26 @@ p {
     }
   }
 
+
+  .about-company_carousel_block{
+    background-color: $orange !important;
+    max-height: 310px !important;
+    .bd-example{
+      max-width: 450px !important;
+    }
+    .carousel-item{
+      height: 220px !important;
+    }
+    .carousel-indicators{
+      margin-top: 90px !important;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+      filter: brightness(0) invert(1) !important;
+    }
+  }
+
+
   #carouselExampleCaptionsSmall {
     .carousel-control-prev {
       display: none !important;
@@ -1549,7 +1576,7 @@ p {
   .container {
     padding: 30px 5px 0 5px !important;
     p, h1, h3{
-      padding-left: 20px;
+      padding-left: 25px;
     }
     .breadcrumbs{
       padding-left: 30px;

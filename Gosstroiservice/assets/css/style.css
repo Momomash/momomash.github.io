@@ -39,6 +39,13 @@
   margin: 0;
 }
 
+.about-company_carousel_block {
+  max-height: 330px;
+}
+.about-company_carousel_block .carousel-item {
+  height: 240px !important;
+}
+
 .about-map {
   min-height: 300px;
   position: relative;
@@ -972,6 +979,24 @@ p {
     top: 0 !important;
   }
 
+  .about-company_carousel_block {
+    background-color: #d34f2a !important;
+    max-height: 310px !important;
+  }
+  .about-company_carousel_block .bd-example {
+    max-width: 450px !important;
+  }
+  .about-company_carousel_block .carousel-item {
+    height: 220px !important;
+  }
+  .about-company_carousel_block .carousel-indicators {
+    margin-top: 90px !important;
+  }
+  .about-company_carousel_block .carousel-control-next-icon,
+.about-company_carousel_block .carousel-control-prev-icon {
+    filter: brightness(0) invert(1) !important;
+  }
+
   #carouselExampleCaptionsSmall .carousel-control-prev {
     display: none !important;
   }
@@ -1258,7 +1283,7 @@ p {
     padding: 30px 5px 0 5px !important;
   }
   .container p, .container h1, .container h3 {
-    padding-left: 20px;
+    padding-left: 25px;
   }
   .container .breadcrumbs {
     padding-left: 30px;
