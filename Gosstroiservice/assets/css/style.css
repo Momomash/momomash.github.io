@@ -40,10 +40,29 @@
 }
 
 .about-company_carousel_block {
+  position: relative;
   max-height: 330px;
+}
+.about-company_carousel_block .about-company_carousel {
+  position: absolute;
+  left: -50px;
+}
+.about-company_carousel_block .about-company_carousel .carousel-control-prev {
+  display: none;
 }
 .about-company_carousel_block .carousel-item {
   height: 240px !important;
+}
+.about-company_carousel_block .control-number {
+  margin-right: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Gotham Pro Light", sans-serif;
+  color: #ffffff;
 }
 
 .about-map {
@@ -448,6 +467,33 @@ h5 {
   margin: 0;
 }
 
+.left-block-team {
+  background-color: #fafafa !important;
+}
+.left-block-team .bd-example {
+  max-width: 270px !important;
+}
+.left-block-team .carousel-item {
+  color: #333333;
+  max-height: 170px !important;
+}
+.left-block-team .carousel-control-prev {
+  display: flex !important;
+}
+.left-block-team .carousel-control-next,
+.left-block-team .carousel-control-prev {
+  align-items: flex-end;
+  position: absolute;
+  bottom: -80px;
+  color: #d34f2a;
+}
+.left-block-team .carousel-control-next:hover,
+.left-block-team .carousel-control-prev:hover,
+.left-block-team .carousel-control-next:focus,
+.left-block-team .carousel-control-prev:focus {
+  color: #b04a2e;
+}
+
 .licenses-block {
   display: flex;
   flex-direction: row;
@@ -469,18 +515,22 @@ h5 {
 .licenses-block .right-block .bd-example {
   max-width: 450px;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-indicators {
   display: none !important;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-item {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-item {
   position: relative;
   z-index: 0;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-item img {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item img,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-item img {
   width: 100%;
   height: 100%;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-item .carousel-loupe {
   position: absolute;
   z-index: 5;
   width: 56px;
@@ -488,23 +538,36 @@ h5 {
   left: 45%;
   top: 45%;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe:hover {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-item .carousel-loupe:hover,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-item .carousel-loupe:hover {
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
 .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next,
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-next,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-prev {
   opacity: 1;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-prev-icon {
   background: url("../img/prev-orange.png") 100% 100% no-repeat;
   width: 56px;
   height: 56px;
 }
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-next-icon {
   background: url("../img/next-orange.png") 100% 100% no-repeat;
   width: 56px;
   height: 56px;
+}
+
+.about-company-text {
+  justify-content: flex-end;
+}
+.about-company-text .left-block {
+  width: 570px !important;
+  padding-left: 0 !important;
 }
 
 .logo {
@@ -939,6 +1002,14 @@ p {
   }
 }
 @media screen and (max-width: 1200px) {
+  .about-company-text {
+    justify-content: flex-end;
+  }
+  .about-company-text .left-block {
+    width: 480px !important;
+    padding-left: 0 !important;
+  }
+
   .about-company .left-text {
     max-width: 420px !important;
     margin-left: 10px;
@@ -979,9 +1050,21 @@ p {
     top: 0 !important;
   }
 
+  .about-company-text .left-block {
+    max-width: 960px !important;
+    margin: 0 auto;
+  }
+
   .about-company_carousel_block {
     background-color: #d34f2a !important;
     max-height: 310px !important;
+  }
+  .about-company_carousel_block .about-company_carousel {
+    position: relative !important;
+    left: 0;
+  }
+  .about-company_carousel_block .about-company_carousel .carousel-control-prev {
+    display: flex;
   }
   .about-company_carousel_block .bd-example {
     max-width: 450px !important;
@@ -995,6 +1078,9 @@ p {
   .about-company_carousel_block .carousel-control-next-icon,
 .about-company_carousel_block .carousel-control-prev-icon {
     filter: brightness(0) invert(1) !important;
+  }
+  .about-company_carousel_block .control-number {
+    display: none;
   }
 
   #carouselExampleCaptionsSmall .carousel-control-prev {
@@ -1056,6 +1142,14 @@ p {
     margin-left: 18px;
   }
 
+  .left-block-team {
+    background-color: #ffffff !important;
+    max-height: 390px !important;
+  }
+  .left-block-team .carousel-control-text {
+    display: none;
+  }
+
   .licenses-block {
     display: flex;
     flex-direction: column;
@@ -1077,42 +1171,53 @@ p {
   .licenses-block .right-block .bd-example {
     margin: 0 auto;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses {
+  .licenses-block .right-block .bd-example #carouselLicenses,
+.licenses-block .right-block .bd-example #carouselTeam {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-inner {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-inner,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-inner {
     width: 80%;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-loupe {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-loupe,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-loupe {
     display: none;
   }
   .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev,
-.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next {
+.licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-prev,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-next {
     position: relative;
     width: 5%;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-next {
     margin-left: 10px;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-prev {
     margin-right: 10px;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-prev-icon,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-prev-icon {
     background: url("../img/prev.png") 100% 100% no-repeat;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-control-next-icon,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-control-next-icon {
     background: url("../img/next.png") 100% 100% no-repeat;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-indicators {
     display: flex !important;
     position: relative;
     width: 100%;
     margin-top: 30px;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-indicators li {
     width: 8px;
     height: 8px;
     border-radius: 100%;
@@ -1121,7 +1226,8 @@ p {
     box-sizing: border-box !important;
     border: none !important;
   }
-  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li.active {
+  .licenses-block .right-block .bd-example #carouselLicenses .carousel-indicators li.active,
+.licenses-block .right-block .bd-example #carouselTeam .carousel-indicators li.active {
     width: 12px;
     height: 12px;
     background: #d34f2a !important;
@@ -1139,6 +1245,11 @@ p {
   }
 }
 @media screen and (max-device-width: 990px) {
+  .about-company-text .left-block {
+    max-width: 720px !important;
+    margin: 0 auto;
+  }
+
   .about-company .left-text {
     max-width: 100% !important;
   }
@@ -1202,6 +1313,11 @@ p {
   }
 }
 @media screen and (max-device-width: 768px) {
+  .about-company-text .left-block {
+    max-width: 540px !important;
+    margin: 0 auto;
+  }
+
   .about-projects .home-gallery-desktop {
     display: none;
   }
@@ -1243,6 +1359,10 @@ p {
   }
 }
 @media screen and (max-device-width: 600px) {
+  .about-company-text .left-block {
+    padding-left: 30px !important;
+  }
+
   #carouselExampleCaptionsSmall .about-company {
     margin-top: 10px;
   }

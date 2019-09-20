@@ -57,10 +57,34 @@ $light-grey: #f7f7f7;
   }
 }
 
-.about-company_carousel_block{
+.about-company_carousel_block {
+  position: relative;
   max-height: 330px;
-  .carousel-item{
+
+  .about-company_carousel {
+    position: absolute;
+    left: -50px;
+
+    .carousel-control-prev {
+      display: none;
+    }
+  }
+
+  .carousel-item {
     height: 240px !important;
+  }
+
+  .control-number {
+    margin-right: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Gotham Pro Light', sans-serif;
+    color: $white;
+
   }
 }
 
@@ -101,11 +125,12 @@ $light-grey: #f7f7f7;
 }
 
 .about-projects {
-  .container{
+  .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
+
   .home-gallery-desktop {
     display: flex;
     flex-direction: row;
@@ -305,11 +330,13 @@ $light-grey: #f7f7f7;
       }
     }
   }
+
   button {
     height: 68px;
     width: 200px;
   }
-  .buttons{
+
+  .buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -496,14 +523,14 @@ button {
 
 }
 
-.form-text{
+.form-text {
   text-align: center;
   font-size: 14px;
   font-family: 'Gotham Pro', sans-serif;
   padding-top: 20px;
 }
 
-.grey-button{
+.grey-button {
   border: 2px solid #606060;
   color: #606060;
   font-family: 'Gotham Pro Medium', sans-serif;
@@ -541,6 +568,37 @@ h5 {
   margin: 0;
 }
 
+.left-block-team {
+  background-color: #fafafa !important;
+
+  .bd-example{
+    max-width: 270px !important;
+
+  }
+  .carousel-item{
+    color: $black-grey;
+    max-height: 170px !important;
+  }
+  .carousel-control-prev {
+    display: flex !important;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev{
+    align-items: flex-end;
+    position: absolute;
+    bottom: -80px;
+    color: $orange;
+  }
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover,
+  .carousel-control-next:focus,
+  .carousel-control-prev:focus{
+    color: $black-orange;
+
+  }
+}
+
 .licenses-block {
   display: flex;
   flex-direction: row;
@@ -564,10 +622,12 @@ h5 {
     .bd-example {
       max-width: 450px;
       //margin: 0 auto;
-      #carouselLicenses {
-        .carousel-indicators{
+      #carouselLicenses,
+      #carouselTeam {
+        .carousel-indicators {
           display: none !important;
         }
+
         .carousel-item {
           position: relative;
           z-index: 0;
@@ -611,6 +671,15 @@ h5 {
         }
       }
     }
+  }
+}
+
+.about-company-text {
+  justify-content: flex-end;
+
+  .left-block {
+    width: 570px !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -792,8 +861,8 @@ h5 {
   color: $black-orange;
 }
 
-.orange-underline{
-  border-bottom: 2px solid $orange ;
+.orange-underline {
+  border-bottom: 2px solid $orange;
 }
 
 p {
@@ -814,28 +883,28 @@ p {
     }
 
     .carousel-item-1 {
-      background-image: url("../img/promo-1.jpg") ;
+      background-image: url("../img/promo-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
 
     .carousel-item-2 {
-      background-image: url("../img/promo-1.jpg") ;
+      background-image: url("../img/promo-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
 
     .carousel-item-3 {
-      background-image: url("../img/promo-1.jpg") ;
+      background-image: url("../img/promo-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
 
     .carousel-item-4 {
-      background-image: url("../img/promo-1.jpg") ;
+      background-image: url("../img/promo-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -1123,6 +1192,15 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .about-company-text {
+    justify-content: flex-end;
+
+    .left-block {
+      width: 480px !important;
+      padding-left: 0 !important;
+    }
+  }
+
   .about-company {
     .left-text {
       max-width: 420px !important;
@@ -1139,20 +1217,22 @@ p {
       left: 10% !important;
     }
   }
-  .about-questions{
-    .buttons{
+  .about-questions {
+    .buttons {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center !important;
     }
+
     button {
       height: 68px;
       width: 200px;
       margin: 0 auto 40px auto;
       display: block;
     }
-    form{
+
+    form {
       margin: 0 auto;
       width: 360px;
       display: flex;
@@ -1173,22 +1253,46 @@ p {
     }
   }
 
+  .about-company-text {
+    .left-block {
+      max-width: 960px !important;
+      margin: 0 auto;
+    }
+  }
 
-  .about-company_carousel_block{
+
+  .about-company_carousel_block {
+    .about-company_carousel {
+      position: relative !important;
+      left: 0;
+
+      .carousel-control-prev {
+        display: flex;
+      }
+    }
+
     background-color: $orange !important;
     max-height: 310px !important;
-    .bd-example{
+
+    .bd-example {
       max-width: 450px !important;
     }
-    .carousel-item{
+
+    .carousel-item {
       height: 220px !important;
     }
-    .carousel-indicators{
+
+    .carousel-indicators {
       margin-top: 90px !important;
     }
+
     .carousel-control-next-icon,
-    .carousel-control-prev-icon{
+    .carousel-control-prev-icon {
       filter: brightness(0) invert(1) !important;
+    }
+
+    .control-number {
+      display: none;
     }
   }
 
@@ -1247,7 +1351,7 @@ p {
     }
   }
 
-  .grey-button{
+  .grey-button {
     margin: 40px auto 100px auto;
   }
 
@@ -1271,6 +1375,14 @@ p {
 
   }
 
+  .left-block-team {
+    background-color: $white !important;
+    max-height: 390px !important;
+  .carousel-control-text{
+    display: none;
+  }
+
+  }
   .licenses-block {
     display: flex;
     flex-direction: column;
@@ -1294,7 +1406,8 @@ p {
       .bd-example {
         margin: 0 auto;
 
-        #carouselLicenses {
+        #carouselLicenses,
+        #carouselTeam {
           justify-content: center;
           display: flex;
           flex-wrap: wrap;
@@ -1303,9 +1416,11 @@ p {
           .carousel-inner {
             width: 80%;
           }
-          .carousel-loupe{
+
+          .carousel-loupe {
             display: none;
           }
+
           .carousel-control-prev,
           .carousel-control-next {
             position: relative;
@@ -1356,7 +1471,7 @@ p {
   }
 
   .promo-small-carousel {
-      width: 40% !important;
+    width: 40% !important;
 
     .carousel-caption {
       padding: 50px 0 0 40px !important;
@@ -1369,6 +1484,14 @@ p {
 }
 
 @media screen and (max-device-width: 990px) {
+
+  .about-company-text {
+    .left-block {
+      max-width: 720px !important;
+      margin: 0 auto;
+    }
+  }
+
   .about-company {
     .left-text {
       max-width: 100% !important;
@@ -1380,9 +1503,10 @@ p {
   }
 
   .about-projects {
-    .container{
+    .container {
       display: flex;
     }
+
     .home-gallery-desktop {
       .gallery-block {
         .loupe {
@@ -1442,7 +1566,8 @@ p {
   }
 
   .promo-small-carousel {
-      width: 45% !important;
+    width: 45% !important;
+
     .carousel-caption {
       padding: 50px 0 0 30px !important;
     }
@@ -1466,6 +1591,13 @@ p {
 }
 
 @media screen and (max-device-width: 768px) {
+
+  .about-company-text {
+    .left-block {
+      max-width: 540px !important;
+      margin: 0 auto;
+    }
+  }
 
   .about-projects {
     .home-gallery-desktop {
@@ -1495,7 +1627,7 @@ p {
     display: none !important;
   }
 
-  .privacy_h{
+  .privacy_h {
     font-size: 56px !important;
   }
 
@@ -1522,7 +1654,11 @@ p {
 
 @media screen and (max-device-width: 600px) {
 
-
+  .about-company-text {
+    .left-block {
+      padding-left: 30px !important;
+    }
+  }
 
   #carouselExampleCaptionsSmall {
     .about-company {
@@ -1569,21 +1705,23 @@ p {
     width: 45% !important;
   }
 
-  .privacy_h{
+  .privacy_h {
     font-size: 46px !important;
   }
 
   .container {
     padding: 30px 5px 0 5px !important;
-    p, h1, h3{
+
+    p, h1, h3 {
       padding-left: 25px;
     }
-    .breadcrumbs{
+
+    .breadcrumbs {
       padding-left: 30px;
     }
   }
   .left-text,
-  .right-text{
+  .right-text {
     margin-left: 0 !important;
   }
 
@@ -1619,7 +1757,7 @@ p {
   h1 {
     font-size: 46px !important;
   }
-  .privacy_h{
+  .privacy_h {
     font-size: 30px !important;
   }
 }
@@ -1637,26 +1775,30 @@ p {
     }
   }
 
-  .about-questions{
-    .buttons{
+  .about-questions {
+    .buttons {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center !important;
     }
+
     button {
       height: 68px;
       width: 200px;
       margin: 0 auto 40px auto;
       display: block;
     }
-    form{
+
+    form {
       margin: 0 auto;
       width: auto;
-      input{
+
+      input {
         max-width: 290px;
         margin-right: 0;
       }
+
       display: flex;
       flex-direction: column;
       padding-bottom: 0;
