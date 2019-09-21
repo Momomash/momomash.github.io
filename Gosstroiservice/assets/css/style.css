@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic");
+#carouselLicenses .carousel-item .active {
+  position: relative;
+}
+#carouselLicenses .carousel-item ~ .active::before {
+  content: url("../img/about-company-1.jpg") !important;
+  width: 250px !important;
+  height: 240px !important;
+  position: absolute !important;
+  left: 800px !important;
+  top: 0 !important;
+  z-index: 50;
+}
+
 .about-company .texts {
   display: flex;
   flex-wrap: wrap;
@@ -95,54 +108,6 @@
   color: #ffffff;
   font-family: "Gotham Pro Medium", sans-serif;
   line-height: 30px;
-}
-
-.about-object {
-  margin-bottom: 200px !important;
-}
-.about-object .home-gallery-mobile {
-  max-width: 530px;
-  margin: 0 auto 0 auto;
-  height: 360px;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-inner {
-  height: 320px;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-inner .carousel-item img {
-  height: 100% !important;
-  display: block;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
-.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
-  top: 490px;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-control-next .carousel-control-next-icon {
-  background: url("../img/next.png") 100% 100% no-repeat;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
-  left: 420px;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-control-prev .carousel-control-prev-icon {
-  background: url("../img/prev-or.png") 100% 100% no-repeat;
-  opacity: 1;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-indicators {
-  opacity: 1 !important;
-  bottom: -140px !important;
-  display: flex;
-  margin: 0 !important;
-  justify-content: space-between;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
-  background-color: transparent;
-  text-indent: 0 !important;
-  display: block;
-  width: 30%;
-  height: 90px;
-}
-.about-object .home-gallery-mobile #object_carousel .carousel-indicators li img {
-  width: 100%;
-  height: 90px;
 }
 
 .about-projects .container {
@@ -355,6 +320,111 @@
 .about-work .texts .right-text p {
   max-width: 400px;
   margin-bottom: 30px;
+}
+
+.about-object {
+  margin-bottom: 200px !important;
+}
+.about-object .home-gallery-mobile {
+  max-width: 530px;
+  margin: 0 auto 0 auto;
+  height: 360px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-inner {
+  height: 320px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-inner .carousel-item img {
+  height: 100% !important;
+  display: block;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev,
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next {
+  top: 490px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-next .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
+  left: 420px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-control-prev .carousel-control-prev-icon {
+  background: url("../img/prev-or.png") 100% 100% no-repeat;
+  opacity: 1;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators {
+  opacity: 1 !important;
+  bottom: -140px !important;
+  display: flex;
+  margin: 0 !important;
+  justify-content: space-between;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators li {
+  background-color: transparent;
+  text-indent: 0 !important;
+  display: block;
+  width: 30%;
+  height: 90px;
+}
+.about-object .home-gallery-mobile #object_carousel .carousel-indicators li img {
+  width: 100%;
+  height: 90px;
+}
+.about-object .right-text {
+  padding: 180px 0 0 50px !important;
+  background-color: #fafafa !important;
+}
+.about-object .right-text .control-number {
+  margin-right: 40px;
+  position: absolute;
+  bottom: -65px;
+  left: 240px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  color: #606060;
+}
+.about-object .right-text .carousel-inner {
+  height: 320px;
+}
+.about-object .right-text .carousel-inner .carousel-item img {
+  height: 100% !important;
+  display: block;
+}
+.about-object .right-text .carousel-control-prev,
+.about-object .right-text .carousel-control-next {
+  top: 370px;
+}
+.about-object .right-text .carousel-control-next {
+  right: 150px;
+}
+.about-object .right-text .carousel-control-next .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.about-object .right-text .carousel-control-prev {
+  left: 140px;
+}
+.about-object .right-text .carousel-control-prev .carousel-control-prev-icon {
+  background: url("../img/prev-or.png") 100% 100% no-repeat;
+  opacity: 1;
+}
+.about-object .right-text .carousel-indicators {
+  opacity: 1 !important;
+  bottom: -140px !important;
+  display: flex;
+  margin: 0 !important;
+  justify-content: space-between;
+}
+.about-object .right-text .carousel-indicators li {
+  background-color: transparent;
+  text-indent: 0 !important;
+  display: block;
+  width: 30%;
+  height: 90px;
+}
+.about-object .right-text .carousel-indicators li img {
+  width: 100%;
+  height: 90px;
 }
 
 body {
@@ -778,10 +848,15 @@ h5 {
   padding: 40px 30px;
 }
 .modal-content h3 {
-  font-family: "Noah Bold", sans-serif;
+  font-family: "Noah Bold", sans-serif !important;
   font-size: 24px;
   color: #333333;
   text-align: center;
+}
+.modal-content .modal_thanks {
+  max-width: 450px !important;
+  font-size: 28px !important;
+  text-transform: none !important;
 }
 .modal-content form {
   width: 100%;
@@ -1170,6 +1245,63 @@ p {
   .about-object .home-gallery-mobile #object_carousel .carousel-control-prev {
     left: 360px;
   }
+  .about-object .right-text {
+    padding: 180px 0 0 50px !important;
+    background-color: #fafafa !important;
+  }
+  .about-object .right-text .control-number {
+    margin-right: 40px;
+    position: absolute;
+    bottom: -65px;
+    left: 190px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    color: #606060;
+  }
+  .about-object .right-text .carousel-inner {
+    height: 320px;
+  }
+  .about-object .right-text .carousel-inner .carousel-item img {
+    height: 100% !important;
+    display: block;
+  }
+  .about-object .right-text .carousel-control-prev,
+.about-object .right-text .carousel-control-next {
+    top: 370px;
+  }
+  .about-object .right-text .carousel-control-next {
+    right: 140px;
+  }
+  .about-object .right-text .carousel-control-next .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
+  }
+  .about-object .right-text .carousel-control-prev {
+    left: 130px;
+  }
+  .about-object .right-text .carousel-control-prev .carousel-control-prev-icon {
+    background: url("../img/prev-or.png") 100% 100% no-repeat;
+    opacity: 1;
+  }
+  .about-object .right-text .carousel-indicators {
+    opacity: 1 !important;
+    bottom: -140px !important;
+    display: flex;
+    margin: 0 !important;
+    justify-content: space-between;
+  }
+  .about-object .right-text .carousel-indicators li {
+    background-color: transparent;
+    text-indent: 0 !important;
+    display: block;
+    width: 30%;
+    height: 90px;
+  }
+  .about-object .right-text .carousel-indicators li img {
+    width: 100%;
+    height: 90px;
+  }
 
   .about-questions .buttons {
     display: flex;
@@ -1216,7 +1348,7 @@ p {
     max-width: 99%;
   }
   .about-object .home-gallery-mobile {
-    height: 100%;
+    height: 420px !important;
     max-width: 100% !important;
     margin: 0 auto 0 auto !important;
   }
@@ -1252,7 +1384,7 @@ p {
     background: url("../img/next.png") 100% 100% no-repeat;
   }
   .about-object .home-gallery-mobile #object_carousel .carousel-indicators {
-    bottom: -50px !important;
+    bottom: -40px !important;
     display: flex !important;
     position: relative;
     width: 100%;
@@ -1275,6 +1407,56 @@ p {
     width: 12px;
     height: 12px;
     background: #d34f2a !important;
+  }
+  .about-object .right-text {
+    padding: 50px 0 0 0 !important;
+    background-color: #fafafa !important;
+  }
+  .about-object .right-text .control-number {
+    position: absolute;
+    bottom: -65px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    color: #606060;
+  }
+  .about-object .right-text .carousel-indicators {
+    display: none !important;
+  }
+  .about-object .right-text #object_carousel1 {
+    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+  .about-object .right-text #object_carousel1 .carousel-inner {
+    width: 85% !important;
+    height: 75% !important;
+  }
+  .about-object .right-text #object_carousel1 .carousel-loupe {
+    display: none;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev,
+.about-object .right-text #object_carousel1 .carousel-control-next {
+    position: relative !important;
+    width: 5% !important;
+    top: 0;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-next {
+    margin-left: 10px;
+    right: 0;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev {
+    left: 0;
+    margin-right: 10px;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev-icon {
+    background: url("../img/prev.png") 100% 100% no-repeat !important;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-next-icon {
+    background: url("../img/next.png") 100% 100% no-repeat;
   }
 
   .about-company-text .left-block {
@@ -1573,7 +1755,7 @@ p {
   }
 
   .about-object .home-gallery-mobile {
-    height: 560px;
+    height: 420px;
   }
   .about-object .home-gallery-mobile #object_carousel {
     justify-content: center;
@@ -1583,6 +1765,7 @@ p {
   }
   .about-object .home-gallery-mobile #object_carousel .carousel-inner {
     width: 85%;
+    height: 320px;
   }
   .about-object .home-gallery-mobile #object_carousel .carousel-loupe {
     display: none;
@@ -1623,6 +1806,47 @@ p {
     width: 12px;
     height: 12px;
     background: #d34f2a !important;
+  }
+  .about-object .right-text {
+    padding: 50px 0 0 0 !important;
+  }
+  .about-object .right-text .control-number {
+    margin-right: 40px;
+    position: absolute;
+    bottom: -65px;
+    left: 240px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    color: #606060;
+  }
+  .about-object .right-text .carousel-indicators {
+    display: none !important;
+  }
+  .about-object .right-text #object_carousel1 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .about-object .right-text #object_carousel1 .carousel-inner {
+    width: 85%;
+    height: 320px;
+  }
+  .about-object .right-text #object_carousel1 .carousel-loupe {
+    display: none;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev,
+.about-object .right-text #object_carousel1 .carousel-control-next {
+    position: relative;
+    width: 5%;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-next {
+    margin-left: 10px;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev {
+    margin-right: 10px;
   }
 
   #carouselExampleCaptionsSmall .carousel-caption h5 {
@@ -1665,6 +1889,22 @@ p {
 
   .about-company .texts .right-icons .text img {
     margin-left: 20px;
+  }
+
+  .about-object .home-gallery-mobile {
+    height: 400px;
+  }
+  .about-object .home-gallery-mobile #object_carousel,
+.about-object .home-gallery-mobile #object_carousel1 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .about-object .home-gallery-mobile #object_carousel .carousel-inner,
+.about-object .home-gallery-mobile #object_carousel1 .carousel-inner {
+    width: 85%;
+    height: 300px;
   }
 
   .about-work .texts {
@@ -1750,9 +1990,12 @@ p {
     max-width: 99%;
   }
   .about-object .home-gallery-mobile {
-    height: 360px;
+    height: 340px !important;
     max-width: 100% !important;
     margin: 0 auto 0 auto !important;
+  }
+  .about-object .home-gallery-mobile .carousel-inner {
+    height: 250px !important;
   }
   .about-object .home-gallery-mobile #object_carousel {
     justify-content: center;
@@ -1809,6 +2052,41 @@ p {
     width: 12px;
     height: 12px;
     background: #d34f2a !important;
+  }
+  .about-object .right-text .control-number {
+    position: absolute;
+    bottom: -65px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    color: #606060;
+  }
+  .about-object .right-text .carousel-indicators {
+    display: none;
+  }
+  .about-object .right-text #object_carousel1 {
+    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+  .about-object .right-text #object_carousel1 .carousel-inner {
+    width: 85% !important;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev,
+.about-object .right-text #object_carousel1 .carousel-control-next {
+    position: relative !important;
+    width: 3% !important;
+    top: 0;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-next {
+    margin-left: 0;
+  }
+  .about-object .right-text #object_carousel1 .carousel-control-prev {
+    left: 0;
+    margin-right: 0;
   }
 
   .about-work h2 {
@@ -1872,7 +2150,10 @@ p {
     max-width: 99%;
   }
   .about-object .home-gallery-mobile {
-    height: 360px;
+    height: 340px !important;
+  }
+  .about-object .home-gallery-mobile .carousel-item {
+    height: 260px;
   }
 
   .about-questions .buttons {
