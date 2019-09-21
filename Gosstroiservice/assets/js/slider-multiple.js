@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  generateSlider("#carouselCompany", 2);
+  generateSlider("#carouselLicenses", 2);
   generateSlider("#carouselTeam", 4)
 });
 

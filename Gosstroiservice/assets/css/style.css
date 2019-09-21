@@ -460,6 +460,22 @@ button {
   font-family: "Gotham Pro Medium", sans-serif;
 }
 
+.carousel-control-text {
+  display: flex;
+  flex-direction: row;
+}
+.carousel-control-text .prev_arrow {
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+  margin: auto 5px auto 0;
+}
+.carousel-control-text .next_arrow {
+  display: flex;
+  align-items: center;
+  margin: auto 0 auto 5px;
+}
+
 .container {
   width: 1150px;
   margin: 0 auto;
@@ -1469,6 +1485,7 @@ p {
     max-height: 310px !important;
   }
   .about-company_carousel_block .about-company_carousel {
+    z-index: 5;
     position: relative !important;
     left: 0;
   }
@@ -1479,7 +1496,7 @@ p {
     max-width: 450px !important;
   }
   .about-company_carousel_block .carousel-item {
-    height: 220px !important;
+    height: 250px !important;
   }
   .about-company_carousel_block .carousel-indicators {
     margin-top: 90px !important;
