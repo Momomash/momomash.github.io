@@ -20,7 +20,6 @@ $(document).ready(function(){
         slidesToShow: 4,
         autoplay: true,
         autoplaySpeed: 4000,
-        speed: 20000,
         prevArrow: $('.company-slick-prev1'),
         nextArrow: $('.company-slick-next1'),
         responsive: [
