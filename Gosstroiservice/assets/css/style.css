@@ -70,12 +70,202 @@
   margin-right: 40px;
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 180px;
   display: flex;
   align-items: center;
   font-size: 16px;
   font-family: "Gotham Pro Light", sans-serif;
   color: #ffffff;
+}
+
+.about-company-text {
+  overflow-x: hidden;
+  justify-content: flex-end;
+}
+.about-company-text .left-block {
+  max-width: 660px !important;
+  padding-left: 0 !important;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 1800px) {
+  .about-company-text .left-block {
+    max-width: 650px !important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .about-company-text .left-block {
+    max-width: 640px !important;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .about-company-text .left-block {
+    max-width: 630px !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .about-company-text .left-block {
+    width: 55% !important;
+  }
+}
+.about-company-text .about-company_carousel_block {
+  position: relative;
+  width: 45% !important;
+}
+.about-company-text .about-company_carousel_block .wrapper {
+  width: 1100px;
+  position: absolute;
+  left: -80px;
+}
+.about-company-text .about-company_carousel_block .wrapper .slick-slide {
+  margin-right: 30px !important;
+}
+.about-company-text .about-company_carousel_block .wrapper .slick-slide img {
+  filter: brightness(0.5) !important;
+  height: 100%;
+  width: 100%;
+}
+.about-company-text .about-company_carousel_block .wrapper .slick-current img {
+  filter: brightness(1) !important;
+}
+.about-company-text .about-company_carousel_block .wrapper .slick-dots {
+  display: none !important;
+}
+.about-company-text .about-company_carousel_block .wrapper .company-slick-prev {
+  display: none !important;
+}
+.about-company-text .about-company_carousel_block .wrapper .company-slick-next {
+  background-image: url("../img/next-orange.png");
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  z-index: 4;
+  top: 90px;
+  left: 400px;
+}
+
+.about-team-text {
+  overflow-x: hidden;
+  justify-content: flex-end;
+}
+.about-team-text .left-block {
+  max-width: 660px !important;
+  padding-left: 0 !important;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 1800px) {
+  .about-team-text .left-block {
+    max-width: 650px !important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .about-team-text .left-block {
+    max-width: 640px !important;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .about-team-text .left-block {
+    max-width: 630px !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .about-team-text .left-block {
+    width: 55% !important;
+  }
+}
+.about-team-text .right-block {
+  background-color: inherit !important;
+  padding-top: 0 !important;
+}
+.about-team-text .about-company_carousel_block {
+  position: relative;
+  width: 45% !important;
+}
+.about-team-text .about-company_carousel_block .wrapper {
+  width: 1100px;
+  position: absolute;
+  left: -80px;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-slide {
+  margin-right: 30px !important;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-slide h5 {
+  font-size: 18px;
+  font-family: "Gotham Pro", sans-serif;
+  color: #333333;
+  text-align: left;
+  padding: 5px 0 5px 30px;
+  max-width: 265px;
+  margin: 0 auto 0 auto;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-slide p {
+  font-size: 16px;
+  font-family: "Gotham Pro Light", sans-serif;
+  color: #333333;
+  text-align: left;
+  max-width: 265px;
+  padding: 0 0 5px 30px;
+  margin: 0 auto 0 auto;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-slide img {
+  height: 70%;
+  margin: 0 auto;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-current {
+  z-index: 10 !important;
+  margin-right: 30px !important;
+  position: relative;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-current .item_content h5 {
+  z-index: 3 !important;
+  font-size: 18px;
+  font-family: "Gotham Pro", sans-serif;
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 5px;
+  max-width: 265px;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-current .item_content p {
+  z-index: 3;
+  font-size: 16px;
+  font-family: "Gotham Pro Light", sans-serif;
+  color: #ffffff;
+  text-align: left;
+  max-width: 265px;
+  margin: 0 auto 0 auto;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-current .item_content img {
+  z-index: 3;
+  height: 70%;
+  width: 100%;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-current:before {
+  z-index: -1 !important;
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #d34f2a;
+  width: 240px;
+  height: 210px;
+  left: 20px;
+  top: 20px;
+}
+.about-team-text .about-company_carousel_block .wrapper .slick-dots {
+  display: none !important;
+}
+.about-team-text .about-company_carousel_block .wrapper .company-slick-prev1 {
+  color: #d34f2a;
+  position: absolute;
+  z-index: 4;
+  bottom: -15px;
+  left: 0;
+}
+.about-team-text .about-company_carousel_block .wrapper .company-slick-next1 {
+  font-weight: bold;
+  color: #d34f2a;
+  position: absolute;
+  z-index: 4;
+  bottom: -15px;
+  left: 150px;
 }
 
 .about-map {
@@ -769,14 +959,6 @@ h5 {
   height: 56px;
 }
 
-.about-company-text {
-  justify-content: flex-end;
-}
-.about-company-text .left-block {
-  width: 570px !important;
-  padding-left: 0 !important;
-}
-
 .logo {
   font-family: "PT Sans", sans-serif !important;
   font-size: 20px;
@@ -1001,7 +1183,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 60px 0 0 20px;
+  padding: 60px 0 0 30px;
   margin: 0 auto;
   width: 1020px;
   text-align: left;
@@ -1146,7 +1328,7 @@ p {
   bottom: 0;
   background-color: #ffffff;
   height: 281px;
-  width: 35%;
+  width: 40%;
 }
 .promo .promo-small-carousel .bd-example {
   height: 281px;
@@ -1173,7 +1355,7 @@ p {
   text-decoration: none;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a {
-  max-width: 300px;
+  max-width: 270px;
   position: relative;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption a img {
@@ -1190,7 +1372,7 @@ p {
   font-family: "Gotham Pro Medium", sans-serif;
   font-size: 24px;
   margin-bottom: 25px;
-  max-width: 300px;
+  max-width: 270px;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-caption h5:before {
   content: "";
@@ -1203,13 +1385,13 @@ p {
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-prev {
   z-index: 10;
-  left: 250px;
+  left: 180px;
   top: -90px;
   height: 280px;
 }
 .promo .promo-small-carousel #carouselExampleCaptionsSmall .carousel-control-next {
   z-index: 10;
-  left: 300px;
+  left: 220px;
   top: -90px;
   height: 280px;
 }
@@ -1234,7 +1416,15 @@ p {
     justify-content: flex-end;
   }
   .about-company-text .left-block {
-    width: 480px !important;
+    max-width: 530px !important;
+    padding-left: 0 !important;
+  }
+
+  .about-team-text {
+    justify-content: flex-end;
+  }
+  .about-team-text .left-block {
+    max-width: 530px !important;
     padding-left: 0 !important;
   }
 
@@ -1480,6 +1670,210 @@ p {
     margin: 0 auto;
   }
 
+  .about-company-text {
+    overflow-x: inherit !important;
+  }
+  .about-company-text .about-company_carousel_block {
+    padding-bottom: 50px !important;
+    max-height: 340px !important;
+    position: relative;
+    width: 100% !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper {
+    width: 95% !important;
+    margin: 0 auto;
+    position: relative;
+    left: 0 !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .carouselAboutCompany {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-slide {
+    margin-right: 0 !important;
+    max-width: 90% !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-slide img {
+    filter: brightness(0.6) !important;
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-active img {
+    filter: brightness(1) !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-dots {
+    display: block !important;
+    position: absolute;
+    bottom: -120px;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-dots li button:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #333333 !important;
+    opacity: 1 !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .slick-dots li.slick-active button:before {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #d34f2a !important;
+  }
+  .about-company-text .about-company_carousel_block .wrapper .company-slick-prev {
+    background-image: url("../img/prev.png");
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 120px;
+    left: 1%;
+    display: block !important;
+    filter: brightness(0) invert(1);
+  }
+  .about-company-text .about-company_carousel_block .wrapper .company-slick-next {
+    background-image: url("../img/next.png") !important;
+    width: 10px !important;
+    height: 16px !important;
+    position: absolute;
+    z-index: 4;
+    top: 120px;
+    left: 98%;
+    filter: brightness(0) invert(1);
+  }
+
+  .about-team-text .left-block {
+    max-width: 960px !important;
+    margin: 0 auto;
+  }
+
+  .about-team-text {
+    overflow-x: inherit !important;
+  }
+  .about-team-text .about-company_carousel_block {
+    padding-bottom: 50px !important;
+    max-height: 340px !important;
+    position: relative;
+    width: 100% !important;
+  }
+  .about-team-text .about-company_carousel_block .wrapper {
+    background-color: #d34f2a !important;
+    width: 100% !important;
+    margin: 0 auto;
+    position: relative;
+    left: 0 !important;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .carouselAboutCompany {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-slide {
+    margin-top: 20px;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-slide .item-content {
+    max-width: 250px !important;
+    margin: 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-slide .item-content h5 {
+    font-size: 18px;
+    font-family: "Gotham Pro", sans-serif;
+    color: #ffffff !important;
+    text-align: left;
+    padding: 5px 0 5px 30px;
+    max-width: 250px;
+    margin: 0 auto 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-slide .item-content p {
+    font-size: 16px;
+    font-family: "Gotham Pro Light", sans-serif;
+    color: #ffffff !important;
+    text-align: left;
+    max-width: 250px;
+    padding: 0 0 5px 30px;
+    margin: 0 auto 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-slide .item-content img {
+    height: 70%;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-current {
+    width: 100%;
+    z-index: 10 !important;
+    margin-right: 0 !important;
+    position: relative;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-current .item_content {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-current .item_content h5 {
+    z-index: 3 !important;
+    font-size: 18px;
+    font-family: "Gotham Pro", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 5px;
+    max-width: 265px;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-current .item_content p {
+    z-index: 3;
+    font-size: 16px;
+    font-family: "Gotham Pro Light", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    max-width: 265px;
+    margin: 0 auto 0 auto;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-current:before {
+    display: none;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-dots {
+    display: block !important;
+    position: absolute;
+    bottom: -120px;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-dots li button:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #333333 !important;
+    opacity: 1 !important;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .slick-dots li.slick-active button:before {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #d34f2a !important;
+  }
+  .about-team-text .about-company_carousel_block .wrapper .company-slick-prev1 {
+    background-image: url("../img/prev.png");
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 120px;
+    left: 1%;
+    display: block !important;
+    filter: brightness(0) invert(1);
+  }
+  .about-team-text .about-company_carousel_block .wrapper .company-slick-next1 {
+    background-image: url("../img/next.png") !important;
+    width: 10px !important;
+    height: 16px !important;
+    position: absolute;
+    z-index: 4;
+    top: 120px;
+    left: 96%;
+    filter: brightness(0) invert(1);
+  }
+  .about-team-text .about-company_carousel_block .wrapper .prev-text,
+.about-team-text .about-company_carousel_block .wrapper .next-text {
+    display: none;
+  }
+
   .about-company_carousel_block {
     background-color: #d34f2a !important;
     max-height: 310px !important;
@@ -1491,6 +1885,16 @@ p {
   }
   .about-company_carousel_block .about-company_carousel .carousel-control-prev {
     display: flex;
+  }
+  .about-company_carousel_block .about-company_carousel:after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 50px;
+    top: 50px;
+    width: 250px;
+    height: 220px;
+    background-color: #d34f2a;
   }
   .about-company_carousel_block .bd-example {
     max-width: 450px !important;
@@ -1696,6 +2100,11 @@ p {
     margin: 0 auto;
   }
 
+  .about-team-text .left-block {
+    max-width: 720px !important;
+    margin: 0 auto;
+  }
+
   .about-company .left-text {
     max-width: 100% !important;
   }
@@ -1760,6 +2169,11 @@ p {
 }
 @media screen and (max-device-width: 768px) {
   .about-company-text .left-block {
+    max-width: 540px !important;
+    margin: 0 auto;
+  }
+
+  .about-team-text .left-block {
     max-width: 540px !important;
     margin: 0 auto;
   }
@@ -1900,7 +2314,17 @@ p {
   }
 }
 @media screen and (max-device-width: 600px) {
+  .about-company-text {
+    margin-bottom: 80px;
+  }
   .about-company-text .left-block {
+    padding-left: 30px !important;
+  }
+
+  .about-team-text {
+    margin-bottom: 80px;
+  }
+  .about-team-text .left-block {
     padding-left: 30px !important;
   }
 
@@ -2279,6 +2703,10 @@ p {
   src: url("../fonts/Noah_Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+.wrapper {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
