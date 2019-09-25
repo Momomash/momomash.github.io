@@ -30,7 +30,7 @@ $black: #212121;
   left: 0;
 }
 .dropdown-left{
-  transform: translateX(100px);
+  transform: translateX(250px);
   //transition: transform, 2s;
 }
 #dropdown-desktop-menu-1{
@@ -118,7 +118,11 @@ $black: #212121;
   #dropdown_menu_1,
   #dropdown_menu_2,
   #dropdown_menu_3,
-  #dropdown_menu_4{
+  #dropdown_menu_4,
+  #dropdown_menu_5,
+  #dropdown_menu_6,
+  #dropdown_menu_7,
+  #dropdown_menu_8{
     display: none;
   }
 }

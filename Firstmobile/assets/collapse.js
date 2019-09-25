@@ -22,3 +22,15 @@ sidenav_drop_3.onclick = function () {
 sidenav_drop_4.onclick = function () {
     open(document.getElementById("dropdown_menu_4"));
 };
+sidenav_drop_5.onclick = function () {
+    open(document.getElementById("dropdown_menu_5"));
+};
+sidenav_drop_6.onclick = function () {
+    open(document.getElementById("dropdown_menu_6"));
+};
+sidenav_drop_7.onclick = function () {
+    open(document.getElementById("dropdown_menu_7"));
+};
+sidenav_drop_8.onclick = function () {
+    open(document.getElementById("dropdown_menu_8"));
+};
