@@ -4,6 +4,100 @@
   background-color: #ffffff;
 }
 
+.big-card {
+  border: 1px solid #D3D3D3;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.big-card .card_header {
+  display: flex;
+  flex-direction: row;
+}
+.big-card .card_header img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: 1px solid #D3D3D3;
+}
+.big-card .card_header .header_text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.big-card .card_header .header_text h6 {
+  font-weight: 500 !important;
+  margin: 0;
+}
+.big-card .card_header .header_text p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.big-card .card_header .header_text .company-stars {
+  margin-top: 5px;
+}
+.big-card .card_header .header_text .company-stars .yellow-star {
+  color: #ffff00;
+}
+.big-card .card_header .header_text .company-stars .grey-star {
+  color: #D3D3D3;
+}
+.big-card .card_content .icons-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.big-card .card_content .icons-block .icon_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.big-card .card_content .icons-block .icon_block h6 {
+  font-weight: 500 !important;
+  margin: 0;
+}
+.big-card .card_content .icons-block .icon_block p {
+  font-size: 12px;
+}
+.big-card .card_content .icons-block .icon_block .icon {
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-card .card_content .icons-block .icon_block .icon i {
+  font-size: 50px;
+  color: #5AE2EB;
+}
+.big-card .card_footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.big-card .card_footer .btn:first-child {
+  margin-right: 10px;
+}
+@media screen and (max-width: 714px) {
+  .big-card {
+    padding: 10px;
+  }
+  .big-card .card_header img {
+    width: 50px;
+    height: 40px;
+  }
+  .big-card .card_content .icons-block {
+    margin-top: 20px;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .big-card .card_content .icons-block .icon_block h6 {
+    font-size: 14px !important;
+  }
+}
+
 .blue-color {
   color: #5AE2EB !important;
 }
@@ -14,9 +108,46 @@
   border-color: transparent;
 }
 
+.btn-blue-outline {
+  background-color: transparent;
+  color: #5AE2EB;
+  border-color: #5AE2EB;
+}
+
 .desktop-menu {
   position: relative;
   z-index: 11;
+}
+
+.layout-inner {
+  flex-direction: row;
+}
+
+.layout-sidenav {
+  position: fixed;
+}
+
+.layout-content {
+  flex: 0 0 auto;
+  width: -webkit-calc(100% - 250px) !important;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .layout-content {
+    width: 100% !important;
+  }
+}
+
+.navbar-expand-lg {
+  width: -webkit-calc(100% - 250px) !important;
+  margin: 0 0 0 auto;
+  position: fixed;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar-expand-lg {
+    width: 100% !important;
+  }
 }
 
 .dropdown-desktop-menu {
@@ -32,12 +163,21 @@
   z-index: 9;
 }
 
+.dropdown-menu > li:not(.disabled) > a:not(.dropdown-item):active, .dropdown-menu > li.active:not(.disabled) > a:not(.dropdown-item) {
+  background-color: #5AE2EB;
+  color: #fff;
+}
+
 .error {
   display: block;
   color: #FF0000;
   margin-bottom: 15px;
   font-size: 13px !important;
   font-weight: 300 !important;
+}
+
+.green-text {
+  color: #00b862;
 }
 
 .help-text {
@@ -65,6 +205,11 @@
 .layout-sidenav {
   box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.02);
   height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .layout-sidenav {
+    box-shadow: none;
+  }
 }
 
 .logo-block svg {
@@ -123,15 +268,15 @@
     transform: translateX(170px);
   }
 }
-.sidenav-link h5 {
-  font-size: 18px !important;
-}
-
 .custom-control.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before,
 .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #5AE2EB !important;
   border-color: #5AE2EB !important;
+}
+
+.form-control:focus {
+  border-color: #D3D3D3;
 }
 
 h6 {
@@ -144,6 +289,20 @@ h5 {
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #212121 !important;
+}
+
+.search_options {
+  max-width: 400px !important;
+}
+.search_options h6 {
+  width: 100px;
+}
+.search_options .form-control {
+  width: auto !important;
+}
+
+.sidenav-link h5 {
+  font-size: 18px !important;
 }
 
 .pure-material-textfield-outlined {

@@ -357,7 +357,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
         <!--dropdown desktop menu-->
         <div class="layout-sidenav sidenav sidenav-vertical bg-white dropdown-desktop-menu" id="dropdown_menu_1">
@@ -595,7 +594,7 @@
         <!--/desktop menu-->
         <div class="layout-container">
             <!--navbar top-->
-            <nav class="navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+            <nav class="navbar navbar-expand-lg align-items-lg-center bg-white container-p-x " id="layout-navbar">
                 <a href="authentication.html" class=" d-lg-none py-0 mr-4 logo-block">
                     <p class="logo"><span class="app-brand-logo ">
               <svg width="15" height="15" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -780,48 +779,304 @@
             <div class="layout-content">
                 <div class="container-fluid flex-grow-1 container-p-y">
                     <h3> Контракты</h3>
-                    <div class="filter"></div>
-                    <form>
-                        <div class="form-group">
+                    <div class="filter">
+                        <form>
+                            <div class="form-group">
                                 <label class="pure-material-textfield-outlined ">
                                     <input placeholder=" ">
                                     <span>Введите данные для поиска контракта...</span>
                                 </label>
-                            <div class="d-flex justify-content-between align-items-center m-0">
-                                <label class="custom-control custom-checkbox m-0">
-                                    <input type="checkbox" checked="checked" class="custom-control-input">
-                                    <h6 class="custom-control-label"> С учетом всех форм слов </h6>
-                                </label>
-
-                                <!--<button type="button" class="btn btn-blue">Войти</button>-->
+                                <div class="d-flex justify-content-between align-items-center m-0">
+                                    <label class="custom-control custom-checkbox m-0">
+                                        <input type="checkbox" checked="checked" class="custom-control-input">
+                                        <h6 class="custom-control-label"> С учетом всех форм слов </h6>
+                                    </label>
+                                    <a class="blue-color advanced_search" href="javascript:void(0);">Расширенный
+                                        поиск</a>
+                                </div>
                             </div>
-                    </form>
-                    <!--<hr class="container-m&#45;&#45;x mt-0 mb-4">-->
+
+                        </form>
+                        <!--<hr class="container-m&#45;&#45;x mt-0 mb-4">-->
+                    </div>
+                    <div class="search_options">
+                        <label style="display: flex; flex-direction: row;align-items: center">
+                            <h6 class="custom-control-label mr-3">Статус контракта</h6>
+                            <select id="bs-multiselect-2" multiple>
+                                <option value="cheese">Исполняется</option>
+                                <option value="tomatoes">Завершен</option>
+                                <option value="tomatoes">Завершен</option>
+                            </select>
+                        </label>
+                        <label style="display: flex; flex-direction: row;align-items: center">
+                            <h6 class="custom-control-label mr-3">Контрагент</h6>
+                            <input type="text" class="form-control" placeholder="Контрагент">
+                        </label>
+                    </div>
+                    <div class="big-card">
+                        <div class="card_header">
+                            <img>
+                            <div class="header_text">
+                                <h6>Контракт №656564</h6>
+                                <p><span class="green-text">Исполняется</span> (до 1 ноября 2020)</p>
+                                <p>ООО Триумф, ОГРН 545353, Пермь, Пермский край</p>
+                                <div class="company-stars">
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star grey-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_content">
+                            <div class="icons-block">
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h6>Бренды</h6>
+                                    <p>Все, 12 из 12</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <h6>Нарушения</h6>
+                                    <p>23</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h6>Обращения</h6>
+                                    <p>2</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h6>Точек продаж</h6>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <p>Комментарий виден только вам</p>
+                            <p>Обратить внимание во второй половине года на Триумф.
+                                Снижение продаж и слишком большое количество жалоб от потребителей.  </p>
+                        </div>
+                        <div class="card_footer">
+                            <button type="button" class="btn btn-blue-outline" >О дилере</button>
+                            <button type="button" class="btn btn-blue">Детали контракта</button>
+
+                        </div>
+
+                    </div>
+                    <div class="big-card">
+                        <div class="card_header">
+                            <img>
+                            <div class="header_text">
+                                <h6>Контракт №656564</h6>
+                                <p><span class="green-text">Исполняется</span> (до 1 ноября 2020)</p>
+                                <p>ООО Триумф, ОГРН 545353, Пермь, Пермский край</p>
+                                <div class="company-stars">
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star grey-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_content">
+                            <div class="icons-block">
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h6>Бренды</h6>
+                                    <p>Все, 12 из 12</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <h6>Нарушения</h6>
+                                    <p>23</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h6>Обращения</h6>
+                                    <p>2</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h6>Точек продаж</h6>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <p>Комментарий виден только вам</p>
+                            <p>Обратить внимание во второй половине года на Триумф.
+                                Снижение продаж и слишком большое количество жалоб от потребителей.  </p>
+                        </div>
+                        <div class="card_footer">
+                            <button type="button" class="btn btn-blue-outline" >О дилере</button>
+                            <button type="button" class="btn btn-blue">Детали контракта</button>
+
+                        </div>
+
+                    </div>
+                    <div class="big-card">
+                        <div class="card_header">
+                            <img>
+                            <div class="header_text">
+                                <h6>Контракт №656564</h6>
+                                <p><span class="green-text">Исполняется</span> (до 1 ноября 2020)</p>
+                                <p>ООО Триумф, ОГРН 545353, Пермь, Пермский край</p>
+                                <div class="company-stars">
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star grey-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_content">
+                            <div class="icons-block">
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h6>Бренды</h6>
+                                    <p>Все, 12 из 12</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <h6>Нарушения</h6>
+                                    <p>23</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h6>Обращения</h6>
+                                    <p>2</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h6>Точек продаж</h6>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <p>Комментарий виден только вам</p>
+                            <p>Обратить внимание во второй половине года на Триумф.
+                                Снижение продаж и слишком большое количество жалоб от потребителей.  </p>
+                        </div>
+                        <div class="card_footer">
+                            <button type="button" class="btn btn-blue-outline" >О дилере</button>
+                            <button type="button" class="btn btn-blue">Детали контракта</button>
+
+                        </div>
+
+                    </div>
+                    <div class="big-card">
+                        <div class="card_header">
+                            <img>
+                            <div class="header_text">
+                                <h6>Контракт №656564</h6>
+                                <p><span class="green-text">Исполняется</span> (до 1 ноября 2020)</p>
+                                <p>ООО Триумф, ОГРН 545353, Пермь, Пермский край</p>
+                                <div class="company-stars">
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star yellow-star"></i>
+                                    <i class="fas fa-star grey-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_content">
+                            <div class="icons-block">
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h6>Бренды</h6>
+                                    <p>Все, 12 из 12</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <h6>Нарушения</h6>
+                                    <p>23</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h6>Обращения</h6>
+                                    <p>2</p>
+                                </div>
+                                <div class="icon_block">
+                                    <div class="icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h6>Точек продаж</h6>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <p>Комментарий виден только вам</p>
+                            <p>Обратить внимание во второй половине года на Триумф.
+                                Снижение продаж и слишком большое количество жалоб от потребителей.  </p>
+                        </div>
+                        <div class="card_footer">
+                            <button type="button" class="btn btn-blue-outline" >О дилере</button>
+                            <button type="button" class="btn btn-blue">Детали контракта</button>
+
+                        </div>
+
+                    </div>
+
+
+
                 </div>
             </div>
-
         </div>
 
+        <!-- Overlay -->
+        <div class="layout-overlay layout-sidenav-toggle"></div>
     </div>
+    <!-- / Layout wrapper -->
 
-    <!-- Overlay -->
-    <div class="layout-overlay layout-sidenav-toggle"></div>
-</div>
-<!-- / Layout wrapper -->
+    <!-- Core scripts -->
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/sidenav.js"></script>
+    <script src="assets/js/forms_selects.js"></script>
 
-<!-- Core scripts -->
-<script src="assets/vendor/libs/popper/popper.js"></script>
-<script src="assets/vendor/js/bootstrap.js"></script>
-<script src="assets/vendor/js/sidenav.js"></script>
 
-<!-- Libs -->
-<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-<script src="assets/vendor/libs/chartjs/chartjs.js"></script>
+    <!-- Libs -->
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+    <script src="assets/vendor/libs/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
 
-<!-- Demo -->
-<script src="assets/js/demo.js"></script>
-<script src="assets/js/dashboards_dashboard-2.js"></script>
-<script src="assets/collapse.js"></script>
+    <!-- Demo -->
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/dashboards_dashboard-2.js"></script>
+    <script src="assets/collapse.js"></script>
 </body>
 
 </html>
