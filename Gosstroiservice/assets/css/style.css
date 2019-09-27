@@ -1145,6 +1145,49 @@ h5 {
   color: #ffffff;
 }
 
+.object_carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.object_carousel .carousel-item-next,
+.object_carousel .carousel-item-prev,
+.object_carousel .carousel-item.active {
+  display: flex !important;
+  justify-content: center !important;
+}
+.object_carousel .carousel-indicators {
+  bottom: -40px;
+}
+.object_carousel .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #666666;
+  opacity: 1;
+  box-sizing: border-box !important;
+  border: none !important;
+}
+.object_carousel .carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  background: #d34f2a;
+}
+.object_carousel .carousel-inner {
+  width: 80%;
+}
+.object_carousel .carousel-control-prev,
+.object_carousel .carousel-control-next {
+  position: relative !important;
+  width: 5%;
+}
+.object_carousel .carousel-control-next-icon {
+  background: url("../img/next.png") 100% 100% no-repeat;
+}
+.object_carousel .carousel-control-prev-icon {
+  background: url("../img/prev.png") 100% 100% no-repeat;
+}
+
 .outlined_orange_btn {
   border: 1px solid #d34f2a;
   color: #d34f2a;
