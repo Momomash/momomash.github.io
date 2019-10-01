@@ -120,6 +120,7 @@ $yellow: #ffff00;
   }
 }
 
+
 .blue-color {
   color: $blue !important;
 }
@@ -135,6 +136,43 @@ $yellow: #ffff00;
   color: $blue;
   border-color: $blue;
 }
+
+.card_header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid $light_grey;
+    background-color: $light_grey;
+
+  }
+  .header_text{
+    margin-left: 20px;
+    display: flex;;
+    flex-direction: column;
+    h6{
+      font-weight: 500 !important;
+      margin: 0;
+    }
+    p{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .company-stars{
+      margin-top: 5px;
+      .yellow-star{
+        color: $yellow;
+      }
+      .grey-star{
+        color: $light_grey;
+      }
+    }
+  }
+}
+
 
 .desktop-menu{
   position: relative;
