@@ -173,6 +173,25 @@ $yellow: #ffff00;
   }
 }
 
+.custom-file_upload{
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload {
+    display: flex;
+    align-items: center;
+    height: 44px !important;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .custom-file-upload i{
+    margin-right: 10px;
+    color: #D3D3D3;
+    font-size: 18px;
+  }
+}
 
 .desktop-menu{
   position: relative;
