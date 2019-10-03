@@ -120,6 +120,15 @@ $yellow: #ffff00;
   }
 }
 
+.form-group_small{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .form-group{
+    width: 45%;
+  }
+}
 
 .blue-color {
   color: $blue !important;
