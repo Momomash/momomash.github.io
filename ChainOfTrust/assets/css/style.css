@@ -76,6 +76,11 @@ body {
   }
 }
 
+.gradient {
+  background: url("../img/wave-2.png") no-repeat, linear-gradient(119.02deg, #5200D7 0%, rgba(82, 0, 215, 0.4) 100%);
+  background-size: cover;
+}
+
 .grey-button {
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
@@ -166,11 +171,18 @@ h3 {
   color: #212121;
   max-width: 625px;
   margin-bottom: 50px;
+  line-height: 150%;
 }
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 18px;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile_none {
+    display: none;
   }
 }
 
@@ -191,6 +203,18 @@ h3 {
   color: #ffffff !important;
   border-color: #621ad6;
   background-color: #621ad6;
+}
+
+.waves_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.white {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

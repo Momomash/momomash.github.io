@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   width: 100%;
 }
 
-.cards{
+.cards {
   padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  @media screen and (max-device-width: 1165px){
+  @media screen and (max-device-width: 1165px) {
     justify-content: space-around;
   }
-  .card{
+
+  .card {
     max-width: 300px;
     background-color: inherit;
     border: none;
     margin-right: 10px;
-    .card_header{
+
+    .card_header {
       background-color: #ffffff;
       padding: 20px 0 10px 0;
       display: flex;
@@ -31,24 +34,27 @@ body{
       box-shadow: 0 0 40px rgba(167, 167, 167, 0.25);
       border-radius: 5px;
       margin-bottom: 90px;
-      @media screen and (max-width: 688px){
+      @media screen and (max-width: 688px) {
         margin-bottom: 30px;
 
       }
-      img{
+
+      img {
         display: block;
         width: 180px;
         height: 100px;
         margin-bottom: 10px;
       }
-      p{
+
+      p {
         font-size: 17px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-align: center;
       }
     }
-    p{
+
+    p {
       font-size: 14px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -57,20 +63,26 @@ body{
   }
 }
 
-.container{
+.container {
   max-width: 60%;
   padding: 100px 0;
-  @media screen and (max-device-width: 1330px){
+  @media screen and (max-device-width: 1330px) {
     max-width: 70% !important;
     padding: 50px 0;
   }
-  @media screen and (max-device-width: 1165px){
+  @media screen and (max-device-width: 1165px) {
     max-width: 80% !important;
   }
 }
 
+.gradient {
+  background:
+  url("../img/wave-2.png") no-repeat,
+  linear-gradient(119.02deg, #5200D7 0%, rgba(82, 0, 215, 0.4) 100%);
+  background-size: cover;
+}
 
-.grey-button{
+.grey-button {
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -80,31 +92,32 @@ body{
   border-radius: 3px;
 }
 
-.grey-button:hover{
+.grey-button:hover {
   color: #9c9c9c !important;
   border-color: #9c9c9c;
 }
 
-.header{
+.header {
   background-image: url("../img/wave-1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  //background-position: center center;
   background-color: #0A0A0A;
 
-  .menu{
+  .menu {
     max-width: 90%;
     margin: 0 auto 0 auto;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    img{
+
+    img {
       width: 53px;
       height: 28px;
     }
   }
-  p{
+
+  p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 20px;
@@ -113,57 +126,68 @@ body{
     margin-bottom: 80px;
 
   }
-  .violet-button{
+
+  .violet-button {
     margin-bottom: 100px;
   }
-  @media screen and (max-width: 768px){
+
+  @media screen and (max-width: 768px) {
     p {
       font-size: 16px;
     }
-    .violet-button{
+    .violet-button {
       margin-bottom: 40px;
     }
   }
 }
 
-h1{
+h1 {
   font-size: 75px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
   max-width: 925px;
   margin-bottom: 80px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 40px;
     margin-bottom: 40px;
   }
 }
-h2{
+
+h2 {
   font-size: 60px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #212121;
   max-width: 925px;
   margin-bottom: 50px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 30px;
     margin-bottom: 40px;
   }
 }
-h3{
+
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 22px;
   color: #212121;
   max-width: 625px;
   margin-bottom: 50px;
-  @media screen and (max-width: 768px){
+  line-height: 150%;
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     margin-bottom: 40px;
   }
 }
 
-.violet-button{
+.mobile_none{
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.violet-button {
   display: block;
   max-width: 170px;
   font-family: 'Montserrat', sans-serif;
@@ -176,10 +200,22 @@ h3{
   border-radius: 6px;
 }
 
-.violet-button:hover{
+.violet-button:hover {
   color: #ffffff !important;
-  border-color: #621ad6 ;
+  border-color: #621ad6;
   background-color: #621ad6;
 
+}
+
+.waves_text{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.white {
+  color: #ffffff;
 }
 
