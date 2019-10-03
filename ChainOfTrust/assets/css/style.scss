@@ -64,14 +64,10 @@ body {
 }
 
 .container {
-  max-width: 60%;
-  padding: 100px 0;
+  max-width: 1100px;
+  padding: 100px 50px 100px 50px;
   @media screen and (max-device-width: 1330px) {
-    max-width: 70% !important;
-    padding: 50px 0;
-  }
-  @media screen and (max-device-width: 1165px) {
-    max-width: 80% !important;
+    padding: 50px 30px 50px 30px;
   }
 }
 
@@ -181,10 +177,67 @@ h3 {
   }
 }
 
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #212121;
+  margin-bottom: 40px;
+}
+
 .mobile_none{
   @media screen and (max-width: 1024px) {
     display: none;
   }
+}
+
+.tiles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .big-tile{
+    height: 300px;
+    width: 630px;
+    box-shadow: 0 0 40px rgba(167, 167, 167, 0.25);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 30px 30px 0;
+    background:
+            url("../img/wave-3.png") no-repeat,
+            #5200D7;
+    background-size: cover;
+  }
+  .tile{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 40px rgba(167, 167, 167, 0.25);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 30px 30px 0;
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #212121;
+    }
+  }
+  @media screen and (max-width: 720px){
+    .big-tile,
+    .tile{
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      background-position: top;
+    }
+
+  }
+  .wave{
+    background: url("../img/wave-4.png") no-repeat;
+    background-size: cover;
+  }
+
 }
 
 .violet-button {
