@@ -1,14 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
 }
+body{
+  width: 100%;
+}
+
+.cards{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-device-width: 1165px){
+    justify-content: space-around;
+  }
+  .card{
+    max-width: 300px;
+    background-color: inherit;
+    border: none;
+    margin-right: 10px;
+    .card_header{
+      background-color: #ffffff;
+      padding: 20px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 40px rgba(167, 167, 167, 0.25);
+      border-radius: 5px;
+      margin-bottom: 90px;
+      @media screen and (max-width: 688px){
+        margin-bottom: 30px;
+
+      }
+      img{
+        display: block;
+        width: 180px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+    p{
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #212121;
+    }
+  }
+}
 
 .container{
-  max-width: 70%;
+  max-width: 60%;
   padding: 100px 0;
-  @media screen and (max-device-width: 768px){
-    max-width: 90% !important;
+  @media screen and (max-device-width: 1330px){
+    max-width: 70% !important;
+    padding: 50px 0;
+  }
+  @media screen and (max-device-width: 1165px){
+    max-width: 80% !important;
   }
 }
 
@@ -54,9 +111,18 @@
     color: #ffffff;
     max-width: 735px;
     margin-bottom: 80px;
+
   }
   .violet-button{
     margin-bottom: 100px;
+  }
+  @media screen and (max-width: 768px){
+    p {
+      font-size: 16px;
+    }
+    .violet-button{
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -67,6 +133,34 @@ h1{
   color: #ffffff;
   max-width: 925px;
   margin-bottom: 80px;
+  @media screen and (max-width: 768px){
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+h2{
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #212121;
+  max-width: 925px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 768px){
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: #212121;
+  max-width: 625px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 .violet-button{
@@ -84,6 +178,8 @@ h1{
 
 .violet-button:hover{
   color: #ffffff !important;
-  border-color: #753ad6;
+  border-color: #621ad6 ;
+  background-color: #621ad6;
+
 }
 

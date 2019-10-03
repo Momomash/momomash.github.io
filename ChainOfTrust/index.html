@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Chain Of Trust</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -9,22 +10,61 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="menu">
-            <img src="assets/img/logo.png" alt="">
-            <a class="grey-button">Get access now</a>
-        </div>
-        <div class="container">
-            <h1>Setting the standart for expertise & competency validation.</h1>
-            <p>Chain Of Trust (CoT) is the first industry-focused blockchain-based platform
-                that securely verify and track expertise & competency level of a company.</p>
-            <a class="violet-button">Get access now</a>
+<div class="modal fade" id="getAccess" tabindex="-1" role="dialog" aria-labelledby="getAccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                ...
+            </div>
         </div>
     </div>
+</div>
 
-
-
-
+<div class="header">
+    <div class="menu">
+        <img src="assets/img/logo.png" alt="">
+        <a class="grey-button" data-toggle="modal" data-target="#getAccess">Get access now</a>
+    </div>
+    <div class="container">
+        <h1>Setting the standart for expertise & competency validation.</h1>
+        <p>Chain Of Trust (CoT) is the first industry-focused blockchain-based platform
+            that securely verify and track expertise & competency level of a company.</p>
+        <a class="violet-button" data-toggle="modal" data-target="#getAccess">Get access now</a>
+    </div>
+</div>
+<div class="content" >
+    <div class="container">
+        <h2>Будущее это доверие</h2>
+        <h3>Chain Of Trust создает доверительные отношения между компаниями.
+            Для этого платформа использует методики оценки опыта, компетенций и экспертизы. </h3>
+        <div class="cards">
+            <div class="card">
+                <div class="card_header">
+                    <img src="assets/img/group-1.png" alt="">
+                    <p>Релевантная<br> экспертиза</p>
+                </div>
+                <p>Анализ наличия и применения релевантной экспертизы - важнейший элемент оценки компании.
+                    Для расчета этого показателя в CoT используются собственные разработки и известная методика 360.</p>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <img src="assets/img/group-2.png" alt="">
+                    <p>Уровень<br> компетенций </p>
+                </div>
+                <p>Автоматическая оценка уровня компетенций помогает выбрать надежного исполнителя,
+                    исходя из достоверных данных, подтвержденных другими участниками рынка. </p>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <img src="assets/img/group-3.png" alt="">
+                    <p>Подтвержденный<br> опыт </p>
+                </div>
+                <p>Релевантный и официально подтвержденный опыт - эффективное средство
+                    рекламы для исполнителя и важнейший триггер надежности для корпоративного заказчика.  </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
