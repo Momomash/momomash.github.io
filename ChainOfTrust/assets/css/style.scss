@@ -64,6 +64,7 @@ body {
 }
 
 .cases {
+  margin-bottom: 200px;
   .case {
     display: flex;
     flex-direction: row;
@@ -82,13 +83,15 @@ body {
     }
   }
     @media screen and (max-width: 1023px){
+      margin-bottom: 50px;
       .case{
         flex-direction: column;
+        align-items: center;
         img{
           max-width: 630px;
           width: 100%;
           height: auto;
-          margin-bottom: 30px;
+          margin: 0 0 30px 0;
         }
         .case-text{
           width: 100%;
@@ -103,6 +106,61 @@ body {
   padding: 100px 50px 100px 50px;
   @media screen and (max-device-width: 1330px) {
     padding: 50px 30px 50px 30px;
+  }
+}
+
+.footer{
+  background-color: #0A0A0A;
+  padding: 60px 0 20px 0;
+  .menu {
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 53px;
+      height: 28px;
+      margin-right: 110px;
+    }
+    .violet-button{
+      margin: 0 0 0 auto;
+      max-height: 47px;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      font-size: 11px;
+      line-height: 15px;
+      color: #FFFFFF;
+      a{
+        color: inherit;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+    @media screen and (max-width: 880px){
+      flex-wrap: wrap;
+      align-items: center;
+      img{
+        order: 1;
+        margin-right: 0;
+      }
+      .violet-button{
+        order: 2;
+      }
+      p{
+        margin-top: 60px;
+        order: 3;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 880px){
+    padding: 20px 0 0 0;
   }
 }
 
