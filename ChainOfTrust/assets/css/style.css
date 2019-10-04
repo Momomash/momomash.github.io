@@ -60,6 +60,39 @@ body {
   color: #212121;
 }
 
+.cases .case {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+.cases .case img {
+  margin-right: 30px;
+}
+.cases .case .case-text {
+  background: #FFFFFF;
+  box-shadow: 0 0 40px rgba(167, 167, 167, 0.25);
+  border-radius: 5px;
+  padding: 40px 30px;
+  display: block;
+  width: 300px;
+}
+@media screen and (max-width: 1023px) {
+  .cases .case {
+    flex-direction: column;
+  }
+  .cases .case img {
+    max-width: 630px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .cases .case .case-text {
+    width: 100%;
+    max-width: 630px;
+  }
+}
+
 .container {
   max-width: 1100px;
   padding: 100px 50px 100px 50px;
