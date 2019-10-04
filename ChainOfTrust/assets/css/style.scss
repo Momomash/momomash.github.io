@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700&display=swap');
 
 * {
   margin: 0;
@@ -86,6 +86,7 @@ body {
   padding: 10px 20px;
   border: 1px solid #515151;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .grey-button:hover {
@@ -192,10 +193,23 @@ h4{
   }
 }
 
+.small-text{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #757575;
+  margin: 0;
+}
+
 .tiles{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  @media screen and (max-width: 1049px){
+    justify-content: center;
+  }
   .big-tile{
     height: 300px;
     width: 630px;
@@ -251,6 +265,7 @@ h4{
   padding: 12px 26px;
   border: 1px solid #5200D7;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .violet-button:hover {
@@ -266,6 +281,72 @@ h4{
   font-size: 8px;
   color: #FFFFFF;
   margin-bottom: 0;
+}
+
+.widgets{
+  display: flex;
+  flex-direction: column;
+  .big-widget{
+    max-width: 440px;
+    position: absolute;
+    left: 25%;
+    right: 27%;
+    margin: 0 auto;
+    img{
+      margin-top: 20px;
+      box-shadow: 0 0 40px rgba(167, 167, 167, 0.35);
+    }
+  }
+  .widget-row {
+    margin-top: 180px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .widget{
+      img{
+        margin-bottom: 20px;
+        box-shadow: 0 0 40px rgba(167, 167, 167, 0.35);
+      }
+    }
+  }
+  @media screen and (max-width: 1023px){
+    .big-widget{
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+    .widget-row{
+      flex-direction: column;
+      margin-top: 40px;
+      .widget{
+        display: flex;
+        flex-direction: column;
+        img{
+          order: 2;
+        }
+        p{
+          order: 1;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px){
+    .big-widget{
+      img{
+        max-width: 260px;
+        height: auto;
+      }
+    }
+    .widget{
+      img{
+        max-width: 260px;
+        height: auto;
+      }
+    }
+  }
 }
 
 .white {
