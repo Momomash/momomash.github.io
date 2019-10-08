@@ -80,6 +80,20 @@ body {
       padding: 40px 30px;
       display: block;
       width: 300px;
+      position: relative;
+      p{
+        margin-bottom: 30px;
+      }
+      a{
+        color: #5200D7 !important;
+        font-size: 11px !important;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+      }
+      a:hover{
+        text-decoration: none;
+      }
     }
   }
     @media screen and (max-width: 1023px){
