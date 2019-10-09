@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:600&display=swap');
+
+
+$white: #ffffff;
+$black: #000000;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1240px !important;
+  margin: 0 auto;
+}
+
+.logo{
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: $white;
+}
+
+.menu{
+  position: absolute;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  top: 0;
+  z-index: 2;
+
+  .c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    background-color: initial;
+    span {
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
+      height: 4px;
+      width: 36px;
+      background: white;
+      transition: background 0s 0.3s;
+    }
+    span::before,
+    span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width:36px;
+      height: 4px;
+      background-color: #fff;
+      content: "";
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s;
+    }
+    span::before {
+      top: -10px;
+      transition-property: top, transform;
+    }
+    span::after {
+      bottom: -10px;
+      transition-property: bottom, transform;
+    }
+  }
+  .c-hamburger:focus {
+    outline: none;
+  }
+  .c-hamburger.is-active {
+    span {
+      background: none;
+    }
+    span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+    span::before,
+    span::after {
+      transition-delay: 0s, 0.3s;
+      background-color: $black;
+
+    }
+  }
+}
+
+.header{
+  position: relative;
+}
+
+
+
+
