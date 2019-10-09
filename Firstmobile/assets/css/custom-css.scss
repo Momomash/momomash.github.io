@@ -97,6 +97,18 @@ $yellow: #ffff00;
           color: $black;
           font-weight: 500 !important;
         }
+        @media screen and (max-width: 460px){
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      @media screen and (max-width: 991px){
+        .icon_block{
+          display: none;
+        }
+        .icon_block:first-child{
+          display: flex;
+        }
       }
     }
   }
@@ -116,15 +128,15 @@ $yellow: #ffff00;
       }
     }
     button{
-      margin-left: 10px;
+      margin-left: 15px;
     }
   }
 
   @media screen and (max-width: 714px) {
-    padding: 10px;
+    padding: 20px;
     .card_header {
       img {
-        width: 50px;
+        width: 40px;
         height: 40px;
       }
     }
@@ -211,6 +223,9 @@ $yellow: #ffff00;
     .header_text_left {
       align-items: center;
       margin-right: 20px;
+      h6, span{
+        display: inline-block;
+      }
     }
 
     .header_text_right {
@@ -227,6 +242,14 @@ $yellow: #ffff00;
           top: -20px;
           left: 5px;
         }
+      }
+    }
+    @media screen and (max-width: 991px){
+      .header_text_right {
+        display: none;
+      }
+      .header_text_left {
+        margin-right: 0;
       }
     }
   }
@@ -285,7 +308,6 @@ $yellow: #ffff00;
     width: 100% !important;
   }
 }
-
 
 .dropdown-desktop-menu {
   position: absolute;
@@ -374,12 +396,8 @@ $yellow: #ffff00;
 }
 
 
-//@media screen and (max-width: 1024px) {
-//  .layout-sidenav {
-//    box-shadow: none;
-//
-//  }
-//}
+
+// media requests for mobile and desktop menu
 
 @media screen and (min-width: 992px) {
   .mobile-menu {
