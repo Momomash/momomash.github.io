@@ -5,6 +5,61 @@
   padding: 0;
 }
 
+.appeal {
+  background-color: #F8F8F8;
+  margin-top: 50px;
+  padding-top: 50px !important;
+}
+.appeal .container {
+  display: flex;
+  flex-direction: row;
+}
+.appeal .container .right-block {
+  width: 50%;
+  padding-top: 50px;
+}
+.appeal .container .right-block h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 400px) {
+  .appeal .container .right-block h4 {
+    font-size: 30px;
+  }
+}
+.appeal .container .right-block p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: #000000;
+}
+.appeal .container .left-block {
+  width: 50%;
+}
+.appeal .container .left-block img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .appeal .container {
+    flex-direction: column;
+  }
+  .appeal .container .right-block,
+.appeal .container .left-block {
+    width: 100%;
+  }
+  .appeal .container .left-block img {
+    margin: 20px 0 auto 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;

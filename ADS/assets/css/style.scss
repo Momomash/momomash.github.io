@@ -10,20 +10,74 @@ $black: #000000;
   padding: 0;
 }
 
-.clients{
+.appeal {
+  background-color: #F8F8F8;
+  margin-top: 50px;
+  padding-top: 50px !important;
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .right-block {
+      width: 50%;
+      padding-top: 50px;
+      h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 130%;
+        color: $black;
+        margin-bottom: 50px;
+        @media screen and (max-width: 400px){
+          font-size: 30px;
+        }
+      }
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+        color: $black;
+      }
+    }
+
+    .left-block {
+      width: 50%;
+      img{
+        display: block;
+        margin: 0 0 0 auto;
+      }
+    }
+    @media screen and (max-width: 900px){
+      flex-direction: column;
+      .right-block,
+      .left-block{
+        width: 100%;
+      }
+      .left-block img{
+        margin: 20px 0 auto 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.clients {
   display: flex;
   flex-wrap: wrap;
-  .client{
+
+  .client {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 25%;
     background-color: #F1F1F1;
-    @media screen and (max-width: 765px){
+    @media screen and (max-width: 765px) {
       width: 50%;
     }
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 450px) {
       width: 100%;
     }
   }
@@ -35,9 +89,9 @@ $black: #000000;
   margin: 0 auto;
 }
 
-.content{
+.content {
   padding-top: 100px;
-  @media screen and (max-width: 765px){
+  @media screen and (max-width: 765px) {
     padding-top: 50px;
   }
 }
@@ -130,10 +184,12 @@ $black: #000000;
 
       }
     }
-    .c-hamburger.is-active ~ .dropdown-menu{
+
+    .c-hamburger.is-active ~ .dropdown-menu {
       display: block;
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
       display: none;
       position: absolute;
       right: 0;
@@ -146,13 +202,15 @@ $black: #000000;
       line-height: 160%;
       color: $black;
       cursor: pointer;
-      .small-text{
+
+      .small-text {
         font-size: 14px;
         line-height: 160%;
       }
-      @media screen and (max-width: 765px){
+
+      @media screen and (max-width: 765px) {
         font-size: 22px;
-        background-color: rgba(0,0,0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
       }
     }
 
@@ -166,7 +224,7 @@ $black: #000000;
   }
 }
 
-h2{
+h2 {
   max-width: 1000px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -176,7 +234,7 @@ h2{
   margin-bottom: 100px;
 }
 
-h3{
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -206,9 +264,10 @@ h3{
         top: 0;
 
         .container {
-          a{
+          a {
             text-decoration: none;
           }
+
           //a:active{
           //  outline: none;
           //}
@@ -220,7 +279,7 @@ h3{
             font-size: 52px;
             line-height: 130%;
             color: #FFFFFF;
-            @media screen and (max-width: 1250px){
+            @media screen and (max-width: 1250px) {
               max-width: 700px;
             }
             @media screen and (max-width: 768px) {
@@ -228,7 +287,8 @@ h3{
               font-size: 42px;
             }
           }
-          img{
+
+          img {
             margin-top: 50px;
           }
         }
@@ -236,13 +296,16 @@ h3{
     }
 
   }
-  .slick-dots{
+
+  .slick-dots {
     bottom: 80px;
     text-align: left;
     left: 17.5%;
     width: 100px !important;
-    li{
+
+    li {
       margin: 0;
+
       button:before {
         position: absolute;
         top: 0;
@@ -257,7 +320,8 @@ h3{
         -moz-osx-font-smoothing: grayscale;
       }
     }
-    .slick-active{
+
+    .slick-active {
       button:before {
         background-color: #ffffff;
       }
@@ -265,36 +329,42 @@ h3{
   }
 }
 
-.product-block{
+.product-block {
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+
   .product-block_right,
-  .product-block_left{
+  .product-block_left {
     height: 400px;
     width: 50%;
   }
-  .product-block_right{
+
+  .product-block_right {
     background-size: 100% 100%;
     position: relative;
-    .text{
+
+    .text {
       margin: 70px 0 0 30px;
       font-family: 'Montserrat', sans-serif;
       font-size: 30px;
       line-height: 130%;
-      h5{
+
+      h5 {
         font-size: 30px;
         color: #FFFFFF;
         font-style: normal !important;
         font-weight: 500 !important;
       }
-      h6{
+
+      h6 {
         font-size: 28px;
         color: rgba(255, 255, 255, 0.6);
         font-style: normal !important;
         font-weight: 500 !important;
       }
-      a{
+
+      a {
         position: absolute;
         bottom: 40px;
         color: rgba(255, 255, 255, 0.6);
@@ -305,10 +375,11 @@ h3{
       }
     }
   }
-  @media screen and(max-width: 969px){
+
+  @media screen and(max-width: 969px) {
     flex-direction: column;
     .product-block_right,
-    .product-block_left{
+    .product-block_left {
       width: 100%;
       background-size: cover;
       background-position: center center;
@@ -321,20 +392,21 @@ h3{
   display: none !important;
 }
 
-.text-cards{
+.text-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 100px;
 
-  .text-card{
+  .text-card {
     width: 280px;
     margin: 0 30px 30px 0;
-    @media screen and (max-width: 660px){
+    @media screen and (max-width: 660px) {
       margin: 0 0 30px 0;
       width: 100%;
     }
-    h4{
+
+    h4 {
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 40px;
@@ -342,7 +414,8 @@ h3{
       color: $black;
       margin-bottom: 20px;
     }
-    p{
+
+    p {
       font-family: 'Montserrat', sans-serif;
       font-weight: normal;
       font-size: 16px;
