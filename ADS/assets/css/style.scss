@@ -211,31 +211,84 @@ h3{
         }
       }
     }
-    .slick-dots{
-      bottom: 80px;
-      text-align: left;
-      left: 17.5%;
-       li{
-         margin: 0;
-         button:before {
-           position: absolute;
-           top: 0;
-           left: 0;
-           content: "";
-           width: 12px;
-           height: 12px;
-           background-color: #A9A9A9;
-           border-radius: 100%;
-           opacity: 1;
-           -webkit-font-smoothing: antialiased;
-           -moz-osx-font-smoothing: grayscale;
-         }
-       }
-      .slick-active{
-        button:before {
-          background-color: #ffffff;
-        }
+
+  }
+  .slick-dots{
+    bottom: 80px;
+    text-align: left;
+    left: 17.5%;
+    width: 100px !important;
+    li{
+      margin: 0;
+      button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: #A9A9A9;
+        border-radius: 100%;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
+    }
+    .slick-active{
+      button:before {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.product-block{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  .product-block_right,
+  .product-block_left{
+    height: 400px;
+    width: 50%;
+  }
+  .product-block_right{
+    background-size: 100% 100%;
+    position: relative;
+    .text{
+      margin: 70px 0 0 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      line-height: 130%;
+      h5{
+        font-size: 30px;
+        color: #FFFFFF;
+        font-style: normal !important;
+        font-weight: 500 !important;
+      }
+      h6{
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal !important;
+        font-weight: 500 !important;
+      }
+      a{
+        position: absolute;
+        bottom: 40px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+      }
+    }
+  }
+  @media screen and(max-width: 969px){
+    flex-direction: column;
+    .product-block_right,
+    .product-block_left{
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
     }
   }
 }
