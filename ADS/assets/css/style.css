@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.content {
+  padding-top: 100px;
+}
+
 .menu_block {
   position: absolute;
   top: 0;
@@ -122,6 +126,26 @@
   color: #ffffff;
 }
 
+h2 {
+  max-width: 1000px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #5E5E5E;
+  margin-bottom: 30px;
+}
+
 .header .header_slider .slide {
   height: 600px;
   position: relative;
@@ -191,6 +215,38 @@
 .slick-prev,
 .slick-next {
   display: none !important;
+}
+
+.text-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.text-cards .text-card {
+  width: 280px;
+  margin: 0 30px 30px 0;
+}
+@media screen and (max-width: 660px) {
+  .text-cards .text-card {
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+}
+.text-cards .text-card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.text-cards .text-card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
