@@ -60,6 +60,40 @@
   }
 }
 
+.blog ul {
+  list-style: none;
+  margin-bottom: 150px;
+}
+.blog ul li {
+  margin-bottom: 50px;
+}
+.blog ul li a {
+  text-decoration: none;
+}
+.blog ul li h5:hover {
+  color: #5E5E5E;
+}
+.blog ul li h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 500px) {
+  .blog ul li h5 {
+    font-size: 24px;
+  }
+}
+.blog ul li p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;

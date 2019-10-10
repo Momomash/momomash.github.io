@@ -63,6 +63,40 @@ $black: #000000;
   }
 }
 
+.blog{
+  ul{
+    list-style: none;
+    margin-bottom: 150px;
+    li{
+      margin-bottom: 50px;
+      a{
+        text-decoration: none;
+      }
+      h5:hover{
+        color: #5E5E5E;
+      }
+      h5{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 130%;
+        color: $black;
+        margin-bottom: 15px;
+        @media screen and (max-width: 500px){
+          font-size: 24px;
+        }
+      }
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+      }
+    }
+  }
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;
