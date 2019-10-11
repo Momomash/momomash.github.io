@@ -56,8 +56,11 @@ $black: #000000;
       }
       .left-block img{
         margin: 20px 0 auto 0;
-        width: 100%;
-        height: auto;
+
+        @media screen and (max-width: 480px){
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -127,6 +130,63 @@ $black: #000000;
   padding-top: 100px;
   @media screen and (max-width: 765px) {
     padding-top: 50px;
+  }
+}
+
+.footer{
+  background-color: $black;
+  padding: 100px 0;
+  h3{
+    color: #d2d2d2;
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 120%;
+    color: #818181;
+    max-width: 480px;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    .left-block,
+    .right-block{
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      margin-right: 20px;
+      h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 20px 0 30px 0;
+      }
+      a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 180%;
+        color: #D2D2D2;
+        text-decoration: none;
+      }
+    }
+  }
+  .container{
+    position: relative;
+    img{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      @media screen and (max-width: 765px){
+        display: none;
+      }
+    }
   }
 }
 
