@@ -306,8 +306,12 @@ body{
       }
 
       @media screen and (max-width: 765px) {
-        font-size: 22px;
-        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 16px;
+        max-width: 140px;
+        //background-color: rgba(0, 0, 0, 0.3);
+        .small-text{
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -342,6 +346,7 @@ h3 {
 }
 
 .header {
+  position: relative;
   .header_slider {
     .slide {
       height: 600px;
@@ -381,7 +386,7 @@ h3 {
             }
             @media screen and (max-width: 768px) {
               margin-top: 150px;
-              font-size: 42px;
+              font-size: 32px;
             }
           }
 
@@ -394,10 +399,22 @@ h3 {
 
   }
 
+  .dots-container{
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 600px;
+    .container{
+      position: relative;
+      height: 600px;
+    }
+  }
   .slick-dots {
-    bottom: 80px;
+    z-index: 5;
+    left: 20px;
+    position: absolute;
+    bottom: 60px;
     text-align: left;
-    left: 17.5%;
     width: 100px !important;
 
     li {
@@ -483,11 +500,6 @@ h3 {
     }
   }
 }
-
-
-
-
-
 
 .reviews{
   margin-top: 50px;
@@ -585,7 +597,6 @@ h3 {
             }
           }
           @media screen and (max-width: 620px){
-            //flex-direction: column;
             flex-wrap: wrap;
             align-items: flex-start;
             .stars, .person, .company{
