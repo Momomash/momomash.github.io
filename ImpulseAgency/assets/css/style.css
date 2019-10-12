@@ -464,11 +464,13 @@ p {
 .product-block .product-block_right .text a {
   position: absolute;
   bottom: 40px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400;
+}
+.product-block .product-block_right .text a p {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 500;
+  font-size: 16px;
 }
 @media screen and (max-width: 969px) {
   .product-block {
