@@ -207,7 +207,10 @@ body{
     justify-content: space-between;
     top: 0;
     z-index: 2;
-
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
     .c-hamburger {
       display: block;
       position: relative;
@@ -355,56 +358,56 @@ p{
 
 .header {
   position: relative;
+  video {
+    width: 100%;
+    min-width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
   .header_slider {
-    .slide {
-      height: 600px;
+  }
+  .slide {
+    height: 600px;
 
-      position: relative;
+    position: relative;
 
-      video {
-        width: 100%;
-        min-width: 100%;
-        height: 600px;
-        object-fit: cover;
-      }
 
-      .slider-text {
-        width: 100%;
-        position: absolute;
-        top: 0;
 
-        .container {
-          a {
-            text-decoration: none;
+    .slider-text {
+      width: 100%;
+      position: absolute;
+      top: 0;
+
+      .container {
+        a {
+          text-decoration: none;
+        }
+
+        //a:active{
+        //  outline: none;
+        //}
+        h1 {
+          max-width: 1000px;
+          margin-top: 250px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          font-size: 52px;
+          line-height: 130%;
+          color: #FFFFFF;
+          @media screen and (max-width: 1250px) {
+            max-width: 700px;
           }
-
-          //a:active{
-          //  outline: none;
-          //}
-          h1 {
-            max-width: 1000px;
-            margin-top: 250px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 52px;
-            line-height: 130%;
-            color: #FFFFFF;
-            @media screen and (max-width: 1250px) {
-              max-width: 700px;
-            }
-            @media screen and (max-width: 768px) {
-              margin-top: 150px;
-              font-size: 32px;
-            }
+          @media screen and (max-width: 768px) {
+            margin-top: 150px;
+            font-size: 32px;
           }
+        }
 
-          img {
-            margin-top: 50px;
-          }
+        img {
+          margin-top: 50px;
         }
       }
     }
-
   }
 
   .dots-container{
