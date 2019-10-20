@@ -9,6 +9,9 @@ $blue: #0DD1A2;
   color: #ffffff;
 }
 
+
+
+
 .btn-group {
   margin-top: 70px;
   display: flex;
@@ -221,6 +224,9 @@ h5 {
   }
 }
 
+.is-active-header{
+  background: rgba(28, 28, 28, 0.8);
+}
 .c-hamburger {
   display: block;
   position: relative;
@@ -315,7 +321,7 @@ h5 {
   display: none;
   position: absolute;
   right: 0;
-  top: 75px;
+  top: 74px;
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -333,7 +339,7 @@ h5 {
     display: block !important;
     width: 100% !important;
     padding-left: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
     li {
       margin-bottom: 35px;
@@ -358,6 +364,9 @@ h5 {
     i {
       margin-right: 25px;
     }
+  }
+  a{
+    color: #ffffff;
   }
 }
 
@@ -394,6 +403,10 @@ h5 {
   }
 }
 
+.overflow{
+  //prevent overflow: visible from fullpage.js
+  overflow-x: hidden !important;
+}
 
 .scroll-block:hover {
   cursor: pointer;
@@ -405,25 +418,28 @@ h5 {
 }
 
 .section {
-  //padding-top: 80px;
-  //height: calc(100% - 80px) !important;
 
   .fp-tableCell {
     padding-top: 80px;
   }
+  @media screen and (max-width: 600px){
+    min-height: 100vh !important;
+    height: auto !important;
+    .fp-tableCell {
+      min-height: 100vh !important;
+      height: auto !important;
+    }
+  }
 }
 
 .section-1 {
-  background: url("../img/bg-1.jpg") no-repeat center center;
+  background:   url("../img/bg-1.jpg") no-repeat center center;
   background-size: cover;
-  //@media screen and (max-width: 600px) {
-  //  //.fp-tableCell{
-  //  //  background: linear-gradient(262.59deg, #171A1C 0%, rgba(94, 94, 87, 0.72) 99.69%);
-  //  //  mix-blend-mode: normal;
-  //  //  opacity: 0.5;
-  //  //}
-  //}
 
+  //@media screen and (max-width: 600px){
+  //  background:linear-gradient(to bottom, rgba(14,14,14,0.45) 0%,rgba(125,126,125,0.36) 49%,rgba(14,14,14,0.45) 100%),
+  //  url("../img/bg-1.jpg") no-repeat center center;
+  //}
   .container {
     position: relative;
     padding-top: 150px;
@@ -501,6 +517,11 @@ h5 {
   background: url("../img/bg-3.jpg") no-repeat center center;
   background-size: cover;
 
+  //@media screen and (max-width: 600px){
+  //  background:linear-gradient(to bottom, rgba(14,14,14,0.45) 0%,rgba(125,126,125,0.36) 49%,rgba(14,14,14,0.45) 100%),
+  //  url("../img/bg-3.jpg") no-repeat center center;
+  //}
+
   .container {
     position: relative;
     padding-top: 150px;
@@ -528,7 +549,7 @@ h5 {
 
   .scroll-block {
     position: absolute;
-    bottom: 120px;
+    bottom: 30px;
     left: 30%;
     right: 30%;
 
@@ -566,10 +587,20 @@ h5 {
 .section-3 {
   background: url("../img/bg-3.jpg") no-repeat center center;
   background-size: cover;
+  .fp-tableCell{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  //@media screen and (max-width: 600px){
+  //  background:linear-gradient(to bottom, rgba(14,14,14,0.45) 0%,rgba(125,126,125,0.36) 49%,rgba(14,14,14,0.45) 100%),
+  //  url("../img/bg-3.jpg") no-repeat center center;
+  //}
 
   .container {
     position: relative;
     padding-top: 70px;
+
 
     @media screen and (max-width: 1200px) {
       padding-top: 30px;
@@ -632,6 +663,11 @@ h5 {
         font-weight: 500;
         color: #FFFFFF;
       }
+      #total_slider{
+        p{
+          margin-bottom: 0;
+        }
+      }
     }
 
     @media screen and (max-width: 600px) {
@@ -679,9 +715,26 @@ h5 {
   }
 }
 
+.section-4,
+.section-6{
+    background: url("../img/bg-1.jpg") no-repeat center center;
+    background-size: cover;
+
+  //@media screen and (max-width: 600px){
+  //  background:linear-gradient(to bottom, rgba(14,14,14,0.45) 0%,rgba(125,126,125,0.36) 49%,rgba(14,14,14,0.45) 100%),
+  //  url("../img/bg-1.jpg") no-repeat center center;
+  //}
+}
+
 .section-5 {
   background: url("../img/bg-5.jpg") no-repeat center center;
   background-size: cover;
+  padding-bottom: 50px;
+
+  //@media screen and (max-width: 600px){
+  //  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%) ,
+  //  url("../img/bg-5.jpg")no-repeat center center ;
+  //}
 
   .container {
     position: relative;
@@ -694,7 +747,6 @@ h5 {
       padding: 10px 0 0 15px;
 
     }
-
     .boy {
       position: absolute;
       bottom: 0;
@@ -826,6 +878,7 @@ h5 {
   }
 
 }
+
 
 
 .steps {

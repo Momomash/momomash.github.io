@@ -203,6 +203,10 @@ h5 {
   }
 }
 
+.is-active-header {
+  background: rgba(28, 28, 28, 0.8);
+}
+
 .c-hamburger {
   display: block;
   position: relative;
@@ -286,7 +290,7 @@ h5 {
   display: none;
   position: absolute;
   right: 0;
-  top: 75px;
+  top: 74px;
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -304,7 +308,7 @@ h5 {
   display: block !important;
   width: 100% !important;
   padding-left: 30px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .dropdown-menu .dropdown-menu_ul li {
   margin-bottom: 35px;
@@ -323,6 +327,9 @@ h5 {
 }
 .dropdown-menu .socials i {
   margin-right: 25px;
+}
+.dropdown-menu a {
+  color: #ffffff;
 }
 
 .logo {
@@ -352,6 +359,10 @@ h5 {
   fill: #0DD1A2 !important;
 }
 
+.overflow {
+  overflow-x: hidden !important;
+}
+
 .scroll-block:hover {
   cursor: pointer;
 }
@@ -362,6 +373,16 @@ h5 {
 
 .section .fp-tableCell {
   padding-top: 80px;
+}
+@media screen and (max-width: 600px) {
+  .section {
+    min-height: 100vh !important;
+    height: auto !important;
+  }
+  .section .fp-tableCell {
+    min-height: 100vh !important;
+    height: auto !important;
+  }
 }
 
 .section-1 {
@@ -458,7 +479,7 @@ h5 {
 }
 .section-2 .scroll-block {
   position: absolute;
-  bottom: 120px;
+  bottom: 30px;
   left: 30%;
   right: 30%;
 }
@@ -492,6 +513,11 @@ h5 {
 .section-3 {
   background: url("../img/bg-3.jpg") no-repeat center center;
   background-size: cover;
+}
+.section-3 .fp-tableCell {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .section-3 .container {
   position: relative;
@@ -553,6 +579,9 @@ h5 {
   font-weight: 500;
   color: #FFFFFF;
 }
+.section-3 .slider_buttons .control-number #total_slider p {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 600px) {
   .section-3 .slider_buttons {
     display: flex;
@@ -594,9 +623,16 @@ h5 {
   display: none !important;
 }
 
+.section-4,
+.section-6 {
+  background: url("../img/bg-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 .section-5 {
   background: url("../img/bg-5.jpg") no-repeat center center;
   background-size: cover;
+  padding-bottom: 50px;
 }
 .section-5 .container {
   position: relative;
