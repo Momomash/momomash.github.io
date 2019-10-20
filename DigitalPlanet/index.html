@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Digital Planet VR - планетарий в Новороссийске</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
     <link rel="stylesheet" type="text/css" href="assets/libs/fontawesome-free-5.11.2-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
+<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a3erQ38658U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!--<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-dialog-centered" role="document">-->
+        <!--<div class="modal-content">-->
+            <!--<form>-->
+                <!--<input type="text"  placeholder="Ваше имя">-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
 <div class="header" id="menu">
     <div class="container">
         <div data-menuanchor="block1"><a href="#block1" class="logo">
@@ -68,14 +87,14 @@
 
 </div>
 <div id="fullpage">
-    <div class="section section-1" data-anchor="block1">
+    <div class="section section-1 grey" data-anchor="block1">
         <div class="container">
             <h1>Digital Planet VR</h1>
             <h5>Образовательный виртуальный планетарий в Новороссийске.<br>
                 Познавательное приключение в мир звёзд и галактик.</h5>
             <div class="btn-group">
-                <button class="btn-primary"><span><img src="assets/img/ticket.png" alt=""></span>Заказать</button>
-                <button class="btn-secondary"><span><i class="fas fa-play-circle"></i></span>Видео</button>
+                <button class="btn-primary" data-toggle="modal" data-target="#modalForm"><span><img src="assets/img/ticket.png" alt=""></span>Заказать</button>
+                <button class="btn-secondary" data-toggle="modal" data-target="#modalVideo"><span><i class="fas fa-play-circle"></i></span>Видео</button>
             </div>
             <div class="socials">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -91,6 +110,7 @@
     </div>
     <div class="section section-2"  data-anchor="block2">
         <div class="container scrollable">
+
             <h2>Что такое VR-планетарий?</h2>
             <p>Это образовательная программа, использующая технологию виртуальной реальности.</p>
                 <p>Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария
@@ -250,7 +270,7 @@
     </div>
     <div class="section" data-anchor="block6">
 
-        
+
     </div>
 </div>
 
@@ -259,6 +279,9 @@
 <script src="assets/js/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
     $(document).ready(function () {
@@ -267,8 +290,9 @@
             menu: '#menu',
             css3: true,
             scrollingSpeed: 1000,
+            responsiveWidth: 600
             //scrollOverflow:true
-            normalScrollElements: '.scrollable'
+            // normalScrollElements: '.scrollable'
         });
     });
 </script>

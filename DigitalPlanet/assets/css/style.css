@@ -84,7 +84,7 @@
   max-width: 1340px;
   margin: 0 auto;
   padding: 0 20px;
-  height: calc(100% - 150px);
+  height: 100%;
 }
 
 h1 {
@@ -360,9 +360,8 @@ h5 {
   transition-duration: 0.5s;
 }
 
-.section {
+.section .fp-tableCell {
   padding-top: 80px;
-  height: calc(100% - 80px) !important;
 }
 
 .section-1 {
@@ -381,7 +380,7 @@ h5 {
 }
 .section-1 .container .socials {
   position: absolute;
-  bottom: 120px;
+  bottom: 30px;
 }
 .section-1 .container .socials i {
   font-size: 22px;
@@ -403,7 +402,7 @@ h5 {
 }
 .section-1 .scroll-block {
   position: absolute;
-  bottom: 120px;
+  bottom: 30px;
   left: 30%;
   right: 30%;
 }
