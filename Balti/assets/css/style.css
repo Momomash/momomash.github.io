@@ -11,6 +11,20 @@
   }
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #212121;
+}
+
+p {
+  font-size: 17px;
+  line-height: 150%;
+  color: #212121;
+}
+
 .header .navbar {
   padding: 20px 0;
 }
@@ -60,9 +74,12 @@
   background-color: #000000;
   display: flex;
   align-items: center;
+}
+.promo .promo_left p {
   font-weight: bold;
   font-size: 74px;
   line-height: 120%;
+  color: #ffffff;
 }
 .promo .promo_left:after {
   content: "from";
@@ -81,9 +98,12 @@
   background-size: cover;
   display: flex;
   align-items: center;
+}
+.promo .promo_right p {
   font-weight: 800;
   font-size: 100px;
   line-height: 90%;
+  color: #ffffff;
 }
 @media screen and (max-width: 1200px) {
   .promo .promo_left,
