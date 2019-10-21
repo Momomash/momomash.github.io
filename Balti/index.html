@@ -9,11 +9,11 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-<div class="header">
+<body style="padding-top: 100px">
+<div class="header fixed-top">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="logo" href="#"><span class="bolder">Balti</span> b2b</a>
+        <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+            <a class="logo" href="#yak1"><span class="bolder">Balti</span> b2b</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">О проекте</a>
+                        <a class="nav-link" href="#yak2">О проекте</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Новый рынок</a>
+                        <a class="nav-link" href="#yak3">Новый рынок</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Условия</a>
+                        <a class="nav-link" href="#yak4">Условия</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
+                        <a class="nav-link" href="#yak5">О нас</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eng</a>
@@ -40,7 +40,7 @@
         </nav>
     </div>
 </div>
-<div class="container">
+<div class="container" id="yak1">
     <div class="promo">
         <div class="promo_left">
             <p>Tere!<br>
@@ -56,7 +56,7 @@
         </div>
     </div>
 </div>
-<div class="container padding-150">
+<div class="container padding-150" id="yak2">
     <h1>О проекте</h1>
     <p class=" pt-5 text-center mx-auto max-width-60">Balti Store - дропшиппинг маркетплейс для компаний из
         Прибалтики, производящих и реализующих
@@ -73,7 +73,7 @@
     <p class="mx-auto">По данным маркетинговых исследований больше 1/3 россиян совершают покупки в интернете.</p>
 
 </div>
-<div class="container padding-100">
+<div class="container padding-100" id="yak3">
     <h1>Ваш новый рынок</h1>
     <p class="pt-5 text-center col-md-6 col-xs-12 mx-auto">Balti - единая платформа, с системой поддержки потребителей,
         международным биллингом и защитой от контрафакта,
@@ -101,7 +101,7 @@
     </div>
     <button class="btn-black mx-auto">Регистрация</button>
 </div>
-<div class="container">
+<div class="container pb-5" id="yak4">
     <h1>Условия</h1>
     <p class="pt-5 text-center col-md-6 col-xs-12 mx-auto pb-3">Условия размещения позволяют любой компании
         разместить товары в маркетплейсе.</p>
@@ -164,9 +164,54 @@
 
 
             </div>
-            <div class="tab-pane fade" id="pills2" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills3" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            <div class="tab-pane fade" id="pills2" role="tabpanel" aria-labelledby="pills-profile-tab">Lorem ipsum</div>
+            <div class="tab-pane fade" id="pills3" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem ipsum Lorem ipsum Lorem ipsum<br>
+                Lorem ipsum Lorem ipsum Lorem ipsum</div>
         </div>
+        <button class="btn-black mx-auto mb-5 mt-5">Регистрация</button>
+    </div>
+</div>
+<div style="background: #F8F8F8" id="yak5">
+    <div class="container pb-5 pt-5" >
+        <h1 class="mt-5">О нас</h1>
+        <p class="pt-5 text-center col-md-6 col-xs-12 mx-auto pb-3">Условия размещения позволяют любой компании
+            разместить товары в маркетплейсе.</p>
+        <p class="text-center col-md-6 col-xs-12 mx-auto font-italic small-text">Используйте ссылки, чтобы узнать
+            подробнее о наших условиях:</p>
+        <div class="cards big mb-5 mt-5">
+            <div class="card">
+                <img src="assets/img/chernovround.png" alt="">
+                <h1 class="pb-3">Владимир Чернов</h1>
+                <h2 class="pb-2">Эксперт по цифровой трансформации и CTO.</h2>
+                <p>12 лет опыта разработки и интеграции различных цифровых продуктов для бизнеса
+                    (интегрированные веб-приложения, корпоративные приложения, CRM и ERP-системы).</p>
+                <p>С 2015 года изучает технологии распределенного реестра и блокчейн-приложения для бизнеса.
+                    Специализируется на разработке корпоративных блокчейн приложений. </p>
+            </div>
+            <div class="card">
+                <img src="assets/img/chernovround.png" alt="">
+                <h1 class="pb-3">Владимир Чернов</h1>
+                <h2 class="pb-2">Эксперт по цифровой трансформации и CTO.</h2>
+                <p>12 лет опыта разработки и интеграции различных цифровых продуктов для бизнеса
+                    (интегрированные веб-приложения, корпоративные приложения, CRM и ERP-системы).</p>
+                <p>С 2015 года изучает технологии распределенного реестра и блокчейн-приложения для бизнеса.
+                    Специализируется на разработке корпоративных блокчейн приложений. </p>
+            </div>
+            <div class="card">
+                <img src="assets/img/chernovround.png" alt="">
+                <h1 class="pb-3">Владимир Чернов</h1>
+                <h2 class="pb-2">Эксперт по цифровой трансформации и CTO.</h2>
+                <p>12 лет опыта разработки и интеграции различных цифровых продуктов для бизнеса
+                    (интегрированные веб-приложения, корпоративные приложения, CRM и ERP-системы).</p>
+                <p>С 2015 года изучает технологии распределенного реестра и блокчейн-приложения для бизнеса.
+                    Специализируется на разработке корпоративных блокчейн приложений. </p>
+            </div>
+
+        </div>
+
+
+
+
     </div>
 </div>
 
@@ -180,5 +225,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
+        });
+    });
+</script>
 </body>
 </html>
