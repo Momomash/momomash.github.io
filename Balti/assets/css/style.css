@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+.header .navbar {
+  padding: 20px 0;
+}
+.header .navbar .navbar-nav a {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 120%;
+  color: #212121;
+}
+.header .navbar .navbar-nav a:hover {
+  color: #000000;
+  font-weight: 600;
+}
+.header .navbar .navbar-toggler {
+  border: none;
+}
+.header .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #9B9B9B;
+}
+.logo .bolder {
+  font-weight: 800;
+  color: #000000;
+}
+.logo:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.promo .promo_left {
+  position: relative;
+  width: 50%;
+  height: 460px;
+  padding-left: 140px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 74px;
+  line-height: 120%;
+}
+.promo .promo_left:after {
+  content: "from";
+  position: absolute;
+  right: -70px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 90%;
+}
+.promo .promo_right {
+  width: 50%;
+  height: 460px;
+  padding-left: 140px;
+  background: url("../img/promo.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 90%;
+}
+@media screen and (max-width: 1200px) {
+  .promo .promo_left,
+.promo .promo_right {
+    padding-left: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .promo .promo_left {
+    padding-left: 45px;
+    font-size: 50px;
+  }
+  .promo .promo_left:after {
+    font-size: 35px;
+    right: -45px;
+  }
+  .promo .promo_right {
+    padding-left: 45px;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo {
+    flex-direction: column;
+  }
+  .promo .promo_right,
+.promo .promo_left {
+    width: 100%;
+    justify-content: center;
+    height: 320px;
+  }
+  .promo .promo_left:after {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 668px) {
+  .promo {
+    flex-direction: column;
+  }
+  .promo .promo_right,
+.promo .promo_left {
+    height: 240px;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

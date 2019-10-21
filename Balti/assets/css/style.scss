@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  @media (min-width: 1200px){
+    max-width: 1240px;
+  }
+}
+
+.header{
+  .navbar {
+    padding: 20px 0;
+    .navbar-nav {
+      a {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 120%;
+        color: #212121;
+        &:hover{
+          color: #000000;
+          font-weight: 600;
+        }
+      }
+    }
+    .navbar-toggler{
+      border: none;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+
+.logo{
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px ;
+  color: #9B9B9B;
+  .bolder{
+    font-weight: 800;
+    color: #000000;
+  }
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.promo{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  .promo_left{
+    position: relative;
+    width: 50%;
+    height: 460px;
+    padding-left: 140px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 120%;
+
+    &:after{
+      content: 'from';
+      position: absolute;
+      right: -70px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 90%;
+    }
+  }
+  .promo_right{
+    width: 50%;
+    height: 460px;
+    padding-left: 140px;
+    background: url("../img/promo.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 90%;
+
+  }
+  @media screen and (max-width: 1200px){
+    .promo_left,
+    .promo_right {
+      padding-left: 80px;
+    }
+  }
+  @media screen and (max-width: 992px){
+    .promo_left{
+        padding-left: 45px;
+        font-size: 50px;
+      &:after{
+          font-size: 35px;
+          right: -45px;
+      }
+    }
+    .promo_right{
+        padding-left: 45px;
+        font-size: 80px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    .promo_right,
+    .promo_left{
+      width: 100%;
+      justify-content: center;
+      height: 320px;
+    }
+    .promo_left{
+      &:after{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: -15px;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (max-width: 668px){
+    flex-direction: column;
+    .promo_right,
+    .promo_left{
+      height: 240px;
+      padding: 0;
+    }
+  }
+}
