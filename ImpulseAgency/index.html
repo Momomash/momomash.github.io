@@ -14,7 +14,7 @@
 <body>
 <div class="header">
     <div class="dots-container">
-        <div class="container container1" ></div>
+        <div class="container container1"></div>
     </div>
     <div class="header_slider">
         <div class="slide">
@@ -494,6 +494,23 @@
 
         }
     });
+</script>
+<script>
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 10) {
+            $(".menu_block").css({"background": "#ffffff"})
+            $(".logo").css({"color": "#000000"})
+            $(".c-hamburger span").css({"background": "#000000"})
+        }
+        if (10 > scrolled) {
+            $(".menu_block").css({"background": "transparent"})
+            $(".logo").css({"color": "#ffffff"})
+            $(".c-hamburger span").css({"background": "#ffffff"})
+        }
+
+    }
 </script>
 </body>
 </html>
