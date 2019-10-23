@@ -315,6 +315,9 @@
           display: none;
         }
       }
+      &:after{
+        left: calc(100% + 16px) !important;
+      }
     }
     &:before{
       content: '';

@@ -318,6 +318,9 @@
     display: none;
   }
 }
+.steps .circle.active .step:after {
+  left: calc(100% + 16px) !important;
+}
 .steps .circle.active:before {
   content: "";
   position: absolute;
