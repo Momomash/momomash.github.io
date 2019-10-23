@@ -53,6 +53,11 @@
   background-color: #282b2f;
   padding: 20px 40px;
 }
+@media screen and (max-width: 600px) {
+  .content .steps_descriprion {
+    padding: 20px 10px;
+  }
+}
 .content .steps_descriprion .nav-pills {
   position: relative;
   z-index: 10;
@@ -105,6 +110,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .steps {
+    margin: 40px 0 50px 0;
+  }
 }
 .steps .circle {
   z-index: 2;
