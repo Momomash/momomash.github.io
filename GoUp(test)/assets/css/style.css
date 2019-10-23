@@ -24,6 +24,7 @@
 }
 @media screen and (max-width: 600px) {
   .content .content_header {
+    background: url("../img/bg-m.png") no-repeat top center;
     background-size: 100% 90%;
   }
 }
@@ -34,7 +35,7 @@
 }
 @media screen and (max-width: 400px) {
   .content .content_header {
-    background-size: 100% 77%;
+    background-size: 100% 75%;
   }
 }
 .content .content_header h1 {

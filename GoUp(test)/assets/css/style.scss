@@ -23,13 +23,15 @@
     padding-top: 60px;
     color: #ffffff;
     @media screen and (max-width: 600px){
+      background: url("../img/bg-m.png") no-repeat top center;
+
       background-size: 100% 90%;
     }
     @media screen and (max-width: 500px){
       background-size: 100% 80%;
     }
     @media screen and (max-width: 400px){
-      background-size: 100% 77%;
+      background-size: 100% 75%;
     }
 
     h1 {
