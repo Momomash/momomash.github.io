@@ -22,6 +22,21 @@
   padding-top: 60px;
   color: #ffffff;
 }
+@media screen and (max-width: 600px) {
+  .content .content_header {
+    background-size: 100% 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content .content_header {
+    background-size: 100% 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content .content_header {
+    background-size: 100% 77%;
+  }
+}
 .content .content_header h1 {
   font-size: 62px;
   font-weight: 700;
@@ -163,10 +178,15 @@
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #7d7d7d;
+  background-color: #282b2f;
   top: 50%;
   left: calc(100% + 8px);
   z-index: -1;
+}
+@media screen and (max-width: 600px) {
+  .steps .circle .step:after {
+    width: 50px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .steps .circle .step {
@@ -250,7 +270,7 @@
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #7d7d7d;
+  background-color: #282b2f;
   top: 50%;
   left: calc(100% + 8px);
   z-index: -1;
@@ -288,7 +308,7 @@
   }
 }
 .steps .circle.active:before {
-  content: "aaa";
+  content: "";
   position: absolute;
   bottom: -35px;
   left: -35px;

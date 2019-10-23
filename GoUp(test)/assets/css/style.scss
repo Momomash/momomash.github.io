@@ -22,6 +22,15 @@
     height: 370px;
     padding-top: 60px;
     color: #ffffff;
+    @media screen and (max-width: 600px){
+      background-size: 100% 90%;
+    }
+    @media screen and (max-width: 500px){
+      background-size: 100% 80%;
+    }
+    @media screen and (max-width: 400px){
+      background-size: 100% 77%;
+    }
 
     h1 {
       font-size: 62px;
@@ -176,10 +185,13 @@
         height: 2px;
         content: '';
         position: absolute;
-        background-color: #7d7d7d;
+        background-color: #282b2f;
         top: 50%;
         left: calc(100% + 8px);
         z-index: -1;
+        @media screen and (max-width: 600px){
+          width: 50px;
+        }
       }
       @media screen and (max-width: 1200px){
         width: 220px;
@@ -250,7 +262,7 @@
         height: 2px;
         content: '';
         position: absolute;
-        background-color: #7d7d7d;
+        background-color: #282b2f;
         top: 50%;
         left: calc(100% + 8px);
         z-index: -1;
@@ -294,7 +306,7 @@
       }
     }
     &:before{
-      content: 'aaa';
+      content: '';
       position: absolute;
       bottom: -35px;
       left: -35px;
