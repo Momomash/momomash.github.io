@@ -53,6 +53,10 @@
   background-color: #282b2f;
   padding: 20px 40px;
 }
+.content .steps_descriprion .nav-pills {
+  position: relative;
+  z-index: 10;
+}
 .content .steps_descriprion .nav-pills a {
   border-radius: 0;
   font-size: 14px;
@@ -80,6 +84,15 @@
   display: inline-block;
   height: 12px;
   width: 8px;
+}
+@media screen and (max-width: 768px) {
+  .content .steps_descriprion .nav-pills a {
+    padding: 10px 0 !important;
+  }
+  .content .steps_descriprion .nav-pills a.active:before {
+    left: -20px;
+    top: 10px;
+  }
 }
 .content .steps_descriprion .tab-pane {
   padding-top: 20px;
@@ -126,10 +139,14 @@
   margin-bottom: 15px;
 }
 .steps .circle .step p {
+  display: none;
   color: #7d848d;
   font-size: 16px;
   max-width: 60%;
   text-align: center;
+}
+.steps .circle .step:hover {
+  cursor: pointer;
 }
 .steps .circle .step:after {
   width: 100px;
@@ -140,6 +157,83 @@
   top: 50%;
   left: calc(100% + 8px);
   z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .steps .circle .step {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps .circle .step {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .steps .circle .step {
+    width: 170px;
+    height: 170px;
+  }
+  .steps .circle .step h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .steps .circle .step h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .steps .circle .step p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .steps .circle .step {
+    width: 150px;
+    height: 150px;
+  }
+  .steps .circle .step h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .steps .circle .step h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .steps .circle .step p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .steps .circle .step {
+    width: 120px;
+    height: 120px;
+  }
+  .steps .circle .step h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .steps .circle .step h2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .steps .circle .step {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .steps .circle .step {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .steps .circle .step {
+    width: 60px;
+    height: 60px;
+  }
 }
 .steps .circle:last-child .step:after {
   width: 1000px;
@@ -161,12 +255,79 @@
   right: calc(100% + 8px);
   z-index: -1;
 }
+.steps .circle.active {
+  position: relative;
+}
 .steps .circle.active .step {
   z-index: 10000;
   box-shadow: 0 0 0 8px #2b87d5;
 }
 .steps .circle.active .step h1, .steps .circle.active .step h2 {
   color: #ffffff;
+}
+.steps .circle.active .step p {
+  display: inline-block;
+  color: #7d848d;
+  font-size: 16px;
+  max-width: 60%;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .steps .circle.active .step p {
+    display: none;
+  }
+}
+.steps .circle.active:before {
+  content: "aaa";
+  position: absolute;
+  bottom: -35px;
+  left: -35px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: #282b2f;
+}
+@media screen and (max-width: 1200px) {
+  .steps .circle.active:before {
+    bottom: -40px;
+    left: -40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps .circle.active:before {
+    bottom: -45px;
+    left: -45px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .steps .circle.active:before {
+    bottom: -50px;
+    left: -50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .steps .circle.active:before {
+    bottom: -55px;
+    left: -55px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .steps .circle.active:before {
+    bottom: -60px;
+    left: -60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .steps .circle.active:before {
+    bottom: -65px;
+    left: -65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .steps .circle.active:before {
+    bottom: -70px;
+    left: -70px;
+  }
 }
 .steps .circle.active > .step:after {
   left: calc(100% + 15px);
