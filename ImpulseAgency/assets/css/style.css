@@ -317,7 +317,7 @@ body {
 @media screen and (max-width: 765px) {
   .menu_block .menu .dropdown-menu {
     font-size: 16px;
-    max-width: 140px;
+    max-width: 200px;
   }
   .menu_block .menu .dropdown-menu .small-text {
     margin-bottom: 10px;
