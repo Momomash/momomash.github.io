@@ -1,0 +1,21 @@
+.house {
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+.house img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.house #roof,
+.house #walls {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
