@@ -200,13 +200,58 @@ body {
 .footer .container {
   position: relative;
 }
-.footer .container img {
+.footer .container .rating-card {
   position: absolute;
   right: 20px;
   top: 0;
+  width: 240px;
+  height: 120px;
+  background: #2B1C42;
+  border-radius: 5px;
+  padding: 15px 10px 0 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.footer .container .rating-card a {
+  text-decoration: none;
+}
+.footer .container .rating-card h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 110%;
+  color: #2ADBE7;
+  margin-bottom: 10px;
+}
+.footer .container .rating-card h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 110%;
+  color: #B6B6B6;
+  margin-bottom: 10px;
+}
+.footer .container .rating-card h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 110%;
+  color: #B6B6B6;
+  margin-bottom: 15px;
+}
+.footer .container .rating-card p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 110%;
+  color: #757575;
+}
+.footer .container .rating-card .chain-logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 @media screen and (max-width: 765px) {
-  .footer .container img {
+  .footer .container .rating-card {
     display: none;
   }
 }
@@ -304,11 +349,15 @@ body {
   text-align: right;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 500;
   font-size: 32px;
   line-height: 160%;
   color: #000000;
   cursor: pointer;
+  background-color: rgba(82, 74, 74, 0.3);
+  padding: 5px;
+}
+.menu_block .menu .dropdown-menu a {
+  font-weight: bold;
 }
 .menu_block .menu .dropdown-menu .small-text {
   font-size: 14px;

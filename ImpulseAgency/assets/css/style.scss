@@ -194,10 +194,56 @@ body{
   }
   .container{
     position: relative;
-    img{
+    .rating-card{
       position: absolute;
       right: 20px;
       top: 0;
+      width: 240px;
+      height: 120px;
+      background: #2B1C42;
+      border-radius: 5px;
+      padding: 15px 10px 0 20px;
+      font-family: 'Montserrat', sans-serif;
+      a{
+        text-decoration: none;
+      }
+      h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 110%;
+        color: #2ADBE7;
+        margin-bottom: 10px;
+      }
+      h2{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 110%;
+        color: #B6B6B6;
+        margin-bottom: 10px;
+      }
+      h3{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 110%;
+        color: #B6B6B6;
+        margin-bottom: 15px;
+      }
+      p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 110%;
+        color: #757575;
+      }
+
+      .chain-logo{
+        position: absolute;
+        right: 10px;
+        top:10px;
+      }
       @media screen and (max-width: 765px){
         display: none;
       }
@@ -311,11 +357,15 @@ body{
       text-align: right;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
-      font-weight: 500;
       font-size: 32px;
       line-height: 160%;
       color: $black;
       cursor: pointer;
+      background-color: rgba(82, 74, 74, 0.3);
+      padding: 5px;
+      a{
+        font-weight: bold;
+      }
 
       .small-text {
         font-size: 14px;
@@ -325,7 +375,6 @@ body{
       @media screen and (max-width: 765px) {
         font-size: 16px;
         max-width: 200px;
-        //background-color: rgba(0, 0, 0, 0.3);
         .small-text{
           margin-bottom: 10px;
         }
