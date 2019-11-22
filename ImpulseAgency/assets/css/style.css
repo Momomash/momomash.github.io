@@ -51,6 +51,7 @@ body {
   font-size: 16px;
   line-height: 180%;
   color: #000000;
+  max-width: 90%;
 }
 .appeal .container .left-block {
   width: 50%;
@@ -92,6 +93,7 @@ body {
   color: #5E5E5E;
 }
 .blog ul li h5 {
+  max-width: 90%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 38px;
@@ -283,6 +285,7 @@ body {
   text-decoration: none;
 }
 .menu_block .menu .c-hamburger {
+  margin-right: 50px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -376,7 +379,8 @@ h1 {
 }
 
 h2 {
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 90%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 38px;
@@ -400,7 +404,8 @@ p {
   font-size: 24px;
   line-height: 160%;
   color: #212121;
-  max-width: 900px;
+  width: 900px;
+  max-width: 90%;
 }
 
 .header {
@@ -489,7 +494,7 @@ p {
   display: block;
   position: fixed;
   right: -270px;
-  top: 0;
+  top: -5px;
   text-align: right;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -514,8 +519,9 @@ p {
 }
 @media screen and (max-width: 765px) {
   .dropdown_menu {
+    right: -290px;
     font-size: 16px;
-    max-width: 300px;
+    max-width: 320px;
   }
   .dropdown_menu .small-text {
     margin-bottom: 10px;
@@ -523,7 +529,7 @@ p {
 }
 
 .dropdown_menu__open {
-  transform: translateX(-270px);
+  transform: translateX(-280px);
   transition-duration: 1s;
 }
 
@@ -738,6 +744,11 @@ p {
   position: absolute;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 94.79%);
 }
+@media screen and (max-width: 768px) {
+  .reviews .container .reviews-slider {
+    max-width: 90%;
+  }
+}
 .reviews .container .slick-dots {
   bottom: 40px;
 }
@@ -762,6 +773,11 @@ p {
 }
 .reviews .container .slick-dots .slick-active button:before {
   background-color: #2ADBE7;
+}
+@media screen and (max-width: 768px) {
+  .reviews .container {
+    justify-content: flex-start;
+  }
 }
 
 .slick-prev,
