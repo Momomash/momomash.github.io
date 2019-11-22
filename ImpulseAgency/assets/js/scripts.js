@@ -20,6 +20,11 @@
 
 })();
 
+//left dropdown menu
+function dropdownmenu() {
+    $('.dropdown_menu').toggleClass('dropdown_menu__open');
+}
+
 // scrolling menu background
 
 var scrolled;

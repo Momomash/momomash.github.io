@@ -9,16 +9,17 @@ $black: #000000;
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.about-work{
-  .container{
-    img{
+.about-work {
+  .container {
+    img {
       width: 100%;
       margin: 120px 0;
-      @media screen and (max-width: 765px){
+      @media screen and (max-width: 765px) {
         margin: 60px 0;
       }
     }
@@ -29,6 +30,7 @@ body{
   background-color: #F8F8F8;
   margin-top: 50px;
   padding-top: 50px !important;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -36,18 +38,20 @@ body{
     .right-block {
       width: 50%;
       padding-top: 50px;
-      h4{
+
+      h4 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 40px;
         line-height: 130%;
         color: $black;
         margin-bottom: 50px;
-        @media screen and (max-width: 400px){
+        @media screen and (max-width: 400px) {
           font-size: 30px;
         }
       }
-      p{
+
+      p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         font-size: 16px;
@@ -58,21 +62,23 @@ body{
 
     .left-block {
       width: 50%;
-      img{
+
+      img {
         display: block;
         margin: 0 0 0 auto;
       }
     }
-    @media screen and (max-width: 900px){
+
+    @media screen and (max-width: 900px) {
       flex-direction: column;
       .right-block,
-      .left-block{
+      .left-block {
         width: 100%;
       }
-      .left-block img{
+      .left-block img {
         margin: 20px 0 auto 0;
 
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 480px) {
           width: 100%;
           height: auto;
         }
@@ -81,30 +87,35 @@ body{
   }
 }
 
-.blog{
-  ul{
+.blog {
+  ul {
     list-style: none;
     margin-bottom: 150px;
-    li{
+
+    li {
       margin-bottom: 50px;
-      a{
+
+      a {
         text-decoration: none;
       }
-      h5:hover{
+
+      h5:hover {
         color: #5E5E5E;
       }
-      h5{
+
+      h5 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 38px;
         line-height: 130%;
         color: $black;
         margin-bottom: 15px;
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 500px) {
           font-size: 24px;
         }
       }
-      p{
+
+      p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -136,9 +147,12 @@ body{
 }
 
 .container {
-  max-width: 1240px !important;
+  max-width: 1740px !important;
   padding: 0 20px;
   margin: 0 auto;
+  @media screen and (min-width: 2200px) {
+    max-width: 2240px !important;
+  }
 }
 
 .content {
@@ -148,13 +162,15 @@ body{
   }
 }
 
-.footer{
+.footer {
   background-color: $black;
   padding: 100px 0;
-  h3{
+
+  h3 {
     color: #d2d2d2;
   }
-  p{
+
+  p {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 11px;
@@ -162,18 +178,21 @@ body{
     color: #818181;
     max-width: 480px;
   }
-  .contacts{
+
+  .contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
+
     .left-block,
-    .right-block{
+    .right-block {
       display: flex;
       flex-direction: column;
       width: 280px;
       margin-right: 20px;
-      h6{
+
+      h6 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 22px;
@@ -182,7 +201,8 @@ body{
         color: #FFFFFF;
         margin: 20px 0 30px 0;
       }
-      a{
+
+      a {
         font-family: 'Montserrat', sans-serif;
         font-weight: normal;
         font-size: 28px;
@@ -192,9 +212,11 @@ body{
       }
     }
   }
-  .container{
+
+  .container {
     position: relative;
-    .rating-card{
+
+    .rating-card {
       position: absolute;
       right: 20px;
       top: 0;
@@ -204,10 +226,12 @@ body{
       border-radius: 5px;
       padding: 15px 10px 0 20px;
       font-family: 'Montserrat', sans-serif;
-      a{
+
+      a {
         text-decoration: none;
       }
-      h1{
+
+      h1 {
         font-style: normal;
         font-weight: 600;
         font-size: 26px;
@@ -215,7 +239,8 @@ body{
         color: #2ADBE7;
         margin-bottom: 10px;
       }
-      h2{
+
+      h2 {
         font-style: normal;
         font-weight: normal;
         font-size: 11px;
@@ -223,7 +248,8 @@ body{
         color: #B6B6B6;
         margin-bottom: 10px;
       }
-      h3{
+
+      h3 {
         font-style: normal;
         font-weight: normal;
         font-size: 8px;
@@ -231,7 +257,8 @@ body{
         color: #B6B6B6;
         margin-bottom: 15px;
       }
-      p{
+
+      p {
         font-style: normal;
         font-weight: normal;
         font-size: 8px;
@@ -239,12 +266,13 @@ body{
         color: #757575;
       }
 
-      .chain-logo{
+      .chain-logo {
         position: absolute;
         right: 10px;
-        top:10px;
+        top: 10px;
       }
-      @media screen and (max-width: 765px){
+
+      @media screen and (max-width: 765px) {
         display: none;
       }
     }
@@ -267,10 +295,12 @@ body{
     justify-content: space-between;
     top: 0;
     z-index: 2;
-    a{
+
+    a {
       color: inherit;
       text-decoration: none;
     }
+
     .c-hamburger {
       display: block;
       position: relative;
@@ -281,6 +311,7 @@ body{
       border: none;
       cursor: pointer;
       background-color: initial;
+      z-index: 10;
 
       span {
         display: block;
@@ -345,41 +376,6 @@ body{
       }
     }
 
-    .c-hamburger.is-active ~ .dropdown-menu {
-      display: block;
-    }
-
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 100px;
-      text-align: right;
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-size: 32px;
-      line-height: 160%;
-      color: $black;
-      cursor: pointer;
-      background-color: rgba(255, 255, 255, 0.73);
-      padding: 5px;
-      a{
-        font-weight: bold;
-      }
-
-      .small-text {
-        font-size: 14px;
-        line-height: 160%;
-      }
-
-      @media screen and (max-width: 765px) {
-        font-size: 16px;
-        max-width: 200px;
-        .small-text{
-          margin-bottom: 10px;
-        }
-      }
-    }
 
     .logo {
       font-family: 'Barlow', sans-serif;
@@ -391,25 +387,28 @@ body{
   }
 }
 
-.black-menu{
-    a{
-      color: inherit;
-      text-decoration: none;
+.black-menu {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .c-hamburger {
+    span {
+      background: $black !important;
     }
-    .c-hamburger {
-      span {
-        background: $black !important;
-      }
-    }
-      .dropdown-menu {
-      color: $black !important;
-    }
-    .logo {
-      color: $black !important;
-    }
+  }
+
+  .dropdown_menu {
+    color: $black !important;
+  }
+
+  .logo {
+    color: $black !important;
+  }
 }
 
-h1{
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -438,7 +437,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-p{
+p {
   font-weight: 500;
   font-size: 24px;
   line-height: 160%;
@@ -448,19 +447,21 @@ p{
 
 .header {
   position: relative;
+
   video {
     width: 100%;
     min-width: 100%;
     height: 600px;
     object-fit: cover;
   }
+
   .header_slider {
   }
+
   .slide {
     height: 600px;
 
     position: relative;
-
 
 
     .slider-text {
@@ -500,16 +501,18 @@ p{
     }
   }
 
-  .dots-container{
+  .dots-container {
     position: absolute;
     width: 100%;
     display: block;
     height: 600px;
-    .container{
+
+    .container {
       position: relative;
       height: 600px;
     }
   }
+
   .slick-dots {
     z-index: 5;
     left: 20px;
@@ -542,6 +545,53 @@ p{
       }
     }
   }
+
+
+}
+
+.dropdown_menu {
+  display: block;
+  position: fixed;
+  right: -270px;
+  top: 0;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  width: 300px;
+  height: 100vh;
+  font-size: 32px;
+  line-height: 160%;
+  color: $black;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(171, 171, 171, 0.25);
+  padding: 100px 30px 0 0;
+  z-index: 5;
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .small-text {
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  @media screen and (max-width: 765px) {
+    font-size: 16px;
+    max-width: 300px;
+    .small-text{
+      margin-bottom: 10px;
+    }
+  }
+}
+.dropdown_menu__open{
+  transform: translateX(-270px);
+  transition-duration: 1s;
+}
+
+.c-hamburger.is-active {
+
 }
 
 .product-block {
@@ -583,17 +633,20 @@ p{
         bottom: 40px;
         text-transform: uppercase;
         text-decoration: none;
-        p{
+
+        p {
           color: rgba(255, 255, 255, 0.6) !important;
           font-weight: 500;
           font-size: 16px;
-          span{
+
+          span {
             margin-left: 30px;
           }
         }
-        &:hover{
-          p{
-            span{
+
+        &:hover {
+          p {
+            span {
               margin-left: 50px;
               transition-duration: 0.3s;
             }
@@ -614,38 +667,45 @@ p{
   }
 }
 
-.reviews{
+.reviews {
   margin-top: 50px;
   padding: 100px 0;
-  .container{
+
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    .reviews-slider{
+
+    .reviews-slider {
       max-width: 600px;
       width: 100%;
       box-shadow: 0 0 40px rgba(167, 167, 167, 0.35);
       border-radius: 5px;
-      .review{
+
+      .review {
         padding: 20px;
-        .review_header{
+
+        .review_header {
           border-bottom: 1px solid #F8F8F8;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          .rating{
+
+          .rating {
             display: flex;
             flex-direction: row;
             align-items: center;
-            h5{
+
+            h5 {
               font-weight: normal;
               font-size: 40px;
               line-height: 110%;
               color: #2ADBE7;
               margin-right: 10px;
             }
-            p{
+
+            p {
               font-weight: 500;
               font-size: 8px;
               line-height: 120%;
@@ -654,73 +714,86 @@ p{
             }
           }
         }
-        .review-person{
+
+        .review-person {
           padding: 20px 0 30px 0;
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
 
-          .stars{
+          .stars {
             margin-right: 40px;
-            .far{
+
+            .far {
               font-size: 26px;
               color: #2ADBE7;
             }
-            .fas{
+
+            .fas {
               font-size: 26px;
               color: #E9E9E9;
             }
           }
+
           .person,
-          .company{
+          .company {
             display: flex;
             flex-direction: row;
             align-items: center;
-            img{
+
+            img {
               margin-right: 10px;
             }
-            p{
+
+            p {
               font-weight: 500;
               font-size: 7px;
               line-height: 135%;
               text-transform: uppercase;
               color: #757575;
-              span{
+
+              span {
                 font-weight: bold;
                 font-size: 9px;
                 text-transform: none;
               }
             }
           }
-          .company{
+
+          .company {
             margin-right: 30px;
           }
-          .person{
+
+          .person {
             position: relative;
-            .person-photo{
+
+            .person-photo {
               width: 30px;
               height: 30px;
             }
-            .check{
+
+            .check {
               position: absolute;
               bottom: 0;
               left: 20px;
               z-index: 2;
             }
           }
-          @media screen and (max-width: 620px){
+
+          @media screen and (max-width: 620px) {
             flex-wrap: wrap;
             align-items: flex-start;
-            .stars, .person, .company{
-                margin-bottom: 10px;
+            .stars, .person, .company {
+              margin-bottom: 10px;
             }
-            .stars{
+            .stars {
               width: 100%;
             }
           }
         }
-        p{
+
+        p {
           display: block;
           font-weight: normal;
           font-size: 14px;
@@ -729,7 +802,7 @@ p{
           z-index: 1;
         }
 
-        a{
+        a {
           font-size: 12px;
           text-align: center;
           color: #2ADBE7;
@@ -739,50 +812,57 @@ p{
           margin: 10px 0 50px 0;
         }
 
-        .small-text{
+        .small-text {
           font-size: 8px;
           line-height: 110%;
           text-align: center;
           color: #757575;
         }
-        .shadow{
+
+        .shadow {
           //margin-top: -80px;
           position: relative;
         }
-        .shadow:after{
-          content:"";
-          display:block;
-          height:80px;
+
+        .shadow:after {
+          content: "";
+          display: block;
+          height: 80px;
           bottom: 0;
           left: 0;
           width: 100%;
-          position:absolute;
+          position: absolute;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 94.79%);
         }
       }
     }
-    .slick-dots{
-      bottom: 40px;
-       li {
-         margin: 0 2px 0 0;
-         width: 8px;
-         height: 8px;
-         button{
 
-           margin: 0;
-         }
-         button:before{
-           position: absolute;
-           top: 0;
-           left: 0;
-           content: "";
-           width: 8px;
-           height: 8px;
-           border-radius: 100%;
-           background: #C4C4C4;
-           opacity: 1;
-         }
-       }
+    .slick-dots {
+      bottom: 40px;
+
+      li {
+        margin: 0 2px 0 0;
+        width: 8px;
+        height: 8px;
+
+        button {
+
+          margin: 0;
+        }
+
+        button:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: #C4C4C4;
+          opacity: 1;
+        }
+      }
+
       .slick-active {
         button:before {
           background-color: #2ADBE7;
