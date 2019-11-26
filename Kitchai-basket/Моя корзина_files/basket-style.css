@@ -75,6 +75,8 @@ a {
   color: #212121;
 }
 
+
+
 @media screen and (max-width: 850px) {
   .about-order-text {
     width: 100%;
