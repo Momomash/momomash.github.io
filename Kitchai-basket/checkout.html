@@ -659,7 +659,7 @@
 
 <div class="main about-store">
     <div class="container container-basket">
-        <h1>Корзина</h1>
+        <h1>Оформление заказа</h1>
         <ul class="bread-crumbs bread-crumbs-poz2">
             <li class="bread-crumbs__item">
 
@@ -668,320 +668,119 @@
                 </a>
             </li>
             <li class="bread-crumbs__item">
-                Моя корзина
+                Корзина
+            </li>
+            <li class="bread-crumbs__item">
+                Оформление заказа
             </li>
         </ul>
-        <div class="warning-block">
-            <p>Внимание! Сумма заказа должна быть больше 1 000 ₽.<br>
-                Вы можете увеличить количество товаров в заказе или добавить другие товары из <a class="bold"
-                                                                                                 href="https://kitchai.ru/catalog/">каталога</a>.
-            </p>
+        <div class="row customer-cards">
+            <div class="col-md-6 col-12 ">
+                <div class="  new-customer-card">
+                    <h4>Новый покупатель</h4>
+                    <form method="post">
+                        <input type="text" placeholder="Логин *" required>
+                        <input type="text" placeholder="Email *" required>
+                        <input type="password" placeholder="Придумайте пароль *" required>
+                        <input type="password" placeholder="Пароль повторно *" required>
+                        <input type="text" placeholder="Имя и фамилия *" required>
+                        <input type="text" placeholder="Телефон *" required>
+                    </form>
+                    <p class="small-text">Нажимая кнопку “Заказать” вы соглашаетесь с<br>
+                        Условиями использования персональных данных</p>
+                    <button class="red-btn">Создать аккаунт</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class=" last-customer-card">
+                    <h4>Уже зарегистрированы</h4>
+                    <form method="post">
+                        <input type="text" placeholder="Логин *" required>
+                        <input type="password" placeholder="Придумайте пароль *" required>
+                    </form>
+                    <p class="small-text" style="color: #AD0404">Забыли пароль?</p>
+
+                    <button class="red-btn">Войти</button>
+                </div>
+            </div>
         </div>
-        <h3 class="green-text">А вы знаете, заказы стоимостью больше 3 000 ₽ <span
-                class="bold">доставляются бесплатно!</span></h3>
-        <script type="text/javascript">
-            var basketJSParams = {
-                'SALE_DELETE': 'Удалить',
-                'SALE_DELAY': 'Отложить',
-                'SALE_TYPE': 'Тип цены',
-                'TEMPLATE_FOLDER': '/bitrix/templates/kitchai/components/bitrix/sale.basket.basket/template',
-                'DELETE_URL': '/personal/cart/?basketAction=delete&id=#ID#',
-                'DELAY_URL': '/personal/cart/?basketAction=delay&id=#ID#',
-                'ADD_URL': '/personal/cart/?basketAction=add&id=#ID#',
-                'EVENT_ONCHANGE_ON_START': 'N'
-            }</script>
-        <div id="warning_message">
-        </div>
-        <form method="post" action="https://kitchai.ru/personal/cart/" name="basket_form" id="basket_form">
-            <div id="basket_form_container">
-                <div class="bx_ordercart bx_green">
+        <div class="row customer-delivery" style="margin-bottom: 110px">
+            <div class="col-12">
+                <h4>Доставка и адрес</h4>
+                <p class="small-text">Нажимая кнопку “Заказать” вы соглашаетесь с<br>
+                    Условиями использования персональных данных</p>
+                <form method="post">
+                    <div class="radio-toolbar">
+                        <input type="radio" id="mkad" name="delivery" value="300" checked>
+                        <label for="mkad">Курьером в<br> пределах МКАД</label>
 
-                    <div id="basket_items_list">
-                        <div class="LeftBlock">
-                            <div class="bx_ordercart_order_table_container">
-                                <table id="basket_items">
-                                    <thead>
-                                    <tr>
-                                        <td class="margin"></td>
-                                        <td class="item" colspan="2" id="col_NAME">
-                                            Товар:
-                                        </td>
-                                        <td class="custom" id="col_DISCOUNT">
-                                            Скидка:
-                                        </td>
-                                        <td class="price" id="col_PRICE">
-                                            Стоимость:
-                                        </td>
-                                        <td class="custom" id="col_QUANTITY">
-                                            Количество:
-                                        </td>
-                                        <td class="custom" id="col_SUM">
-                                            К оплате:
-                                        </td>
-                                        <!--<td class="custom" id="col_PREVIEW_PICTURE">-->
-                                        <!--</td>-->
-                                        <td class="custom"></td>
-                                        <td class="margin"></td>
-                                    </tr>
-                                    </thead>
+                        <input type="radio" id="fast_mkad" name="delivery" value="300">
+                        <label for="fast_mkad">Срочная доставка в<br> пределах МКАД</label>
 
-                                    <tbody>
-                                    <tr id="27755">
-                                        <td class="margin"></td>
-                                        <td class="itemphoto">
-                                            <div class="bx_ordercart_photo_container">
+                        <input type="radio" id="out_mkad" name="delivery" value="300">
+                        <label for="out_mkad">Курьером зв МКАД</label>
 
-                                                <a href="https://kitchai.ru/catalog/item/bi_lo_chun_izumrudnye_spirali_vesny__4/">
-                                                    <div class="bx_ordercart_photo"
-                                                         style="background-image:url(&#39;/upload/resize_cache/iblock/e25/160_160_1/e2504f174a2f0585dc7e4fe213a48cf3.jpg&#39;)"></div>
-                                                </a></div>
-                                        </td>
-                                        <td class="item">
-                                            <h2 class="bx_ordercart_itemtitle">
-                                                <a href="https://kitchai.ru/catalog/item/bi_lo_chun_izumrudnye_spirali_vesny__4/">
-                                                    Би Ло Чунь (Изумрудные спирали весны) </a></h2>
-                                            <div class="bx_ordercart_itemart">
-                                                Артикул:&nbsp;<span>9994511<span><br>Фасовка:&nbsp;<span>0.025кг x 1шт<span><br>									    <p
-                                            >В наличии: <span class="red-text">мало</span></p>
-									</span></span></span></span></div>
-                                        </td>
-                                        <td class="custom">
-                                            <span>Скидка:</span>
-                                            <div id="discount_value_27755">0%</div>
-                                        </td>
-                                        <td class="price">
-                                            <div class="current_price" id="current_price_27755">
-                                                20 000 ₽
-                                            </div>
-                                            <div class="old_price" id="old_price_27755">
-                                            </div>
+                        <input type="radio" id="post" name="delivery" value="300">
+                        <label for="post"><span><img src="rus_post.png" alt="" style="margin-right: 7px"></span>Почтой России</label>
 
-                                        </td>
-                                        <td class="custom">
-                                            <span>Количество:</span>
-                                            <div class="centered">
-                                                <table cellspacing="0" cellpadding="0" class="counter">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="text" size="3" id="QUANTITY_INPUT_27755"
-                                                                   name="QUANTITY_INPUT_27755" maxlength="18" min="0"
-                                                                   max="3.093" step="0.005" style="max-width: 50px"
-                                                                   value="0.155"
-                                                                   onchange="updateQuantity(&#39;QUANTITY_INPUT_27755&#39;, &#39;27755&#39;, 0.005, true)">
-                                                        </td>
-                                                        <td id="basket_quantity_control">
-                                                            <div class="basket_quantity_control">
-                                                                <a href="javascript:void(0);" class="plus"
-                                                                   onclick="setQuantity(27755, 0.005, &#39;up&#39;, true);"></a>
-                                                                <a href="javascript:void(0);" class="minus"
-                                                                   onclick="setQuantity(27755, 0.005, &#39;down&#39;, true);"></a>
-                                                            </div>
-                                                        </td>
-                                                        <td style="text-align: left">кг</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <input type="hidden" id="QUANTITY_27755" name="QUANTITY_27755"
-                                                   value="0.155">
-                                        </td>
-                                        <td class="custom">
-                                            <span>Сумма:</span>
-                                            <div class="sum" id="sum_27755">
-                                                3 100 ₽
-                                            </div>
-                                        </td>
-                                        <!--<td class="custom">-->
-                                        <!--<span>:</span>-->
-                                        <!--127954-->
-                                        <!--</td>-->
-                                        <td class="control">
-                                            <a href="https://kitchai.ru/personal/cart/?basketAction=delete&amp;id=27755"><img
-                                                    class="button-delete" src="Моя%20корзина_files/button-delete.png"
-                                                    alt=""></a><br>
-                                        </td>
-                                        <td class="margin"></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr id="27755">
-                                        <td class="margin"></td>
-                                        <td class="itemphoto">
-                                            <div class="bx_ordercart_photo_container">
-
-                                                <a href="https://kitchai.ru/catalog/item/bi_lo_chun_izumrudnye_spirali_vesny__4/">
-                                                    <div class="bx_ordercart_photo"
-                                                         style="background-image:url(&#39;/upload/resize_cache/iblock/e25/160_160_1/e2504f174a2f0585dc7e4fe213a48cf3.jpg&#39;)"></div>
-                                                </a></div>
-                                        </td>
-                                        <td class="item">
-                                            <h2 class="bx_ordercart_itemtitle">
-                                                <a href="https://kitchai.ru/catalog/item/bi_lo_chun_izumrudnye_spirali_vesny__4/">
-                                                    Би Ло Чунь (Изумрудные спирали весны) </a></h2>
-                                            <div class="bx_ordercart_itemart">
-                                                Артикул:&nbsp;<span>9994511<span><br>Фасовка:&nbsp;<span>0.025кг x 1шт<span><br>									    <p
-                                            >В наличии: <span class="green-text">много</span></p>
-									</span></span></span></span></div>
-                                        </td>
-                                        <td class="custom">
-                                            <span>Скидка:</span>
-                                            <div id="discount_value_27755">0%</div>
-                                        </td>
-                                        <td class="price">
-                                            <div class="current_price" id="current_price_27755">
-                                                20 000 ₽
-                                            </div>
-                                            <div class="old_price" id="old_price_27755">
-                                            </div>
-
-                                        </td>
-                                        <td class="custom">
-                                            <span>Количество:</span>
-                                            <div class="centered">
-                                                <table cellspacing="0" cellpadding="0" class="counter">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <input type="text" size="3" id="QUANTITY_INPUT_27755"
-                                                                   name="QUANTITY_INPUT_27755" maxlength="18" min="0"
-                                                                   max="3.093" step="0.005" style="max-width: 50px"
-                                                                   value="0.155"
-                                                                   onchange="updateQuantity(&#39;QUANTITY_INPUT_27755&#39;, &#39;27755&#39;, 0.005, true)">
-                                                        </td>
-                                                        <td id="basket_quantity_control">
-                                                            <div class="basket_quantity_control">
-                                                                <a href="javascript:void(0);" class="plus"
-                                                                   onclick="setQuantity(27755, 0.005, &#39;up&#39;, true);"></a>
-                                                                <a href="javascript:void(0);" class="minus"
-                                                                   onclick="setQuantity(27755, 0.005, &#39;down&#39;, true);"></a>
-                                                            </div>
-                                                        </td>
-                                                        <td style="text-align: left">кг</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <input type="hidden" id="QUANTITY_27755" name="QUANTITY_27755"
-                                                   value="0.155">
-                                        </td>
-                                        <td class="custom">
-                                            <span>Сумма:</span>
-                                            <div class="sum" id="sum_27755">
-                                                3 100 ₽
-                                            </div>
-                                        </td>
-                                        <!--<td class="custom">-->
-                                        <!--<span>:</span>-->
-                                        <!--127954-->
-                                        <!--</td>-->
-                                        <td class="control">
-                                            <a href="https://kitchai.ru/personal/cart/?basketAction=delete&amp;id=27755"><img
-                                                    class="button-delete" src="Моя%20корзина_files/button-delete.png"
-                                                    alt=""></a><br>
-                                        </td>
-                                        <td class="margin"></td>
-                                    </tr>
-                                    </tbody>
-
-                                </table>
+                        <input type="radio" id="transport" name="delivery" value="300">
+                        <label for="transport">Транспортной<br> компанием</label>
+                    </div>
+                    <h1>Стоимость доставки: <span id="delivery_price">250 ₽</span></h1>
+                    <h4>Ваш адрес</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="row">
+                                <input type="text" placeholder="Индекс" class="w-200" >
+                                <input type="text" placeholder="Город *" class="w-200" required>
+                                <input type="text" placeholder="Улица *" class="w-410" required>
+                                <input type="text" placeholder="№ дома *" class="w-100" required>
+                                <input type="text" placeholder="№ корпуса*" class="w-100" required>
+                                <input type="text" placeholder="№ квартиры *" class="w-100" required>
+                                <input type="text" placeholder="№ строения *" class="w-200" required>
                             </div>
                         </div>
-                    </div>
-                    <input type="hidden" name="BasketOrder" value="BasketOrder">
-                    <!-- <input type="hidden" name="ajax_post" id="ajax_post" value="Y"> -->
+                        <div class="col-md-6 col-12" style="padding-left: 0">
+                            <textarea rows="6" placeholder="Комментарий для курьера (необязательно)"></textarea>
 
-                    <div style="margin-top: 35px;"><!--'start_frame_cache_sz16ux'-->
-                        <!--'end_frame_cache_sz16ux'-->
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </form>
-        <div class="about-order-text">
-            <h4>ИТОГО</h4>
-            <p>Общий вес: <span>250 грамм</span></p>
-            <p>Доставка: <span>Бесплатно</span></p>
-            <p class="green-text">Ваша экономия: <span>560 ₽</span></p>
-            <br>
-            <h5>К оплате: <span class="bold">23 560 ₽</span></h5>
-        </div>
-        <div class="buttons">
-            <div class="both"></div>
-            <input type="hidden" id="column_headers"
-                   value="NAME,DISCOUNT,PROPS,DELETE,PRICE,QUANTITY,SUM,PREVIEW_PICTURE">
-            <input type="hidden" id="offers_props" value="">
-            <input type="hidden" id="action_var" value="basketAction">
-            <input type="hidden" id="quantity_float" value="Y">
-            <input type="hidden" id="count_discount_4_all_quantity" value="N">
-            <input type="hidden" id="price_vat_show_value" value="Y">
-            <input type="hidden" id="hide_coupon" value="N">
-            <input type="hidden" id="use_prepayment" value="N">
-            <input type="hidden" id="auto_calculation" value="Y">
-
-            <div class="bx_ordercart_order_pay">
-
-                <div class="bx_ordercart_order_pay_left" id="coupons_block">
-                    <div class="bx_ordercart_coupon">
-                        <span></span><input type="text" id="coupon" name="COUPON"
-                                            placeholder="Сертификат на скидку" onchange="enterCoupon();">&nbsp;<a
-                            class="bx_bt_button bx_big" href="javascript:void(0)"
-                            onclick="enterCoupon();"
-                            title="Нажмите для применения нового купона">Ок</a>
-                    </div>
-                </div>
-                <!--<div class="bx_ordercart_order_pay_right">-->
-                <!--<table class="bx_ordercart_order_sum">-->
-                <!--<tbody>-->
-                <!--<tr>-->
-                <!--<td>Товаров на:</td>-->
-                <!--<td id="allSum_wVAT_FORMATED">3 100 ₽</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td class="fwb">Итого:</td>-->
-                <!--<td class="fwb" id="allSum_FORMATED">3&nbsp;100&nbsp;₽</td>-->
-                <!--</tr>-->
-
-
-                <!--</tbody>-->
-                <!--</table>-->
-                <!--<div style="clear:both;"></div>-->
-                <!--</div>-->
-                <!--<div style="clear:both;"></div>-->
-                <div class="bx_ordercart_order_pay_center-burgunty">
-                    <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter">Оформить
-                        без регистрации</a>
-                </div>
-                <div class="bx_ordercart_order_pay_center">
-                    <a href="javascript:void(0)" onclick="checkOut();" class="checkout">Оформить
-                        заказ</a>
-                </div>
-                <p class="black-help">
-                    Оформление заказа с регистрацией
-                    нового покупателя или для ранее зарегистрированных пользователей.
-                </p>
-            </div>
-        </div>
-        <div class="modal fade modal-without-order" id="exampleModalCenter"  tabindex="-1" role="dialog"
-             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h4>Оформить заказ без регистрации</h4>
-                        <h5>Уважаемый покупатель! Заполните форму ниже и нажмите кнопку “Заказать”.
-                            Наш сотрудник перезвонит вам сразу же после поступления заказа.</h5>
-                        <form>
-                            <input type="tel" placeholder="Телефон*">
-                            <input type="text" placeholder="Ваше имя*">
-                        </form>
-                        <div class="red-button">
-                            <a href="javascript:void(0)">Заказать</a>
                         </div>
-                        <p>Нажимая кнопку “Заказать” вы соглашаетесь с<br>
-                            Условиями использования персональных данных</p>
                     </div>
-                </div>
+                </form>
             </div>
+        </div>
+        <div class="row customer-pay">
+            <div class="col-12">
+                <h4>Оплата</h4>
+                <p class="small-text">Нажимая кнопку “Заказать” вы соглашаетесь с<br>
+                    Условиями использования персональных данных</p>
+                <form method="post">
+                    <div class="radio-toolbar">
+                        <input type="radio" id="bank" name="pay" value="300" checked>
+                        <label for="bank" class="bank">Банковская карта
+                        <span>
+                            <img src="card.png" alt="">
+                            <img src="card1.png" alt="">
+                            <img src="card2.png" alt="">
+                        </span>
+                        </label>
+
+                        <input type="radio" id="money" name="pay" value="300">
+                        <label for="money">Наличными</label>
+
+                        <input type="radio" id="nal_pay" name="pay" value="300">
+                        <label for="nal_pay">Наложенный платеж</label>
+                    </div>
+                    <h1>Выбрано <span id="pay_option">Банковская карта</span></h1>
+                    <p class="small-red-text">Условия использования...</p>
+                </form>
+            </div>
+        </div>
+        <div class="total-order">
+            <p><span class="left-text">Адрес доставки:  </span><span id="order_addres" class="total">Мурманск, ул. Петрова, д. 21, кв. 40</span></p>
+            <p><span class="left-text">Тип доставки:  </span><span id="order_delivery" class="total">Курьером в пределах МКАД</span></p>
+            <p><span class="left-text">Тип оплаты:  </span><span id="order_pay" class="total">Банковская карта</span></p>
+            <h1>Итого (с учетом доставки) <span >21 550 ₽</span></h1>
+            <button class="red-btn">Оформить</button>
         </div>
     </div>
 </div>

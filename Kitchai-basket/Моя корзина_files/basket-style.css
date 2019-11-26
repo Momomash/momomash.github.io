@@ -123,7 +123,6 @@ a {
 }
 .buttons .bx_ordercart_order_pay #coupons_block {
   margin-bottom: 10px;
-  margin-right: 295px;
 }
 .buttons .bx_ordercart_order_pay #coupons_block input {
   height: 42px;
@@ -155,6 +154,10 @@ a {
   text-align: center;
   color: #FFFFFF !important;
 }
+.buttons .bx_ordercart_order_pay #coupons_block .bx_ordercart_coupon {
+  display: flex;
+  max-width: 260px;
+}
 .buttons .bx_ordercart_order_pay .bx_ordercart_order_pay_center:hover ~ .black-help {
   display: block;
 }
@@ -176,10 +179,10 @@ a {
   color: #FFFFFF;
 }
 .buttons .bx_ordercart_order_pay .bx_ordercart_order_pay_center-burgunty {
-  margin-bottom: 10px;
   padding: 10px 20px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
+  margin: 0 10px 10px auto;
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
   font-weight: 500;
@@ -190,7 +193,14 @@ a {
   color: #FFFFFF;
   width: 250px !important;
   background-color: #831212;
-  margin-right: 10px;
+}
+@media screen and (max-width: 810px) {
+  .buttons .bx_ordercart_order_pay {
+    flex-direction: column;
+  }
+  .buttons .bx_ordercart_order_pay .bx_ordercart_order_pay_center-burgunty {
+    margin: 10px 0;
+  }
 }
 
 .bx_ordercart_order_table_container {
@@ -320,17 +330,371 @@ a {
     max-width: 1000px !important;
   }
 }
-#exampleModalCenter .modal-body {
-  width: 570px;
+.customer-cards {
+  margin: 60px;
+  justify-content: space-between;
 }
-#exampleModalCenter .modal-content {
+.customer-cards h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140.62%;
+  letter-spacing: 0.1em;
+  color: #212121;
+}
+.customer-cards .small-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  color: #A7A7A7;
+  margin-bottom: 30px;
+}
+.customer-cards .red-btn {
+  width: 170px;
+  height: 42px;
+  background: #AD0404;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  color: #ffffff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.customer-cards .new-customer-card {
+  background-color: #F8F8F8;
+  padding: 30px 50px 40px 30px;
+  max-width: 490px;
+  margin-bottom: 20px;
+}
+.customer-cards .last-customer-card {
+  background-color: #F8F8F8;
+  max-width: 490px;
+  padding: 30px 50px 40px 30px;
+  max-height: 290px;
+}
+.customer-cards .new-customer-card form,
+.customer-cards .last-customer-card form {
+  margin-top: 25px;
+}
+.customer-cards .new-customer-card form input,
+.customer-cards .last-customer-card form input {
+  margin-bottom: 18px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+  width: 45%;
+  height: 42px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.customer-cards .new-customer-card form input:focus,
+.customer-cards .last-customer-card form input:focus {
+  outline: 0;
+  border: 1px solid rgba(173, 4, 4, 0.4);
+}
+@media screen and (max-width: 550px) {
+  .customer-cards .new-customer-card form input,
+.customer-cards .last-customer-card form input {
+    width: 100%;
+  }
+}
+.customer-cards .new-customer-card:hover,
+.customer-cards .last-customer-card:hover,
+.customer-cards .new-customer-card:focus,
+.customer-cards .last-customer-card:focus,
+.customer-cards .new-customer-card:active,
+.customer-cards .last-customer-card:active {
+  background: #FFFFFF;
+  box-shadow: 0 0 30px rgba(100, 100, 100, 0.25);
+}
+
+.customer-pay .radio-toolbar label {
+  background-color: #ffffff;
+  color: #A1A1A1;
+}
+@media screen and (max-width: 500px) {
+  .customer-pay .radio-toolbar label {
+    width: 100%;
+  }
+}
+.customer-pay .radio-toolbar input[type=radio]:checked + label {
+  background: #ffffff !important;
+  border: 2px solid #AD0404 !important;
+  border-radius: 2px !important;
+  color: #AD0404 !important;
+}
+.customer-pay .bank {
+  display: flex;
+  flex-direction: column;
+}
+.customer-pay .bank .span {
+  display: block;
+}
+.customer-pay h1 {
+  margin-bottom: 20px;
+}
+.customer-pay .small-red-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  color: #AD0404;
+}
+
+.customer-delivery,
+.customer-pay {
+  padding: 30px 10px 40px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(100, 100, 100, 0.25);
+}
+.customer-delivery h4,
+.customer-pay h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140.62%;
+  letter-spacing: 0.1em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+.customer-delivery .small-text,
+.customer-pay .small-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  color: #A7A7A7;
+  margin-bottom: 30px;
+}
+.customer-delivery form,
+.customer-pay form {
+  margin-top: 25px;
+}
+.customer-delivery form .col-6,
+.customer-pay form .col-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.customer-delivery form input,
+.customer-pay form input {
+  margin-bottom: 18px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+  height: 42px;
+  width: 100%;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.customer-delivery form input:focus,
+.customer-pay form input:focus {
+  outline: 0;
+  border: 1px solid rgba(173, 4, 4, 0.4);
+}
+@media screen and (max-width: 550px) {
+  .customer-delivery form input,
+.customer-pay form input {
+    width: 100%;
+  }
+}
+.customer-delivery form .w-200,
+.customer-pay form .w-200 {
+  max-width: 200px;
+}
+@media screen and (max-width: 990px) {
+  .customer-delivery form .w-200,
+.customer-pay form .w-200 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.customer-delivery form .w-410,
+.customer-pay form .w-410 {
+  max-width: 410px;
+}
+@media screen and (max-width: 990px) {
+  .customer-delivery form .w-410,
+.customer-pay form .w-410 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.customer-delivery form .w-100,
+.customer-pay form .w-100 {
+  max-width: 100px;
+}
+@media screen and (max-width: 990px) {
+  .customer-delivery form .w-100,
+.customer-pay form .w-100 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.customer-delivery form textarea,
+.customer-pay form textarea {
+  height: 100%;
+  max-width: 410px;
+  width: 100%;
+  padding: 10px 0 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  border: 1px solid #DEDEDE;
+  color: #757575;
+}
+@media screen and (max-width: 990px) {
+  .customer-delivery form textarea,
+.customer-pay form textarea {
+    max-width: 100%;
+  }
+}
+.customer-delivery form .radio-toolbar,
+.customer-pay form .radio-toolbar {
+  margin: 10px 0 30px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .customer-delivery form .radio-toolbar,
+.customer-pay form .radio-toolbar {
+    justify-content: center;
+  }
+}
+.customer-delivery form .radio-toolbar input[type=radio],
+.customer-pay form .radio-toolbar input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.customer-delivery form .radio-toolbar label,
+.customer-pay form .radio-toolbar label {
+  background-color: #ffffff;
+  color: #A1A1A1;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  width: 170px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  .customer-delivery form .radio-toolbar label,
+.customer-pay form .radio-toolbar label {
+    width: 100%;
+  }
+}
+.customer-delivery form .radio-toolbar input[type=radio]:checked + label,
+.customer-pay form .radio-toolbar input[type=radio]:checked + label {
+  background: #AD0404;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+.customer-delivery h1,
+.customer-pay h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal !important;
+  font-size: 26px;
+  line-height: 175.78%;
+  color: #212121;
+}
+.customer-delivery h1 span,
+.customer-pay h1 span {
+  font-weight: bold;
+}
+
+.total-order {
+  margin-top: 40px;
+}
+.total-order p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 175.78%;
+  color: #757575;
+}
+.total-order p .left-text {
+  width: 110px;
+  display: inline-block;
+}
+.total-order p .total {
+  color: #212121;
+  font-weight: normal;
+}
+.total-order h1 {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal !important;
+  font-size: 26px;
+  line-height: 175.78%;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.total-order h1 span {
+  font-weight: bold;
+}
+.total-order .red-btn {
+  width: 170px;
+  height: 56px;
+  background: #AD0404;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  color: #ffffff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.modal-without-order .modal-dialog {
+  max-width: 600px;
+}
+.modal-without-order .modal-body {
+  max-width: 570px;
+}
+.modal-without-order .modal-content {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   padding: 25px 15px;
   width: 600px;
 }
-#exampleModalCenter h4 {
+@media screen and (max-width: 1024px) {
+  .modal-without-order .modal-content {
+    width: auto;
+    max-width: 600px;
+  }
+}
+.modal-without-order h4 {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
   font-weight: bold;
@@ -340,7 +704,7 @@ a {
   color: #212121;
   padding-bottom: 20px;
 }
-#exampleModalCenter h5 {
+.modal-without-order h5 {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
   font-weight: 300;
@@ -350,12 +714,13 @@ a {
   color: #757575;
   padding-bottom: 30px;
 }
-#exampleModalCenter form {
+.modal-without-order form {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
-#exampleModalCenter form input {
+.modal-without-order form input {
   width: 200px;
   height: 42px;
   border: 1px solid #DEDEDE;
@@ -370,7 +735,7 @@ a {
   margin-bottom: 30px;
   margin-right: 20px;
 }
-#exampleModalCenter .red-button {
+.modal-without-order .red-button {
   margin: 0 auto 25px auto;
   width: 170px !important;
   padding: 10px 20px;
@@ -386,7 +751,7 @@ a {
   text-align: center;
   color: #FFFFFF;
 }
-#exampleModalCenter p {
+.modal-without-order p {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
   font-weight: 300;
