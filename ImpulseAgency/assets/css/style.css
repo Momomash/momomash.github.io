@@ -165,6 +165,7 @@ body {
   color: #d2d2d2;
 }
 .footer p {
+  width: 80%;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 11px;
@@ -251,6 +252,7 @@ body {
   font-size: 8px;
   line-height: 110%;
   color: #757575;
+  width: 100%;
 }
 .footer .container .rating-card .chain-logo {
   position: absolute;
@@ -569,6 +571,7 @@ p {
   bottom: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  width: 100%;
 }
 .product-block .product-block_right .text a p {
   color: rgba(255, 255, 255, 0.6) !important;
@@ -637,6 +640,7 @@ p {
   line-height: 120%;
   text-transform: uppercase;
   color: #757575;
+  width: 100%;
 }
 .reviews .container .reviews-slider .review .review-person {
   padding: 20px 0 30px 0;
@@ -647,6 +651,8 @@ p {
 }
 .reviews .container .reviews-slider .review .review-person .stars {
   margin-right: 40px;
+  display: flex;
+  flex-direction: row;
 }
 .reviews .container .reviews-slider .review .review-person .stars .far {
   font-size: 26px;
@@ -695,6 +701,9 @@ p {
   bottom: 0;
   left: 20px;
   z-index: 2;
+}
+.reviews .container .reviews-slider .review .review-person .person p {
+  width: 100%;
 }
 @media screen and (max-width: 620px) {
   .reviews .container .reviews-slider .review .review-person {

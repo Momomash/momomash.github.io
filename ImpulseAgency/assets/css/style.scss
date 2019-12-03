@@ -173,6 +173,7 @@ body {
   }
 
   p {
+    width: 80%;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 11px;
@@ -266,6 +267,7 @@ body {
         font-size: 8px;
         line-height: 110%;
         color: #757575;
+        width: 100%;
       }
 
       .chain-logo {
@@ -639,6 +641,7 @@ p {
         bottom: 40px;
         text-transform: uppercase;
         text-decoration: none;
+        width: 100%;
 
         p {
           color: rgba(255, 255, 255, 0.6) !important;
@@ -717,6 +720,7 @@ p {
               line-height: 120%;
               text-transform: uppercase;
               color: #757575;
+              width: 100%;
             }
           }
         }
@@ -730,6 +734,8 @@ p {
 
           .stars {
             margin-right: 40px;
+            display: flex;
+            flex-direction: row;
 
             .far {
               font-size: 26px;
@@ -784,6 +790,9 @@ p {
               bottom: 0;
               left: 20px;
               z-index: 2;
+            }
+            p{
+              width: 100%;
             }
           }
 
