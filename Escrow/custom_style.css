@@ -1,0 +1,270 @@
+.breadcrumbs {
+  color: #A8A8A8;
+}
+.breadcrumbs a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+}
+.breadcrumbs a:not(:last-child):after {
+  content: "-";
+  margin-left: 5px;
+}
+
+.business-card {
+  margin-bottom: 32px;
+  position: relative;
+  max-width: 344px;
+  width: 344px;
+  box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.25);
+  padding: 16px 16px 32px 16px;
+  color: #000000;
+  margin-right: 36px;
+}
+@media screen and (max-width: 500px) {
+  .business-card {
+    margin-right: 0;
+  }
+}
+.business-card:before {
+  position: absolute;
+  content: url("assets/img/close.png");
+  right: 12px;
+  top: 12px;
+}
+.business-card .business-card_number {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15px;
+}
+.business-card .business-card_company {
+  display: flex;
+  flex-direction: row;
+}
+.business-card .business-card_company img {
+  width: 40px;
+  height: 40px;
+}
+.business-card .business-card_company .card_company-text {
+  padding: 6px 0 0 16px;
+}
+.business-card .business-card_company h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  letter-spacing: 0.15px;
+}
+.business-card .business-card_company p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #A8A8A8;
+}
+.business-card .business-card_status p {
+  font-weight: 300;
+  font-size: 11px;
+  color: #A8A8A8;
+}
+.business-card .business-card_status .btn-status {
+  width: 150px;
+  height: 32px;
+  font-weight: normal;
+  font-size: 11px;
+  color: #FFFFFF;
+  border-radius: 16px;
+  border: none;
+}
+.business-card .business-card_status .btn-status.green {
+  background-color: #79e967;
+}
+.business-card .business-card_status .btn-status.orange {
+  background-color: #f5761b;
+}
+.business-card .business-card_date {
+  padding-top: 30px;
+  display: flex;
+}
+.business-card .business-card_date .card_date-start p,
+.business-card .business-card_date .card_date-finish p {
+  font-weight: 300;
+  font-size: 11px;
+  color: #A8A8A8;
+  margin-bottom: 5px;
+}
+.business-card .business-card_date .card_date-start b,
+.business-card .business-card_date .card_date-finish b {
+  color: #4E4E4E;
+}
+.business-card .business-card_date .card_date-start {
+  margin-right: 30px;
+}
+.business-card .business-card_agent {
+  padding-top: 30px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #A8A8A8;
+}
+.business-card .business-card_agent p {
+  margin-bottom: 0;
+}
+.business-card .business-card_agent b {
+  color: #4E4E4E;
+}
+.business-card .business-card_agent .agent_name {
+  display: flex;
+  align-items: center;
+}
+.business-card .business-card_agent .agent_name img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.business-card .business-card_services {
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #A8A8A8;
+}
+.business-card .business-card_services p {
+  margin-bottom: 0;
+}
+.business-card .business-card_services b {
+  color: #4E4E4E;
+}
+.business-card .total {
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+.business-card .total span {
+  font-weight: normal;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #A8A8A8;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-fluid {
+  padding-left: 2.75rem !important;
+  padding-right: 5rem !important;
+}
+@media screen and (max-width: 500px) {
+  .container-fluid {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+}
+
+.layout-sidenav {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.25);
+}
+
+.logo-text_big {
+  padding: 20px 15px 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #6100FF;
+}
+
+.logo-text_small {
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 100%;
+  color: #BFBFBF;
+  text-transform: uppercase;
+}
+
+.mini-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mini-header h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.sidenav-vertical .app-brand {
+  padding-top: 25px;
+  padding-bottom: 75px;
+}
+.sidenav-vertical .app-brand .app-brand-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (min-width: 990px) {
+  .sidenav-vertical .app-brand .ion-md-menu {
+    display: none;
+  }
+}
+
+.sidenav-item .sidenav-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 120%;
+  color: #212121;
+}
+.sidenav-item .sidenav-link sup {
+  font-size: 10px;
+  color: #757575;
+  font-weight: normal;
+}
+
+.violet-btn {
+  width: 160px;
+  height: 36px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6100ff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.violet-btn:hover {
+  box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.25);
+}
+
+.small-menu {
+  padding-top: 200px;
+}
+.small-menu .sidenav-item .sidenav-link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 60%;
+  color: #757575;
+}
+.small-menu .settings-item {
+  margin-top: 30px;
+}
+.small-menu .chat {
+  position: absolute;
+  top: 5px;
+  margin-left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #42CE00;
+}
+
+/*# sourceMappingURL=custom_style.css.map */
