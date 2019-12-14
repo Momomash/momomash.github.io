@@ -529,7 +529,7 @@ p {
 
   .slick-dots {
     z-index: 5;
-    left: 20px;
+    left: 40px;
     position: absolute;
     bottom: 60px;
     text-align: left;
@@ -617,19 +617,39 @@ p {
   .product-block_left {
     height: 400px;
     width: 50%;
+    .text{
+      display: none;
+      transition-property: display;
+      transition-duration: 2s;
+    }
+    &:hover{
+
+      .text{
+        background-color: rgba(0,0,0, 0.4);
+        display: block;
+        duration: 2s;
+
+      }
+    }
   }
 
-  .product-block_right {
+  .product-block_right,
+  .product-block_left
+  {
     background-size: 100% 100%;
     position: relative;
 
     .text {
-      margin: 70px 0 0 30px;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
       font-family: 'Montserrat', sans-serif;
       font-size: 30px;
       line-height: 130%;
 
       h5 {
+        margin: 70px 0 0 30px;
         font-size: 30px;
         color: #FFFFFF;
         font-style: normal !important;
@@ -637,6 +657,7 @@ p {
       }
 
       h6 {
+        margin-left: 30px;
         font-size: 28px;
         color: rgba(255, 255, 255, 0.6);
         font-style: normal !important;
@@ -646,6 +667,7 @@ p {
       a {
         position: absolute;
         bottom: 40px;
+        left: 30px;
         text-transform: uppercase;
         text-decoration: none;
         max-width: 240px;
@@ -654,16 +676,12 @@ p {
           color: rgba(255, 255, 255, 0.6) !important;
           font-weight: 500;
           font-size: 16px;
-
-          span {
-            margin-left: 30px;
-          }
         }
 
         &:hover {
           p {
             span {
-              margin-left: 50px;
+              margin-left: 30px;
               transition-duration: 0.3s;
             }
           }

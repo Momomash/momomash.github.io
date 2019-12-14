@@ -477,7 +477,7 @@ p {
 }
 .header .slick-dots {
   z-index: 5;
-  left: 20px;
+  left: 40px;
   position: absolute;
   bottom: 60px;
   text-align: left;
@@ -555,45 +555,67 @@ p {
   height: 400px;
   width: 50%;
 }
-.product-block .product-block_right {
+.product-block .product-block_right .text,
+.product-block .product-block_left .text {
+  display: none;
+  transition-property: display;
+  transition-duration: 2s;
+}
+.product-block .product-block_right:hover .text,
+.product-block .product-block_left:hover .text {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  duration: 2s;
+}
+.product-block .product-block_right,
+.product-block .product-block_left {
   background-size: 100% 100%;
   position: relative;
 }
-.product-block .product-block_right .text {
-  margin: 70px 0 0 30px;
+.product-block .product-block_right .text,
+.product-block .product-block_left .text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 130%;
 }
-.product-block .product-block_right .text h5 {
+.product-block .product-block_right .text h5,
+.product-block .product-block_left .text h5 {
+  margin: 70px 0 0 30px;
   font-size: 30px;
   color: #FFFFFF;
   font-style: normal !important;
   font-weight: 500 !important;
 }
-.product-block .product-block_right .text h6 {
+.product-block .product-block_right .text h6,
+.product-block .product-block_left .text h6 {
+  margin-left: 30px;
   font-size: 28px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal !important;
   font-weight: 500 !important;
 }
-.product-block .product-block_right .text a {
+.product-block .product-block_right .text a,
+.product-block .product-block_left .text a {
   position: absolute;
   bottom: 40px;
+  left: 30px;
   text-transform: uppercase;
   text-decoration: none;
   max-width: 240px;
 }
-.product-block .product-block_right .text a p {
+.product-block .product-block_right .text a p,
+.product-block .product-block_left .text a p {
   color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 500;
   font-size: 16px;
 }
-.product-block .product-block_right .text a p span {
+.product-block .product-block_right .text a:hover p span,
+.product-block .product-block_left .text a:hover p span {
   margin-left: 30px;
-}
-.product-block .product-block_right .text a:hover p span {
-  margin-left: 50px;
   transition-duration: 0.3s;
 }
 @media screen and (max-width: 969px) {
