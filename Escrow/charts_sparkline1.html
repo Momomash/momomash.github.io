@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en" class="default-style">
+
+<head>
+    <title>Sparkline - Charts - Appwork</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--  Custom style-->
+    <link rel="stylesheet" href="custom_style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+
+
+    <script src="assets/vendor/js/material-ripple.js"></script>
+    <script src="assets/vendor/js/layout-helpers.js"></script>
+
+    <!-- Theme settings -->
+    <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+    <script src="assets/vendor/js/theme-settings.js"></script>
+    <script>
+        window.themeSettings = new ThemeSettings({
+            cssPath: 'assets/vendor/css/rtl/',
+            themesPath: 'assets/vendor/css/rtl/'
+        });
+    </script>
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/js/pace.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+
+</head>
+
+<body>
+<div class="page-loader">
+    <div class="bg-primary"></div>
+</div>
+
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+
+        <!-- Layout sidenav -->
+        <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical ">
+
+            <!-- Brand demo (see assets/css/demo/demo.css) -->
+            <div class="app-brand ">
+
+                <a href="index.html" class="app-brand-text demo sidenav-text font-weight-normal ml-2">
+                  <span class="logo-text_big">
+              Escrow
+            </span>
+                    <span class="logo-text_small">безопасные<br> сделки</span>
+                </a>
+
+                <a href="javascript:void(0)" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+                    <i class="ion ion-md-menu align-middle"></i>
+                </a>
+            </div>
+
+
+            <!-- Links -->
+            <ul class="sidenav-inner py-1">
+                <li class="sidenav-item">
+                    <a href="typography.html" class="sidenav-link">
+                        <div>Каталог</div>
+                    </a>
+                </li>
+                <!-- UI elements -->
+                <li class="sidenav-item">
+                    <a href="javascript:void(0)" class="sidenav-link ">
+                        <div>Мои сделки<sup>12</sup></div>
+                    </a>
+                </li>
+
+                <li class="sidenav-item">
+                    <a href="javascript:void(0)" class="sidenav-link ">
+                        <div>Услуги</div>
+                    </a>
+                </li>
+
+                <li class="sidenav-item">
+                    <a href="javascript:void(0)" class="sidenav-link ">
+                        <div>О сервисе</div>
+                    </a>
+                </li>
+                <div class="small-menu">
+                    <li class="sidenav-item">
+                        <a href="javascript:void(0)" class="sidenav-link ">
+                            <div style="color: #FF001F">&#8212;&nbsp; Экстренная помощь</div>
+                        </a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a href="javascript:void(0)" class="sidenav-link ">
+                            <div>&#8212;&nbsp; Оповещения</div>
+                        </a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a href="javascript:void(0)" class="sidenav-link ">
+                            <div>&#8212;&nbsp; Чат<span class="chat"></span></div>
+                        </a>
+                    </li>
+                    <li class="sidenav-item settings-item">
+                        <a href="javascript:void(0)" class="sidenav-link ">
+                            <div>Настройки</div>
+                        </a>
+                    </li>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- / Layout sidenav -->
+
+        <!-- Layout container -->
+        <div class="layout-container">
+            <!-- Layout navbar -->
+            <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x"
+                 id="layout-navbar">
+
+                <!-- Brand demo (see assets/css/demo/demo.css) -->
+                <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+            <span class="logo-text_big">
+              Escrow
+            </span>
+                    <span class="logo-text_small">безопасные<br> сделки</span>
+                </a>
+
+                <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+                <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+                    <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+                        <i class="ion ion-md-menu text-large align-middle"></i>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#layout-navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+
+
+                    <div class="navbar-nav align-items-lg-center ml-auto">
+                        <div class="demo-navbar-user mr-5 nav-item dropdown">
+                            <a class="nav-link " href="#" data-toggle="dropdown">
+                                <!--для добавления раскрывающегося меню проыфиля добавить класс "dropdown-toggle" в строку выше-->
+                                <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+<!--<img src="assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle">-->
+                    <span class="px-1 mr-lg-2 ml-2 ml-lg-0 ">Артем Петренко</span>
+                  </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="javascript:void(0)" class="dropdown-item"><i
+                                        class="ion ion-ios-person text-lightest"></i> &nbsp; My profile</a>
+                                <a href="javascript:void(0)" class="dropdown-item"><i
+                                        class="ion ion-ios-mail text-lightest"></i> &nbsp; Messages</a>
+                                <a href="javascript:void(0)" class="dropdown-item"><i
+                                        class="ion ion-md-settings text-lightest"></i> &nbsp; Account settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:void(0)" class="dropdown-item"><i
+                                        class="ion ion-ios-log-out text-danger"></i> &nbsp; Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- / Layout navbar -->
+
+            <!-- Layout content -->
+            <div class="layout-content">
+
+                <div class="container-fluid flex-grow-1 container-p-y">
+                    <div class="mini-header">
+                        <div class="mini-header_left">
+                            <h2>Мои сделки</h2>
+                            <div class="breadcrumbs">
+                                <a href="#">Мои сделки</a>
+                                <a href="#">Сделка № 43423</a>
+                                <a>BMW Z4 VIN 534534534534534</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persons mt-5 row">
+                        <div class="person col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="person_img" style="border: 1px solid grey">
+                                </div>
+                                <div class="col-9">
+                                    <p>Бенефициар / Продавец: Самолет Девелопмент</p>
+                                    <p>ООО “Самолет Ритейл”. ОГРН: 5345353453</p>
+                                    <p>Москва, Российская Федерация</p>
+
+                                    <div class="ui-stars text-large text-nowrap">
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star ">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="person_img" style="border: 1px solid grey">
+                                </div>
+                                <div class="col-9">
+                                    <p>Эскроу-агент / Банк: Альфабанк</p>
+                                    <p>ПАО “Альфабанк”. ОГРН: 5345353453</p>
+                                    <p>Москва, Российская Федерация</p>
+                                    <div class="ui-stars text-large text-nowrap">
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star filled">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                        <div class="ui-star ">
+                                            <i class="ion ion-md-star"></i>
+                                            <i class="ion ion-md-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cards mt-5">
+                        <div class="business-card">
+                            <p class="business-card_number">Сделка № 34564564</p>
+                            <div class="business-card_company">
+                                <img>
+                                <div class="card_company-text">
+                                    <h2>Квартира №41</h2>
+                                    <p>ПАО Самолет девелопмент</p>
+                                </div>
+                            </div>
+                            <div class="business-card_status">
+                                <p>Статус сделки:</p>
+                                <button class="btn-status green">Подготовка документов</button>
+                            </div>
+                            <div class="business-card_date">
+                                <div class="card_date-start">
+                                    <p>Начало:</p>
+                                    <p><b>15 января 2020</b></p>
+                                </div>
+                                <div class="card_date-finish">
+                                    <p>Завершение:</p>
+                                    <p><b>15 февраля 2020</b></p>
+                                </div>
+                            </div>
+                            <div class="business-card_agent">
+                                <p class="mb-1">Эскроу агент:</p>
+                                <div class="agent_name">
+                                    <img>
+                                    <p><b>ПАО Сбербанк. Московское отделение.</b></p>
+                                </div>
+                            </div>
+                            <div class="business-card_services">
+                                <p>Дополнительные услуги:</p>
+                                <p><b>Юридическая помощь за 500 - 500 ₽</b></p>
+                                <p><b>Проверка документов нотариусом - 1 350 ₽</b></p>
+                            </div>
+                            <p class="total">15 650 000 ₽ <span>ЗА ВСЮ СДЕЛКУ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+
+                <!-- Layout footer -->
+                <!--          <nav class="layout-footer footer bg-footer-theme">-->
+                <!--            <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">-->
+                <!--              <div class="pt-3">-->
+                <!--                <span class="footer-text font-weight-bolder">Appwork</span> ©-->
+                <!--              </div>-->
+                <!--              <div>-->
+                <!--                <a href="javascript:void(0)" class="footer-link pt-3">About Us</a>-->
+                <!--                <a href="javascript:void(0)" class="footer-link pt-3 ml-4">Help</a>-->
+                <!--                <a href="javascript:void(0)" class="footer-link pt-3 ml-4">Contact</a>-->
+                <!--                <a href="javascript:void(0)" class="footer-link pt-3 ml-4">Terms &amp; Conditions</a>-->
+                <!--              </div>-->
+                <!--            </div>-->
+                <!--          </nav>-->
+                <!-- / Layout footer -->
+
+            </div>
+            <!-- Layout content -->
+
+        </div>
+        <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<!-- Core scripts -->
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/js/sidenav.js"></script>
+
+<!-- Libs -->
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/libs/sparkline/sparkline.js"></script>
+
+<!-- Demo -->
+<script src="assets/js/demo.js"></script>
+<script src="assets/js/charts_sparkline.js"></script>
+</body>
+
+</html>

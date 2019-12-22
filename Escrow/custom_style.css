@@ -5,6 +5,10 @@
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
+  color: #A8A8A8;
+}
+.breadcrumbs a:hover {
+  color: #000000;
 }
 .breadcrumbs a:not(:last-child):after {
   content: "-";
@@ -197,6 +201,20 @@
   font-size: 26px;
   line-height: 100%;
   color: #000000;
+}
+
+.person p {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 130%;
+  color: #757575;
+  margin-bottom: 5px;
+}
+
+.person_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 
 .sidenav-vertical .app-brand {
