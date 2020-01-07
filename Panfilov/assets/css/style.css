@@ -47,6 +47,14 @@ a:hover {
   font-size: 9px;
   line-height: 90%;
 }
+@media screen and (min-width: 2000px) {
+  .stub .stub-header .logo .big_logo {
+    font-size: 36px;
+  }
+  .stub .stub-header .logo .small_logo {
+    font-size: 18px;
+  }
+}
 .stub .stub-content {
   margin-top: 150px;
 }
@@ -73,6 +81,11 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite;
+}
+@media screen and (min-width: 2000px) {
+  .stub h1 {
+    font-size: 160px;
+  }
 }
 @media screen and (max-width: 900px) {
   .stub h1 {
@@ -116,9 +129,25 @@ a:hover {
 .stub .socials a:hover {
   color: #0093d5;
 }
+@media screen and (min-width: 2000px) {
+  .stub .socials a {
+    font-size: 30px;
+  }
+}
 .stub p {
   color: #757575;
   max-width: 640px;
+}
+@media screen and (max-width: 455px) {
+  .stub p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .stub p {
+    font-size: 24px;
+    max-width: 800px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -50,6 +50,14 @@ a:hover {
         line-height: 90%;
 
       }
+      @media screen and (min-width: 2000px){
+        .big_logo{
+          font-size: 36px;
+        }
+        .small_logo{
+          font-size: 18px;
+        }
+      }
     }
   }
   .stub-content{
@@ -77,6 +85,9 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 8s linear infinite;
+    @media screen and (min-width: 2000px){
+      font-size: 160px;
+    }
     @media screen and (max-width: 900px){
       font-size: 90px;
     }
@@ -113,9 +124,21 @@ a:hover {
         color: #0093d5;
       }
   }
+    @media screen and (min-width: 2000px){
+      a{
+        font-size: 30px;
+      }
+    }
   }
   p{
     color: #757575;
     max-width: 640px;
+    @media screen and (max-width: 455px){
+      font-size: 12px;
+    }
+    @media screen and (min-width: 2000px){
+      font-size: 24px;
+      max-width: 800px;
+    }
   }
 }
