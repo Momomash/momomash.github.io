@@ -126,8 +126,8 @@ a:hover {
   margin-right: 5px;
   color: #757575;
 }
-.stub .socials a:hover {
-  color: #0093d5;
+.stub .socials a img {
+  margin: auto auto;
 }
 @media screen and (min-width: 2000px) {
   .stub .socials a {
