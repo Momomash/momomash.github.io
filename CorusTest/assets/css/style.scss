@@ -1,0 +1,143 @@
+$green: #1dd33b;
+$grey: #dbdbdb;
+$blackGray: #a8a8a8;
+$orange: #ffA500;
+$white: #fff;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.timeline-wrapper {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.timeline__item {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+
+  span {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+    color: $blackGray;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  &:last-child:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    left: 100%;
+  }
+
+}
+
+.timeline__item.completed {
+  background-color: $green;
+
+  &:before,
+  &:last-child:after {
+    background-color: $green;
+    box-shadow: 0 0 0 2px $green,
+    0 0 0 4px $white;
+  }
+}
+
+.timeline__item.processing {
+  background-color: $orange;
+
+  &:before,
+  &:last-child:after {
+    background-color: $orange;
+    box-shadow: 0 0 0 2px $orange,
+    0 0 0 4px $white;
+  }
+}
+
+.timeline__item.awaiting {
+  background-color: $grey;
+
+  &:before,
+  &:last-child:after {
+    background-color: $white;
+    box-shadow: 0 0 0 2px $grey,
+    0 0 0 4px $white;
+  }
+}
+
+//label over timeline
+.timeline.label-over-line {
+  .timeline__item {
+
+    span {
+      top: 15px;
+    }
+  }
+}
+
+//label in the center of the point
+
+.timeline.label-center-checkpoint {
+
+  .timeline__item {
+    &:last-child {
+      flex-grow: 0;
+      position: static;
+      span{
+        text-align: right;
+        width: auto;
+        right: 0;
+      }
+    }
+    &:first-child{
+      span{
+        left:0;
+        text-align: left;
+      }
+    }
+
+    span {
+      left: -50%;
+    }
+    &.processing{
+      background-color: $grey;
+    }
+  }
+
+}

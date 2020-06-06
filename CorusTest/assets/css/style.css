@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.timeline-wrapper {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline__item {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+}
+.timeline__item span {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  text-align: center;
+  color: #a8a8a8;
+}
+.timeline__item:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.timeline__item:last-child:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  left: 100%;
+}
+
+.timeline__item.completed {
+  background-color: #1dd33b;
+}
+.timeline__item.completed:before, .timeline__item.completed:last-child:after {
+  background-color: #1dd33b;
+  box-shadow: 0 0 0 2px #1dd33b, 0 0 0 4px #fff;
+}
+
+.timeline__item.processing {
+  background-color: #ffA500;
+}
+.timeline__item.processing:before, .timeline__item.processing:last-child:after {
+  background-color: #ffA500;
+  box-shadow: 0 0 0 2px #ffA500, 0 0 0 4px #fff;
+}
+
+.timeline__item.awaiting {
+  background-color: #dbdbdb;
+}
+.timeline__item.awaiting:before, .timeline__item.awaiting:last-child:after {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #dbdbdb, 0 0 0 4px #fff;
+}
+
+.timeline.label-over-line .timeline__item span {
+  top: 15px;
+}
+
+.timeline.label-center-checkpoint .timeline__item:last-child {
+  flex-grow: 0;
+  position: static;
+}
+.timeline.label-center-checkpoint .timeline__item:last-child span {
+  text-align: right;
+  width: auto;
+  right: 0;
+}
+.timeline.label-center-checkpoint .timeline__item:first-child span {
+  left: 0;
+  text-align: left;
+}
+.timeline.label-center-checkpoint .timeline__item span {
+  left: -50%;
+}
+.timeline.label-center-checkpoint .timeline__item.processing {
+  background-color: #dbdbdb;
+}
+
+/*# sourceMappingURL=style.css.map */
