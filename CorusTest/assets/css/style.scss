@@ -13,10 +13,13 @@ body {
 }
 
 .timeline-wrapper {
-  min-height: 60px;
+  min-height: 80px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .timeline {
@@ -28,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  min-width: 480px;
 
 }
 
@@ -38,7 +42,7 @@ body {
 
   span {
     position: absolute;
-    top: -30px;
+    bottom: 10px;
     width: 100%;
     text-align: center;
     color: $blackGray;
@@ -47,6 +51,7 @@ body {
   &:before {
     content: '';
     position: absolute;
+    left: 3px;
     top: -2px;
     z-index: 2;
     width: 6px;
@@ -63,7 +68,8 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: red;
-    left: 100%;
+    left: auto;
+    right: 2px;
   }
 
   &:not(.processing) {
@@ -100,7 +106,6 @@ body {
   }
 }
 
-
 //label over timeline
 .timeline.label-over-line {
   .timeline__item {
@@ -112,13 +117,13 @@ body {
 }
 
 //label in the center of the point
-
 .timeline.label-center-checkpoint {
 
   .timeline__item {
     &:last-child {
       flex-grow: 0;
       position: static;
+      min-width: 0;
 
       span {
         text-align: right;
@@ -126,6 +131,9 @@ body {
         width: inherit;
         right: 0;
       }
+    }
+    &:last-child:before{
+      content: none;
     }
 
     &:first-child {
@@ -143,6 +151,6 @@ body {
       background-color: $grey;
     }
   }
-
 }
+
 
