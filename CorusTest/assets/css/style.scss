@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 3px;
+  height: 2px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -47,10 +47,10 @@ body {
   &:before {
     content: '';
     position: absolute;
-    top: -4px;
+    top: -2px;
     z-index: 2;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
   }
 
@@ -66,40 +66,40 @@ body {
     left: 100%;
   }
 
-}
-
-.timeline__item.completed {
-  background-color: $green;
-
-  &:before,
-  &:last-child:after {
+  &:not(.processing) {
     background-color: $green;
-    box-shadow: 0 0 0 2px $green,
-    0 0 0 4px $white;
+
+    &:before,
+    &:last-child:after {
+      background-color: $green;
+      box-shadow: 0 0 0 2px $green,
+      0 0 0 4px $white;
+    }
   }
-}
 
-.timeline__item.processing {
-  background-color: $orange;
-
-  &:before,
-  &:last-child:after {
+  &.processing {
     background-color: $orange;
-    box-shadow: 0 0 0 2px $orange,
-    0 0 0 4px $white;
+
+    &:before,
+    &:last-child:after {
+      background-color: $orange;
+      box-shadow: 0 0 0 2px $orange,
+      0 0 0 4px $white;
+    }
+
+    & ~ .timeline__item {
+      background-color: $grey;
+
+      &:before,
+      &:last-child:after {
+        background-color: $white;
+        box-shadow: 0 0 0 2px $grey,
+        0 0 0 4px $white;
+      }
+    }
   }
 }
 
-.timeline__item.awaiting {
-  background-color: $grey;
-
-  &:before,
-  &:last-child:after {
-    background-color: $white;
-    box-shadow: 0 0 0 2px $grey,
-    0 0 0 4px $white;
-  }
-}
 
 //label over timeline
 .timeline.label-over-line {
@@ -119,15 +119,18 @@ body {
     &:last-child {
       flex-grow: 0;
       position: static;
-      span{
+
+      span {
         text-align: right;
-        width: auto;
+        left: auto;;
+        width: inherit;
         right: 0;
       }
     }
-    &:first-child{
-      span{
-        left:0;
+
+    &:first-child {
+      span {
+        left: 0;
         text-align: left;
       }
     }
@@ -135,9 +138,11 @@ body {
     span {
       left: -50%;
     }
-    &.processing{
+
+    &.processing {
       background-color: $grey;
     }
   }
 
 }
+

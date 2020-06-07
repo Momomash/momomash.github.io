@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 3px;
+  height: 2px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,10 +40,10 @@ body {
 .timeline__item:before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -2px;
   z-index: 2;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
 }
 .timeline__item:last-child:after {
@@ -57,15 +57,13 @@ body {
   background-color: red;
   left: 100%;
 }
-
-.timeline__item.completed {
+.timeline__item:not(.processing) {
   background-color: #1dd33b;
 }
-.timeline__item.completed:before, .timeline__item.completed:last-child:after {
+.timeline__item:not(.processing):before, .timeline__item:not(.processing):last-child:after {
   background-color: #1dd33b;
   box-shadow: 0 0 0 2px #1dd33b, 0 0 0 4px #fff;
 }
-
 .timeline__item.processing {
   background-color: #ffA500;
 }
@@ -73,11 +71,10 @@ body {
   background-color: #ffA500;
   box-shadow: 0 0 0 2px #ffA500, 0 0 0 4px #fff;
 }
-
-.timeline__item.awaiting {
+.timeline__item.processing ~ .timeline__item {
   background-color: #dbdbdb;
 }
-.timeline__item.awaiting:before, .timeline__item.awaiting:last-child:after {
+.timeline__item.processing ~ .timeline__item:before, .timeline__item.processing ~ .timeline__item:last-child:after {
   background-color: #fff;
   box-shadow: 0 0 0 2px #dbdbdb, 0 0 0 4px #fff;
 }
@@ -92,7 +89,8 @@ body {
 }
 .timeline.label-center-checkpoint .timeline__item:last-child span {
   text-align: right;
-  width: auto;
+  left: auto;
+  width: inherit;
   right: 0;
 }
 .timeline.label-center-checkpoint .timeline__item:first-child span {

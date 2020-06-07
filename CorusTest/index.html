@@ -10,39 +10,90 @@
 <div class="wrapper">
     <div class="timeline-wrapper">
         <ul class="timeline label-center-checkpoint">
-            <li class="timeline__item completed"><span>Step 1</span></li>
-            <li class="timeline__item completed"><span>Step any text 2</span></li>
+            <li class="timeline__item "><span>Step 1</span></li>
+            <li class="timeline__item "><span>Step any text 2</span></li>
             <li class="timeline__item processing"><span>Step 3</span></li>
-            <li class="timeline__item awaiting"><span>Step 4</span></li>
+            <li class="timeline__item "><span>Step 4</span></li>
         </ul>
     </div>
     <div class="timeline-wrapper">
         <ul class="timeline">
-            <li class="timeline__item completed"><span>Step 1</span></li>
-            <li class="timeline__item completed"><span>Step any text 2</span></li>
+            <li class="timeline__item "><span>Step 1</span></li>
+            <li class="timeline__item "><span>Step any text 2</span></li>
             <li class="timeline__item processing"><span>Step 3</span></li>
-            <li class="timeline__item awaiting"><span>Step 4</span></li>
+            <li class="timeline__item "><span>Step 4</span></li>
         </ul>
     </div>
     <div class="timeline-wrapper">
         <ul class="timeline label-center-checkpoint label-over-line">
-            <li class="timeline__item completed"><span>Step 1</span></li>
-            <li class="timeline__item completed"><span>Step any text 2</span></li>
+            <li class="timeline__item "><span>Step 1</span></li>
+            <li class="timeline__item "><span>Step any text 2</span></li>
             <li class="timeline__item processing"><span>Step 3</span></li>
-            <li class="timeline__item awaiting"><span>Step 4</span></li>
+            <li class="timeline__item "><span>Step 4</span></li>
         </ul>
     </div>
     <div class="timeline-wrapper">
         <ul class="timeline label-over-line">
-            <li class="timeline__item completed"><span>Step 1</span></li>
-            <li class="timeline__item completed"><span>Step any text 2</span></li>
+            <li class="timeline__item "><span>Step 1</span></li>
+            <li class="timeline__item "><span>Step any text 2</span></li>
             <li class="timeline__item processing"><span>Step 3</span></li>
-            <li class="timeline__item awaiting"><span>Step 4</span></li>
+            <li class="timeline__item "><span>Step 4</span></li>
         </ul>
     </div>
-
-
+    <h2>Timeline toggle type demo</h2>
+    <div style="margin-bottom: 20px;">
+        <button onclick="toggleClass('label-center-checkpoint')">Toggle type timeline</button>
+        <button onclick="toggleClass('label-over-line')">Toggle type label</button>
+        <button onclick="addItem()">Add new timeline item</button>
+        <button onclick="removeItem()">Remove last item</button>
+    </div>
+    <div class="timeline-wrapper">
+        <ul class="timeline " id="demo">
+            <li class="timeline__item "><span>Step 1</span></li>
+            <li class="timeline__item "><span>Step any text 2</span></li>
+            <li class="timeline__item processing"><span>Step 3</span></li>
+            <li class="timeline__item "><span>Step 4</span></li>
+        </ul>
+    </div>
 </div>
+
+<script>
+    const wrapper = document.getElementById('demo');
+    const ul = wrapper.getElementsByTagName('li');
+    for (var i = 0; i < ul.length; i++) {
+        ul[i].onclick = toggleProcessing;
+    }
+
+    function toggleClass(cls) {
+        wrapper.classList.toggle(cls);
+    }
+
+    function addItem() {
+        const newItem = document.createElement("li");
+        newItem.innerHTML = '<span>new Item</span>';
+        newItem.classList.add("timeline__item");
+        newItem.onclick = toggleProcessing;
+        document.getElementById('demo').append(newItem);
+    }
+
+    function toggleProcessing() {
+        const currentProcessing = wrapper.getElementsByClassName('processing')[0];
+        if (currentProcessing) {
+            currentProcessing.classList.remove('processing');
+        }
+        this.classList.add('processing');
+    }
+
+    function removeItem() {
+        const arrLi = wrapper.getElementsByTagName('li');
+        const lastItem = arrLi[arrLi.length -1];
+        if (lastItem){
+            lastItem.remove();
+        }
+
+    }
+
+</script>
 
 </body>
 </html>
