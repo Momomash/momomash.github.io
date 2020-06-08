@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="Fixes1">
-      <change afterPath="$PROJECT_DIR$/Escrow/charts_sparkline1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Escrow/custom_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Escrow/custom_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Escrow/custom_style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Escrow/custom_style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Escrow/custom_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Escrow/custom_style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="f8c5ed1e-7be8-4b8f-95da-39ef880082e2" name="Revert &quot;Fix adaptive mobile&quot;" comment="Revert &quot;Fix adaptive mobile&quot;&#10;&#10;This reverts commit d753c5e6" />
     <list id="6ffa6a7f-801e-47ec-a855-97b89a702531" name="Test" comment="" />
@@ -101,6 +98,8 @@
       <workItem from="1568064474693" duration="8000" />
       <workItem from="1575226970250" duration="374000" />
       <workItem from="1576871611646" duration="6000" />
+      <workItem from="1591626005407" duration="206000" />
+      <workItem from="1591630609448" duration="157000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1558846279824</created>
