@@ -12,14 +12,20 @@ body {
   padding: 50px;
 }
 
+.flex-wrapper{
+  display: flex;
+  width: 100%;
+}
 .timeline-wrapper {
   min-height: 80px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow-x: auto;
   overflow-y: visible;
+  -ms-overflow-y: visible;
 }
 
 .timeline {
@@ -62,10 +68,10 @@ body {
   &:last-child:after {
     content: '';
     position: absolute;
-    top: -4px;
+    top: -2px;
     z-index: 2;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color: red;
     left: auto;
@@ -144,7 +150,7 @@ body {
     }
 
     span {
-      left: -50%;
+      left: -49%;
     }
 
     &.processing {

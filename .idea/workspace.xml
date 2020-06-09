@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="Fixes1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="efc7b45e-c38a-42e1-97eb-f29a69712671" name="Default Changelist" comment="" />
     <list id="f8c5ed1e-7be8-4b8f-95da-39ef880082e2" name="Revert &quot;Fix adaptive mobile&quot;" comment="Revert &quot;Fix adaptive mobile&quot;&#10;&#10;This reverts commit d753c5e6" />
     <list id="6ffa6a7f-801e-47ec-a855-97b89a702531" name="Test" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,6 +98,7 @@
       <workItem from="1576871611646" duration="6000" />
       <workItem from="1591626005407" duration="206000" />
       <workItem from="1591630609448" duration="157000" />
+      <workItem from="1591631391001" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1558846279824</created>
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575227337951</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixes1">
+      <created>1591631469295</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591631469295</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,8 +217,8 @@
     <MESSAGE value="images" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fixes" />
-    <MESSAGE value="Fixes1" />
     <MESSAGE value="git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
+    <MESSAGE value="Fixes1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes1" />
   </component>
 </project>
